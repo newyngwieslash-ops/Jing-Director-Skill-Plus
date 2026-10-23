@@ -1,0 +1,34 @@
+{
+  "audit": "4.4 independent read-only identity validation QA",
+  "timestamp_utc": "2026-10-22T15:26:14.773461+00:00",
+  "registry_probe_count": 66,
+  "bundle_probe_count": 9,
+  "total": 75,
+  "failures": [],
+  "status": "passed",
+  "source_sha256": {
+    "scripts/director_identity.py": "5973a0f93502c82799330473999c23e17c205794eae73e6115fd0601517d25e0",
+    "scripts/director_blocking.py": "b7c7c403470085dab4642ffa50644b8946dc109eecc8a47d8b3b3c799ecb0f8e",
+    "scripts/director_blocking_output.py": "4acca3534353edab6c8c5a2bb9f58e521903f5a00a96fe078dcf9acc8aacab00",
+    "scripts/director_design_board.py": "ec785ead68483a9c9090429c41e98c92af86c90f9523f5390483a9044d25cc93",
+    "tests/test_character_identity.py": "a749debb8b44b960021c107adaa01cba3f9980470018f8a76fbfef5e41e5e45d"
+  },
+  "checked": [
+    "Malformed registry fields and missing values fail closed",
+    "Missing role, duplicated code/ID and cast color drift block",
+    "Registry/cast ordering and off-contract additions do not reassign identity",
+    "Same color and same marker shape block even when path styles differ",
+    "Manifest global/scene legend divergence blocks after manifest rehash",
+    "Updated current registry blocks historical bundle even with updated current raw hash",
+    "Bundled registry snapshot cannot serve as current project registry",
+    "PNG byte mutation and missing current registry block",
+    "Diff reviewed: source/roster/geometry gate retained; old tests adapted with registry, not removed"
+  ],
+  "limitations": [
+    "Independent probes supplement, not replace full regression and final visual QA",
+    "Current external registry is an explicitly supplied authority input, not independently authenticated organizational truth",
+    "Hash bindings and shared renderer do not semantically authenticate arbitrary pixel edits if all trusted references are intentionally rewritten",
+    "Near-color/contrast checks are heuristics requiring final-size visual review; no color-vision certification",
+    "Initial hall source PNG visually inspected; final revised PNG/board validation is performed by example QA owner"
+  ]
+}

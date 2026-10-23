@@ -1,0 +1,34 @@
+{
+  "family": "seedance",
+  "min_duration_sec": 4,
+  "max_duration_sec": 30,
+  "modes": [
+    "T2V",
+    "I2V",
+    "FL2V",
+    "REF"
+  ],
+  "max_prompt_chars": null,
+  "max_images": 30,
+  "max_videos": 10,
+  "max_audio": 10,
+  "max_total_refs": 50,
+  "profile_id": "seedance-2.5",
+  "verified_at": "2026-09-24",
+  "actual_model_id": null,
+  "provider": null,
+  "status": "guidance_snapshot_not_api_contract",
+  "integer_seconds_policy": "Conservative local compiler policy; confirm provider support before submitting fractional or other durations.",
+  "sources": [
+    "https://seed.bytedance.com/en/seedance2_5",
+    "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+  ],
+  "evidence_level": "official_model_page_plus_local_workflow_policy",
+  "notes": [
+    "30-second maximum and 30 image / 10 video / 10 audio reference capacities are model-level documentation; provider/mode limits may be smaller.",
+    "4-second minimum is a conservative local delivery policy, not a claim about every Seedance 2.5 endpoint.",
+    "Internal mode names and reference aliases must be bound to the actual product interface.",
+    "Human review boards remain <=15 seconds. A >15-second generation job needs an explicitly approved multi-shot production grouping.",
+    "Unknown character budget is null, not unlimited guaranteed. Confirm the provider limit or pass --char-limit."
+  ]
+}

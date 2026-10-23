@@ -1,0 +1,6 @@
+interface:
+  display_name: "JingStudio"
+  short_description: "剧本分镜、逐场站位走位图与连续性审核、故事板及Seedance/H3输入包"
+  default_prompt: "使用 $jingstudio，将现有分镜表升级为导演级时间化故事板。保留原镜号、时长、对白与剧情顺序；先完成导演规划和连续性检查，再按批准结果生成纯净关键帧、审阅板及目标模型提示词。"
+policy:
+  allow_implicit_invocation: false

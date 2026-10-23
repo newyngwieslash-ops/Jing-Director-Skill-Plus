@@ -1,0 +1,127 @@
+{
+  "schema_version": "3.0.0",
+  "profile_id": "minimax-h3",
+  "profile_sha256": "404fb16958cf36f5562c542d2de3ce5885321c99e5c7013aa91816c8fd3b416e",
+  "mode": "Ref2VA",
+  "requested_duration_sec": 10.0,
+  "aspect_ratio": "16:9",
+  "shot_ids": [
+    "S009"
+  ],
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "prompt_sha256": "ee4808e3ffd300fa7b877ee8cab98f8668f253bbcb61d45861d5bdd7de53ad5d",
+  "prompt_char_count": 3947,
+  "upload_plan": [
+    {
+      "id": "child_identity",
+      "kind": "image",
+      "role": "identity",
+      "path": "refs/characters/xiao_nan_hai.png",
+      "entity_id": "xiao_nan_hai",
+      "description": {
+        "zh": "小男孩身份与黄色T恤、牛仔背带裤，蓝白鞋；单个蓝色气球细线缠腕。",
+        "en": "The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist."
+      },
+      "used_in_shots": [
+        "S009"
+      ],
+      "upload_label": "<Picture 1>",
+      "content_label": "<Subject 1>",
+      "submitted": false,
+      "file_status": "missing"
+    },
+    {
+      "id": "hall_plate",
+      "kind": "image",
+      "role": "scene",
+      "path": "refs/scenes/heritage_hall_plate.jpg",
+      "entity_id": "scene_exhibition_hall",
+      "description": {
+        "zh": "批准的展厅纵深、玻璃展柜、暖白灯光和横向前景通道。",
+        "en": "Approved hall depth, glass displays, warm-white lights and transverse foreground passage."
+      },
+      "used_in_shots": [
+        "S009"
+      ],
+      "upload_label": "<Picture 2>",
+      "content_label": "<Subject 2>",
+      "submitted": false,
+      "file_status": "missing"
+    },
+    {
+      "id": "left_group",
+      "kind": "image",
+      "role": "composition",
+      "path": "refs/continuity/shot08_left_group.png",
+      "entity_id": "left_group",
+      "description": {
+        "zh": "左后景父亲和四名员工，儿子落后；锁定队列及相对距离，不把全部人硬塞入近景。",
+        "en": "Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view."
+      },
+      "used_in_shots": [
+        "S009"
+      ],
+      "upload_label": "<Picture 3>",
+      "content_label": "<Picture 3>",
+      "submitted": false,
+      "file_status": "missing"
+    },
+    {
+      "id": "right_group",
+      "kind": "image",
+      "role": "composition",
+      "path": "refs/continuity/shot08_right_group.png",
+      "entity_id": "right_group",
+      "description": {
+        "zh": "右侧尔玛朵与两名游客持续讲绣；角色造型沿用既有角色图。",
+        "en": "Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs."
+      },
+      "used_in_shots": [
+        "S009"
+      ],
+      "upload_label": "<Picture 4>",
+      "content_label": "<Picture 4>",
+      "submitted": false,
+      "file_status": "missing"
+    },
+    {
+      "id": "embroidery_stand",
+      "kind": "image",
+      "role": "prop",
+      "path": "refs/props/embroidery_stand_intact.png",
+      "entity_id": "embroidery_stand",
+      "description": {
+        "zh": "四羊护宝刺绣和金属展架近侧底座均完整，位置固定；不得提前破损。",
+        "en": "The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage."
+      },
+      "used_in_shots": [
+        "S009"
+      ],
+      "upload_label": "<Picture 5>",
+      "content_label": "<Subject 3>",
+      "submitted": false,
+      "file_status": "missing"
+    }
+  ],
+  "missing_assets": [
+    "child_identity",
+    "hall_plate",
+    "left_group",
+    "right_group",
+    "embroidery_stand"
+  ],
+  "speaker_map": {},
+  "status": "draft_missing_assets",
+  "actual_model_id": null,
+  "provider_payload": null,
+  "submitted": false,
+  "video_verified": false,
+  "warnings": [
+    {
+      "code": "PROVIDER_PREFLIGHT",
+      "where": "minimax-h3",
+      "message": "This is a prompt bundle, not an API payload. Confirm actual provider/model/mode/limits/reference slots/rights and upload each asset; labels do not upload files."
+    }
+  ],
+  "created_at": "2026-09-24T02:55:27.287617+00:00"
+}

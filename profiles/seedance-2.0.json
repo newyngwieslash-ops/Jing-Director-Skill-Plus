@@ -1,0 +1,32 @@
+{
+  "family": "seedance",
+  "min_duration_sec": 4,
+  "max_duration_sec": 15,
+  "modes": [
+    "T2V",
+    "I2V",
+    "FL2V",
+    "REF"
+  ],
+  "max_prompt_chars": 2000,
+  "max_images": 9,
+  "max_videos": 3,
+  "max_audio": 3,
+  "max_total_refs": 12,
+  "profile_id": "seedance-2.0",
+  "verified_at": "2026-09-24",
+  "actual_model_id": null,
+  "provider": null,
+  "status": "guidance_snapshot_not_api_contract",
+  "integer_seconds_policy": "Conservative local compiler policy; confirm provider support before submitting fractional or other durations.",
+  "sources": [
+    "legacy/SKILL.original.txt"
+  ],
+  "evidence_level": "legacy_conservative_local_profile",
+  "notes": [
+    "2000-character limit preserves the original user skill budget; it is not asserted as a universal model API limit.",
+    "The bundled minimum and reference caps are conservative legacy project defaults, not newly verified provider limits. Confirm actual target UI/API before use.",
+    "T2V/I2V/FL2V/REF are internal workflow labels, not guaranteed official API enum values.",
+    "@Image N labels describe planned upload slot mapping, not an automatic upload."
+  ]
+}

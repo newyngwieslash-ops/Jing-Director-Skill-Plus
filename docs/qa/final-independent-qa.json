@@ -1,0 +1,213 @@
+{
+  "status": "pass",
+  "passed": 47,
+  "total": 47,
+  "method_probes": {
+    "results": [
+      {
+        "name": "baseline draft only",
+        "pass": true
+      },
+      {
+        "name": "baseline jsonschema",
+        "pass": true
+      },
+      {
+        "name": "stale hash",
+        "pass": true
+      },
+      {
+        "name": "locked source duration_sec",
+        "pass": true
+      },
+      {
+        "name": "locked source scene_id",
+        "pass": true
+      },
+      {
+        "name": "locked source subjects",
+        "pass": true
+      },
+      {
+        "name": "locked source camera",
+        "pass": true
+      },
+      {
+        "name": "approved flag cannot grant",
+        "pass": true
+      },
+      {
+        "name": "source approved flag cannot grant",
+        "pass": true
+      },
+      {
+        "name": "missing shot",
+        "pass": true
+      },
+      {
+        "name": "duplicate shot",
+        "pass": true
+      },
+      {
+        "name": "missing role",
+        "pass": true
+      },
+      {
+        "name": "invented role",
+        "pass": true
+      },
+      {
+        "name": "retime",
+        "pass": true
+      },
+      {
+        "name": "fake execution",
+        "pass": true
+      },
+      {
+        "name": "capability no evidence",
+        "pass": true
+      },
+      {
+        "name": "unknown capability blocked",
+        "pass": true
+      },
+      {
+        "name": "repair dual counters budget",
+        "pass": true
+      },
+      {
+        "name": "source interpretation inference and XSS",
+        "pass": true
+      },
+      {
+        "name": "strict malformed JSON",
+        "pass": true
+      },
+      {
+        "name": "symlink and overwrite safe",
+        "pass": true
+      },
+      {
+        "name": "resource bounds",
+        "pass": true
+      },
+      {
+        "name": "JSON schema walker alignment adversarial types",
+        "pass": true
+      },
+      {
+        "name": "baseline core contracts roster registry diagrams immutable",
+        "pass": true
+      },
+      {
+        "name": "cue exclusive frame bounds dialogue and sound role",
+        "pass": true
+      },
+      {
+        "name": "fractional frame duration never rounded",
+        "pass": true
+      },
+      {
+        "name": "malformed root review controlled diagnostic",
+        "pass": true
+      },
+      {
+        "name": "empty shot no false performance blocker while cast shot remains blocked",
+        "pass": true
+      }
+    ],
+    "passed": 28,
+    "total": 28,
+    "source_hashes": {
+      "scripts/director_methods.py": "dc804c2563c87da317e4894f38e3ec063429ef38ed0dafb7506b01bdc3a5d097",
+      "schemas/director-method-pack.schema.json": "58b964958f9713de824952f5d301a909e5847cc595e20d63c226741c8f150c5d"
+    }
+  },
+  "behavior_probes": {
+    "results": [
+      {
+        "name": "no run stays not_run",
+        "pass": true
+      },
+      {
+        "name": "ceiling 52 of57 does not meet92",
+        "pass": true
+      },
+      {
+        "name": "synthetic cannot be actual model or production evidence",
+        "pass": true
+      },
+      {
+        "name": "stale suite",
+        "pass": true
+      },
+      {
+        "name": "stale source hash",
+        "pass": true
+      },
+      {
+        "name": "stale prompt hash",
+        "pass": true
+      },
+      {
+        "name": "duplicate response",
+        "pass": true
+      },
+      {
+        "name": "fabricated quote",
+        "pass": true
+      },
+      {
+        "name": "positive pass missing quote",
+        "pass": true
+      },
+      {
+        "name": "duplicate grade",
+        "pass": true
+      },
+      {
+        "name": "same grader generator session",
+        "pass": true
+      },
+      {
+        "name": "fake review bool integer",
+        "pass": true
+      },
+      {
+        "name": "source traversal",
+        "pass": true
+      },
+      {
+        "name": "hard fail defeats passing aggregate",
+        "pass": true
+      },
+      {
+        "name": "missing grades incomplete",
+        "pass": true
+      },
+      {
+        "name": "duplicate JSON blocked",
+        "pass": true
+      },
+      {
+        "name": "symlink artifact blocked",
+        "pass": true
+      },
+      {
+        "name": "cannot overwrite source",
+        "pass": true
+      },
+      {
+        "name": "packaged baseline not executed",
+        "pass": true
+      }
+    ],
+    "passed": 19,
+    "total": 19,
+    "source_sha256": "e12c79df69190eb9f690225d8e35c0b3e3d3e93ffcb0da969fce89c95d246a9d"
+  },
+  "limits": [
+    "Synthetic offline adversarial checks only, not actual model evaluation or video-quality validation."
+  ]
+}

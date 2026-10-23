@@ -1,0 +1,354 @@
+{
+  "schema_version": "3.0.0",
+  "jobs": [
+    {
+      "job_id": "S009-entry",
+      "shot_id": "S009",
+      "time_sec": 0,
+      "purpose": "clean_video_keyframe",
+      "prompt_zh": "16:9，写实城市非遗展厅，柔和暖白照明，服装与展柜沿用已批准参考。\n这是镜头S009在0秒的单一画面状态，而不是整段动作的拼贴。\n男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。\n只绘制这一时刻可见的角色、道具与构图；参考图片按清单中职责使用。输出纯净画面，不绘制故事板表格、编号、边框、字幕、三视图或人物设定拼贴。\n",
+      "input_assets": [
+        {
+          "id": "child_identity",
+          "kind": "image",
+          "role": "identity",
+          "path": "refs/characters/xiao_nan_hai.png",
+          "entity_id": "xiao_nan_hai",
+          "description": {
+            "zh": "小男孩身份与黄色T恤、牛仔背带裤，蓝白鞋；单个蓝色气球细线缠腕。",
+            "en": "The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "hall_plate",
+          "kind": "image",
+          "role": "scene",
+          "path": "refs/scenes/heritage_hall_plate.jpg",
+          "entity_id": "scene_exhibition_hall",
+          "description": {
+            "zh": "批准的展厅纵深、玻璃展柜、暖白灯光和横向前景通道。",
+            "en": "Approved hall depth, glass displays, warm-white lights and transverse foreground passage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "left_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_left_group.png",
+          "entity_id": "left_group",
+          "description": {
+            "zh": "左后景父亲和四名员工，儿子落后；锁定队列及相对距离，不把全部人硬塞入近景。",
+            "en": "Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "right_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_right_group.png",
+          "entity_id": "right_group",
+          "description": {
+            "zh": "右侧尔玛朵与两名游客持续讲绣；角色造型沿用既有角色图。",
+            "en": "Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "embroidery_stand",
+          "kind": "image",
+          "role": "prop",
+          "path": "refs/props/embroidery_stand_intact.png",
+          "entity_id": "embroidery_stand",
+          "description": {
+            "zh": "四羊护宝刺绣和金属展架近侧底座均完整，位置固定；不得提前破损。",
+            "en": "The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        }
+      ],
+      "output_path": "frames/S009/S009-entry.png",
+      "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+      "missing_assets": [
+        "child_identity",
+        "hall_plate",
+        "left_group",
+        "right_group",
+        "embroidery_stand"
+      ],
+      "status": "blocked_missing_references",
+      "tool_call_id": null,
+      "executed": false,
+      "visual_review": "unreviewed"
+    },
+    {
+      "job_id": "S009-trigger",
+      "shot_id": "S009",
+      "time_sec": 2,
+      "purpose": "clean_video_keyframe",
+      "prompt_zh": "16:9，写实城市非遗展厅，柔和暖白照明，服装与展柜沿用已批准参考。\n这是镜头S009在2秒的单一画面状态，而不是整段动作的拼贴。\n向右平移到停止机位的时刻。男孩仍在运动中，前方底座与右侧讲解组保持空间区分。\n只绘制这一时刻可见的角色、道具与构图；参考图片按清单中职责使用。输出纯净画面，不绘制故事板表格、编号、边框、字幕、三视图或人物设定拼贴。\n",
+      "input_assets": [
+        {
+          "id": "child_identity",
+          "kind": "image",
+          "role": "identity",
+          "path": "refs/characters/xiao_nan_hai.png",
+          "entity_id": "xiao_nan_hai",
+          "description": {
+            "zh": "小男孩身份与黄色T恤、牛仔背带裤，蓝白鞋；单个蓝色气球细线缠腕。",
+            "en": "The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "hall_plate",
+          "kind": "image",
+          "role": "scene",
+          "path": "refs/scenes/heritage_hall_plate.jpg",
+          "entity_id": "scene_exhibition_hall",
+          "description": {
+            "zh": "批准的展厅纵深、玻璃展柜、暖白灯光和横向前景通道。",
+            "en": "Approved hall depth, glass displays, warm-white lights and transverse foreground passage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "left_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_left_group.png",
+          "entity_id": "left_group",
+          "description": {
+            "zh": "左后景父亲和四名员工，儿子落后；锁定队列及相对距离，不把全部人硬塞入近景。",
+            "en": "Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "right_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_right_group.png",
+          "entity_id": "right_group",
+          "description": {
+            "zh": "右侧尔玛朵与两名游客持续讲绣；角色造型沿用既有角色图。",
+            "en": "Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "embroidery_stand",
+          "kind": "image",
+          "role": "prop",
+          "path": "refs/props/embroidery_stand_intact.png",
+          "entity_id": "embroidery_stand",
+          "description": {
+            "zh": "四羊护宝刺绣和金属展架近侧底座均完整，位置固定；不得提前破损。",
+            "en": "The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        }
+      ],
+      "output_path": "frames/S009/S009-trigger.png",
+      "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+      "missing_assets": [
+        "child_identity",
+        "hall_plate",
+        "left_group",
+        "right_group",
+        "embroidery_stand"
+      ],
+      "status": "blocked_missing_references",
+      "tool_call_id": null,
+      "executed": false,
+      "visual_review": "unreviewed"
+    },
+    {
+      "job_id": "S009-development",
+      "shot_id": "S009",
+      "time_sec": 7,
+      "purpose": "clean_video_keyframe",
+      "prompt_zh": "16:9，写实城市非遗展厅，柔和暖白照明，服装与展柜沿用已批准参考。\n这是镜头S009在7秒的单一画面状态，而不是整段动作的拼贴。\n固定机位下，男孩比上一状态更靠近右侧底座前区域，鞋与地缝尚未发生绊脚接触；绣面和展架仍完整。\n只绘制这一时刻可见的角色、道具与构图；参考图片按清单中职责使用。输出纯净画面，不绘制故事板表格、编号、边框、字幕、三视图或人物设定拼贴。\n",
+      "input_assets": [
+        {
+          "id": "child_identity",
+          "kind": "image",
+          "role": "identity",
+          "path": "refs/characters/xiao_nan_hai.png",
+          "entity_id": "xiao_nan_hai",
+          "description": {
+            "zh": "小男孩身份与黄色T恤、牛仔背带裤，蓝白鞋；单个蓝色气球细线缠腕。",
+            "en": "The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "hall_plate",
+          "kind": "image",
+          "role": "scene",
+          "path": "refs/scenes/heritage_hall_plate.jpg",
+          "entity_id": "scene_exhibition_hall",
+          "description": {
+            "zh": "批准的展厅纵深、玻璃展柜、暖白灯光和横向前景通道。",
+            "en": "Approved hall depth, glass displays, warm-white lights and transverse foreground passage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "left_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_left_group.png",
+          "entity_id": "left_group",
+          "description": {
+            "zh": "左后景父亲和四名员工，儿子落后；锁定队列及相对距离，不把全部人硬塞入近景。",
+            "en": "Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "right_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_right_group.png",
+          "entity_id": "right_group",
+          "description": {
+            "zh": "右侧尔玛朵与两名游客持续讲绣；角色造型沿用既有角色图。",
+            "en": "Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "embroidery_stand",
+          "kind": "image",
+          "role": "prop",
+          "path": "refs/props/embroidery_stand_intact.png",
+          "entity_id": "embroidery_stand",
+          "description": {
+            "zh": "四羊护宝刺绣和金属展架近侧底座均完整，位置固定；不得提前破损。",
+            "en": "The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        }
+      ],
+      "output_path": "frames/S009/S009-development.png",
+      "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+      "missing_assets": [
+        "child_identity",
+        "hall_plate",
+        "left_group",
+        "right_group",
+        "embroidery_stand"
+      ],
+      "status": "blocked_missing_references",
+      "tool_call_id": null,
+      "executed": false,
+      "visual_review": "unreviewed"
+    },
+    {
+      "job_id": "S009-exit",
+      "shot_id": "S009",
+      "time_sec": 10,
+      "purpose": "clean_video_keyframe",
+      "prompt_zh": "16:9，写实城市非遗展厅，柔和暖白照明，服装与展柜沿用已批准参考。\n这是镜头S009在10秒的单一画面状态，而不是整段动作的拼贴。\n固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。\n只绘制这一时刻可见的角色、道具与构图；参考图片按清单中职责使用。输出纯净画面，不绘制故事板表格、编号、边框、字幕、三视图或人物设定拼贴。\n",
+      "input_assets": [
+        {
+          "id": "child_identity",
+          "kind": "image",
+          "role": "identity",
+          "path": "refs/characters/xiao_nan_hai.png",
+          "entity_id": "xiao_nan_hai",
+          "description": {
+            "zh": "小男孩身份与黄色T恤、牛仔背带裤，蓝白鞋；单个蓝色气球细线缠腕。",
+            "en": "The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "hall_plate",
+          "kind": "image",
+          "role": "scene",
+          "path": "refs/scenes/heritage_hall_plate.jpg",
+          "entity_id": "scene_exhibition_hall",
+          "description": {
+            "zh": "批准的展厅纵深、玻璃展柜、暖白灯光和横向前景通道。",
+            "en": "Approved hall depth, glass displays, warm-white lights and transverse foreground passage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "left_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_left_group.png",
+          "entity_id": "left_group",
+          "description": {
+            "zh": "左后景父亲和四名员工，儿子落后；锁定队列及相对距离，不把全部人硬塞入近景。",
+            "en": "Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "right_group",
+          "kind": "image",
+          "role": "composition",
+          "path": "refs/continuity/shot08_right_group.png",
+          "entity_id": "right_group",
+          "description": {
+            "zh": "右侧尔玛朵与两名游客持续讲绣；角色造型沿用既有角色图。",
+            "en": "Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        },
+        {
+          "id": "embroidery_stand",
+          "kind": "image",
+          "role": "prop",
+          "path": "refs/props/embroidery_stand_intact.png",
+          "entity_id": "embroidery_stand",
+          "description": {
+            "zh": "四羊护宝刺绣和金属展架近侧底座均完整，位置固定；不得提前破损。",
+            "en": "The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage."
+          },
+          "submitted": false,
+          "file_status": "missing"
+        }
+      ],
+      "output_path": "frames/S009/S009-exit.png",
+      "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+      "missing_assets": [
+        "child_identity",
+        "hall_plate",
+        "left_group",
+        "right_group",
+        "embroidery_stand"
+      ],
+      "status": "blocked_missing_references",
+      "tool_call_id": null,
+      "executed": false,
+      "visual_review": "unreviewed"
+    }
+  ],
+  "warning": "Job plans only. Filenames and planned labels do not upload references or prove generation. A real image tool must be invoked and its result reviewed."
+}

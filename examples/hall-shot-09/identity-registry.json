@@ -1,0 +1,77 @@
+{
+  "schema_version": "character-identity-1",
+  "project_id": "hall-shot-09",
+  "revision": 2,
+  "characters": [
+    {
+      "character_id": "xiao_nan_hai",
+      "short_code": "C001",
+      "color": "#D55E00",
+      "marker_shape": "circle",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "lu_jing_tian",
+      "short_code": "C002",
+      "color": "#0072B2",
+      "marker_shape": "square",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "employee_1",
+      "short_code": "C003",
+      "color": "#008060",
+      "marker_shape": "diamond",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "employee_2",
+      "short_code": "C004",
+      "color": "#A04E86",
+      "marker_shape": "triangle",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "employee_3",
+      "short_code": "C005",
+      "color": "#A96500",
+      "marker_shape": "circle",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "employee_4",
+      "short_code": "C006",
+      "color": "#167D9A",
+      "marker_shape": "triangle",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "lu_chen",
+      "short_code": "C007",
+      "color": "#6F4C9B",
+      "marker_shape": "diamond",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "er_ma_duo",
+      "short_code": "C008",
+      "color": "#8C564B",
+      "marker_shape": "triangle",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "tourist_1",
+      "short_code": "C009",
+      "color": "#595959",
+      "marker_shape": "circle",
+      "path_style": "dotted"
+    },
+    {
+      "character_id": "tourist_2",
+      "short_code": "C010",
+      "color": "#777318",
+      "marker_shape": "square",
+      "path_style": "dotted"
+    }
+  ]
+}

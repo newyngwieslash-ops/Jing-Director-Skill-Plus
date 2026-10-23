@@ -1,0 +1,261 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "MANUAL_REVIEW",
+      "where": "$",
+      "message": "Source excerpts prove traceability only. Story relevance, cast completeness, sightlines, camera axis, offscreen logic, and rendered diagram readability require manual review. Collision checks use centerlines only; body clearance, speed and 3D geometry are not simulated."
+    }
+  ],
+  "source_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "spec_sha256": "b67009006f177040dedbbb1c44c59c659e3a70ed08aa95650aef1c9a61d65445",
+  "review_status": "needs_manual_review",
+  "collision_check": "centerline_approximation",
+  "coverage": {
+    "schema_version": "1.0",
+    "status": "complete",
+    "contract_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+    "roster_sha256": "5e89b955901ee16ce238d0e2b7852e55f390952b7feeb4cc0ab1b1b15ffda3fa",
+    "expected_scene_ids": [
+      "SC01",
+      "SC02"
+    ],
+    "actual_scene_ids": [
+      "SC01",
+      "SC02"
+    ],
+    "scenes": [
+      {
+        "scene_id": "SC01",
+        "subject_ids": [
+          "A",
+          "B"
+        ],
+        "unresolved_subject_ids": [],
+        "expected_count": 2,
+        "expected_cast_ids": [
+          "A",
+          "B"
+        ],
+        "actual_cast_ids": [
+          "A",
+          "B"
+        ],
+        "expected_shot_ids": [
+          "S001",
+          "S002"
+        ],
+        "actual_shot_ids": [
+          "S001",
+          "S002"
+        ],
+        "shots": [
+          {
+            "shot_id": "S001",
+            "source_shot_no": "1",
+            "expected_cast_ids": [
+              "A",
+              "B"
+            ],
+            "actual_cast_ids": [
+              "A",
+              "B"
+            ],
+            "missing_cast_ids": [],
+            "extra_cast_ids": [],
+            "frame_states": [
+              {
+                "id": "A",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 4,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 4,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "B",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 6,
+                    "y": 1,
+                    "facing_deg": 90,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 6,
+                    "y": 1,
+                    "facing_deg": 90,
+                    "visibility": "in_frame"
+                  }
+                }
+              }
+            ],
+            "path_coverage": [
+              {
+                "id": "A",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "B",
+                "status": "stationary",
+                "trajectory_count": 0
+              }
+            ],
+            "status": "complete"
+          },
+          {
+            "shot_id": "S002",
+            "source_shot_no": "2",
+            "expected_cast_ids": [
+              "A",
+              "B"
+            ],
+            "actual_cast_ids": [
+              "A",
+              "B"
+            ],
+            "missing_cast_ids": [],
+            "extra_cast_ids": [],
+            "frame_states": [
+              {
+                "id": "A",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 4,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 4,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "B",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 6,
+                    "y": 1,
+                    "facing_deg": 90,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 5.5,
+                    "y": 4,
+                    "facing_deg": 180,
+                    "visibility": "in_frame"
+                  }
+                }
+              }
+            ],
+            "path_coverage": [
+              {
+                "id": "A",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "B",
+                "status": "routes_declared",
+                "trajectory_count": 1
+              }
+            ],
+            "status": "complete"
+          }
+        ],
+        "status": "complete"
+      },
+      {
+        "scene_id": "SC02",
+        "subject_ids": [],
+        "unresolved_subject_ids": [],
+        "expected_count": 0,
+        "expected_cast_ids": [],
+        "actual_cast_ids": [],
+        "expected_shot_ids": [
+          "S003"
+        ],
+        "actual_shot_ids": [
+          "S003"
+        ],
+        "shots": [
+          {
+            "shot_id": "S003",
+            "source_shot_no": "3",
+            "expected_cast_ids": [],
+            "actual_cast_ids": [],
+            "missing_cast_ids": [],
+            "extra_cast_ids": [],
+            "frame_states": [],
+            "path_coverage": [],
+            "status": "complete"
+          }
+        ],
+        "status": "complete"
+      }
+    ],
+    "classification_status": "complete",
+    "review_status": "needs_manual_review",
+    "unclassified_subject_ids": [],
+    "identity_registry_sha256": "a6626639020cd54883ef30351ad5124012bca626ca53a93e8b24828665569d71",
+    "identity_status": "complete"
+  },
+  "identity": {
+    "status": "complete",
+    "errors": [],
+    "warnings": [],
+    "registry_sha256": "a6626639020cd54883ef30351ad5124012bca626ca53a93e8b24828665569d71",
+    "project_id": "blocking-demo",
+    "revision": 1,
+    "legend": [
+      {
+        "character_id": "A",
+        "short_code": "C001",
+        "color": "#BE123C",
+        "marker_shape": "circle",
+        "path_style": "solid",
+        "name": "林晓"
+      },
+      {
+        "character_id": "B",
+        "short_code": "C002",
+        "color": "#1D4ED8",
+        "marker_shape": "square",
+        "path_style": "solid",
+        "name": "周衡"
+      }
+    ],
+    "checks": "Structural and heuristic only; final-size visual/manual review required"
+  }
+}

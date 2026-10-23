@@ -1,0 +1,477 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "MANUAL_REVIEW",
+      "where": "$",
+      "message": "Source excerpts prove traceability only. Story relevance, cast completeness, sightlines, camera axis, offscreen logic, and rendered diagram readability require manual review. Collision checks use centerlines only; body clearance, speed and 3D geometry are not simulated."
+    },
+    {
+      "code": "IDENTITY_NEAR_COLOR",
+      "where": "scene_exhibition_hall/lu_jing_tian/employee_4",
+      "message": "Colors are close under a simple RGB heuristic; verify visual discrimination (not a color-vision certification)"
+    }
+  ],
+  "source_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "spec_sha256": "8936707de400de4c584e9e793a65b3df3bd0077848b9f098d5956903e818a038",
+  "review_status": "needs_manual_review",
+  "collision_check": "centerline_approximation",
+  "coverage": {
+    "schema_version": "1.0",
+    "status": "complete",
+    "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+    "roster_sha256": "2f21455482f688210094cfd878fb287cb87507ab4b9409663224ae9b806c1bf2",
+    "expected_scene_ids": [
+      "scene_exhibition_hall"
+    ],
+    "actual_scene_ids": [
+      "scene_exhibition_hall"
+    ],
+    "scenes": [
+      {
+        "scene_id": "scene_exhibition_hall",
+        "subject_ids": [
+          "er_ma_duo",
+          "lu_chen",
+          "lu_jing_tian",
+          "staff_group_4",
+          "tourist_pair",
+          "xiao_nan_hai"
+        ],
+        "unresolved_subject_ids": [],
+        "expected_count": 10,
+        "expected_cast_ids": [
+          "employee_1",
+          "employee_2",
+          "employee_3",
+          "employee_4",
+          "er_ma_duo",
+          "lu_chen",
+          "lu_jing_tian",
+          "tourist_1",
+          "tourist_2",
+          "xiao_nan_hai"
+        ],
+        "actual_cast_ids": [
+          "xiao_nan_hai",
+          "lu_jing_tian",
+          "employee_1",
+          "employee_2",
+          "employee_3",
+          "employee_4",
+          "lu_chen",
+          "er_ma_duo",
+          "tourist_1",
+          "tourist_2"
+        ],
+        "expected_shot_ids": [
+          "S009"
+        ],
+        "actual_shot_ids": [
+          "S009"
+        ],
+        "shots": [
+          {
+            "shot_id": "S009",
+            "source_shot_no": "9",
+            "expected_cast_ids": [
+              "employee_1",
+              "employee_2",
+              "employee_3",
+              "employee_4",
+              "er_ma_duo",
+              "lu_chen",
+              "lu_jing_tian",
+              "tourist_1",
+              "tourist_2",
+              "xiao_nan_hai"
+            ],
+            "actual_cast_ids": [
+              "xiao_nan_hai",
+              "lu_jing_tian",
+              "employee_1",
+              "employee_2",
+              "employee_3",
+              "employee_4",
+              "lu_chen",
+              "er_ma_duo",
+              "tourist_1",
+              "tourist_2"
+            ],
+            "missing_cast_ids": [],
+            "extra_cast_ids": [],
+            "frame_states": [
+              {
+                "id": "employee_1",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "employee_2",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 4,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 4,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "employee_3",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 7,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 3,
+                    "y": 7,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "employee_4",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 4,
+                    "y": 7,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 4,
+                    "y": 7,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "er_ma_duo",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 10,
+                    "y": 5,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 10,
+                    "y": 5,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "lu_chen",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 1,
+                    "y": 5,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 1,
+                    "y": 5,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "lu_jing_tian",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 2,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 2,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "tourist_1",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 11,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 11,
+                    "y": 6,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "tourist_2",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 11,
+                    "y": 4,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 11,
+                    "y": 4,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              },
+              {
+                "id": "xiao_nan_hai",
+                "entry": {
+                  "status": "present",
+                  "state": {
+                    "x": 2,
+                    "y": 2,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                },
+                "exit": {
+                  "status": "present",
+                  "state": {
+                    "x": 7,
+                    "y": 2,
+                    "facing_deg": 0,
+                    "visibility": "in_frame"
+                  }
+                }
+              }
+            ],
+            "path_coverage": [
+              {
+                "id": "employee_1",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "employee_2",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "employee_3",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "employee_4",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "er_ma_duo",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "lu_chen",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "lu_jing_tian",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "tourist_1",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "tourist_2",
+                "status": "stationary",
+                "trajectory_count": 0
+              },
+              {
+                "id": "xiao_nan_hai",
+                "status": "routes_declared",
+                "trajectory_count": 3
+              }
+            ],
+            "status": "complete"
+          }
+        ],
+        "status": "complete"
+      }
+    ],
+    "classification_status": "complete",
+    "review_status": "needs_manual_review",
+    "unclassified_subject_ids": [],
+    "identity_registry_sha256": "52680e1b42d5f8f6ae76fc7214ad4a420f797df6718c2b0b669df47ab43d9130",
+    "identity_status": "complete"
+  },
+  "identity": {
+    "status": "complete",
+    "errors": [],
+    "warnings": [
+      {
+        "code": "IDENTITY_NEAR_COLOR",
+        "where": "scene_exhibition_hall/lu_jing_tian/employee_4",
+        "message": "Colors are close under a simple RGB heuristic; verify visual discrimination (not a color-vision certification)"
+      }
+    ],
+    "registry_sha256": "52680e1b42d5f8f6ae76fc7214ad4a420f797df6718c2b0b669df47ab43d9130",
+    "project_id": "hall-shot-09",
+    "revision": 2,
+    "legend": [
+      {
+        "character_id": "xiao_nan_hai",
+        "short_code": "C001",
+        "color": "#D55E00",
+        "marker_shape": "circle",
+        "path_style": "solid",
+        "name": "男孩"
+      },
+      {
+        "character_id": "lu_jing_tian",
+        "short_code": "C002",
+        "color": "#0072B2",
+        "marker_shape": "square",
+        "path_style": "solid",
+        "name": "父亲（合同ID）"
+      },
+      {
+        "character_id": "employee_1",
+        "short_code": "C003",
+        "color": "#008060",
+        "marker_shape": "diamond",
+        "path_style": "solid",
+        "name": "员工1（跟踪编号）"
+      },
+      {
+        "character_id": "employee_2",
+        "short_code": "C004",
+        "color": "#A04E86",
+        "marker_shape": "triangle",
+        "path_style": "solid",
+        "name": "员工2（跟踪编号）"
+      },
+      {
+        "character_id": "employee_3",
+        "short_code": "C005",
+        "color": "#A96500",
+        "marker_shape": "circle",
+        "path_style": "dashed",
+        "name": "员工3（跟踪编号）"
+      },
+      {
+        "character_id": "employee_4",
+        "short_code": "C006",
+        "color": "#167D9A",
+        "marker_shape": "triangle",
+        "path_style": "dashed",
+        "name": "员工4（跟踪编号）"
+      },
+      {
+        "character_id": "lu_chen",
+        "short_code": "C007",
+        "color": "#6F4C9B",
+        "marker_shape": "diamond",
+        "path_style": "dashed",
+        "name": "陆宸"
+      },
+      {
+        "character_id": "er_ma_duo",
+        "short_code": "C008",
+        "color": "#8C564B",
+        "marker_shape": "triangle",
+        "path_style": "dashed",
+        "name": "尔玛朵"
+      },
+      {
+        "character_id": "tourist_1",
+        "short_code": "C009",
+        "color": "#595959",
+        "marker_shape": "circle",
+        "path_style": "dotted",
+        "name": "游客1（跟踪编号）"
+      },
+      {
+        "character_id": "tourist_2",
+        "short_code": "C010",
+        "color": "#777318",
+        "marker_shape": "square",
+        "path_style": "dotted",
+        "name": "游客2（跟踪编号）"
+      }
+    ],
+    "checks": "Structural and heuristic only; final-size visual/manual review required"
+  }
+}

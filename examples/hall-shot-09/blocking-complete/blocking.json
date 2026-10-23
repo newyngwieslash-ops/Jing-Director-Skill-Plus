@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.0",
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "locations": [
+    {
+      "id": "hall",
+      "name": "展厅·未批准相对示意",
+      "coordinate_mode": "schematic",
+      "units": "relative",
+      "basis": "仅依据镜9左右/前后关系作候选示意；单位无物理尺度，位置、朝向、间隔及边界非实测、非批准。相机精确位置未知，不画假机位。",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 14,
+        "h": 9
+      },
+      "landmarks": [
+        {
+          "id": "stand_base",
+          "label": "近侧底座（示意；未接触）",
+          "x": 8.5,
+          "y": 2,
+          "w": 1,
+          "h": 1,
+          "blocking": true
+        }
+      ],
+      "walls": []
+    }
+  ],
+  "cast": [
+    {
+      "id": "xiao_nan_hai",
+      "name": "男孩",
+      "color": "#D55E00"
+    },
+    {
+      "id": "lu_jing_tian",
+      "name": "父亲（合同ID）",
+      "color": "#0072B2"
+    },
+    {
+      "id": "employee_1",
+      "name": "员工1（跟踪编号）",
+      "color": "#008060"
+    },
+    {
+      "id": "employee_2",
+      "name": "员工2（跟踪编号）",
+      "color": "#A04E86"
+    },
+    {
+      "id": "employee_3",
+      "name": "员工3（跟踪编号）",
+      "color": "#A96500"
+    },
+    {
+      "id": "employee_4",
+      "name": "员工4（跟踪编号）",
+      "color": "#167D9A"
+    },
+    {
+      "id": "lu_chen",
+      "name": "陆宸",
+      "color": "#6F4C9B"
+    },
+    {
+      "id": "er_ma_duo",
+      "name": "尔玛朵",
+      "color": "#8C564B"
+    },
+    {
+      "id": "tourist_1",
+      "name": "游客1（跟踪编号）",
+      "color": "#595959"
+    },
+    {
+      "id": "tourist_2",
+      "name": "游客2（跟踪编号）",
+      "color": "#777318"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_exhibition_hall",
+      "location_id": "hall",
+      "cast_ids": [
+        "xiao_nan_hai",
+        "lu_jing_tian",
+        "employee_1",
+        "employee_2",
+        "employee_3",
+        "employee_4",
+        "lu_chen",
+        "er_ma_duo",
+        "tourist_1",
+        "tourist_2"
+      ],
+      "shots": [
+        {
+          "shot_id": "S009",
+          "source_shot_no": "9",
+          "duration_sec": 10,
+          "evidence": [
+            {
+              "field": "action",
+              "quote": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。"
+            },
+            {
+              "field": "notes",
+              "quote": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道"
+            }
+          ],
+          "characters": [
+            {
+              "id": "xiao_nan_hai",
+              "entry": {
+                "x": 2,
+                "y": 2,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 7,
+                "y": 2,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "lu_jing_tian",
+              "entry": {
+                "x": 2,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 2,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "employee_1",
+              "entry": {
+                "x": 3,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 3,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "employee_2",
+              "entry": {
+                "x": 4,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 4,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "employee_3",
+              "entry": {
+                "x": 3,
+                "y": 7,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 3,
+                "y": 7,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "employee_4",
+              "entry": {
+                "x": 4,
+                "y": 7,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 4,
+                "y": 7,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "lu_chen",
+              "entry": {
+                "x": 1,
+                "y": 5,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 1,
+                "y": 5,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "er_ma_duo",
+              "entry": {
+                "x": 10,
+                "y": 5,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 10,
+                "y": 5,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "tourist_1",
+              "entry": {
+                "x": 11,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 11,
+                "y": 6,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "tourist_2",
+              "entry": {
+                "x": 11,
+                "y": 4,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 11,
+                "y": 4,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            }
+          ],
+          "trajectories": [
+            {
+              "who": "xiao_nan_hai",
+              "beat_index": 0,
+              "start_sec": 0,
+              "end_sec": 2,
+              "points": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  2
+                ]
+              ],
+              "reason": "据原文左前景向右横穿；仅示意分段，未接触底座，不代表实测速度。"
+            },
+            {
+              "who": "xiao_nan_hai",
+              "beat_index": 1,
+              "start_sec": 2,
+              "end_sec": 7,
+              "points": [
+                [
+                  3,
+                  2
+                ],
+                [
+                  6,
+                  2
+                ]
+              ],
+              "reason": "据原文左前景向右横穿；仅示意分段，未接触底座，不代表实测速度。"
+            },
+            {
+              "who": "xiao_nan_hai",
+              "beat_index": 2,
+              "start_sec": 7,
+              "end_sec": 10,
+              "points": [
+                [
+                  6,
+                  2
+                ],
+                [
+                  7,
+                  2
+                ]
+              ],
+              "reason": "据原文左前景向右横穿；仅示意分段，未接触底座，不代表实测速度。"
+            }
+          ],
+          "cameras": [],
+          "transition": null
+        }
+      ]
+    }
+  ],
+  "identity_binding": {
+    "project_id": "hall-shot-09",
+    "revision": 2,
+    "registry_sha256": "52680e1b42d5f8f6ae76fc7214ad4a420f797df6718c2b0b669df47ab43d9130"
+  }
+}

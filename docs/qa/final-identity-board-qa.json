@@ -1,0 +1,221 @@
+{
+  "schema_version": "manual-board-qa-1",
+  "package_version": "4.4.0",
+  "checked_at_utc": "2026-10-22T15:27:30Z",
+  "method": "Viewed all 16 actual PNG pages; re-viewed all 9 changed pages after final label fix; inspected actual-resolution crops of hall and demo movement middle columns. Also checked dimensions, input placement, output hashes and item bounds. This is layout QA, not artistic approval.",
+  "summary": {
+    "pages": 16,
+    "required_spatial_png": 15,
+    "blocking_layout_defects_found": 0,
+    "all_pages_visually_inspected": true,
+    "final_code_and_state_labels_clear_of_table_landmark": true
+  },
+  "examples": [
+    {
+      "example": "blocking-demo",
+      "board_manifest_sha256": "f31e6e0bcbdab62bf3949bb4294a217f8844d0ac9e44402198d7cd338adbbf70",
+      "page_count": 11,
+      "pages": [
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p001.png",
+          "sha256": "55e285e2d010654e6de5133ed15de0d61b5e69995fa8d4f52c6fdaf8e61a8cc3",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p002.png",
+          "sha256": "ddd89555fb6fa20c463796fe648ecb5678a0a9036e4b5b146a399da0f4057ad7",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p003.png",
+          "sha256": "542b85ed2ba9d600003b00cc6cd92a55d5c4cb69adb47c8bcbd85d1b605d2af2",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p004.png",
+          "sha256": "89594b70bc2cb61cf5ee52a8911f4146fb03c21565d3a23274a54acbf9e42fff",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p005.png",
+          "sha256": "c910a50db3eebfd8737e838ea8911f0df08e78046333a70f6656536a1f1d6638",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p006.png",
+          "sha256": "73ec7e5b50e27c9b775c1074b4387b6c49388eb3252ff73ba356a3d0c001a10f",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-001-p007.png",
+          "sha256": "22eba46b1b593a6cea3b3a9ca39fbf2ad668c47dd2cbd12354c3530bbdcd8920",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-002-p001.png",
+          "sha256": "de6db2cd81cbc9389a62b26deb500f7392a44307297115d3fe8199f692d0513d",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-002-p002.png",
+          "sha256": "36a9382f46280799056e274c3316c723575ffd55904611385ecdbc9f068403f0",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-002-p003.png",
+          "sha256": "1434645f14f41e09fd4890e8ee5e3df79ad9dc341fcc420e409e0cfcb0468df6",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/blocking-demo/design-spatial/board-002-p004.png",
+          "sha256": "00f30f197d8463b7cee8d4f99534c7f5203180e866f8b2de522c111d2d464163",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        }
+      ],
+      "required_spatial_png_count": 11,
+      "all_required_spatial_png_in_source_items_and_pages": true,
+      "all_output_hashes_match": true,
+      "all_items_within_canvas_and_content_bounds": true,
+      "total_duration_sec": 9,
+      "uncovered_items": [],
+      "registry_revision": 1,
+      "spatial_status": "spatial_complete_schematic",
+      "visual_review_status": "needs_manual_review"
+    },
+    {
+      "example": "hall-shot-09",
+      "board_manifest_sha256": "0925916568ddbe9926618717f2d3e340cf15cfe7a4d236e2a4bd1c4ad7b3cf51",
+      "page_count": 5,
+      "pages": [
+        {
+          "path": "examples/hall-shot-09/design-spatial/board-001-p001.png",
+          "sha256": "8a56863995227454c66fa5a1b0d61c03ed8630890a64521e6dd36acf3947d300",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/hall-shot-09/design-spatial/board-001-p002.png",
+          "sha256": "f093b1eb3b593032dc2cf2d14b9053be360f6f6ae0ed031ae9d59dd043d81031",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/hall-shot-09/design-spatial/board-001-p003.png",
+          "sha256": "44329b855956cc95e66923830d94f709fac651b8a04826c593fbc1eb800705fc",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/hall-shot-09/design-spatial/board-001-p004.png",
+          "sha256": "1910b85e42175d3f60d5dd3049eac695298831d047cbc0ddc59c35a84d46e095",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        },
+        {
+          "path": "examples/hall-shot-09/design-spatial/board-001-p005.png",
+          "sha256": "ef481f5f4c2703881947be816cfeaef5541040db39342c0719ed2bd06756a5c8",
+          "width": 3840,
+          "height": 2160,
+          "visually_inspected": true,
+          "notes": "No column clipping or overlapping board items observed."
+        }
+      ],
+      "required_spatial_png_count": 4,
+      "all_required_spatial_png_in_source_items_and_pages": true,
+      "all_output_hashes_match": true,
+      "all_items_within_canvas_and_content_bounds": true,
+      "total_duration_sec": 10,
+      "uncovered_items": [],
+      "registry_revision": 2,
+      "spatial_status": "spatial_complete_schematic",
+      "visual_review_status": "needs_manual_review",
+      "hall_identity_check": {
+        "characters": 10,
+        "distinct_colors": 10,
+        "fixed_codes": [
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "C008",
+          "C009",
+          "C010"
+        ],
+        "father_shape": "square",
+        "employee4_shape": "triangle",
+        "dark_text_and_colored_symbol_legend_visually_verified": true
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "severity": "nonblocking",
+      "scope": "hall-shot-09",
+      "message": "One near-color heuristic warning remains for father/employee4; visibly different square/triangle markers and fixed codes provide redundant identity. No color-vision accessibility certification is claimed."
+    },
+    {
+      "severity": "nonblocking",
+      "scope": "hall-shot-09",
+      "message": "Coverage text continues across pages and may wrap within a long character ID; continuation is visible and manifest content is preserved."
+    },
+    {
+      "severity": "nonblocking",
+      "scope": "hall-shot-09",
+      "message": "Final fifth page is sparse because lossless independent column pagination carries tone/dynamics/approach placeholders forward."
+    },
+    {
+      "severity": "nonblocking",
+      "scope": "blocking-demo/SC01/S002",
+      "message": "R1 route-segment annotation remains adjacent to the path vertex; readable and not a character-code collision."
+    }
+  ],
+  "limitations": [
+    "Missing generated character/frame artwork remains explicitly shown as placeholders; this review covers spatial identity diagrams and board layout only.",
+    "All output remains schematic, draft and needs_manual_review.",
+    "HTML/browser pixel parity and printed-size accessibility were not verified."
+  ]
+}

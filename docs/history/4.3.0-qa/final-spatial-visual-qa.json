@@ -1,0 +1,271 @@
+{
+  "scope": "Current 4.3 blocking-complete artifacts, read-only visual review; no regeneration or package edits.",
+  "status": "pass_with_nonblocking_layout_warnings",
+  "total_scenes": 3,
+  "total_shots": 4,
+  "total_pngs_inspected": 15,
+  "png_type_counts": {
+    "overview": 3,
+    "entry": 4,
+    "exit": 4,
+    "movement": 4
+  },
+  "blockers": [],
+  "limitations": [
+    "This is agent visual QA, not human approval or production release.",
+    "Both manifests remain needs_manual_review.",
+    "Coordinates, facing, spacing, boundaries and dimensions are schematic, not measured; hall timing does not establish actual running speed or physical feasibility.",
+    "Minor demo label/landmark and label/route overlaps mean zero-overlap cannot be claimed.",
+    "SVG files and other delivered artifacts were hash-verified; only the 15 PNGs were visually inspected.",
+    "This scope is 3 scenes and 4 shots across two examples, not all 39 original-workbook shots."
+  ],
+  "examples": [
+    {
+      "example": "blocking-demo",
+      "manifest_path": "examples/blocking-demo/blocking-complete/manifest.json",
+      "manifest_sha256": "6dab42b7db81784fcfe30b350ff466b09440cc1c05b66f08b6e729d526be54f3",
+      "scene_count": 2,
+      "shot_count": 3,
+      "png_count": 11,
+      "delivered_file_count_including_manifest": 32,
+      "manifest_listed_file_count": 31,
+      "exact_tree_matches_manifest_except_self": true,
+      "all_manifest_hash_references_match": true,
+      "manifest_hash_reference_checks": 60,
+      "tree": [
+        "blocking.json",
+        "coverage.json",
+        "index.html",
+        "manifest.json",
+        "roster.json",
+        "scene-001/movement.svg",
+        "scene-001/overview.png",
+        "scene-001/overview.svg",
+        "scene-001/positions.svg",
+        "scene-001/shot-001/entry.png",
+        "scene-001/shot-001/entry.svg",
+        "scene-001/shot-001/exit.png",
+        "scene-001/shot-001/exit.svg",
+        "scene-001/shot-001/movement.png",
+        "scene-001/shot-001/movement.svg",
+        "scene-001/shot-002/entry.png",
+        "scene-001/shot-002/entry.svg",
+        "scene-001/shot-002/exit.png",
+        "scene-001/shot-002/exit.svg",
+        "scene-001/shot-002/movement.png",
+        "scene-001/shot-002/movement.svg",
+        "scene-002/movement.svg",
+        "scene-002/overview.png",
+        "scene-002/overview.svg",
+        "scene-002/positions.svg",
+        "scene-002/shot-001/entry.png",
+        "scene-002/shot-001/entry.svg",
+        "scene-002/shot-001/exit.png",
+        "scene-002/shot-001/exit.svg",
+        "scene-002/shot-001/movement.png",
+        "scene-002/shot-001/movement.svg",
+        "validation.json"
+      ],
+      "pngs": [
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/overview.png",
+          "sha256": "6296564886c5334194cdb0eb20e77026060107466a18641e9f431d2442feb360",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/entry.png",
+          "sha256": "2e5a9e30c40813ddac2adc8e9dedcb9b132191e0954c07a061e69ceb25e6cad2",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/exit.png",
+          "sha256": "a7b77effffbc9a86c075a5e07d4c40d506e480459b32540b9334989d5c4dad94",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/movement.png",
+          "sha256": "63077a971dc96769dc403edaa14b2cc0481049339664790a8c1ae5a5b6d5223b",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible.",
+            "Static E=X labels and duration legend present."
+          ],
+          "warnings": [
+            "P1 E=X label crosses left table border; readable but not zero-overlap."
+          ]
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/entry.png",
+          "sha256": "99b6fc4748e1dbd62f669f2e633209bb87b39911f13651e4dd4094f366880ab2",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/exit.png",
+          "sha256": "e6f4dbe71732f86738801c239c85adc86e688b18fd4396e9ec0392aeca63eb3e",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/movement.png",
+          "sha256": "e75f9be4d313a50b68ea0136f4a2845ee60d125a18e88550ad6ae0aff9262139",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "P1 and P2 markers present and legible; camera, table and doorway visible.",
+            "Static E=X labels and duration legend present.",
+            "P2 route R1 and 0–4 s legend present; route avoids table."
+          ],
+          "warnings": [
+            "P1 E=X label crosses left table border; readable but not zero-overlap.",
+            "P2 X label is touched by the diagonal route line; still readable."
+          ]
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-002/overview.png",
+          "sha256": "de25022f0e1c4c30c28c5838d7b598ad4d00b382f2e1d98fab6261d7777eabb2",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "Correct empty scene: no person markers; camera and facade readable."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/entry.png",
+          "sha256": "24f8227223628a03277665801fc9727eb1361873698a18488fef43f00c510b2e",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "Correct empty scene: no person markers; camera and facade readable."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/exit.png",
+          "sha256": "aa576f3e35a7fceddd71f8e968e5a26353cd0d7f1cf90e1464b01a783c2fad56",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "Correct empty scene: no person markers; camera and facade readable."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/movement.png",
+          "sha256": "7d35b2ecb7ea0edcd05de81328ab34d5499b0ca8942ab7e782d46439fdd47ebe",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "Correct empty scene: no person markers; camera and facade readable."
+          ],
+          "warnings": []
+        }
+      ],
+      "source_document": "examples/blocking-demo/README.md",
+      "source_document_schematic_acknowledged": true,
+      "review_status": "needs_manual_review"
+    },
+    {
+      "example": "hall-shot-09",
+      "manifest_path": "examples/hall-shot-09/blocking-complete/manifest.json",
+      "manifest_sha256": "27f4919a40a889378b7bc769d1dbe4f731d4890de7c300642f353ba759e9f9b1",
+      "scene_count": 1,
+      "shot_count": 1,
+      "png_count": 4,
+      "delivered_file_count_including_manifest": 16,
+      "manifest_listed_file_count": 15,
+      "exact_tree_matches_manifest_except_self": true,
+      "all_manifest_hash_references_match": true,
+      "manifest_hash_reference_checks": 28,
+      "tree": [
+        "blocking.json",
+        "coverage.json",
+        "index.html",
+        "manifest.json",
+        "roster.json",
+        "scene-001/movement.svg",
+        "scene-001/overview.png",
+        "scene-001/overview.svg",
+        "scene-001/positions.svg",
+        "scene-001/shot-001/entry.png",
+        "scene-001/shot-001/entry.svg",
+        "scene-001/shot-001/exit.png",
+        "scene-001/shot-001/exit.svg",
+        "scene-001/shot-001/movement.png",
+        "scene-001/shot-001/movement.svg",
+        "validation.json"
+      ],
+      "pngs": [
+        {
+          "path": "examples/hall-shot-09/blocking-complete/scene-001/overview.png",
+          "sha256": "df1c1cd4c8d7a2fbbdc237aee5d84a0b8425e64c44dab9f2c52917ee9a4568f7",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "All ten person markers P1–P10 visible and legible; base landmark separated from boy endpoint; schematic/unmeasured caveats visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/entry.png",
+          "sha256": "29878958861c9089d4a9209d2f43d5eb78fe013fd44edd1e32d9e36174acbe7c",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "All ten person markers P1–P10 visible and legible; base landmark separated from boy endpoint; schematic/unmeasured caveats visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/exit.png",
+          "sha256": "a6f4c0d77fcb5162a7e207a8c2f699fba4d75a4cb701893bddfc102037815d74",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "All ten person markers P1–P10 visible and legible; base landmark separated from boy endpoint; schematic/unmeasured caveats visible."
+          ],
+          "warnings": []
+        },
+        {
+          "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/movement.png",
+          "sha256": "a53586cbb5a87d2f4bf8afae351e432e42955ca46fe39e61a94eb9158d2f1a6a",
+          "view_image_inspected": true,
+          "observations": [
+            "Individually inspected using view_image; no visible clipping; headings, evidence and legends readable.",
+            "All ten person markers P1–P10 visible and legible; base landmark separated from boy endpoint; schematic/unmeasured caveats visible.",
+            "Nine static persons P2–P10 show E=X; P1 route R1/R2/R3 linked to 0–2/2–7/7–10 s legend."
+          ],
+          "warnings": []
+        }
+      ],
+      "source_document": "examples/hall-shot-09/README.md",
+      "source_document_schematic_acknowledged": true,
+      "review_status": "needs_manual_review"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "archive": "shanyin-director-master-2.rar",
+  "archive_sha256": "d4e6a6fddeb1e257e1d5b3f41aef62c41c09e2d9d0a652b0279481dc3a1056c2",
+  "original_file_count": 20,
+  "all_preserved": true,
+  "files": [
+    {
+      "original_path": "SKILL.md",
+      "archived_path": "legacy/SKILL.original.txt",
+      "sha256": "b0f6c78053e45ceb72bba17bf7df32eb81c910cf8a88e8c3fb9e2f9869e377a2",
+      "byte_identical": true
+    },
+    {
+      "original_path": "SKILL.md.before-continuity.bak",
+      "archived_path": "legacy/SKILL.md.before-continuity.bak",
+      "sha256": "c894a216be0a2fc8a47b77a6a59a9e5528fcbab9c8bb7f234d4786f559383d78",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/character-consistency-format.md",
+      "archived_path": "legacy/references/character-consistency-format.md",
+      "sha256": "cfff13fb458222416ca7b180f5b3705a0344d24657cf668a35a6a0971f696459",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/core-methodology.md",
+      "archived_path": "legacy/references/core-methodology.md",
+      "sha256": "229cbd48f673fdbfd10595e81f80432b72a96781e59232223275abd3bec59604",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/execution-storyboard-format.md",
+      "archived_path": "legacy/references/execution-storyboard-format.md",
+      "sha256": "6efccf8d03b943c819f5833697f044a0e1d5ffe0d43a56bf80ae0e9da592318e",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/execution-storyboard-format.md.before-continuity.bak",
+      "archived_path": "legacy/references/execution-storyboard-format.md.before-continuity.bak",
+      "sha256": "bf551312947cab09da21cdc5386a4918ce191538eefc3065cf82b9f8dbb91fc1",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/genre-A-mood.md",
+      "archived_path": "legacy/references/genre-A-mood.md",
+      "sha256": "4e7eddb5b6c019ee6ffb6b5252bd2a6ceabc92c96a7b8caf75c72bcb3150ccec",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/genre-B-genre.md",
+      "archived_path": "legacy/references/genre-B-genre.md",
+      "sha256": "bdeca11ede2d62a9108d8e84136edb72e954b53b910fe875ff52d5f764c35ea2",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/genre-C-action.md",
+      "archived_path": "legacy/references/genre-C-action.md",
+      "sha256": "2ec43dbb746ca52495fdd207a67a944264d6cc2e6b63d70cabe6cac335d2fa11",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/genre-D-theme.md",
+      "archived_path": "legacy/references/genre-D-theme.md",
+      "sha256": "c26a20d6f921b42ae8bebb0ebd9037bdce1e01f37a6f0b9fdd916ee5a35b20a1",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/genre-E-form.md",
+      "archived_path": "legacy/references/genre-E-form.md",
+      "sha256": "ffc2818d220e3bc4627e94558a85ced33f5b802491d602f8a7bac3d21f58a77f",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/genre-F-social.md",
+      "archived_path": "legacy/references/genre-F-social.md",
+      "sha256": "f4141a5dcc501d98e6e070194b363a3113d7e96632647eca417dbac00041f075",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/scene-consistency-format.md",
+      "archived_path": "legacy/references/scene-consistency-format.md",
+      "sha256": "29a2431cfa6e1350d0d9681e874e6cb98f74a579f8f81d4a9811045b453e0576",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/seedance2-video-storyboard-format.md",
+      "archived_path": "legacy/references/seedance2-video-storyboard-format.md",
+      "sha256": "286a58646eafa30533104703c7df82651adef6fc0302719e2624b00dec5b99f2",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/shot-design.md",
+      "archived_path": "legacy/references/shot-design.md",
+      "sha256": "680b7e3b9a892d10ae112b54c6f99cb1e42fb7e05e94e2242198457959cf2f4b",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/storyboard-format.md",
+      "archived_path": "legacy/references/storyboard-format.md",
+      "sha256": "52771d3e0ac32770946a19e6c8372fe4247eb6629c9183634fbdb56a0e4d6a43",
+      "byte_identical": true
+    },
+    {
+      "original_path": "references/video-prompt-format.md",
+      "archived_path": "legacy/references/video-prompt-format.md",
+      "sha256": "d50c2f07e8b35470bed95c2bcfbd679a749b5d987d8ec76651dce1dec9eeee50",
+      "byte_identical": true
+    },
+    {
+      "original_path": "scripts/generate-seedance2-video-storyboards.mjs",
+      "archived_path": "legacy/scripts/generate-seedance2-video-storyboards.mjs",
+      "sha256": "d7fefa77d194dce87748944ae846cac4d87360ba08b89e5b5ddf5732816e349d",
+      "byte_identical": true
+    },
+    {
+      "original_path": "scripts/group-execution-storyboards.mjs",
+      "archived_path": "legacy/scripts/group-execution-storyboards.mjs",
+      "sha256": "286f1306605204cceadca34b37383091ce7b8b7cfc9d03edc120f33666df8847",
+      "byte_identical": true
+    },
+    {
+      "original_path": "scripts/validate-character-bible.mjs",
+      "archived_path": "legacy/scripts/validate-character-bible.mjs",
+      "sha256": "a303c42e0250c71c7b21052533284f1d7fba0e0e3d53e0d24ed2f98e71c30389",
+      "byte_identical": true
+    }
+  ]
+}

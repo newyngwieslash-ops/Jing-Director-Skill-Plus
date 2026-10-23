@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "results": [
+    {
+      "name": "brand allowlist exact and current hash bound",
+      "pass": true,
+      "details": {
+        "files": 15,
+        "occurrences": 60
+      }
+    },
+    {
+      "name": "original 4.4 examples and new method packs byte preserved",
+      "pass": true,
+      "details": {
+        "4.4": 100,
+        "unchanged_new_method_packs": 2,
+        "spatial_svg_png_pairs": 15,
+        "design_board_pngs": 16
+      }
+    },
+    {
+      "name": "core and contract constraints untouched",
+      "pass": true,
+      "details": "core bytes exact; contract schema only title/$id identity differs"
+    },
+    {
+      "name": "not_run baseline bound to renamed suite",
+      "pass": true,
+      "details": "588926c1bfcd3531f99ec933dd33d4b78b8ae2a0c2de162344c6eac91cd57dd3"
+    },
+    {
+      "name": "provenance and upstream license preserved",
+      "pass": true,
+      "details": "immutable originals and MIT; original credits retained"
+    },
+    {
+      "name": "Git checkout installation and legacy coexistence",
+      "pass": true,
+      "details": "real git init; 3 clients temporary homes only; 16 old installs unchanged; repeat idempotent; extra/nested/link rejected"
+    },
+    {
+      "name": "active canonical identity and package",
+      "pass": true,
+      "details": "jingstudio"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "source_hashes": {
+    "scripts/install_skill.py": "4e6ed6a8c8167f095fcebf43d6666de49936e5aa0fe90ae4c6c6151d34f87c72",
+    "scripts/director_methods.py": "dc804c2563c87da317e4894f38e3ec063429ef38ed0dafb7506b01bdc3a5d097",
+    "scripts/director_behavior_evals.py": "e12c79df69190eb9f690225d8e35c0b3e3d3e93ffcb0da969fce89c95d246a9d",
+    "schemas/director-contract.schema.json": "fab3c8efbaa03390739ea17a16803d566a77f035d39ccdecbde49c40396b4e3c",
+    "schemas/director-method-pack.schema.json": "58b964958f9713de824952f5d301a909e5847cc595e20d63c226741c8f150c5d",
+    "evals/cases.json": "588926c1bfcd3531f99ec933dd33d4b78b8ae2a0c2de162344c6eac91cd57dd3",
+    "SKILL.md": "aa81bbda4e022872007ad63a50132e0a11b0ada1c25d293d0d7604ba06b69d00"
+  },
+  "limits": [
+    "Temporary Linux home installation only; no user host or Windows/PowerShell runtime execution.",
+    "No browser visual recheck; SVG/PNG and board example bytes preserved.",
+    "No model/provider invocation, behavior generation, GitHub push, or CI claim."
+  ],
+  "pre_finalization_manifest_sha256": "f7cc316d34ce27abfb8993bb9da62d1f5d4e54adfd3fe83c4774e32159f0e487",
+  "manifest_note": "Snapshot before embedding QA reports; not a final archive checksum. Final package manifest is verified separately."
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "source_contract_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "spec_sha256": "d3fa3e96f66209bdfb04147c245a243ff21d5c92692aa0a85eb4f90e60342f16",
+  "review_status": "needs_manual_review",
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "location_id": "cafe",
+      "shots": [
+        {
+          "shot_id": "S001",
+          "source_shot_no": "1"
+        },
+        {
+          "shot_id": "S002",
+          "source_shot_no": "2"
+        }
+      ],
+      "files": [
+        {
+          "path": "scene-001/positions.svg",
+          "sha256": "24db740621c844acabeab3ce25bebc606e44214e668f782d0847d777a1475f20"
+        },
+        {
+          "path": "scene-001/movement.svg",
+          "sha256": "2666f7d3eb83f431b524bd608bc1722ac9471125068871348fdbc8857ad99ffe"
+        }
+      ]
+    },
+    {
+      "scene_id": "SC02",
+      "location_id": "street",
+      "shots": [
+        {
+          "shot_id": "S003",
+          "source_shot_no": "3"
+        }
+      ],
+      "files": [
+        {
+          "path": "scene-002/positions.svg",
+          "sha256": "7f15aa5bcd52c897199253816e2ea079afeddf7bac07ea9e1658fda16eee0a90"
+        },
+        {
+          "path": "scene-002/movement.svg",
+          "sha256": "584ffe71fa0dcebc65353d9b9dabc5c520b19eb5d41c7f04c50f98aada9aec1c"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "scene-001/positions.svg",
+      "sha256": "24db740621c844acabeab3ce25bebc606e44214e668f782d0847d777a1475f20"
+    },
+    {
+      "path": "scene-001/movement.svg",
+      "sha256": "2666f7d3eb83f431b524bd608bc1722ac9471125068871348fdbc8857ad99ffe"
+    },
+    {
+      "path": "scene-002/positions.svg",
+      "sha256": "7f15aa5bcd52c897199253816e2ea079afeddf7bac07ea9e1658fda16eee0a90"
+    },
+    {
+      "path": "scene-002/movement.svg",
+      "sha256": "584ffe71fa0dcebc65353d9b9dabc5c520b19eb5d41c7f04c50f98aada9aec1c"
+    },
+    {
+      "path": "index.html",
+      "sha256": "b8c53180ae7e1c40dccd337497e3d8a517d85c1e1a9673703556b1310e451952"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "3996b20cda6e7a595aa50fcc5d5ae1145af82ed61cef64a2334de1f092af502a"
+    }
+  ]
+}

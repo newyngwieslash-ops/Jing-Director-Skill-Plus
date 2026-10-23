@@ -1,0 +1,377 @@
+{
+  "method_schema_version": "1.0.0",
+  "structurally_valid": true,
+  "status": "draft",
+  "execution_ready": false,
+  "artistic_approval": false,
+  "errors": [],
+  "blockers": [
+    {
+      "code": "PLANNING_ONLY",
+      "where": "$",
+      "message": "Offline sidecars never certify execution, human approval or video quality"
+    },
+    {
+      "code": "SOURCE_BASELINE_NOT_AUTHENTICATED",
+      "where": "$",
+      "message": "Hash binds the supplied canonical contract, not an independently authenticated original source; existing production evidence gates remain required"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.lighting.lighting-1",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.color.color-1",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.editing.editing-1",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "CAPABILITY_BLOCKED",
+      "where": "shots.S009",
+      "message": "Unknown/unsupported/missing: prompt_shape"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.space",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.space",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S009.space",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.sound",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.space",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.sound",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.space",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.sound",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.space",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.sound",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S009.space",
+      "message": "Inference is advisory and not authorized to change source"
+    }
+  ],
+  "derived": {
+    "shots": [
+      {
+        "shot_id": "S009",
+        "attempt_units": 0,
+        "design_failures": {},
+        "prompt_shape_plannable": false,
+        "duration_frames": 240
+      }
+    ],
+    "total_frames": 240
+  }
+}

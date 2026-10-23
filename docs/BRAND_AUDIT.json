@@ -1,0 +1,100 @@
+{
+  "brand": "JingStudio",
+  "skill_id": "jingstudio",
+  "version": "4.5.0",
+  "audit_scope": "All UTF-8 package files except generated package manifest and Python caches; exact retained-file allowlist below. No current brand/UI/invocation uses former identity.",
+  "retained_occurrences": [
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "occurrences": 2,
+      "reason": "Original source identity, author credit or preservation hash provenance.",
+      "sha256": "e1c817b804005d4710831a6950a9338ac336e15e90d13aa56b548dd9fa67e92b"
+    },
+    {
+      "path": "legacy/SKILL.md.before-continuity.bak",
+      "occurrences": 7,
+      "reason": "Immutable original source, retained with original author attribution.",
+      "sha256": "c894a216be0a2fc8a47b77a6a59a9e5528fcbab9c8bb7f234d4786f559383d78"
+    },
+    {
+      "path": "legacy/SKILL.original.txt",
+      "occurrences": 7,
+      "reason": "Immutable original source, retained with original author attribution.",
+      "sha256": "b0f6c78053e45ceb72bba17bf7df32eb81c910cf8a88e8c3fb9e2f9869e377a2"
+    },
+    {
+      "path": "tests/test_skill_identity_install.py",
+      "occurrences": 9,
+      "reason": "Explicit old installation preservation and identity rejection fixtures.",
+      "sha256": "458c15dcc7d60b1bb3be95fdb08dd59dfa51643412087545f52aceb722ed3f73"
+    },
+    {
+      "path": "tests/test_merged_install.py",
+      "occurrences": 1,
+      "reason": "Explicit old installation preservation and identity rejection fixtures.",
+      "sha256": "77ceab9d3b1fb1950b561e95b2fd6392c319fe2d585832bfe08d23cd062e09a3"
+    },
+    {
+      "path": "scripts/install_skill.py",
+      "occurrences": 4,
+      "reason": "Only protected old directory names; no active old identity.",
+      "sha256": "4e6ed6a8c8167f095fcebf43d6666de49936e5aa0fe90ae4c6c6151d34f87c72"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "occurrences": 1,
+      "reason": "Original source identity, author credit or preservation hash provenance.",
+      "sha256": "78a2656b6000af11dff79f6732ba76563dd973c649541855140bb354db4b8879"
+    },
+    {
+      "path": "docs/ORIGINAL_PRESERVATION.json",
+      "occurrences": 1,
+      "reason": "Original source identity, author credit or preservation hash provenance.",
+      "sha256": "a54cd98d0809bb60498eee0c20ec58148852d9644f37b4492d9de7c9176212f2"
+    },
+    {
+      "path": "docs/history/3.0.0-UPGRADE_REPORT.md",
+      "occurrences": 2,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "27d18d763a3774cbf2ae6776e73d6b34e16d32a7dc5cf3096574a4ddc6cacee3"
+    },
+    {
+      "path": "docs/history/3.0.1-TEST_REPORT.md",
+      "occurrences": 1,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "ba1cd6dfd8a54aaa7c74b6f54337dc711a86ca88d60f3ceab8931818840d2a90"
+    },
+    {
+      "path": "docs/history/4.3.0-qa/final-board-visual-qa.json",
+      "occurrences": 16,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "3244d5f68e408b9735e248ac745c1b540642ced4bf401ea144b32e866b7f0651"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/RENAME_REPORT.md",
+      "occurrences": 2,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "aad2e2b98a1e8dff8db41a3e8283a50bdb971a04d5064d6baf8d7bdb21040cb9"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/UPGRADE_REPORT.md",
+      "occurrences": 2,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "97d6ab78a1bc053e10b14e57d61ff529a5b5183e19cd16f160adf810a81093c5"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/CHANGELOG.md",
+      "occurrences": 3,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "867701f647e8a259ccab2d9ba66cb43965bec7d55b1a0a833685f37074c5f4c1"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/RENAME_AUDIT.json",
+      "occurrences": 2,
+      "reason": "Isolated historical evidence; not current installation instructions.",
+      "sha256": "ff9f4ebdbb4dd0f38dd634166da23b28f83b77950658209b9c6779c66aab4e38"
+    }
+  ],
+  "total_occurrences": 60,
+  "retained_file_count": 15
+}

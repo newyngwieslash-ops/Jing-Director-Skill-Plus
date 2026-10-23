@@ -1,0 +1,1856 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'"><title>Director methods — offline planning review</title><style>body{max-width:1200px;margin:2em auto;padding:0 1em;font:16px sans-serif;line-height:1.5;color:#24303b}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1,.warning{color:#943a00}table{border-collapse:collapse;width:100%;margin:1em 0;table-layout:fixed}td,th{border:1px solid #ccd3da;padding:.5em;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eef2f6}section{border-top:3px solid #73879a;margin-top:2em}.muted{color:#596671}details{margin:1em 0}summary{cursor:pointer;font-weight:bold}</style><h1>离线方法规划 / 非生成结果、非人工批准</h1><p class="warning">结构校验通过不等于可执行或制作批准。CLI exit 0 仅表示 structurally_valid=true；status=draft 仍可能存在阻断项。status=blocked 表示结构或合同约束错误。</p><p>未能精确换算帧数时保留 null 并列出 FRAME_UNREPRESENTABLE，不做舍入；此时草案不能用于执行。图示角色颜色不代表服装或影片调色。</p><table><thead><tr><th>结构有效</th><th>规划状态</th><th>执行就绪</th><th>艺术批准</th><th>帧率</th></tr></thead><tbody><tr><td>True</td><td>draft</td><td>False</td><td>False</td><td>24</td></tr></tbody></table><p>Canonical contract SHA-256: d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757</p><h2>错误与阻断项</h2><table><thead><tr><th>级别</th><th>代码</th><th>位置</th><th>说明</th></tr></thead><tbody><tr><td>BLOCKER</td><td>PLANNING_ONLY</td><td>$</td><td>Offline sidecars never certify execution, human approval or video quality</td></tr><tr><td>BLOCKER</td><td>SOURCE_BASELINE_NOT_AUTHENTICATED</td><td>$</td><td>Hash binds the supplied canonical contract, not an independently authenticated original source; existing production evidence gates remain required</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>director_book.lighting.lighting-1</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>director_book.color.color-1</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>director_book.editing.editing-1</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.contact_feedback</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.contact_feedback</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.contact_feedback</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.attention</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.performance.weight_support</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.performance.contact_feedback</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>CAPABILITY_BLOCKED</td><td>shots.S009</td><td>Unknown/unsupported/missing: prompt_shape</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.space</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.space</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>METHOD_UNKNOWN</td><td>shots.S009.space</td><td>No instruction supplied</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.sound</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.space</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.sound</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.space</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.sound</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.space</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.sound</td><td>Inference is advisory and not authorized to change source</td></tr><tr><td>BLOCKER</td><td>INFERENCE_UNAPPROVED</td><td>shots.S009.space</td><td>Inference is advisory and not authorized to change source</td></tr></tbody></table><h2>部门导演参数卡</h2><h3>camera</h3><table><thead><tr><th>规则</th><th>镜头范围</th><th>偏好与证据</th><th>反例</th><th>冲突 / 优先级</th></tr></thead><tbody><tr><td>camera-1</td><td>S009</td><td>[source] 0–2秒沿通道向右短距平移跟拍；2–10秒固定机位 | evidence: /shots/0/camera/movement</td><td>不以风格偏好增添推拉、摇摄、越轴或特写。</td><td>none / 100</td></tr></tbody></table><h3>lighting</h3><table><thead><tr><th>规则</th><th>镜头范围</th><th>偏好与证据</th><th>反例</th><th>冲突 / 优先级</th></tr></thead><tbody><tr><td>lighting-1</td><td>S009</td><td>[inference] 待确认建议：用可读的主体与背景层次保护源镜空间关系；灯位、照度、色温未获批准。</td><td>不是已完成布光或已验证模型效果。</td><td>none / 20</td></tr></tbody></table><h3>color</h3><table><thead><tr><th>规则</th><th>镜头范围</th><th>偏好与证据</th><th>反例</th><th>冲突 / 优先级</th></tr></thead><tbody><tr><td>color-1</td><td>S009</td><td>[inference] 待确认建议：先保持源道具颜色与角色身份，再讨论画面调色；站位图颜色只服务身份辨认，不等于服装颜色。</td><td>不能把角色图例色直接写成服装、肤色或全片调色。</td><td>none / 20</td></tr></tbody></table><h3>performance</h3><table><thead><tr><th>规则</th><th>镜头范围</th><th>偏好与证据</th><th>反例</th><th>冲突 / 优先级</th></tr></thead><tbody><tr><td>performance-1</td><td>S009</td><td>[source] 男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。 | evidence: /shots/0/director/visible_change</td><td>不得新增转头、哭泣、跌倒、反应镜或源镜没有的位移。</td><td>none / 100</td></tr></tbody></table><h3>editing</h3><table><thead><tr><th>规则</th><th>镜头范围</th><th>偏好与证据</th><th>反例</th><th>冲突 / 优先级</th></tr></thead><tbody><tr><td>editing-1</td><td>S009</td><td>[inference] 只作交接计划：维持本合同镜序与原时长；24 fps 为本示例离线规划时基，尚非供应商/素材帧率承诺。</td><td>不能因预算、风格或故障自动拆镜、删镜、变速。</td><td>none / 20</td></tr></tbody></table><h3>sound</h3><table><thead><tr><th>规则</th><th>镜头范围</th><th>偏好与证据</th><th>反例</th><th>冲突 / 优先级</th></tr></thead><tbody><tr><td>sound-1</td><td>S009</td><td>[source] 无画外配乐。 | evidence: /shots/0/music/zh</td><td>不得把无配乐改为悬疑配乐；不新增可辨识对白。</td><td>none / 100</td></tr></tbody></table><section><h2>镜头 S009 / 场景 scene_exhibition_hall</h2><p>合同主体引用（可包含群组；不是独立人物覆盖计数）：xiao_nan_hai, lu_jing_tian, staff_group_4, lu_chen, er_ma_duo, tourist_pair</p><h3>表演方法：来源 / 推断 / 未知</h3><table><thead><tr><th>主体 / 节拍索引</th><th>任务</th><th>注意对象</th><th>触发</th><th>重心支撑</th><th>接触反馈</th><th>终态</th></tr></thead><tbody><tr><td>xiao_nan_hai / 0</td><td>[source] 男孩追着前上方气球向右跑，成人两组保持背景位置。 | evidence: /shots/0/beats/0/action/zh</td><td>[inference] 待确认建议：追逐方向与前上方气球；不新增看向底座的动作。</td><td>[source] 男孩进入前景横向通道 | evidence: /shots/0/beats/0/trigger</td><td>[inference] 待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。</td><td>[inference] 待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>lu_jing_tian / 0</td><td>[source] 男孩追着前上方气球向右跑，成人两组保持背景位置。 | evidence: /shots/0/beats/0/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩进入前景横向通道 | evidence: /shots/0/beats/0/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>staff_group_4 / 0</td><td>[source] 男孩追着前上方气球向右跑，成人两组保持背景位置。 | evidence: /shots/0/beats/0/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩进入前景横向通道 | evidence: /shots/0/beats/0/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>lu_chen / 0</td><td>[source] 男孩追着前上方气球向右跑，成人两组保持背景位置。 | evidence: /shots/0/beats/0/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩进入前景横向通道 | evidence: /shots/0/beats/0/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>er_ma_duo / 0</td><td>[source] 男孩追着前上方气球向右跑，成人两组保持背景位置。 | evidence: /shots/0/beats/0/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩进入前景横向通道 | evidence: /shots/0/beats/0/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>tourist_pair / 0</td><td>[source] 男孩追着前上方气球向右跑，成人两组保持背景位置。 | evidence: /shots/0/beats/0/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩进入前景横向通道 | evidence: /shots/0/beats/0/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>xiao_nan_hai / 1</td><td>[source] 男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。 | evidence: /shots/0/beats/1/action/zh</td><td>[inference] 待确认建议：追逐方向与前上方气球；不新增看向底座的动作。</td><td>[source] 底座与横穿路线的关系已经清楚，摄影机停止 | evidence: /shots/0/beats/1/trigger</td><td>[inference] 待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。</td><td>[inference] 待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>lu_jing_tian / 1</td><td>[source] 男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。 | evidence: /shots/0/beats/1/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 底座与横穿路线的关系已经清楚，摄影机停止 | evidence: /shots/0/beats/1/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>staff_group_4 / 1</td><td>[source] 男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。 | evidence: /shots/0/beats/1/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 底座与横穿路线的关系已经清楚，摄影机停止 | evidence: /shots/0/beats/1/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>lu_chen / 1</td><td>[source] 男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。 | evidence: /shots/0/beats/1/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 底座与横穿路线的关系已经清楚，摄影机停止 | evidence: /shots/0/beats/1/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>er_ma_duo / 1</td><td>[source] 男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。 | evidence: /shots/0/beats/1/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 底座与横穿路线的关系已经清楚，摄影机停止 | evidence: /shots/0/beats/1/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>tourist_pair / 1</td><td>[source] 男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。 | evidence: /shots/0/beats/1/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 底座与横穿路线的关系已经清楚，摄影机停止 | evidence: /shots/0/beats/1/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>xiao_nan_hai / 2</td><td>[source] 男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。 | evidence: /shots/0/beats/2/action/zh</td><td>[inference] 待确认建议：追逐方向与前上方气球；不新增看向底座的动作。</td><td>[source] 男孩逐渐靠近近侧底座前的地面区域 | evidence: /shots/0/beats/2/trigger</td><td>[inference] 待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。</td><td>[inference] 待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>lu_jing_tian / 2</td><td>[source] 男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。 | evidence: /shots/0/beats/2/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩逐渐靠近近侧底座前的地面区域 | evidence: /shots/0/beats/2/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>staff_group_4 / 2</td><td>[source] 男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。 | evidence: /shots/0/beats/2/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩逐渐靠近近侧底座前的地面区域 | evidence: /shots/0/beats/2/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>lu_chen / 2</td><td>[source] 男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。 | evidence: /shots/0/beats/2/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩逐渐靠近近侧底座前的地面区域 | evidence: /shots/0/beats/2/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>er_ma_duo / 2</td><td>[source] 男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。 | evidence: /shots/0/beats/2/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩逐渐靠近近侧底座前的地面区域 | evidence: /shots/0/beats/2/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr><tr><td>tourist_pair / 2</td><td>[source] 男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。 | evidence: /shots/0/beats/2/action/zh</td><td>[inference] 待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。</td><td>[source] 男孩逐渐靠近近侧底座前的地面区域 | evidence: /shots/0/beats/2/trigger</td><td>[inference] 待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。</td><td>[unknown] unknown</td><td>[source] 末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。 | evidence: /shots/0/ending/zh</td></tr></tbody></table><h3>修复账本：人工记录，不是供应商回执</h3><table><thead><tr><th>累计尝试单位 / 预算</th><th>各设计失败单位</th><th>同设计限制</th></tr></thead><tbody><tr><td>0 / 12</td><td>{}</td><td>3</td></tr></tbody></table><p class="muted">未填写 / no planning records</p><h3>能力与提示词形态：仅规划，不接通 API</h3><table><thead><tr><th>请求形态</th><th>能力声明</th><th>首帧引用</th><th>末帧引用</th><th>执行就绪</th></tr></thead><tbody><tr><td>unknown</td><td>{&quot;text_to_video&quot;: &quot;unknown&quot;, &quot;first_frame&quot;: &quot;unknown&quot;, &quot;last_frame&quot;: &quot;unknown&quot;, &quot;timestamped_multisegment&quot;: &quot;unknown&quot;}</td><td>None</td><td>None</td><td>False</td></tr></tbody></table><p class="muted">未填写 / no planning records</p><h3>声音 Cue 与声源空间（出点不含）</h3><table><thead><tr><th>Cue / 层</th><th>帧范围</th><th>内容与分类</th><th>空间关系 / 主体</th><th>位置</th><th>素材引用</th></tr></thead><tbody><tr><td>S009-source-1 / FOL</td><td>0–48</td><td>[source] 急促脚步、小孩笑声和气球拍打声。 | evidence: /shots/0/beats/0/sound/zh</td><td>unknown / None</td><td>[unknown] unknown</td><td>None</td></tr><tr><td>S009-source-2 / FOL</td><td>48–168</td><td>[source] 脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。 | evidence: /shots/0/beats/1/sound/zh</td><td>unknown / None</td><td>[unknown] unknown</td><td>None</td></tr><tr><td>S009-source-3 / FOL</td><td>168–240</td><td>[source] 脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。 | evidence: /shots/0/beats/2/sound/zh</td><td>unknown / None</td><td>[unknown] unknown</td><td>None</td></tr><tr><td>S009-proposed-footsteps / FOL</td><td>0–240</td><td>[inference] 待确认声部分离：男孩急促脚步；具体接触点与音量包络待实际画面确认。</td><td>unknown / xiao_nan_hai</td><td>[inference] 待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。</td><td>None</td></tr><tr><td>S009-proposed-balloon / SFX</td><td>0–240</td><td>[inference] 待确认声部分离：蓝色气球拍打声；不添加撞架、碎裂声。</td><td>unknown / xiao_nan_hai</td><td>[inference] 待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。</td><td>None</td></tr><tr><td>S009-proposed-laugh / SFX</td><td>0–240</td><td>[inference] 待确认声部分离：小孩笑声；不添加词句。</td><td>unknown / xiao_nan_hai</td><td>[inference] 待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。</td><td>None</td></tr><tr><td>S009-proposed-room / RT</td><td>0–240</td><td>[inference] 待确认声部分离：展厅低电平底噪，不增加可辨识人物对白。</td><td>unknown / None</td><td>[inference] 底噪的声学空间、混响与素材来源待确认。</td><td>None</td></tr></tbody></table><details><summary>保留的原始对白、环境声、音乐</summary><pre>{
+  &quot;source_dialogue&quot;: [],
+  &quot;source_soundscape&quot;: {
+    &quot;zh&quot;: &quot;室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。&quot;,
+    &quot;en&quot;: &quot;Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue.&quot;
+  },
+  &quot;source_music&quot;: {
+    &quot;zh&quot;: &quot;无画外配乐。&quot;,
+    &quot;en&quot;: &quot;N/A&quot;
+  }
+}</pre></details><h3>剪辑帧计划：无重定时，固定切换</h3><table><thead><tr><th>源入 / 出帧</th><th>节目入 / 出帧</th><th>转场</th><th>重定时</th></tr></thead><tbody><tr><td>0 / 240</td><td>0 / 240</td><td>cut</td><td>False</td></tr></tbody></table></section><h2>未生效变更建议</h2><p class="muted">未填写 / no planning records</p><details><summary>完整校验报告 JSON</summary><pre>{
+  &quot;method_schema_version&quot;: &quot;1.0.0&quot;,
+  &quot;structurally_valid&quot;: true,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;execution_ready&quot;: false,
+  &quot;artistic_approval&quot;: false,
+  &quot;errors&quot;: [],
+  &quot;blockers&quot;: [
+    {
+      &quot;code&quot;: &quot;PLANNING_ONLY&quot;,
+      &quot;where&quot;: &quot;$&quot;,
+      &quot;message&quot;: &quot;Offline sidecars never certify execution, human approval or video quality&quot;
+    },
+    {
+      &quot;code&quot;: &quot;SOURCE_BASELINE_NOT_AUTHENTICATED&quot;,
+      &quot;where&quot;: &quot;$&quot;,
+      &quot;message&quot;: &quot;Hash binds the supplied canonical contract, not an independently authenticated original source; existing production evidence gates remain required&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;director_book.lighting.lighting-1&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;director_book.color.color-1&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;director_book.editing.editing-1&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.attention&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.weight_support&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.performance.contact_feedback&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;CAPABILITY_BLOCKED&quot;,
+      &quot;where&quot;: &quot;shots.S009&quot;,
+      &quot;message&quot;: &quot;Unknown/unsupported/missing: prompt_shape&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;METHOD_UNKNOWN&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;No instruction supplied&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.sound&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.sound&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.sound&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.sound&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    },
+    {
+      &quot;code&quot;: &quot;INFERENCE_UNAPPROVED&quot;,
+      &quot;where&quot;: &quot;shots.S009.space&quot;,
+      &quot;message&quot;: &quot;Inference is advisory and not authorized to change source&quot;
+    }
+  ],
+  &quot;derived&quot;: {
+    &quot;shots&quot;: [
+      {
+        &quot;shot_id&quot;: &quot;S009&quot;,
+        &quot;attempt_units&quot;: 0,
+        &quot;design_failures&quot;: {},
+        &quot;prompt_shape_plannable&quot;: false,
+        &quot;duration_frames&quot;: 240
+      }
+    ],
+    &quot;total_frames&quot;: 240
+  }
+}</pre></details><details><summary>完整方法包 JSON（含锁定源快照和证据）</summary><pre>{
+  &quot;method_schema_version&quot;: &quot;1.0.0&quot;,
+  &quot;contract_sha256&quot;: &quot;d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757&quot;,
+  &quot;fps&quot;: 24,
+  &quot;director_book&quot;: {
+    &quot;camera&quot;: {
+      &quot;rules&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;camera-1&quot;,
+          &quot;shot_ids&quot;: [
+            &quot;S009&quot;
+          ],
+          &quot;preference&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;0–2秒沿通道向右短距平移跟拍；2–10秒固定机位&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/camera/movement&quot;,
+                &quot;value&quot;: &quot;0–2秒沿通道向右短距平移跟拍；2–10秒固定机位&quot;
+              }
+            ]
+          },
+          &quot;counterexample&quot;: &quot;不以风格偏好增添推拉、摇摄、越轴或特写。&quot;,
+          &quot;conflict&quot;: &quot;none&quot;,
+          &quot;priority&quot;: 100
+        }
+      ]
+    },
+    &quot;lighting&quot;: {
+      &quot;rules&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;lighting-1&quot;,
+          &quot;shot_ids&quot;: [
+            &quot;S009&quot;
+          ],
+          &quot;preference&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：用可读的主体与背景层次保护源镜空间关系；灯位、照度、色温未获批准。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;counterexample&quot;: &quot;不是已完成布光或已验证模型效果。&quot;,
+          &quot;conflict&quot;: &quot;none&quot;,
+          &quot;priority&quot;: 20
+        }
+      ]
+    },
+    &quot;color&quot;: {
+      &quot;rules&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;color-1&quot;,
+          &quot;shot_ids&quot;: [
+            &quot;S009&quot;
+          ],
+          &quot;preference&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：先保持源道具颜色与角色身份，再讨论画面调色；站位图颜色只服务身份辨认，不等于服装颜色。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;counterexample&quot;: &quot;不能把角色图例色直接写成服装、肤色或全片调色。&quot;,
+          &quot;conflict&quot;: &quot;none&quot;,
+          &quot;priority&quot;: 20
+        }
+      ]
+    },
+    &quot;performance&quot;: {
+      &quot;rules&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;performance-1&quot;,
+          &quot;shot_ids&quot;: [
+            &quot;S009&quot;
+          ],
+          &quot;preference&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/director/visible_change&quot;,
+                &quot;value&quot;: &quot;男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。&quot;
+              }
+            ]
+          },
+          &quot;counterexample&quot;: &quot;不得新增转头、哭泣、跌倒、反应镜或源镜没有的位移。&quot;,
+          &quot;conflict&quot;: &quot;none&quot;,
+          &quot;priority&quot;: 100
+        }
+      ]
+    },
+    &quot;editing&quot;: {
+      &quot;rules&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;editing-1&quot;,
+          &quot;shot_ids&quot;: [
+            &quot;S009&quot;
+          ],
+          &quot;preference&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;只作交接计划：维持本合同镜序与原时长；24 fps 为本示例离线规划时基，尚非供应商/素材帧率承诺。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;counterexample&quot;: &quot;不能因预算、风格或故障自动拆镜、删镜、变速。&quot;,
+          &quot;conflict&quot;: &quot;none&quot;,
+          &quot;priority&quot;: 20
+        }
+      ]
+    },
+    &quot;sound&quot;: {
+      &quot;rules&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;sound-1&quot;,
+          &quot;shot_ids&quot;: [
+            &quot;S009&quot;
+          ],
+          &quot;preference&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;无画外配乐。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/music/zh&quot;,
+                &quot;value&quot;: &quot;无画外配乐。&quot;
+              }
+            ]
+          },
+          &quot;counterexample&quot;: &quot;不得把无配乐改为悬疑配乐；不新增可辨识对白。&quot;,
+          &quot;conflict&quot;: &quot;none&quot;,
+          &quot;priority&quot;: 100
+        }
+      ]
+    }
+  },
+  &quot;shots&quot;: [
+    {
+      &quot;shot_id&quot;: &quot;S009&quot;,
+      &quot;scene_id&quot;: &quot;scene_exhibition_hall&quot;,
+      &quot;role_ids&quot;: [
+        &quot;xiao_nan_hai&quot;,
+        &quot;lu_jing_tian&quot;,
+        &quot;staff_group_4&quot;,
+        &quot;lu_chen&quot;,
+        &quot;er_ma_duo&quot;,
+        &quot;tourist_pair&quot;
+      ],
+      &quot;locked_source&quot;: {
+        &quot;shot_id&quot;: &quot;S009&quot;,
+        &quot;source_shot_no&quot;: &quot;9&quot;,
+        &quot;source_span_sec&quot;: [
+          0,
+          10.0
+        ],
+        &quot;duration_sec&quot;: 10.0,
+        &quot;scene_id&quot;: &quot;scene_exhibition_hall&quot;,
+        &quot;status&quot;: &quot;planned&quot;,
+        &quot;director&quot;: {
+          &quot;viewing_task&quot;: &quot;先让观众辨认男孩的横向路线，再同时看清他前方的近侧底座；只建立风险，不提前发生事故。&quot;,
+          &quot;visible_change&quot;: &quot;男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。&quot;,
+          &quot;why_this_camera&quot;: &quot;继承低机位侧拍与前2秒向右跟拍。摄影机停止后，男孩继续进入既定危险区域，让道具的静止位置变成可读的因果参照，而不是不断追着人拍。&quot;,
+          &quot;hidden_viewpoint_check&quot;: &quot;不借镜头越轴改变路线；男孩未看见底座也不等于观众不能看见。成人可受遮挡但人数、站位和剧情状态不能凭空改变。&quot;
+        },
+        &quot;subjects&quot;: [
+          &quot;xiao_nan_hai&quot;,
+          &quot;lu_jing_tian&quot;,
+          &quot;staff_group_4&quot;,
+          &quot;lu_chen&quot;,
+          &quot;er_ma_duo&quot;,
+          &quot;tourist_pair&quot;
+        ],
+        &quot;reference_asset_ids&quot;: [
+          &quot;child_identity&quot;,
+          &quot;hall_plate&quot;,
+          &quot;left_group&quot;,
+          &quot;right_group&quot;,
+          &quot;embroidery_stand&quot;
+        ],
+        &quot;camera&quot;: {
+          &quot;shot_size_start&quot;: &quot;中远景&quot;,
+          &quot;shot_size_end&quot;: &quot;中远景&quot;,
+          &quot;height&quot;: &quot;男孩身体高度附近的低机位；具体高度由已确认构图定，不虚构厘米值&quot;,
+          &quot;angle&quot;: &quot;同轴线侧拍&quot;,
+          &quot;lens_mm&quot;: null,
+          &quot;fov_deg&quot;: null,
+          &quot;movement&quot;: &quot;0–2秒沿通道向右短距平移跟拍；2–10秒固定机位&quot;,
+          &quot;observable_evidence&quot;: &quot;前2秒，近侧底座与远处展柜有差速位移；随后两者在画面中的位置稳定，只有男孩继续向右移动。不用原地摇摄或数字变焦冒充平移。&quot;,
+          &quot;focus&quot;: &quot;男孩和近侧底座均可辨认；后景群像较弱但不消失&quot;,
+          &quot;composition&quot;: &quot;左后景保留队列，右侧保留讲解组；中前景横向路线与男孩前方底座同框，地面接缝可见但不抢特写。&quot;
+        },
+        &quot;continuity&quot;: {
+          &quot;axis_id&quot;: &quot;boy_crossing_corridor&quot;,
+          &quot;axis_side&quot;: &quot;A&quot;,
+          &quot;screen_direction&quot;: &quot;left_to_right&quot;,
+          &quot;entry_state&quot;: {
+            &quot;stand.condition&quot;: &quot;intact_unmoved&quot;,
+            &quot;embroidery.condition&quot;: &quot;intact&quot;,
+            &quot;balloon.count&quot;: 1,
+            &quot;balloon.string&quot;: &quot;around_boy_wrist&quot;,
+            &quot;left_group.logical_people&quot;: 6,
+            &quot;right_group.logical_people&quot;: 3,
+            &quot;boy.screen_direction&quot;: &quot;left_to_right&quot;,
+            &quot;boy.contact&quot;: &quot;none&quot;,
+            &quot;boy.position&quot;: &quot;left_foreground_corridor&quot;
+          },
+          &quot;exit_state&quot;: {
+            &quot;stand.condition&quot;: &quot;intact_unmoved&quot;,
+            &quot;embroidery.condition&quot;: &quot;intact&quot;,
+            &quot;balloon.count&quot;: 1,
+            &quot;balloon.string&quot;: &quot;around_boy_wrist&quot;,
+            &quot;left_group.logical_people&quot;: 6,
+            &quot;right_group.logical_people&quot;: 3,
+            &quot;boy.screen_direction&quot;: &quot;left_to_right&quot;,
+            &quot;boy.contact&quot;: &quot;none&quot;,
+            &quot;boy.position&quot;: &quot;right_foreground_before_floor_seam_and_base&quot;
+          },
+          &quot;exceptions&quot;: [],
+          &quot;lookahead_source_shots&quot;: [
+            &quot;10&quot;,
+            &quot;11&quot;
+          ]
+        },
+        &quot;opening&quot;: {
+          &quot;zh&quot;: &quot;低机位中远景侧拍。男孩在左前景，蓝色气球位于他前上方、细线缠腕；右前方金属展架近侧底座入画，左后队列、右侧讲解组都留在既定区域。&quot;,
+          &quot;en&quot;: &quot;Low side-on medium-wide framing. The boy is in the left foreground; a single blue balloon floats ahead and above him with its string around his wrist. The near-side metal stand base is visible ahead on the right. The rear-left party and the right-side explanation group remain in their established areas.&quot;
+        },
+        &quot;ending&quot;: {
+          &quot;zh&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+          &quot;en&quot;: &quot;At the ending, the boy is still before the base and moving right. His shoe has not tripped on the floor seam and his body has not contacted the stand. Balloon, embroidery and adult positions remain continuous.&quot;
+        },
+        &quot;beats&quot;: [
+          {
+            &quot;start_sec&quot;: 0,
+            &quot;end_sec&quot;: 2,
+            &quot;trigger&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;action&quot;: {
+              &quot;zh&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+              &quot;en&quot;: &quot;The boy runs right after the balloon ahead of him; both adult groups remain in the background.&quot;
+            },
+            &quot;camera&quot;: {
+              &quot;zh&quot;: &quot;摄影机向右短距平移跟随，底座与远处展柜产生可见视差。&quot;,
+              &quot;en&quot;: &quot;The camera translates a short distance to the right with him; the base shifts against the distant display cases through visible parallax.&quot;
+            },
+            &quot;sound&quot;: {
+              &quot;zh&quot;: &quot;急促脚步、小孩笑声和气球拍打声。&quot;,
+              &quot;en&quot;: &quot;Quick footsteps, the child laughing and light balloon slapping sounds.&quot;
+            }
+          },
+          {
+            &quot;start_sec&quot;: 2,
+            &quot;end_sec&quot;: 7,
+            &quot;trigger&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;action&quot;: {
+              &quot;zh&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+              &quot;en&quot;: &quot;The boy continues right through the physically available transverse passage, with the base ahead still in frame and the string remaining around his wrist.&quot;
+            },
+            &quot;camera&quot;: {
+              &quot;zh&quot;: &quot;摄影机固定，不继续跟移，不推近，不改变拍摄轴侧。&quot;,
+              &quot;en&quot;: &quot;The camera is now locked off; no further translation, push-in or change of axis side.&quot;
+            },
+            &quot;sound&quot;: {
+              &quot;zh&quot;: &quot;脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。&quot;,
+              &quot;en&quot;: &quot;Footsteps and balloon sounds continue over subdued hall ambience, without new intelligible dialogue.&quot;
+            }
+          },
+          {
+            &quot;start_sec&quot;: 7,
+            &quot;end_sec&quot;: 10,
+            &quot;trigger&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;action&quot;: {
+              &quot;zh&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+              &quot;en&quot;: &quot;The boy continues right toward the floor area before the base, without tripping, colliding or changing the stand state.&quot;
+            },
+            &quot;camera&quot;: {
+              &quot;zh&quot;: &quot;保持固定中远景，让男孩、前方底座及地面关系同框收尾。&quot;,
+              &quot;en&quot;: &quot;Hold the locked medium-wide composition so the boy, base ahead and floor relationship share the ending frame.&quot;
+            },
+            &quot;sound&quot;: {
+              &quot;zh&quot;: &quot;脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。&quot;,
+              &quot;en&quot;: &quot;Finish on footsteps, the child laughing and balloon sounds, without an early crash or shattering sound.&quot;
+            }
+          }
+        ],
+        &quot;dialogue&quot;: [],
+        &quot;soundscape&quot;: {
+          &quot;zh&quot;: &quot;室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。&quot;,
+          &quot;en&quot;: &quot;Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue.&quot;
+        },
+        &quot;music&quot;: {
+          &quot;zh&quot;: &quot;无画外配乐。&quot;,
+          &quot;en&quot;: &quot;N/A&quot;
+        },
+        &quot;constraints&quot;: {
+          &quot;zh&quot;: &quot;保留左向右运动、细线缠腕、成人两组原站位以及完整绣面和展架。真实速度；本镜结束在尚未绊倒或碰撞的状态。&quot;,
+          &quot;en&quot;: &quot;Preserve left-to-right motion, the wrist string, both adult groups and the intact embroidery and stand. Use real-time motion; end before any trip or collision.&quot;
+        },
+        &quot;keyframes&quot;: [
+          {
+            &quot;id&quot;: &quot;S009-entry&quot;,
+            &quot;phase&quot;: &quot;entry&quot;,
+            &quot;time_sec&quot;: 0,
+            &quot;visible_state&quot;: {
+              &quot;zh&quot;: &quot;男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。&quot;,
+              &quot;en&quot;: &quot;The boy has just entered the left foreground. Balloon ahead and above; adult groupings, the foreground route and the base ahead are all readable.&quot;
+            },
+            &quot;reference_asset_ids&quot;: [
+              &quot;child_identity&quot;,
+              &quot;hall_plate&quot;,
+              &quot;left_group&quot;,
+              &quot;right_group&quot;,
+              &quot;embroidery_stand&quot;
+            ],
+            &quot;image_path&quot;: null,
+            &quot;generation_receipt&quot;: null,
+            &quot;visual_review&quot;: {
+              &quot;status&quot;: &quot;unreviewed&quot;,
+              &quot;evidence&quot;: &quot;&quot;
+            }
+          },
+          {
+            &quot;id&quot;: &quot;S009-trigger&quot;,
+            &quot;phase&quot;: &quot;trigger&quot;,
+            &quot;time_sec&quot;: 2,
+            &quot;visible_state&quot;: {
+              &quot;zh&quot;: &quot;向右平移到停止机位的时刻。男孩仍在运动中，前方底座与右侧讲解组保持空间区分。&quot;,
+              &quot;en&quot;: &quot;The camera has reached its stopping position after translating right. The boy remains in motion; the base ahead and the right-side group are spatially distinct.&quot;
+            },
+            &quot;reference_asset_ids&quot;: [
+              &quot;child_identity&quot;,
+              &quot;hall_plate&quot;,
+              &quot;left_group&quot;,
+              &quot;right_group&quot;,
+              &quot;embroidery_stand&quot;
+            ],
+            &quot;image_path&quot;: null,
+            &quot;generation_receipt&quot;: null,
+            &quot;visual_review&quot;: {
+              &quot;status&quot;: &quot;unreviewed&quot;,
+              &quot;evidence&quot;: &quot;&quot;
+            }
+          },
+          {
+            &quot;id&quot;: &quot;S009-development&quot;,
+            &quot;phase&quot;: &quot;development&quot;,
+            &quot;time_sec&quot;: 7,
+            &quot;visible_state&quot;: {
+              &quot;zh&quot;: &quot;固定机位下，男孩比上一状态更靠近右侧底座前区域，鞋与地缝尚未发生绊脚接触；绣面和展架仍完整。&quot;,
+              &quot;en&quot;: &quot;From the locked camera, the boy is closer to the area before the base on the right. His shoe has not caught the floor seam; embroidery and stand remain intact.&quot;
+            },
+            &quot;reference_asset_ids&quot;: [
+              &quot;child_identity&quot;,
+              &quot;hall_plate&quot;,
+              &quot;left_group&quot;,
+              &quot;right_group&quot;,
+              &quot;embroidery_stand&quot;
+            ],
+            &quot;image_path&quot;: null,
+            &quot;generation_receipt&quot;: null,
+            &quot;visual_review&quot;: {
+              &quot;status&quot;: &quot;unreviewed&quot;,
+              &quot;evidence&quot;: &quot;&quot;
+            }
+          },
+          {
+            &quot;id&quot;: &quot;S009-exit&quot;,
+            &quot;phase&quot;: &quot;exit&quot;,
+            &quot;time_sec&quot;: 10,
+            &quot;visible_state&quot;: {
+              &quot;zh&quot;: &quot;固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。&quot;,
+              &quot;en&quot;: &quot;The locked-camera ending: boy in the right foreground before the base, with no trip or collision yet. One blue balloon remains ahead and above, string around the wrist; the adult groups have not relocated.&quot;
+            },
+            &quot;reference_asset_ids&quot;: [
+              &quot;child_identity&quot;,
+              &quot;hall_plate&quot;,
+              &quot;left_group&quot;,
+              &quot;right_group&quot;,
+              &quot;embroidery_stand&quot;
+            ],
+            &quot;image_path&quot;: null,
+            &quot;generation_receipt&quot;: null,
+            &quot;visual_review&quot;: {
+              &quot;status&quot;: &quot;unreviewed&quot;,
+              &quot;evidence&quot;: &quot;&quot;
+            }
+          }
+        ]
+      },
+      &quot;performance&quot;: [
+        {
+          &quot;role_id&quot;: &quot;xiao_nan_hai&quot;,
+          &quot;beat_index&quot;: 0,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：追逐方向与前上方气球；不新增看向底座的动作。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/trigger&quot;,
+                &quot;value&quot;: &quot;男孩进入前景横向通道&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;lu_jing_tian&quot;,
+          &quot;beat_index&quot;: 0,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/trigger&quot;,
+                &quot;value&quot;: &quot;男孩进入前景横向通道&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;staff_group_4&quot;,
+          &quot;beat_index&quot;: 0,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/trigger&quot;,
+                &quot;value&quot;: &quot;男孩进入前景横向通道&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;lu_chen&quot;,
+          &quot;beat_index&quot;: 0,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/trigger&quot;,
+                &quot;value&quot;: &quot;男孩进入前景横向通道&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;er_ma_duo&quot;,
+          &quot;beat_index&quot;: 0,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/trigger&quot;,
+                &quot;value&quot;: &quot;男孩进入前景横向通道&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;tourist_pair&quot;,
+          &quot;beat_index&quot;: 0,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩追着前上方气球向右跑，成人两组保持背景位置。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩进入前景横向通道&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/0/trigger&quot;,
+                &quot;value&quot;: &quot;男孩进入前景横向通道&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;xiao_nan_hai&quot;,
+          &quot;beat_index&quot;: 1,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：追逐方向与前上方气球；不新增看向底座的动作。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/trigger&quot;,
+                &quot;value&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;lu_jing_tian&quot;,
+          &quot;beat_index&quot;: 1,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/trigger&quot;,
+                &quot;value&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;staff_group_4&quot;,
+          &quot;beat_index&quot;: 1,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/trigger&quot;,
+                &quot;value&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;lu_chen&quot;,
+          &quot;beat_index&quot;: 1,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/trigger&quot;,
+                &quot;value&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;er_ma_duo&quot;,
+          &quot;beat_index&quot;: 1,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/trigger&quot;,
+                &quot;value&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;tourist_pair&quot;,
+          &quot;beat_index&quot;: 1,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/1/trigger&quot;,
+                &quot;value&quot;: &quot;底座与横穿路线的关系已经清楚，摄影机停止&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;xiao_nan_hai&quot;,
+          &quot;beat_index&quot;: 2,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：追逐方向与前上方气球；不新增看向底座的动作。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/trigger&quot;,
+                &quot;value&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;lu_jing_tian&quot;,
+          &quot;beat_index&quot;: 2,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/trigger&quot;,
+                &quot;value&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;staff_group_4&quot;,
+          &quot;beat_index&quot;: 2,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/trigger&quot;,
+                &quot;value&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;lu_chen&quot;,
+          &quot;beat_index&quot;: 2,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/trigger&quot;,
+                &quot;value&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;er_ma_duo&quot;,
+          &quot;beat_index&quot;: 2,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/trigger&quot;,
+                &quot;value&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;role_id&quot;: &quot;tourist_pair&quot;,
+          &quot;beat_index&quot;: 2,
+          &quot;task&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/action/zh&quot;,
+                &quot;value&quot;: &quot;男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。&quot;
+              }
+            ]
+          },
+          &quot;attention&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;trigger&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/beats/2/trigger&quot;,
+                &quot;value&quot;: &quot;男孩逐渐靠近近侧底座前的地面区域&quot;
+              }
+            ]
+          },
+          &quot;weight_support&quot;: {
+            &quot;classification&quot;: &quot;inference&quot;,
+            &quot;text&quot;: &quot;待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;contact_feedback&quot;: {
+            &quot;classification&quot;: &quot;unknown&quot;,
+            &quot;text&quot;: &quot;&quot;,
+            &quot;evidence&quot;: []
+          },
+          &quot;end_state&quot;: {
+            &quot;classification&quot;: &quot;source&quot;,
+            &quot;text&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;,
+            &quot;evidence&quot;: [
+              {
+                &quot;pointer&quot;: &quot;/shots/0/ending/zh&quot;,
+                &quot;value&quot;: &quot;末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;repair&quot;: {
+        &quot;shot_attempt_budget&quot;: 12,
+        &quot;same_design_failure_limit&quot;: 3,
+        &quot;attempts&quot;: []
+      },
+      &quot;capability&quot;: {
+        &quot;requested_shape&quot;: &quot;unknown&quot;,
+        &quot;capabilities&quot;: {
+          &quot;text_to_video&quot;: &quot;unknown&quot;,
+          &quot;first_frame&quot;: &quot;unknown&quot;,
+          &quot;last_frame&quot;: &quot;unknown&quot;,
+          &quot;timestamped_multisegment&quot;: &quot;unknown&quot;
+        },
+        &quot;evidence&quot;: [],
+        &quot;first_frame_ref&quot;: null,
+        &quot;last_frame_ref&quot;: null,
+        &quot;execution_ready&quot;: false
+      },
+      &quot;sound&quot;: {
+        &quot;source_dialogue&quot;: [],
+        &quot;source_soundscape&quot;: {
+          &quot;zh&quot;: &quot;室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。&quot;,
+          &quot;en&quot;: &quot;Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue.&quot;
+        },
+        &quot;source_music&quot;: {
+          &quot;zh&quot;: &quot;无画外配乐。&quot;,
+          &quot;en&quot;: &quot;N/A&quot;
+        },
+        &quot;cues&quot;: [
+          {
+            &quot;cue_id&quot;: &quot;S009-source-1&quot;,
+            &quot;layer&quot;: &quot;FOL&quot;,
+            &quot;start_frame&quot;: 0,
+            &quot;end_frame&quot;: 48,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;source&quot;,
+              &quot;text&quot;: &quot;急促脚步、小孩笑声和气球拍打声。&quot;,
+              &quot;evidence&quot;: [
+                {
+                  &quot;pointer&quot;: &quot;/shots/0/beats/0/sound/zh&quot;,
+                  &quot;value&quot;: &quot;急促脚步、小孩笑声和气球拍打声。&quot;
+                }
+              ]
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: null,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;unknown&quot;,
+                &quot;text&quot;: &quot;&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          },
+          {
+            &quot;cue_id&quot;: &quot;S009-source-2&quot;,
+            &quot;layer&quot;: &quot;FOL&quot;,
+            &quot;start_frame&quot;: 48,
+            &quot;end_frame&quot;: 168,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;source&quot;,
+              &quot;text&quot;: &quot;脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。&quot;,
+              &quot;evidence&quot;: [
+                {
+                  &quot;pointer&quot;: &quot;/shots/0/beats/1/sound/zh&quot;,
+                  &quot;value&quot;: &quot;脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。&quot;
+                }
+              ]
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: null,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;unknown&quot;,
+                &quot;text&quot;: &quot;&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          },
+          {
+            &quot;cue_id&quot;: &quot;S009-source-3&quot;,
+            &quot;layer&quot;: &quot;FOL&quot;,
+            &quot;start_frame&quot;: 168,
+            &quot;end_frame&quot;: 240,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;source&quot;,
+              &quot;text&quot;: &quot;脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。&quot;,
+              &quot;evidence&quot;: [
+                {
+                  &quot;pointer&quot;: &quot;/shots/0/beats/2/sound/zh&quot;,
+                  &quot;value&quot;: &quot;脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。&quot;
+                }
+              ]
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: null,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;unknown&quot;,
+                &quot;text&quot;: &quot;&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          },
+          {
+            &quot;cue_id&quot;: &quot;S009-proposed-footsteps&quot;,
+            &quot;layer&quot;: &quot;FOL&quot;,
+            &quot;start_frame&quot;: 0,
+            &quot;end_frame&quot;: 240,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;inference&quot;,
+              &quot;text&quot;: &quot;待确认声部分离：男孩急促脚步；具体接触点与音量包络待实际画面确认。&quot;,
+              &quot;evidence&quot;: []
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: &quot;xiao_nan_hai&quot;,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;inference&quot;,
+                &quot;text&quot;: &quot;待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          },
+          {
+            &quot;cue_id&quot;: &quot;S009-proposed-balloon&quot;,
+            &quot;layer&quot;: &quot;SFX&quot;,
+            &quot;start_frame&quot;: 0,
+            &quot;end_frame&quot;: 240,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;inference&quot;,
+              &quot;text&quot;: &quot;待确认声部分离：蓝色气球拍打声；不添加撞架、碎裂声。&quot;,
+              &quot;evidence&quot;: []
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: &quot;xiao_nan_hai&quot;,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;inference&quot;,
+                &quot;text&quot;: &quot;待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          },
+          {
+            &quot;cue_id&quot;: &quot;S009-proposed-laugh&quot;,
+            &quot;layer&quot;: &quot;SFX&quot;,
+            &quot;start_frame&quot;: 0,
+            &quot;end_frame&quot;: 240,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;inference&quot;,
+              &quot;text&quot;: &quot;待确认声部分离：小孩笑声；不添加词句。&quot;,
+              &quot;evidence&quot;: []
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: &quot;xiao_nan_hai&quot;,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;inference&quot;,
+                &quot;text&quot;: &quot;待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          },
+          {
+            &quot;cue_id&quot;: &quot;S009-proposed-room&quot;,
+            &quot;layer&quot;: &quot;RT&quot;,
+            &quot;start_frame&quot;: 0,
+            &quot;end_frame&quot;: 240,
+            &quot;description&quot;: {
+              &quot;classification&quot;: &quot;inference&quot;,
+              &quot;text&quot;: &quot;待确认声部分离：展厅低电平底噪，不增加可辨识人物对白。&quot;,
+              &quot;evidence&quot;: []
+            },
+            &quot;space&quot;: {
+              &quot;relation&quot;: &quot;unknown&quot;,
+              &quot;role_id&quot;: null,
+              &quot;position&quot;: {
+                &quot;classification&quot;: &quot;inference&quot;,
+                &quot;text&quot;: &quot;底噪的声学空间、混响与素材来源待确认。&quot;,
+                &quot;evidence&quot;: []
+              }
+            },
+            &quot;asset_ref&quot;: null
+          }
+        ]
+      },
+      &quot;edit&quot;: {
+        &quot;source_in_frame&quot;: 0,
+        &quot;source_out_frame&quot;: 240,
+        &quot;program_in_frame&quot;: 0,
+        &quot;program_out_frame&quot;: 240,
+        &quot;transition&quot;: &quot;cut&quot;,
+        &quot;retime&quot;: false
+      }
+    }
+  ],
+  &quot;change_requests&quot;: []
+}</pre></details><p class="muted">Evidence pointers and asset references are text only. No scripts, external requests, generation or approval authority.</p></html>

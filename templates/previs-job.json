@@ -1,0 +1,13 @@
+{
+  "status": "interface_only_not_executed",
+  "engine": null,
+  "scene_plate": null,
+  "world_units": "meters_if_measured_else_unknown",
+  "coordinate_system": null,
+  "landmarks": [],
+  "actors": [],
+  "camera_segments": [],
+  "duration_sec": null,
+  "export_video": null,
+  "note": "本版不包含Blender/UE渲染执行器；只定义交接。未经真实渲染，禁止将其标为白模预演完成。"
+}

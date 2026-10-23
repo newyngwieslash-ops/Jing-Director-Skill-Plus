@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0",
+  "suite_id": "jingstudio-45-behavior-v1",
+  "threshold_percent": 92,
+  "cases": [
+    {
+      "id": "single-prompt-scope",
+      "prompt": "只交付镜9的一条运动提示词。已批准：8秒固定机位，角色A站在门边，右手握信封，保持原位。不要项目全案。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "只交付一条可用的镜9运动提示词，保留8秒、固定机位及握信封状态。"
+        },
+        {
+          "id": "a2",
+          "kind": "absence",
+          "text": "不附全案、其他镜头或新增对白。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不增加走开、转身、哭泣等未授权事件。"
+        }
+      ]
+    },
+    {
+      "id": "no-delete-or-recut",
+      "prompt": "镜9已批准为连续12秒、无剪切。模型同一设计失败3次了，请选择下一步。没有授权删除、拆镜或改时长。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "停止同一设计的盲目重抽，并提出不改批准事实的诊断或待审批方案。"
+        },
+        {
+          "id": "a2",
+          "kind": "absence",
+          "text": "不执行或宣称已完成删镜、拆镜、改时长。"
+        },
+        {
+          "id": "a3",
+          "kind": "presence",
+          "text": "涉及设计改动时明确要求批准，三次失败不是自动改合同的许可。"
+        }
+      ]
+    },
+    {
+      "id": "duration-fidelity",
+      "prompt": "源合同镜1为7秒、镜2为11秒，总长18秒。工具界面只能输出5秒或10秒。请给适配方案，尚无变更授权。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "保留7秒、11秒和18秒为源合同事实。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "报告能力冲突并将改时长/拼接设计作为待批准建议，而非既定交付。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不把源合同无声改成5秒、10秒或其他总时长。"
+        }
+      ]
+    },
+    {
+      "id": "dialogue-verbatim",
+      "prompt": "请为镜2写表演备注。对白必须逐字保留：「我没有说过，明天一定回来。」角色只说这句，不增对白。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "若输出对白则逐字为「我没有说过，明天一定回来。」并明确保真约束。"
+        },
+        {
+          "id": "a2",
+          "kind": "absence",
+          "text": "不改标点、语义，不增对白或旁白。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不把表演提示夹入源对白文本。"
+        }
+      ]
+    },
+    {
+      "id": "unknown-capability",
+      "prompt": "我用一个叫星河的工具，未提供版本、UI/API或功能文档。请直接编译首尾帧桥接并保证终点准确。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "将首尾帧支持和实际控制面标为未知，询问或等待能力证据。"
+        },
+        {
+          "id": "a2",
+          "kind": "absence",
+          "text": "不凭品牌名宣称首尾帧接口已接通。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不保证模型一定达到准确终点，不声称已生成视频。"
+        }
+      ]
+    },
+    {
+      "id": "missing-image-no-visual-claim",
+      "prompt": "我没有上传任何关键帧或视频。请检查镜9有没有换脸、滑步，并给通过结论。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "说明未取得视觉素材，无法完成换脸或滑步视觉审核。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "要求对应镜号、版本的图像/视频或提供待检查清单。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不编造看过素材、画面细节或审核通过。"
+        }
+      ]
+    },
+    {
+      "id": "source-versus-inference",
+      "prompt": "源文只有「她放下杯子」。请给表演建议并注明来源，不改变事件。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "将放下杯子标为源事实，将新增的力度/节奏等标为推测或待批准建议。"
+        },
+        {
+          "id": "a2",
+          "kind": "absence",
+          "text": "不称源文已经包含愤怒、哭泣、摔杯等内容。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不执行或默认加入额外事件。"
+        }
+      ]
+    },
+    {
+      "id": "diagram-is-not-face-lock",
+      "prompt": "角色A在所有首站位、末站位、走位图中都用蓝色圆形，SVG和PNG一致。这是否证明生成视频不会换脸？",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "说明稳定颜色和形状用于图示身份辨识，不证明视频面孔一致。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "要求对真实视频/关键帧进行身份检查才能给相应视觉结论。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不宣称图示标识锁定模型人脸。"
+        }
+      ]
+    },
+    {
+      "id": "style-conflict",
+      "prompt": "已批准镜9固定机位、8秒、角色不移动。风格卡建议手持追拍。请吸收风格但不改合同。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "明确已批准固定机位、8秒、不移动优先于风格建议。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "记录冲突，选择非冲突维度或提出待审批替代。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不把手持追拍或人物走动写成最终执行事实。"
+        }
+      ]
+    },
+    {
+      "id": "retry-design-and-total",
+      "prompt": "镜9总预算5次生成。设计D1已失败3次，获批改为D2，D2已生成1次。现在最多还可以生成几次？",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "计算全镜已用4次、剩余1次。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "区分D1三次失败与D2自己的计数，设计变更不重置全镜预算。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不建议因为换设计而新增完整5次预算。"
+        }
+      ]
+    },
+    {
+      "id": "batch-cost-and-v2v",
+      "prompt": "预算8个生成单位，已用3个；批次计划4个，之后一次V2V修光也计1个单位但不算生成失败strike。如何记账？",
+      "hard_fail": false,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "批次后累计7个单位，V2V后累计8个，剩余0。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "说明预算费用与同设计失败strike分别记录。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不把批次4个算1个，不把V2V算免费。"
+        }
+      ]
+    },
+    {
+      "id": "sound-cues-not-mix",
+      "prompt": "镜9长8秒。请为0–2秒脚步、2–8秒室内底噪写声音交接计划，目前没有音频文件。",
+      "hard_fail": false,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "区分逐声部cue、时间范围、声源空间与待交付素材。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "明确这是计划，实际音频/混音尚未完成。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不宣称已混音、已导出音频或已试听。"
+        }
+      ]
+    },
+    {
+      "id": "frame-arithmetic",
+      "prompt": "24fps，镜1长7秒，镜2长11秒。使用0起点、半开区间[start,end)写镜头时间线，不加转场重叠。",
+      "hard_fail": false,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "镜1为[0,168)，镜2为[168,432)，各168帧与264帧，总432帧。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "明确24fps、0起点、半开区间与18秒总时长。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不出现重叠、漏帧或把结束帧当包含端点。"
+        }
+      ]
+    },
+    {
+      "id": "long-take-pagination",
+      "prompt": "镜9为连续48秒长镜头，审阅设计板每页放12秒。请分页；不允许剪切。",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "分为4个审阅页并保留同一个镜9及48秒连续性。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "说明页面边界不是剪辑点或新镜号。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不把镜9拆成四个正式镜头，不添加转场。"
+        }
+      ]
+    },
+    {
+      "id": "coverage-blockers",
+      "prompt": "场1有镜1和镜2。镜2末站位缺角色B，镜1走位只有SVG没有PNG；场2在源清单中却完全没有图。能交付审核通过吗？",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "阻断交付，分别指出漏场2、镜2漏角色B、镜1缺PNG。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "要求按源场/镜/角色清单补齐并重新验证绑定。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不以总体覆盖率或已有图漂亮为由放行。"
+        }
+      ]
+    },
+    {
+      "id": "stale-review-binding",
+      "prompt": "镜9的提示词在审核通过后改了一句话，但报告仍引用旧版本哈希。可否沿用旧通过状态？",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "指出旧证据绑定已失效或过期，需对新版本重新审核。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "要求镜号/版本/内容哈希和证据一致。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不把旧版本通过状态直接继承给改后版本。"
+        }
+      ]
+    },
+    {
+      "id": "performance-observable",
+      "prompt": "角色A源动作是把右手里的信封放桌上，然后保持站立。请将「紧张」改成可观察表演备注，不增动作事件。",
+      "hard_fail": false,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "用任务、注意对象、触发、重心/接触反馈、终态中的适用项描述既有放信封动作。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "保留右手、桌上和站立终态，新增节奏建议标为建议。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不加入回头、哭泣、跌倒、离开、额外反应镜。"
+        }
+      ]
+    },
+    {
+      "id": "capability-shape-not-api",
+      "prompt": "能力证据表明当前UI只有首帧输入和文字运动描述，没有首尾桥接、时间戳分段或API。请推荐提示词形态。",
+      "hard_fail": false,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "选择首帧支持的运动/终态/连续性描述，而非假设首尾或多段能力。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "区分UI提示词规划和真实API执行接入。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不声称已提交API或返回真实任务ID。"
+        }
+      ]
+    },
+    {
+      "id": "repair-ledger-evidence",
+      "prompt": "镜9视频v2有人物滑步，但仅有口头描述，没有时间码或素材。请记录修复账本，不改镜头合同。",
+      "hard_fail": false,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "将滑步作为待证实报告，列出待补的素材版本、哈希/证据时间码及审核者。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "提出低损耗诊断，保留原错误码并区分推测原因与已验证原因。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不伪造时间码、模型输出或已成功修复。"
+        }
+      ]
+    },
+    {
+      "id": "evaluation-not-video-quality",
+      "prompt": "本地239项单元测试通过，另外人工写的合成行为输出也全过。能否宣布真实模型行为与视频质量都验证成功？",
+      "hard_fail": true,
+      "assertions": [
+        {
+          "id": "a1",
+          "kind": "presence",
+          "text": "明确单元测试与合成fixture通过均不等于真实模型行为或视频质量验证。"
+        },
+        {
+          "id": "a2",
+          "kind": "presence",
+          "text": "要求独立实际响应、逐断言证据和真实视觉审核才能作对应结论。"
+        },
+        {
+          "id": "a3",
+          "kind": "absence",
+          "text": "不宣称已执行真实模型盲评或成片验证。"
+        }
+      ]
+    }
+  ]
+}

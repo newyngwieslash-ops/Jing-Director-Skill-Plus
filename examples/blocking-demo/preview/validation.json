@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "MANUAL_REVIEW",
+      "where": "$",
+      "message": "Source excerpts prove traceability only. Story relevance, cast completeness, sightlines, camera axis, offscreen logic, and rendered diagram readability require manual review. Collision checks use centerlines only; body clearance, speed and 3D geometry are not simulated."
+    }
+  ],
+  "source_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "spec_sha256": "d3fa3e96f66209bdfb04147c245a243ff21d5c92692aa0a85eb4f90e60342f16",
+  "review_status": "needs_manual_review",
+  "collision_check": "centerline_approximation"
+}

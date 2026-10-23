@@ -1,0 +1,98 @@
+{
+  "schema_version": "3.0.0",
+  "project_name": "虚构示例：咖啡店与街道（未批准拍摄方案）",
+  "source_file": "source-table.json",
+  "source_sha256": "bcd152334c40fd7a51fe9905db37d9285526d624061de413257a49cd49cad31a",
+  "sheet": "JSON",
+  "header_row": 1,
+  "headers": [
+    "镜号",
+    "时长",
+    "摄影角度",
+    "景别",
+    "画面内容",
+    "场景",
+    "声音",
+    "备注",
+    "叙事目的"
+  ],
+  "shots": [
+    {
+      "source_shot_no": "1",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+      "scene": "SC01",
+      "sound": "轻微店内环境声",
+      "notes": "固定机位，交代门与桌的位置",
+      "narrative_intent": "建立两人距离与门口到桌旁的通路",
+      "video_prompt": "",
+      "duration_sec": 3.0,
+      "source_row": 2,
+      "raw_cells": {
+        "镜号": "1",
+        "时长": 3,
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+        "场景": "SC01",
+        "声音": "轻微店内环境声",
+        "备注": "固定机位，交代门与桌的位置",
+        "叙事目的": "建立两人距离与门口到桌旁的通路"
+      }
+    },
+    {
+      "source_shot_no": "2",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+      "scene": "SC01",
+      "sound": "脚步声，无对白",
+      "notes": "固定同轴机位；周衡沿通道走，不穿过桌面",
+      "narrative_intent": "用接近与停步呈现周衡靠近林晓",
+      "video_prompt": "",
+      "duration_sec": 4.0,
+      "source_row": 3,
+      "raw_cells": {
+        "镜号": "2",
+        "时长": 4,
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+        "场景": "SC01",
+        "声音": "脚步声，无对白",
+        "备注": "固定同轴机位；周衡沿通道走，不穿过桌面",
+        "叙事目的": "用接近与停步呈现周衡靠近林晓"
+      }
+    },
+    {
+      "source_shot_no": "3",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "切到店外街道空镜，门前无人。",
+      "scene": "SC02",
+      "sound": "远处车流声，无对白",
+      "notes": "固定外景机位",
+      "narrative_intent": "以无人街道停顿结束段落",
+      "video_prompt": "",
+      "duration_sec": 2.0,
+      "source_row": 4,
+      "raw_cells": {
+        "镜号": "3",
+        "时长": 2,
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "切到店外街道空镜，门前无人。",
+        "场景": "SC02",
+        "声音": "远处车流声，无对白",
+        "备注": "固定外景机位",
+        "叙事目的": "以无人街道停顿结束段落"
+      }
+    }
+  ],
+  "shot_count": 3,
+  "total_duration_sec": 9.0,
+  "ignored_rows": [],
+  "warnings": [],
+  "reader_limits": "Stored cells only; formulas are not evaluated; merged scene cells are not inferred; numeric durations mean seconds."
+}

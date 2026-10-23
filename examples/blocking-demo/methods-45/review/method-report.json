@@ -1,0 +1,181 @@
+{
+  "method_schema_version": "1.0.0",
+  "structurally_valid": true,
+  "status": "draft",
+  "execution_ready": false,
+  "artistic_approval": false,
+  "errors": [],
+  "blockers": [
+    {
+      "code": "PLANNING_ONLY",
+      "where": "$",
+      "message": "Offline sidecars never certify execution, human approval or video quality"
+    },
+    {
+      "code": "SOURCE_BASELINE_NOT_AUTHENTICATED",
+      "where": "$",
+      "message": "Hash binds the supplied canonical contract, not an independently authenticated original source; existing production evidence gates remain required"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.lighting.lighting-1",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.lighting.lighting-2",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.lighting.lighting-3",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.color.color-1",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.color.color-2",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.color.color-3",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.editing.editing-1",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.editing.editing-2",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "director_book.editing.editing-3",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S001.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S001.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S001.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S001.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S001.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S001.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "CAPABILITY_BLOCKED",
+      "where": "shots.S001",
+      "message": "Unknown/unsupported/missing: prompt_shape"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S001.space",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S002.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S002.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S002.performance.contact_feedback",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S002.performance.attention",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S002.performance.weight_support",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "INFERENCE_UNAPPROVED",
+      "where": "shots.S002.performance.contact_feedback",
+      "message": "Inference is advisory and not authorized to change source"
+    },
+    {
+      "code": "CAPABILITY_BLOCKED",
+      "where": "shots.S002",
+      "message": "Unknown/unsupported/missing: prompt_shape"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S002.space",
+      "message": "No instruction supplied"
+    },
+    {
+      "code": "CAPABILITY_BLOCKED",
+      "where": "shots.S003",
+      "message": "Unknown/unsupported/missing: prompt_shape"
+    },
+    {
+      "code": "METHOD_UNKNOWN",
+      "where": "shots.S003.space",
+      "message": "No instruction supplied"
+    }
+  ],
+  "derived": {
+    "shots": [
+      {
+        "shot_id": "S001",
+        "attempt_units": 0,
+        "design_failures": {},
+        "prompt_shape_plannable": false,
+        "duration_frames": 72
+      },
+      {
+        "shot_id": "S002",
+        "attempt_units": 0,
+        "design_failures": {},
+        "prompt_shape_plannable": false,
+        "duration_frames": 96
+      },
+      {
+        "shot_id": "S003",
+        "attempt_units": 0,
+        "design_failures": {},
+        "prompt_shape_plannable": false,
+        "duration_frames": 48
+      }
+    ],
+    "total_frames": 216
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "schema_version": "3.0.0",
+  "project": {
+    "name": "虚构示例：咖啡店与街道（未批准拍摄方案）",
+    "aspect_ratio": "16:9",
+    "style": {
+      "zh": "俯视调度图配套的虚构生活场景，仅示意，不是电影实景。",
+      "en": "Fictional cafe blocking example; schematic only."
+    },
+    "source_sha256": "bcd152334c40fd7a51fe9905db37d9285526d624061de413257a49cd49cad31a"
+  },
+  "policy": {
+    "board_max_duration_sec": 15,
+    "edit_mode": "preserve_shots",
+    "recut_approval": ""
+  },
+  "source_shots": [
+    {
+      "source_shot_no": "1",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+      "scene": "SC01",
+      "sound": "轻微店内环境声",
+      "notes": "固定机位，交代门与桌的位置",
+      "narrative_intent": "建立两人距离与门口到桌旁的通路",
+      "video_prompt": "",
+      "duration_sec": 3.0,
+      "source_row": 2,
+      "raw_cells": {
+        "镜号": "1",
+        "时长": 3,
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+        "场景": "SC01",
+        "声音": "轻微店内环境声",
+        "备注": "固定机位，交代门与桌的位置",
+        "叙事目的": "建立两人距离与门口到桌旁的通路"
+      }
+    },
+    {
+      "source_shot_no": "2",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+      "scene": "SC01",
+      "sound": "脚步声，无对白",
+      "notes": "固定同轴机位；周衡沿通道走，不穿过桌面",
+      "narrative_intent": "用接近与停步呈现周衡靠近林晓",
+      "video_prompt": "",
+      "duration_sec": 4.0,
+      "source_row": 3,
+      "raw_cells": {
+        "镜号": "2",
+        "时长": 4,
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+        "场景": "SC01",
+        "声音": "脚步声，无对白",
+        "备注": "固定同轴机位；周衡沿通道走，不穿过桌面",
+        "叙事目的": "用接近与停步呈现周衡靠近林晓"
+      }
+    },
+    {
+      "source_shot_no": "3",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "切到店外街道空镜，门前无人。",
+      "scene": "SC02",
+      "sound": "远处车流声，无对白",
+      "notes": "固定外景机位",
+      "narrative_intent": "以无人街道停顿结束段落",
+      "video_prompt": "",
+      "duration_sec": 2.0,
+      "source_row": 4,
+      "raw_cells": {
+        "镜号": "3",
+        "时长": 2,
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "切到店外街道空镜，门前无人。",
+        "场景": "SC02",
+        "声音": "远处车流声，无对白",
+        "备注": "固定外景机位",
+        "叙事目的": "以无人街道停顿结束段落"
+      }
+    }
+  ],
+  "assets": [],
+  "shots": [
+    {
+      "shot_id": "S001",
+      "source_shot_no": "1",
+      "source_span_sec": [
+        0,
+        3.0
+      ],
+      "duration_sec": 3.0,
+      "scene_id": "SC01",
+      "status": "planned",
+      "director": {
+        "viewing_task": "建立两人距离与门口到桌旁的通路",
+        "visible_change": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+        "why_this_camera": "固定机位，交代门与桌的位置",
+        "hidden_viewpoint_check": "只展示源镜允许的可见行动，不补充画外事件。"
+      },
+      "subjects": [
+        "A",
+        "B"
+      ],
+      "reference_asset_ids": [],
+      "camera": {
+        "shot_size_start": "全景",
+        "shot_size_end": "全景",
+        "height": "成人视线高度，未测量",
+        "angle": "平视",
+        "lens_mm": null,
+        "fov_deg": null,
+        "movement": "固定",
+        "observable_evidence": "地标在画面中不移动",
+        "focus": "门与桌旁人物关系",
+        "composition": "同框保留动作起点与终点"
+      },
+      "continuity": {
+        "axis_id": "table_door_axis",
+        "axis_side": "A",
+        "screen_direction": "scene_world",
+        "entry_state": {
+          "A.position": "table_west",
+          "B.position": "inside_door"
+        },
+        "exit_state": {
+          "A.position": "table_west",
+          "B.position": "inside_door"
+        },
+        "exceptions": [],
+        "lookahead_source_shots": []
+      },
+      "opening": {
+        "zh": "林晓在桌西侧，周衡在门内",
+        "en": "Schematic opening state."
+      },
+      "ending": {
+        "zh": "林晓在桌西侧，周衡在门内",
+        "en": "Schematic ending state."
+      },
+      "beats": [
+        {
+          "start_sec": 0,
+          "end_sec": 3.0,
+          "trigger": "源镜开始后的静止观察",
+          "action": {
+            "zh": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+            "en": "Follow the source action."
+          },
+          "camera": {
+            "zh": "机位固定",
+            "en": "Locked-off camera."
+          },
+          "sound": {
+            "zh": "轻微店内环境声",
+            "en": "Ambient sound, no dialogue."
+          }
+        }
+      ],
+      "dialogue": [],
+      "soundscape": {
+        "zh": "轻微店内环境声",
+        "en": "Ambient sound, no dialogue."
+      },
+      "music": {
+        "zh": "无画外配乐。",
+        "en": "N/A"
+      },
+      "constraints": {
+        "zh": "不增加角色、对白、镜号或位移；尺寸为示意。",
+        "en": "No added people, dialogue, cuts or movement. Schematic layout."
+      },
+      "keyframes": [
+        {
+          "id": "S001-entry",
+          "phase": "entry",
+          "time_sec": 0,
+          "visible_state": {
+            "zh": "林晓在桌西侧，周衡在门内",
+            "en": "Schematic opening state."
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S001-exit",
+          "phase": "exit",
+          "time_sec": 3.0,
+          "visible_state": {
+            "zh": "林晓在桌西侧，周衡在门内",
+            "en": "Schematic ending state."
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        }
+      ]
+    },
+    {
+      "shot_id": "S002",
+      "source_shot_no": "2",
+      "source_span_sec": [
+        0,
+        4.0
+      ],
+      "duration_sec": 4.0,
+      "scene_id": "SC01",
+      "status": "planned",
+      "director": {
+        "viewing_task": "用接近与停步呈现周衡靠近林晓",
+        "visible_change": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+        "why_this_camera": "固定同轴机位；周衡沿通道走，不穿过桌面",
+        "hidden_viewpoint_check": "只展示源镜允许的可见行动，不补充画外事件。"
+      },
+      "subjects": [
+        "A",
+        "B"
+      ],
+      "reference_asset_ids": [],
+      "camera": {
+        "shot_size_start": "全景",
+        "shot_size_end": "全景",
+        "height": "成人视线高度，未测量",
+        "angle": "平视",
+        "lens_mm": null,
+        "fov_deg": null,
+        "movement": "固定",
+        "observable_evidence": "地标在画面中不移动",
+        "focus": "门与桌旁人物关系",
+        "composition": "同框保留动作起点与终点"
+      },
+      "continuity": {
+        "axis_id": "table_door_axis",
+        "axis_side": "A",
+        "screen_direction": "scene_world",
+        "entry_state": {
+          "A.position": "table_west",
+          "B.position": "inside_door"
+        },
+        "exit_state": {
+          "A.position": "table_west",
+          "B.position": "table_east"
+        },
+        "exceptions": [],
+        "lookahead_source_shots": []
+      },
+      "opening": {
+        "zh": "林晓在桌西侧，周衡在门内",
+        "en": "Schematic opening state."
+      },
+      "ending": {
+        "zh": "林晓原位，周衡在桌东侧停住",
+        "en": "Schematic ending state."
+      },
+      "beats": [
+        {
+          "start_sec": 0,
+          "end_sec": 4.0,
+          "trigger": "周衡开始走近桌旁",
+          "action": {
+            "zh": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+            "en": "Follow the source action."
+          },
+          "camera": {
+            "zh": "机位固定",
+            "en": "Locked-off camera."
+          },
+          "sound": {
+            "zh": "脚步声，无对白",
+            "en": "Ambient sound, no dialogue."
+          }
+        }
+      ],
+      "dialogue": [],
+      "soundscape": {
+        "zh": "脚步声，无对白",
+        "en": "Ambient sound, no dialogue."
+      },
+      "music": {
+        "zh": "无画外配乐。",
+        "en": "N/A"
+      },
+      "constraints": {
+        "zh": "不增加角色、对白、镜号或位移；尺寸为示意。",
+        "en": "No added people, dialogue, cuts or movement. Schematic layout."
+      },
+      "keyframes": [
+        {
+          "id": "S002-entry",
+          "phase": "entry",
+          "time_sec": 0,
+          "visible_state": {
+            "zh": "林晓在桌西侧，周衡在门内",
+            "en": "Schematic opening state."
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S002-exit",
+          "phase": "exit",
+          "time_sec": 4.0,
+          "visible_state": {
+            "zh": "林晓原位，周衡在桌东侧停住",
+            "en": "Schematic ending state."
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        }
+      ]
+    },
+    {
+      "shot_id": "S003",
+      "source_shot_no": "3",
+      "source_span_sec": [
+        0,
+        2.0
+      ],
+      "duration_sec": 2.0,
+      "scene_id": "SC02",
+      "status": "planned",
+      "director": {
+        "viewing_task": "以无人街道停顿结束段落",
+        "visible_change": "切到店外街道空镜，门前无人。",
+        "why_this_camera": "固定外景机位",
+        "hidden_viewpoint_check": "只展示源镜允许的可见行动，不补充画外事件。"
+      },
+      "subjects": [],
+      "reference_asset_ids": [],
+      "camera": {
+        "shot_size_start": "全景",
+        "shot_size_end": "全景",
+        "height": "成人视线高度，未测量",
+        "angle": "平视",
+        "lens_mm": null,
+        "fov_deg": null,
+        "movement": "固定",
+        "observable_evidence": "地标在画面中不移动",
+        "focus": "无人街道",
+        "composition": "门前空地"
+      },
+      "continuity": {
+        "axis_id": "street_axis",
+        "axis_side": "A",
+        "screen_direction": "scene_world",
+        "entry_state": {
+          "street.people": 0
+        },
+        "exit_state": {
+          "street.people": 0
+        },
+        "exceptions": [],
+        "lookahead_source_shots": []
+      },
+      "opening": {
+        "zh": "店外街道无人",
+        "en": "Schematic opening state."
+      },
+      "ending": {
+        "zh": "店外街道无人",
+        "en": "Schematic ending state."
+      },
+      "beats": [
+        {
+          "start_sec": 0,
+          "end_sec": 2.0,
+          "trigger": "源镜开始后的静止观察",
+          "action": {
+            "zh": "切到店外街道空镜，门前无人。",
+            "en": "Follow the source action."
+          },
+          "camera": {
+            "zh": "机位固定",
+            "en": "Locked-off camera."
+          },
+          "sound": {
+            "zh": "远处车流声，无对白",
+            "en": "Ambient sound, no dialogue."
+          }
+        }
+      ],
+      "dialogue": [],
+      "soundscape": {
+        "zh": "远处车流声，无对白",
+        "en": "Ambient sound, no dialogue."
+      },
+      "music": {
+        "zh": "无画外配乐。",
+        "en": "N/A"
+      },
+      "constraints": {
+        "zh": "不增加角色、对白、镜号或位移；尺寸为示意。",
+        "en": "No added people, dialogue, cuts or movement. Schematic layout."
+      },
+      "keyframes": [
+        {
+          "id": "S003-entry",
+          "phase": "entry",
+          "time_sec": 0,
+          "visible_state": {
+            "zh": "店外街道无人",
+            "en": "Schematic opening state."
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S003-exit",
+          "phase": "exit",
+          "time_sec": 2.0,
+          "visible_state": {
+            "zh": "店外街道无人",
+            "en": "Schematic ending state."
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        }
+      ]
+    }
+  ],
+  "review": {
+    "director": "pending",
+    "visual": "pending",
+    "video": "not_generated",
+    "user": "pending"
+  }
+}

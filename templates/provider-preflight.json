@@ -1,0 +1,18 @@
+{
+  "provider": null,
+  "actual_model_id": null,
+  "model_display_name": null,
+  "mode": null,
+  "documentation_url": null,
+  "checked_at": null,
+  "duration_limits_sec": null,
+  "reference_caps": null,
+  "prompt_character_budget": null,
+  "reference_slot_mapping": [],
+  "real_asset_upload_ids": [],
+  "native_audio_supported": null,
+  "commercial_rights_reviewed": false,
+  "user_budget_approved": false,
+  "submission_authorized": false,
+  "submitted": false
+}

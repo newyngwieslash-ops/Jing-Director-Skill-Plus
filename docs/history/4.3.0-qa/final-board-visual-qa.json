@@ -1,0 +1,411 @@
+{
+  "scope": "Current 16 design-spatial PNGs in two offline examples only; not full real project, cinematic art approval, user approval, or browser parity.",
+  "method": "Every original PNG individually opened with view_image; independent byte, PNG header, manifest coverage and item-bound checks. No edits or rerenders.",
+  "reviewed_at_utc": "2026-10-22T14:04:03.416578+00:00",
+  "status": "pass_with_nonblocking_notes",
+  "examples": [
+    {
+      "name": "blocking-demo",
+      "manifest_sha256": "8cb179f0bc03cff9793e1c5c540e5e0e0cf5d129b2a04d1e27604ff6cc69e0c3",
+      "page_count": 11,
+      "spatial_status": "spatial_complete_schematic",
+      "status": "draft",
+      "visual_review": "needs_manual_review",
+      "required_spatial_png_count": 11,
+      "all_required_spatial_in_source_and_pages": true,
+      "total_duration_sec": 9,
+      "all_pages_add_zero_duration": true,
+      "input_asset_hashes_checked": 32,
+      "output_hashes_checked": 12,
+      "source_text_lossless": true,
+      "errors": []
+    },
+    {
+      "name": "hall-shot-09",
+      "manifest_sha256": "91bb97bc59401f48812c3d138fd8d4e57975823452fbeeb00a708e1b065421f6",
+      "page_count": 5,
+      "spatial_status": "spatial_complete_schematic",
+      "status": "draft",
+      "visual_review": "needs_manual_review",
+      "required_spatial_png_count": 4,
+      "all_required_spatial_in_source_and_pages": true,
+      "total_duration_sec": 10,
+      "all_pages_add_zero_duration": true,
+      "input_asset_hashes_checked": 16,
+      "output_hashes_checked": 6,
+      "source_text_lossless": true,
+      "errors": []
+    }
+  ],
+  "files": [
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p001.png",
+      "sha256": "edcbfc9ffffdfbab34843229c03b88516718c314be1091a79817aa780e212b97",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/overview.png",
+          "width": 1062,
+          "height": 1029
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained.",
+        "Missing cinematic/character assets honestly rendered as missing/uncreated/unsupported placeholders, not claimed finished frames."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p002.png",
+      "sha256": "e95421b805c6bb9159ca14c425612240492d9c62ae12365e2fec20135aef8863",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-001/entry.png",
+          "width": 1062,
+          "height": 1003
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained.",
+        "Missing cinematic/character assets honestly rendered as missing/uncreated/unsupported placeholders, not claimed finished frames."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p003.png",
+      "sha256": "8333bcf20b783cee963b8e90686aaf1f159bf64d410b280c9c671131f8d3f57c",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-001/exit.png",
+          "width": 1062,
+          "height": 1003
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p004.png",
+      "sha256": "ee802a72221f34353f591192e84b3f034dd1a1b22c4646e61577ddba9a9be06b",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-001/movement.png",
+          "width": 1062,
+          "height": 1055
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p005.png",
+      "sha256": "a9b7d13264b45080b0ff7a08dde350df538e4da24a40ec881903af14ed2d2e41",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-002/entry.png",
+          "width": 1062,
+          "height": 1003
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p006.png",
+      "sha256": "f3122fe9be14a578cbb160af3a17533824a421f9e4dc00ef22e223d2827ef918",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-002/exit.png",
+          "width": 1062,
+          "height": 1003
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-001-p007.png",
+      "sha256": "198709fcdd56d46e9aa2450b0bc849be9234be655740034420154018968ea18d",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-002/movement.png",
+          "width": 1062,
+          "height": 1055
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-002-p001.png",
+      "sha256": "578e62af06ecb33fc01a27e631ca699061ba2e6a1f9daab1ad0111d118e64e02",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-002/overview.png",
+          "width": 1062,
+          "height": 924
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained.",
+        "Missing cinematic/character assets honestly rendered as missing/uncreated/unsupported placeholders, not claimed finished frames."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-002-p002.png",
+      "sha256": "228202fbb51d3de5efa0f6ccce323bfacd8a55317daf050e9d7d1dc01b296e84",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-002/shot-001/entry.png",
+          "width": 1062,
+          "height": 898
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-002-p003.png",
+      "sha256": "8646bfafeebe7c31f79123c8d72ebac471c1dcb6e7a4352ab07c33657c0a6300",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-002/shot-001/exit.png",
+          "width": 1062,
+          "height": 898
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/blocking-demo/design-spatial/board-002-p004.png",
+      "sha256": "95d2adb717efb005ee9f42b62461fdc341d95fb8ec50b953f6053912a345d79a",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-002/shot-001/movement.png",
+          "width": 1062,
+          "height": 898
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/hall-shot-09/design-spatial/board-001-p001.png",
+      "sha256": "be0a5eb1c1797eeb8c5bb85d249da90ab93b2513aad8d3c180633acbe06809c3",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/overview.png",
+          "width": 1062,
+          "height": 1263
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained.",
+        "Missing cinematic/character assets honestly rendered as missing/uncreated/unsupported placeholders, not claimed finished frames.",
+        "Nonblocking: long roster wraps and continues across pages, including split employee_2; source text verified lossless."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/hall-shot-09/design-spatial/board-001-p002.png",
+      "sha256": "d8fca336fe64417633749040569e1805171abaa4b0fc4f63804dfaf229d501f5",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-001/entry.png",
+          "width": 1062,
+          "height": 1237
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained.",
+        "Missing cinematic/character assets honestly rendered as missing/uncreated/unsupported placeholders, not claimed finished frames.",
+        "Nonblocking: long roster wraps and continues across pages, including split employee_2; source text verified lossless."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/hall-shot-09/design-spatial/board-001-p003.png",
+      "sha256": "583db143d52fe9f89bba32873f6f2fc4937c8d99308fdb3114a0fd4fa4b408a9",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-001/exit.png",
+          "width": 1062,
+          "height": 1237
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/hall-shot-09/design-spatial/board-001-p004.png",
+      "sha256": "51b4c086e123ec4934d7ce18b4d810fda4fb188b31b593ac6bdc32a06da38d5f",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [
+        {
+          "path": "blocking-complete/scene-001/shot-001/movement.png",
+          "width": 1062,
+          "height": 1500
+        }
+      ],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Middle-column spatial diagram substantial and legible at source resolution; full image bounds retained."
+      ]
+    },
+    {
+      "path": "shanyin-director-master/examples/hall-shot-09/design-spatial/board-001-p005.png",
+      "sha256": "ef481f5f4c2703881947be816cfeaef5541040db39342c0719ed2bd06756a5c8",
+      "manifest_hash_matches": true,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "actually_viewed": true,
+      "bounds_and_overlap_errors": [],
+      "spatial_images": [],
+      "findings": [
+        "Actually viewed: no visible board text/image clipping or unintended overlap.",
+        "Continuation header explicitly says pages add no duration; schematic and manual-review status visible.",
+        "Nonblocking: sparse continuation page contains only three pending tone/dynamics/approach fields; no missing spatial coverage."
+      ]
+    }
+  ]
+}

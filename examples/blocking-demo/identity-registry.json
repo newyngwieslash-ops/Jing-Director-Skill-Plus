@@ -1,0 +1,21 @@
+{
+  "schema_version": "character-identity-1",
+  "project_id": "blocking-demo",
+  "revision": 1,
+  "characters": [
+    {
+      "character_id": "A",
+      "short_code": "C001",
+      "color": "#BE123C",
+      "marker_shape": "circle",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "B",
+      "short_code": "C002",
+      "color": "#1D4ED8",
+      "marker_shape": "square",
+      "path_style": "solid"
+    }
+  ]
+}

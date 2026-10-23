@@ -1,0 +1,797 @@
+{
+  "total": 66,
+  "failures": [],
+  "results": [
+    {
+      "name": "baseline",
+      "ok": true,
+      "expected": true,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-schema_version",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_FIELDS",
+        "IDENTITY_VERSION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-project_id",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_FIELDS",
+        "IDENTITY_PROJECT"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-revision",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_FIELDS",
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-characters",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_FIELDS",
+        "IDENTITY_CHARACTERS"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-None",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-False",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-True",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision--1",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-0",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-1.5",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-'1'",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-[]",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "revision-{}",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_REVISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-None",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-False",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-17",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-[]",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-{}",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-''",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "character_id-'   '",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-character-character_id",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_FIELDS",
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-None",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-False",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-17",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-[]",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-{}",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-''",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "short_code-'   '",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-character-short_code",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_FIELDS",
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-None",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-False",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-17",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-[]",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-{}",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-''",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "color-'   '",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-character-color",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_FIELDS",
+        "IDENTITY_COLOR"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-None",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-False",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-17",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-[]",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-{}",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-''",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "marker_shape-'   '",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-character-marker_shape",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_FIELDS",
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-None",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-False",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-17",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-[]",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-{}",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-''",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "path_style-'   '",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-character-path_style",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_FIELDS",
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "duplicate-id",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_ID"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "duplicate-code",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHORT_CODE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "missing-person",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_CHARACTER_MISSING"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "cast-color-diverged",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_COLOR_MISMATCH"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "unknown-shape",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_SHAPE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "unknown-path-style",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_PATH_STYLE"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "same-color-shape-style-collision",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_VISUAL_COLLISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "same-color-shape-different-style-collision",
+      "ok": false,
+      "expected": false,
+      "passed": true,
+      "errors": [
+        "IDENTITY_VISUAL_COLLISION"
+      ],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "registry-reorder",
+      "ok": true,
+      "expected": true,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "cast-reorder",
+      "ok": true,
+      "expected": true,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "scene-cast-reorder",
+      "ok": true,
+      "expected": true,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "name": "append-unseen-registry-person",
+      "ok": true,
+      "expected": true,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "MANUAL_REVIEW"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "contract_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "subjects": [
+    {
+      "subject_id": "A",
+      "kind": "individual",
+      "member_ids": [
+        "A"
+      ],
+      "expected_count": 1,
+      "evidence": [
+        {
+          "source_shot_no": "1",
+          "field": "action",
+          "quote": "林晓"
+        }
+      ]
+    },
+    {
+      "subject_id": "B",
+      "kind": "individual",
+      "member_ids": [
+        "B"
+      ],
+      "expected_count": 1,
+      "evidence": [
+        {
+          "source_shot_no": "1",
+          "field": "action",
+          "quote": "周衡"
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "cast_ids": [
+        "A",
+        "B"
+      ],
+      "expected_count": 2
+    },
+    {
+      "scene_id": "SC02",
+      "cast_ids": [],
+      "expected_count": 0
+    }
+  ]
+}

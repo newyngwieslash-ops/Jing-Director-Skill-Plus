@@ -1,0 +1,32 @@
+subject_definitions:
+<Subject 1>: <Picture 1> provides identity: The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist.
+<Subject 2>: <Picture 2> provides scene: Approved hall depth, glass displays, warm-white lights and transverse foreground passage.
+<Picture 3>: <Picture 3> provides composition: Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view.
+<Picture 4>: <Picture 4> provides composition: Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs.
+<Subject 3>: <Picture 5> provides prop: The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage.
+
+summary:
+[reference generation] A 10-second 16:9 video with 1 shot(s). <Subject 1> <Subject 2> <Picture 3> <Picture 4> <Subject 3> retain the roles specified below.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - Retain the defined reference role; follow the shot timeline for changing poses and framing.
+<Subject 2> (appears in [Shot 1]): fully_preserved - Retain the defined reference role; follow the shot timeline for changing poses and framing.
+<Picture 3> (appears in [Shot 1]): fully_preserved - Retain the defined reference role; follow the shot timeline for changing poses and framing.
+<Picture 4> (appears in [Shot 1]): fully_preserved - Retain the defined reference role; follow the shot timeline for changing poses and framing.
+<Subject 3> (appears in [Shot 1]): fully_preserved - Retain the defined reference role; follow the shot timeline for changing poses and framing.
+
+detailed_description:
+A realistic urban heritage exhibition hall under soft warm-white lighting. Keep the approved wardrobe and display cases.
+[Shot 1] Low side-on medium-wide framing. The boy is in the left foreground; a single blue balloon floats ahead and above him with its string around his wrist. The near-side metal stand base is visible ahead on the right. The rear-left party and the right-side explanation group remain in their established areas.
+In this shot, <Subject 1> guides identity; <Subject 2> guides scene; <Picture 3> guides composition; <Picture 4> guides composition; <Subject 3> guides prop.
+From 0 to 2 seconds, The boy runs right after the balloon ahead of him; both adult groups remain in the background. The camera translates a short distance to the right with him; the base shifts against the distant display cases through visible parallax. Quick footsteps, the child laughing and light balloon slapping sounds.
+From 2 to 7 seconds, The boy continues right through the physically available transverse passage, with the base ahead still in frame and the string remaining around his wrist. The camera is now locked off; no further translation, push-in or change of axis side. Footsteps and balloon sounds continue over subdued hall ambience, without new intelligible dialogue.
+From 7 to 10 seconds, The boy continues right toward the floor area before the base, without tripping, colliding or changing the stand state. Hold the locked medium-wide composition so the boy, base ahead and floor relationship share the ending frame. Finish on footsteps, the child laughing and balloon sounds, without an early crash or shattering sound.
+At the ending, the boy is still before the base and moving right. His shoe has not tripped on the floor seam and his body has not contacted the stand. Balloon, embroidery and adult positions remain continuous.
+Preserve left-to-right motion, the wrist string, both adult groups and the intact embroidery and stand. Use real-time motion; end before any trip or collision.
+
+overall_soundscape:
+Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue.
+
+non_diegetic_music:
+N/A

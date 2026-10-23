@@ -1,0 +1,39 @@
+{
+  "schema_version": "3.0.0",
+  "nodes": [
+    {
+      "shot_id": "S009",
+      "scene_id": "scene_exhibition_hall",
+      "axis_id": "boy_crossing_corridor",
+      "axis_side": "A",
+      "entry": {
+        "stand.condition": "intact_unmoved",
+        "embroidery.condition": "intact",
+        "balloon.count": 1,
+        "balloon.string": "around_boy_wrist",
+        "left_group.logical_people": 6,
+        "right_group.logical_people": 3,
+        "boy.screen_direction": "left_to_right",
+        "boy.contact": "none",
+        "boy.position": "left_foreground_corridor"
+      },
+      "exit": {
+        "stand.condition": "intact_unmoved",
+        "embroidery.condition": "intact",
+        "balloon.count": 1,
+        "balloon.string": "around_boy_wrist",
+        "left_group.logical_people": 6,
+        "right_group.logical_people": 3,
+        "boy.screen_direction": "left_to_right",
+        "boy.contact": "none",
+        "boy.position": "right_foreground_before_floor_seam_and_base"
+      },
+      "lookahead_source_shots": [
+        "10",
+        "11"
+      ]
+    }
+  ],
+  "edges": [],
+  "status": "explicit_state_graph_not_visual_proof"
+}

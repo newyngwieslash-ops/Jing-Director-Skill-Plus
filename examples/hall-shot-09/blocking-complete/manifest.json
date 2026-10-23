@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.2",
+  "identity_legend": [
+    {
+      "character_id": "xiao_nan_hai",
+      "name": "男孩",
+      "short_code": "C001",
+      "color": "#D55E00",
+      "marker_shape": "circle",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "lu_jing_tian",
+      "name": "父亲（合同ID）",
+      "short_code": "C002",
+      "color": "#0072B2",
+      "marker_shape": "square",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "employee_1",
+      "name": "员工1（跟踪编号）",
+      "short_code": "C003",
+      "color": "#008060",
+      "marker_shape": "diamond",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "employee_2",
+      "name": "员工2（跟踪编号）",
+      "short_code": "C004",
+      "color": "#A04E86",
+      "marker_shape": "triangle",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "employee_3",
+      "name": "员工3（跟踪编号）",
+      "short_code": "C005",
+      "color": "#A96500",
+      "marker_shape": "circle",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "employee_4",
+      "name": "员工4（跟踪编号）",
+      "short_code": "C006",
+      "color": "#167D9A",
+      "marker_shape": "triangle",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "lu_chen",
+      "name": "陆宸",
+      "short_code": "C007",
+      "color": "#6F4C9B",
+      "marker_shape": "diamond",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "er_ma_duo",
+      "name": "尔玛朵",
+      "short_code": "C008",
+      "color": "#8C564B",
+      "marker_shape": "triangle",
+      "path_style": "dashed"
+    },
+    {
+      "character_id": "tourist_1",
+      "name": "游客1（跟踪编号）",
+      "short_code": "C009",
+      "color": "#595959",
+      "marker_shape": "circle",
+      "path_style": "dotted"
+    },
+    {
+      "character_id": "tourist_2",
+      "name": "游客2（跟踪编号）",
+      "short_code": "C010",
+      "color": "#777318",
+      "marker_shape": "square",
+      "path_style": "dotted"
+    }
+  ],
+  "identity_registry": {
+    "path": "identity-registry.json",
+    "sha256": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5"
+  },
+  "identity_registry_sha256": "52680e1b42d5f8f6ae76fc7214ad4a420f797df6718c2b0b669df47ab43d9130",
+  "identity_binding": {
+    "project_id": "hall-shot-09",
+    "revision": 2,
+    "registry_sha256": "52680e1b42d5f8f6ae76fc7214ad4a420f797df6718c2b0b669df47ab43d9130"
+  },
+  "source_contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "spec_sha256": "8936707de400de4c584e9e793a65b3df3bd0077848b9f098d5956903e818a038",
+  "review_status": "needs_manual_review",
+  "scenes": [
+    {
+      "scene_id": "scene_exhibition_hall",
+      "location_id": "hall",
+      "cast_ids": [
+        "xiao_nan_hai",
+        "lu_jing_tian",
+        "employee_1",
+        "employee_2",
+        "employee_3",
+        "employee_4",
+        "lu_chen",
+        "er_ma_duo",
+        "tourist_1",
+        "tourist_2"
+      ],
+      "identity_legend": [
+        {
+          "character_id": "xiao_nan_hai",
+          "name": "男孩",
+          "short_code": "C001",
+          "color": "#D55E00",
+          "marker_shape": "circle",
+          "path_style": "solid"
+        },
+        {
+          "character_id": "lu_jing_tian",
+          "name": "父亲（合同ID）",
+          "short_code": "C002",
+          "color": "#0072B2",
+          "marker_shape": "square",
+          "path_style": "solid"
+        },
+        {
+          "character_id": "employee_1",
+          "name": "员工1（跟踪编号）",
+          "short_code": "C003",
+          "color": "#008060",
+          "marker_shape": "diamond",
+          "path_style": "solid"
+        },
+        {
+          "character_id": "employee_2",
+          "name": "员工2（跟踪编号）",
+          "short_code": "C004",
+          "color": "#A04E86",
+          "marker_shape": "triangle",
+          "path_style": "solid"
+        },
+        {
+          "character_id": "employee_3",
+          "name": "员工3（跟踪编号）",
+          "short_code": "C005",
+          "color": "#A96500",
+          "marker_shape": "circle",
+          "path_style": "dashed"
+        },
+        {
+          "character_id": "employee_4",
+          "name": "员工4（跟踪编号）",
+          "short_code": "C006",
+          "color": "#167D9A",
+          "marker_shape": "triangle",
+          "path_style": "dashed"
+        },
+        {
+          "character_id": "lu_chen",
+          "name": "陆宸",
+          "short_code": "C007",
+          "color": "#6F4C9B",
+          "marker_shape": "diamond",
+          "path_style": "dashed"
+        },
+        {
+          "character_id": "er_ma_duo",
+          "name": "尔玛朵",
+          "short_code": "C008",
+          "color": "#8C564B",
+          "marker_shape": "triangle",
+          "path_style": "dashed"
+        },
+        {
+          "character_id": "tourist_1",
+          "name": "游客1（跟踪编号）",
+          "short_code": "C009",
+          "color": "#595959",
+          "marker_shape": "circle",
+          "path_style": "dotted"
+        },
+        {
+          "character_id": "tourist_2",
+          "name": "游客2（跟踪编号）",
+          "short_code": "C010",
+          "color": "#777318",
+          "marker_shape": "square",
+          "path_style": "dotted"
+        }
+      ],
+      "shots": [
+        {
+          "shot_id": "S009",
+          "source_shot_no": "9",
+          "entry": {
+            "svg": {
+              "path": "scene-001/shot-001/entry.svg",
+              "sha256": "a39006ad88706f00a429baeb65c96c8b95c21bd8363cae4cd01379a37dc85e90"
+            },
+            "png": {
+              "path": "scene-001/shot-001/entry.png",
+              "sha256": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e"
+            }
+          },
+          "exit": {
+            "svg": {
+              "path": "scene-001/shot-001/exit.svg",
+              "sha256": "969479f367b962d3044722ac889c900ab9f6b3a319890a2c11684a64daf75e41"
+            },
+            "png": {
+              "path": "scene-001/shot-001/exit.png",
+              "sha256": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24"
+            }
+          },
+          "movement": {
+            "svg": {
+              "path": "scene-001/shot-001/movement.svg",
+              "sha256": "7d0a63d15b927a5021b69a63a4a87339a6104591f781bf2ea808485ff6975e8e"
+            },
+            "png": {
+              "path": "scene-001/shot-001/movement.png",
+              "sha256": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0"
+            }
+          }
+        }
+      ],
+      "files": [],
+      "overview": {
+        "svg": {
+          "path": "scene-001/overview.svg",
+          "sha256": "3ac63ef45f5ce2dcc0bdacb874b011b3e3c7af69c2f32aae7355f183401612eb"
+        },
+        "png": {
+          "path": "scene-001/overview.png",
+          "sha256": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d"
+        }
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "scene-001/overview.svg",
+      "sha256": "3ac63ef45f5ce2dcc0bdacb874b011b3e3c7af69c2f32aae7355f183401612eb"
+    },
+    {
+      "path": "scene-001/overview.png",
+      "sha256": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d"
+    },
+    {
+      "path": "scene-001/shot-001/entry.svg",
+      "sha256": "a39006ad88706f00a429baeb65c96c8b95c21bd8363cae4cd01379a37dc85e90"
+    },
+    {
+      "path": "scene-001/shot-001/entry.png",
+      "sha256": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e"
+    },
+    {
+      "path": "scene-001/shot-001/exit.svg",
+      "sha256": "969479f367b962d3044722ac889c900ab9f6b3a319890a2c11684a64daf75e41"
+    },
+    {
+      "path": "scene-001/shot-001/exit.png",
+      "sha256": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24"
+    },
+    {
+      "path": "scene-001/shot-001/movement.svg",
+      "sha256": "7d0a63d15b927a5021b69a63a4a87339a6104591f781bf2ea808485ff6975e8e"
+    },
+    {
+      "path": "scene-001/shot-001/movement.png",
+      "sha256": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0"
+    },
+    {
+      "path": "coverage.json",
+      "sha256": "7d4b85532140f54a5a75da427a0116028c6bc4cfcb50bab9e5c1bc333b1e5653"
+    },
+    {
+      "path": "blocking.json",
+      "sha256": "e23625ed0f92d85c319ab1898620829481cf4bb1e59730e95a2c75695ee23e97"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "704422f7ffb95aa71761348b15ae856502ce78c629bf3b5caf2e6ad4f88c48b1"
+    },
+    {
+      "path": "identity-registry.json",
+      "sha256": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5"
+    },
+    {
+      "path": "index.html",
+      "sha256": "53cdde6db9e179c8ca0930a8e7d605865acf4fd8f6ccbadd8ea4bde212476238"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "2bb771bcdb6a68c07a93f27e19ba4fe333493dba9de5f89b090498a44ffa37e0"
+    }
+  ],
+  "coverage": {
+    "path": "coverage.json",
+    "sha256": "7d4b85532140f54a5a75da427a0116028c6bc4cfcb50bab9e5c1bc333b1e5653"
+  },
+  "blocking_spec": {
+    "path": "blocking.json",
+    "sha256": "e23625ed0f92d85c319ab1898620829481cf4bb1e59730e95a2c75695ee23e97"
+  },
+  "roster": {
+    "path": "roster.json",
+    "sha256": "704422f7ffb95aa71761348b15ae856502ce78c629bf3b5caf2e6ad4f88c48b1"
+  },
+  "roster_sha256": "2f21455482f688210094cfd878fb287cb87507ab4b9409663224ae9b806c1bf2",
+  "hash_scope": "Every delivered file except manifest.json (no self-hash)",
+  "rendering": "Shared validated geometry; SVG and Pillow PNG independently drawn",
+  "total_png_pixels": 6349200
+}

@@ -1,0 +1,1012 @@
+{
+  "schema_version": "design-board-1.2",
+  "renderer_version": "design-board-1.2",
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "review_plan_sha256": "4e57b47c2c148965f9abde484a849003cf79d75a352460d4bef37c0c09bcfb69",
+  "review_plan_input_sha256": null,
+  "design_spec_sha256": "a939ced7fee9bd1802ab2b5c2f5f625261223196f2a3f6d4c00470c4f951fbce",
+  "input_asset_sha256": {
+    "blocking-complete/manifest.json": "2a7206f79902c277b2b9800b5abe2b08fa963c826f06aabf2c2b98de64872380",
+    "identity-registry.json": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5",
+    "blocking-complete/blocking.json": "e23625ed0f92d85c319ab1898620829481cf4bb1e59730e95a2c75695ee23e97",
+    "blocking-complete/roster.json": "704422f7ffb95aa71761348b15ae856502ce78c629bf3b5caf2e6ad4f88c48b1",
+    "blocking-complete/coverage.json": "7d4b85532140f54a5a75da427a0116028c6bc4cfcb50bab9e5c1bc333b1e5653",
+    "blocking-complete/identity-registry.json": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5",
+    "blocking-complete/scene-001/overview.svg": "3ac63ef45f5ce2dcc0bdacb874b011b3e3c7af69c2f32aae7355f183401612eb",
+    "blocking-complete/scene-001/overview.png": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d",
+    "blocking-complete/scene-001/shot-001/entry.svg": "a39006ad88706f00a429baeb65c96c8b95c21bd8363cae4cd01379a37dc85e90",
+    "blocking-complete/scene-001/shot-001/entry.png": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e",
+    "blocking-complete/scene-001/shot-001/exit.svg": "969479f367b962d3044722ac889c900ab9f6b3a319890a2c11684a64daf75e41",
+    "blocking-complete/scene-001/shot-001/exit.png": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24",
+    "blocking-complete/scene-001/shot-001/movement.svg": "7d0a63d15b927a5021b69a63a4a87339a6104591f781bf2ea808485ff6975e8e",
+    "blocking-complete/scene-001/shot-001/movement.png": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0",
+    "blocking-complete/index.html": "53cdde6db9e179c8ca0930a8e7d605865acf4fd8f6ccbadd8ea4bde212476238",
+    "blocking-complete/validation.json": "2bb771bcdb6a68c07a93f27e19ba4fe333493dba9de5f89b090498a44ffa37e0"
+  },
+  "font_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+  "canvas": {
+    "width": 3840,
+    "height": 2160,
+    "aspect_ratio": "16:9"
+  },
+  "total_duration_sec": 10,
+  "pages": [
+    {
+      "page_id": "board-001-p001",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 1,
+      "page_count": 5,
+      "window_duration_sec": 10,
+      "adds_duration_sec": 0,
+      "scene_id": "scene_exhibition_hall",
+      "items": [
+        {
+          "id": "RW-001:characters",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "x": 80,
+          "y": 270,
+          "width": 880,
+          "height": 400
+        },
+        {
+          "id": "RW-001:plate-status",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "场景底图未提供；以下为空间示意，不是生成画面。",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:overview:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "场景总览 · schematic / needs_manual_review",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:overview",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/overview.png",
+          "sha256": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d",
+          "display_height": 1315,
+          "x": 1024,
+          "y": 398,
+          "width": 1062,
+          "height": 1315
+        },
+        {
+          "id": "RW-001:coverage",
+          "kind": "text",
+          "start": 0,
+          "end": 61,
+          "text": "逐镜覆盖清单 / scene_exhibition_hall / complete / 角色 employee_1, em",
+          "x": 1024,
+          "y": 1733,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:coverage",
+          "kind": "text",
+          "start": 61,
+          "end": 128,
+          "text": "ployee_2, employee_3, employee_4, er_ma_duo, lu_chen, lu_jing_tian,",
+          "x": 1024,
+          "y": 1781,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:coverage",
+          "kind": "text",
+          "start": 128,
+          "end": 163,
+          "text": " tourist_1, tourist_2, xiao_nan_hai",
+          "x": 1024,
+          "y": 1829,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:coverage:S009",
+          "kind": "text",
+          "start": 0,
+          "end": 61,
+          "text": "S009 / complete / 应有角色 employee_1, employee_2, employee_3, em",
+          "x": 1024,
+          "y": 1893,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:coverage:S009",
+          "kind": "text",
+          "start": 61,
+          "end": 132,
+          "text": "ployee_4, er_ma_duo, lu_chen, lu_jing_tian, tourist_1, tourist_2, xiao_",
+          "x": 1024,
+          "y": 1941,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:time",
+          "kind": "text",
+          "start": 0,
+          "end": 32,
+          "text": "S009 / 原镜 9 / 0–10s（镜内时间；分页不是剪切）",
+          "x": 2150,
+          "y": 270,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S009-entry / entry / 0s",
+          "x": 2150,
+          "y": 334,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-entry",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 398,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S009:frame:S009-entry:state",
+          "kind": "text",
+          "start": 0,
+          "end": 35,
+          "text": "男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。",
+          "x": 2150,
+          "y": 818,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-entry:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 882,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-trigger:label",
+          "kind": "text",
+          "start": 0,
+          "end": 27,
+          "text": "S009-trigger / trigger / 2s",
+          "x": 2150,
+          "y": 946,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-trigger",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 1010,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S009:frame:S009-trigger:state",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "向右平移到停止机位的时刻。男孩仍在运动中，前方底座与右侧讲解组保持空间区分。",
+          "x": 2150,
+          "y": 1430,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-trigger:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 1494,
+          "width": 1610,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p002",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 2,
+      "page_count": 5,
+      "window_duration_sec": 10,
+      "adds_duration_sec": 0,
+      "scene_id": "scene_exhibition_hall",
+      "items": [
+        {
+          "id": "RW-001:coverage:S009",
+          "kind": "text",
+          "start": 132,
+          "end": 196,
+          "text": "nan_hai / 实有角色 xiao_nan_hai, lu_jing_tian, employee_1, employee_",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:coverage:S009",
+          "kind": "text",
+          "start": 196,
+          "end": 263,
+          "text": "2, employee_3, employee_4, lu_chen, er_ma_duo, tourist_1, tourist_2",
+          "x": 1024,
+          "y": 318,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S009:entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S009 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 382,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S009:entry",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-001/entry.png",
+          "sha256": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e",
+          "display_height": 1289,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S009",
+          "blocking_phase": "entry",
+          "x": 1024,
+          "y": 446,
+          "width": 1062,
+          "height": 1289
+        },
+        {
+          "id": "RW-001:S009:frame:S009-development:label",
+          "kind": "text",
+          "start": 0,
+          "end": 35,
+          "text": "S009-development / development / 7s",
+          "x": 2150,
+          "y": 270,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-development",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 334,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S009:frame:S009-development:state",
+          "kind": "text",
+          "start": 0,
+          "end": 46,
+          "text": "固定机位下，男孩比上一状态更靠近右侧底座前区域，鞋与地缝尚未发生绊脚接触；绣面和展架仍完整。",
+          "x": 2150,
+          "y": 754,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-development:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 818,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 22,
+          "text": "S009-exit / exit / 10s",
+          "x": 2150,
+          "y": 882,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-exit",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 946,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S009:frame:S009-exit:state",
+          "kind": "text",
+          "start": 0,
+          "end": 49,
+          "text": "固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。",
+          "x": 2150,
+          "y": 1366,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:frame:S009-exit:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 1430,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:0:timing",
+          "kind": "text",
+          "start": 0,
+          "end": 27,
+          "text": "beats 0–2s / 完整原项；跨窗重复仅供上下文",
+          "x": 2150,
+          "y": 1494,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:0:action",
+          "kind": "text",
+          "start": 0,
+          "end": 24,
+          "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+          "x": 2150,
+          "y": 1558,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:0:camera",
+          "kind": "text",
+          "start": 0,
+          "end": 26,
+          "text": "摄影机向右短距平移跟随，底座与远处展柜产生可见视差。",
+          "x": 2150,
+          "y": 1622,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:0:sound",
+          "kind": "text",
+          "start": 0,
+          "end": 16,
+          "text": "急促脚步、小孩笑声和气球拍打声。",
+          "x": 2150,
+          "y": 1686,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:1:timing",
+          "kind": "text",
+          "start": 0,
+          "end": 27,
+          "text": "beats 2–7s / 完整原项；跨窗重复仅供上下文",
+          "x": 2150,
+          "y": 1750,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:1:action",
+          "kind": "text",
+          "start": 0,
+          "end": 34,
+          "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+          "x": 2150,
+          "y": 1814,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:1:camera",
+          "kind": "text",
+          "start": 0,
+          "end": 24,
+          "text": "摄影机固定，不继续跟移，不推近，不改变拍摄轴侧。",
+          "x": 2150,
+          "y": 1878,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:1:sound",
+          "kind": "text",
+          "start": 0,
+          "end": 31,
+          "text": "脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。",
+          "x": 2150,
+          "y": 1942,
+          "width": 1610,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p003",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 3,
+      "page_count": 5,
+      "window_duration_sec": 10,
+      "adds_duration_sec": 0,
+      "scene_id": "scene_exhibition_hall",
+      "items": [
+        {
+          "id": "RW-001:blocking:S009:exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S009 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S009:exit",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-001/exit.png",
+          "sha256": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24",
+          "display_height": 1289,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S009",
+          "blocking_phase": "exit",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1289
+        },
+        {
+          "id": "RW-001:S009:beats:2:timing",
+          "kind": "text",
+          "start": 0,
+          "end": 28,
+          "text": "beats 7–10s / 完整原项；跨窗重复仅供上下文",
+          "x": 2150,
+          "y": 270,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:2:action",
+          "kind": "text",
+          "start": 0,
+          "end": 30,
+          "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+          "x": 2150,
+          "y": 334,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:2:camera",
+          "kind": "text",
+          "start": 0,
+          "end": 26,
+          "text": "保持固定中远景，让男孩、前方底座及地面关系同框收尾。",
+          "x": 2150,
+          "y": 398,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:beats:2:sound",
+          "kind": "text",
+          "start": 0,
+          "end": 28,
+          "text": "脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。",
+          "x": 2150,
+          "y": 462,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S009:soundscape",
+          "kind": "text",
+          "start": 0,
+          "end": 30,
+          "text": "室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。",
+          "x": 2150,
+          "y": 526,
+          "width": 1610,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p004",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 4,
+      "page_count": 5,
+      "window_duration_sec": 10,
+      "adds_duration_sec": 0,
+      "scene_id": "scene_exhibition_hall",
+      "items": [
+        {
+          "id": "RW-001:blocking:S009:movement:label",
+          "kind": "text",
+          "start": 0,
+          "end": 37,
+          "text": "S009 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S009:movement",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-001/movement.png",
+          "sha256": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0",
+          "display_height": 1500,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S009",
+          "blocking_phase": "movement",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1500
+        },
+        {
+          "id": "RW-001:blocking-status",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "全项目逐镜空间覆盖与字节绑定已核验；示意图 schematic，剧情与空间关",
+          "x": 1024,
+          "y": 1854,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking-status",
+          "kind": "text",
+          "start": 38,
+          "end": 46,
+          "text": "系仍须人工审核。",
+          "x": 1024,
+          "y": 1902,
+          "width": 1062,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p005",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 5,
+      "page_count": 5,
+      "window_duration_sec": 10,
+      "adds_duration_sec": 0,
+      "scene_id": "scene_exhibition_hall",
+      "items": [
+        {
+          "id": "RW-001:footer:tone:label",
+          "kind": "text",
+          "start": 0,
+          "end": 9,
+          "text": "tone · 待定",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:footer:character_dynamics:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "character_dynamics · 待定",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:footer:cinematic_approach:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "cinematic_approach · 待定",
+          "x": 1024,
+          "y": 398,
+          "width": 1062,
+          "height": 48
+        }
+      ]
+    }
+  ],
+  "source_items": [
+    {
+      "id": "RW-001:characters",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400
+    },
+    {
+      "id": "RW-001:plate-status",
+      "kind": "text",
+      "text": "场景底图未提供；以下为空间示意，不是生成画面。"
+    },
+    {
+      "id": "RW-001:overview:label",
+      "kind": "text",
+      "text": "场景总览 · schematic / needs_manual_review"
+    },
+    {
+      "id": "RW-001:overview",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/overview.png",
+      "sha256": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d",
+      "display_height": 1315
+    },
+    {
+      "id": "RW-001:coverage",
+      "kind": "text",
+      "text": "逐镜覆盖清单 / scene_exhibition_hall / complete / 角色 employee_1, employee_2, employee_3, employee_4, er_ma_duo, lu_chen, lu_jing_tian, tourist_1, tourist_2, xiao_nan_hai"
+    },
+    {
+      "id": "RW-001:coverage:S009",
+      "kind": "text",
+      "text": "S009 / complete / 应有角色 employee_1, employee_2, employee_3, employee_4, er_ma_duo, lu_chen, lu_jing_tian, tourist_1, tourist_2, xiao_nan_hai / 实有角色 xiao_nan_hai, lu_jing_tian, employee_1, employee_2, employee_3, employee_4, lu_chen, er_ma_duo, tourist_1, tourist_2"
+    },
+    {
+      "id": "RW-001:blocking:S009:entry:label",
+      "kind": "text",
+      "text": "S009 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S009:entry",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-001/entry.png",
+      "sha256": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e",
+      "display_height": 1289,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S009",
+      "blocking_phase": "entry"
+    },
+    {
+      "id": "RW-001:blocking:S009:exit:label",
+      "kind": "text",
+      "text": "S009 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S009:exit",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-001/exit.png",
+      "sha256": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24",
+      "display_height": 1289,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S009",
+      "blocking_phase": "exit"
+    },
+    {
+      "id": "RW-001:blocking:S009:movement:label",
+      "kind": "text",
+      "text": "S009 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S009:movement",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-001/movement.png",
+      "sha256": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0",
+      "display_height": 1500,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S009",
+      "blocking_phase": "movement"
+    },
+    {
+      "id": "RW-001:blocking-status",
+      "kind": "text",
+      "text": "全项目逐镜空间覆盖与字节绑定已核验；示意图 schematic，剧情与空间关系仍须人工审核。"
+    },
+    {
+      "id": "RW-001:footer:tone:label",
+      "kind": "text",
+      "text": "tone · 待定"
+    },
+    {
+      "id": "RW-001:footer:character_dynamics:label",
+      "kind": "text",
+      "text": "character_dynamics · 待定"
+    },
+    {
+      "id": "RW-001:footer:cinematic_approach:label",
+      "kind": "text",
+      "text": "cinematic_approach · 待定"
+    },
+    {
+      "id": "RW-001:S009:time",
+      "kind": "text",
+      "text": "S009 / 原镜 9 / 0–10s（镜内时间；分页不是剪切）"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-entry:label",
+      "kind": "text",
+      "text": "S009-entry / entry / 0s"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-entry",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S009:frame:S009-entry:state",
+      "kind": "text",
+      "text": "男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-entry:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-trigger:label",
+      "kind": "text",
+      "text": "S009-trigger / trigger / 2s"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-trigger",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S009:frame:S009-trigger:state",
+      "kind": "text",
+      "text": "向右平移到停止机位的时刻。男孩仍在运动中，前方底座与右侧讲解组保持空间区分。"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-trigger:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-development:label",
+      "kind": "text",
+      "text": "S009-development / development / 7s"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-development",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S009:frame:S009-development:state",
+      "kind": "text",
+      "text": "固定机位下，男孩比上一状态更靠近右侧底座前区域，鞋与地缝尚未发生绊脚接触；绣面和展架仍完整。"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-development:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-exit:label",
+      "kind": "text",
+      "text": "S009-exit / exit / 10s"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-exit",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S009:frame:S009-exit:state",
+      "kind": "text",
+      "text": "固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。"
+    },
+    {
+      "id": "RW-001:S009:frame:S009-exit:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S009:beats:0:timing",
+      "kind": "text",
+      "text": "beats 0–2s / 完整原项；跨窗重复仅供上下文"
+    },
+    {
+      "id": "RW-001:S009:beats:0:action",
+      "kind": "text",
+      "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+    },
+    {
+      "id": "RW-001:S009:beats:0:camera",
+      "kind": "text",
+      "text": "摄影机向右短距平移跟随，底座与远处展柜产生可见视差。"
+    },
+    {
+      "id": "RW-001:S009:beats:0:sound",
+      "kind": "text",
+      "text": "急促脚步、小孩笑声和气球拍打声。"
+    },
+    {
+      "id": "RW-001:S009:beats:1:timing",
+      "kind": "text",
+      "text": "beats 2–7s / 完整原项；跨窗重复仅供上下文"
+    },
+    {
+      "id": "RW-001:S009:beats:1:action",
+      "kind": "text",
+      "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+    },
+    {
+      "id": "RW-001:S009:beats:1:camera",
+      "kind": "text",
+      "text": "摄影机固定，不继续跟移，不推近，不改变拍摄轴侧。"
+    },
+    {
+      "id": "RW-001:S009:beats:1:sound",
+      "kind": "text",
+      "text": "脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。"
+    },
+    {
+      "id": "RW-001:S009:beats:2:timing",
+      "kind": "text",
+      "text": "beats 7–10s / 完整原项；跨窗重复仅供上下文"
+    },
+    {
+      "id": "RW-001:S009:beats:2:action",
+      "kind": "text",
+      "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+    },
+    {
+      "id": "RW-001:S009:beats:2:camera",
+      "kind": "text",
+      "text": "保持固定中远景，让男孩、前方底座及地面关系同框收尾。"
+    },
+    {
+      "id": "RW-001:S009:beats:2:sound",
+      "kind": "text",
+      "text": "脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。"
+    },
+    {
+      "id": "RW-001:S009:soundscape",
+      "kind": "text",
+      "text": "室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。"
+    }
+  ],
+  "output_sha256": {
+    "board-001-p001.png": "8a56863995227454c66fa5a1b0d61c03ed8630890a64521e6dd36acf3947d300",
+    "board-001-p002.png": "f093b1eb3b593032dc2cf2d14b9053be360f6f6ae0ed031ae9d59dd043d81031",
+    "board-001-p003.png": "44329b855956cc95e66923830d94f709fac651b8a04826c593fbc1eb800705fc",
+    "board-001-p004.png": "1910b85e42175d3f60d5dd3049eac695298831d047cbc0ddc59c35a84d46e095",
+    "board-001-p005.png": "ef481f5f4c2703881947be816cfeaef5541040db39342c0719ed2bd06756a5c8",
+    "index.html": "40d576b941e57e602929876266dd5e82eed66f47a38c5ebba519c900142c9829"
+  },
+  "issues": [
+    {
+      "item_id": "RW-001:characters",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S009:frame:S009-entry",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S009:frame:S009-trigger",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S009:frame:S009-development",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S009:frame:S009-exit",
+      "reason": "missing_image_mapping"
+    }
+  ],
+  "uncovered_items": [],
+  "resource_limits": {
+    "max_pages": 1000,
+    "max_items": 50000,
+    "max_text_characters": 1000000,
+    "max_raster_pixels": 40000000
+  },
+  "layout_checks": {
+    "text_ranges_lossless": true,
+    "fixed_canvas": true
+  },
+  "status": "draft",
+  "spatial_status": "spatial_complete_schematic",
+  "blocking_bundle": {
+    "manifest_path": "blocking-complete/manifest.json",
+    "manifest_sha256": "2a7206f79902c277b2b9800b5abe2b08fa963c826f06aabf2c2b98de64872380",
+    "identity_registry_path": "identity-registry.json",
+    "identity_registry_sha256": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5"
+  },
+  "visual_review": "needs_manual_review",
+  "html_pixel_parity": "not_verified_browser_font_dependent",
+  "unsupported": [
+    "SVG preview/conversion",
+    "blocking approval interpretation"
+  ]
+}

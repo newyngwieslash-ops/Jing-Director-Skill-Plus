@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "subjects": [
+    {
+      "subject_id": "xiao_nan_hai",
+      "kind": "individual",
+      "member_ids": [
+        "xiao_nan_hai"
+      ],
+      "expected_count": 1,
+      "evidence": [
+        {
+          "source_shot_no": "9",
+          "field": "action",
+          "quote": "xiao_nan_hai"
+        }
+      ]
+    },
+    {
+      "subject_id": "lu_jing_tian",
+      "kind": "individual",
+      "member_ids": [
+        "lu_jing_tian"
+      ],
+      "expected_count": 1,
+      "evidence": [
+        {
+          "source_shot_no": "9",
+          "field": "action",
+          "quote": "父亲"
+        }
+      ]
+    },
+    {
+      "subject_id": "staff_group_4",
+      "kind": "group",
+      "member_ids": [
+        "employee_1",
+        "employee_2",
+        "employee_3",
+        "employee_4"
+      ],
+      "expected_count": 4,
+      "evidence": [
+        {
+          "source_shot_no": "9",
+          "field": "action",
+          "quote": "四名员工"
+        }
+      ]
+    },
+    {
+      "subject_id": "lu_chen",
+      "kind": "individual",
+      "member_ids": [
+        "lu_chen"
+      ],
+      "expected_count": 1,
+      "evidence": [
+        {
+          "source_shot_no": "9",
+          "field": "action",
+          "quote": "陆宸"
+        }
+      ]
+    },
+    {
+      "subject_id": "er_ma_duo",
+      "kind": "individual",
+      "member_ids": [
+        "er_ma_duo"
+      ],
+      "expected_count": 1,
+      "evidence": [
+        {
+          "source_shot_no": "9",
+          "field": "action",
+          "quote": "尔玛朵"
+        }
+      ]
+    },
+    {
+      "subject_id": "tourist_pair",
+      "kind": "group",
+      "member_ids": [
+        "tourist_1",
+        "tourist_2"
+      ],
+      "expected_count": 2,
+      "evidence": [
+        {
+          "source_shot_no": "9",
+          "field": "action",
+          "quote": "两名游客"
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_exhibition_hall",
+      "cast_ids": [
+        "xiao_nan_hai",
+        "lu_jing_tian",
+        "employee_1",
+        "employee_2",
+        "employee_3",
+        "employee_4",
+        "lu_chen",
+        "er_ma_duo",
+        "tourist_1",
+        "tourist_2"
+      ],
+      "expected_count": 10
+    }
+  ]
+}

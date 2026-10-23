@@ -1,0 +1,307 @@
+{
+  "version": "4.4.0",
+  "scope": "Two supplied independent example projects only; no full production screenplay",
+  "automated_checks": [
+    {
+      "project": "blocking-demo",
+      "registry_revision": 1,
+      "registry_sha256": "a6626639020cd54883ef30351ad5124012bca626ca53a93e8b24828665569d71",
+      "source_contract_and_roster_unchanged": true,
+      "all_geometry_and_timing_unchanged": true,
+      "inventory_hashes_match": true,
+      "warning_codes": [
+        "MANUAL_REVIEW"
+      ]
+    },
+    {
+      "project": "hall-shot-09",
+      "registry_revision": 2,
+      "registry_sha256": "52680e1b42d5f8f6ae76fc7214ad4a420f797df6718c2b0b669df47ab43d9130",
+      "source_contract_and_roster_unchanged": true,
+      "all_geometry_and_timing_unchanged": true,
+      "inventory_hashes_match": true,
+      "warning_codes": [
+        "MANUAL_REVIEW",
+        "IDENTITY_NEAR_COLOR"
+      ]
+    }
+  ],
+  "views": [
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "overview",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/overview.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/overview.svg",
+      "png_sha256": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d",
+      "svg_sha256": "01347bb2c023a3c3a3259cd8aafd67332564ef3229b6f4006a20c3fc86f47147",
+      "dimensions": [
+        1100,
+        1119
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "S001/entry",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/shot-001/entry.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/shot-001/entry.svg",
+      "png_sha256": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc",
+      "svg_sha256": "7cacc949ebc714f0b629488d42cd16eba0377e3d7cbb9d103154be05bd004072",
+      "dimensions": [
+        1100,
+        1092
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "S001/exit",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/shot-001/exit.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/shot-001/exit.svg",
+      "png_sha256": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d",
+      "svg_sha256": "093b4237465e75be56da1aac42542f2784b9483e83654bddadb0e160578f9c18",
+      "dimensions": [
+        1100,
+        1092
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "S001/movement",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/shot-001/movement.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/shot-001/movement.svg",
+      "png_sha256": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130",
+      "svg_sha256": "4a7a3654b583ce71db72c2f8216d824eac3089f3f5db3e853e4ca5a6fa305161",
+      "dimensions": [
+        1100,
+        1146
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "S002/entry",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/shot-002/entry.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/shot-002/entry.svg",
+      "png_sha256": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81",
+      "svg_sha256": "b28c7b7edfed5e7158825322174ffa09ab4f01cd23cde1a7ed96d0a7042d9599",
+      "dimensions": [
+        1100,
+        1092
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "S002/exit",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/shot-002/exit.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/shot-002/exit.svg",
+      "png_sha256": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26",
+      "svg_sha256": "900aeea009c64d4d0b30676d85047af1b09937ff7e9828a5fdf44c290e4259d3",
+      "dimensions": [
+        1100,
+        1092
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC01",
+      "kind": "S002/movement",
+      "png": "examples/blocking-demo/blocking-complete/scene-001/shot-002/movement.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-001/shot-002/movement.svg",
+      "png_sha256": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31",
+      "svg_sha256": "e4778fb754f5d65caa5633a59d2df65c906dbbe1fc9cb6f539cef10a4bab73ac",
+      "dimensions": [
+        1100,
+        1146
+      ],
+      "role_count": 2,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC02",
+      "kind": "overview",
+      "png": "examples/blocking-demo/blocking-complete/scene-002/overview.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-002/overview.svg",
+      "png_sha256": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8",
+      "svg_sha256": "f010108a7e8addf2b71484b1d18b26b7376fb72da2a11d1255e5227d2c7caefb",
+      "dimensions": [
+        1100,
+        1011
+      ],
+      "role_count": 0,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "previous_view_byte_identical"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC02",
+      "kind": "S003/entry",
+      "png": "examples/blocking-demo/blocking-complete/scene-002/shot-001/entry.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-002/shot-001/entry.svg",
+      "png_sha256": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658",
+      "svg_sha256": "6e983a28dfcdf8caace1f242496e892b203c532fea497389e4c74608eb9ca74b",
+      "dimensions": [
+        1100,
+        984
+      ],
+      "role_count": 0,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "previous_view_byte_identical"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC02",
+      "kind": "S003/exit",
+      "png": "examples/blocking-demo/blocking-complete/scene-002/shot-001/exit.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-002/shot-001/exit.svg",
+      "png_sha256": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870",
+      "svg_sha256": "8fd4371e7bc9218c55fda4c6c9f408c877ce3b2771910d94297bb304ff9b589d",
+      "dimensions": [
+        1100,
+        984
+      ],
+      "role_count": 0,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "previous_view_byte_identical"
+    },
+    {
+      "project": "blocking-demo",
+      "scene_id": "SC02",
+      "kind": "S003/movement",
+      "png": "examples/blocking-demo/blocking-complete/scene-002/shot-001/movement.png",
+      "svg": "examples/blocking-demo/blocking-complete/scene-002/shot-001/movement.svg",
+      "png_sha256": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722",
+      "svg_sha256": "190d60f607d5dadaa488b1086c7b60272fd72d2a99508efca2ec7a7b73eb9b1a",
+      "dimensions": [
+        1100,
+        984
+      ],
+      "role_count": 0,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "previous_view_byte_identical"
+    },
+    {
+      "project": "hall-shot-09",
+      "scene_id": "scene_exhibition_hall",
+      "kind": "overview",
+      "png": "examples/hall-shot-09/blocking-complete/scene-001/overview.png",
+      "svg": "examples/hall-shot-09/blocking-complete/scene-001/overview.svg",
+      "png_sha256": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d",
+      "svg_sha256": "3ac63ef45f5ce2dcc0bdacb874b011b3e3c7af69c2f32aae7355f183401612eb",
+      "dimensions": [
+        1100,
+        1362
+      ],
+      "role_count": 10,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "previous_view_byte_identical"
+    },
+    {
+      "project": "hall-shot-09",
+      "scene_id": "scene_exhibition_hall",
+      "kind": "S009/entry",
+      "png": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/entry.png",
+      "svg": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/entry.svg",
+      "png_sha256": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e",
+      "svg_sha256": "a39006ad88706f00a429baeb65c96c8b95c21bd8363cae4cd01379a37dc85e90",
+      "dimensions": [
+        1100,
+        1335
+      ],
+      "role_count": 10,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "previous_view_byte_identical"
+    },
+    {
+      "project": "hall-shot-09",
+      "scene_id": "scene_exhibition_hall",
+      "kind": "S009/exit",
+      "png": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/exit.png",
+      "svg": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/exit.svg",
+      "png_sha256": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24",
+      "svg_sha256": "969479f367b962d3044722ac889c900ab9f6b3a319890a2c11684a64daf75e41",
+      "dimensions": [
+        1100,
+        1335
+      ],
+      "role_count": 10,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    },
+    {
+      "project": "hall-shot-09",
+      "scene_id": "scene_exhibition_hall",
+      "kind": "S009/movement",
+      "png": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/movement.png",
+      "svg": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/movement.svg",
+      "png_sha256": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0",
+      "svg_sha256": "7d0a63d15b927a5021b69a63a4a87339a6104591f781bf2ea808485ff6975e8e",
+      "dimensions": [
+        1100,
+        1740
+      ],
+      "role_count": 10,
+      "color_pixels_present": true,
+      "visual_inspected": true,
+      "inspection_pass": "final_reinspection"
+    }
+  ],
+  "visual_review": {
+    "status": "inspected_no_blocking_readability_issue",
+    "reviewed_count": 15,
+    "method": "All 15 PNGs individually viewed; after final obstacle-aware label fix, all 9 changed PNGs re-viewed, remaining 6 verified byte-identical to viewed files.",
+    "artistic_approval": "needs_manual_review",
+    "findings": [
+      "All 10 hall roles have fixed codes, distinct RGB values, and consistent shape/path legend in overview/entry/exit/movement.",
+      "Employee 4 uses triangle while father uses square; close blue/cyan color heuristic warning retained.",
+      "Former adjacent code/state label contact fixed by separating labels.",
+      "Former demo C001/table label collision and C002/path state-label contact resolved without changing actor positions or paths.",
+      "Final inspected images show no identity-label clipping or ambiguous landmark/identity overlap.",
+      "Empty SC02 remains explicit zero cast with no invented role symbols."
+    ],
+    "nonblocking_warnings": [
+      "Father and employee 4 retain IDENTITY_NEAR_COLOR heuristic warning; code/shape differ, final-size manual review still required."
+    ]
+  },
+  "limitations": [
+    "Relative schematic, not surveyed or approved",
+    "No accessibility certification"
+  ]
+}

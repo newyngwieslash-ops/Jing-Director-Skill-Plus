@@ -1,0 +1,22 @@
+{
+  "version": "3.0.0",
+  "project_root": null,
+  "mode": "existing_excel",
+  "active_source": null,
+  "source_sha256": null,
+  "active_contract": null,
+  "contract_sha256": null,
+  "blocking_spec": null,
+  "blocking_spec_sha256": null,
+  "blocking_review": null,
+  "blocking_scene_coverage": [],
+  "locked_decisions": [],
+  "user_approvals": [],
+  "current_batch": [],
+  "invalidated_artifacts": [],
+  "pending_questions": [],
+  "last_actual_tool_receipts": [],
+  "provider_preflight": null,
+  "skill_name": "jingstudio",
+  "skill_version": "4.5.0"
+}

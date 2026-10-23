@@ -1,0 +1,17 @@
+{
+  "status": "not_run",
+  "suite_sha256": "588926c1bfcd3531f99ec933dd33d4b78b8ae2a0c2de162344c6eac91cd57dd3",
+  "evaluation_type": "manual_behavior_grades_structurally_checked",
+  "semantic_correctness_verified": false,
+  "model_identity_verified": false,
+  "video_quality_verified": false,
+  "release_ready": false,
+  "production_evidence": false,
+  "total_cases": 20,
+  "required_passes": 19,
+  "passed_cases": 0,
+  "hard_failures": [],
+  "missing_responses": [],
+  "missing_grades": [],
+  "case_results": []
+}

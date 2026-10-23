@@ -1,0 +1,1470 @@
+{
+  "method_schema_version": "1.0.0",
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "fps": 24,
+  "director_book": {
+    "camera": {
+      "rules": [
+        {
+          "rule_id": "camera-1",
+          "shot_ids": [
+            "S009"
+          ],
+          "preference": {
+            "classification": "source",
+            "text": "0–2秒沿通道向右短距平移跟拍；2–10秒固定机位",
+            "evidence": [
+              {
+                "pointer": "/shots/0/camera/movement",
+                "value": "0–2秒沿通道向右短距平移跟拍；2–10秒固定机位"
+              }
+            ]
+          },
+          "counterexample": "不以风格偏好增添推拉、摇摄、越轴或特写。",
+          "conflict": "none",
+          "priority": 100
+        }
+      ]
+    },
+    "lighting": {
+      "rules": [
+        {
+          "rule_id": "lighting-1",
+          "shot_ids": [
+            "S009"
+          ],
+          "preference": {
+            "classification": "inference",
+            "text": "待确认建议：用可读的主体与背景层次保护源镜空间关系；灯位、照度、色温未获批准。",
+            "evidence": []
+          },
+          "counterexample": "不是已完成布光或已验证模型效果。",
+          "conflict": "none",
+          "priority": 20
+        }
+      ]
+    },
+    "color": {
+      "rules": [
+        {
+          "rule_id": "color-1",
+          "shot_ids": [
+            "S009"
+          ],
+          "preference": {
+            "classification": "inference",
+            "text": "待确认建议：先保持源道具颜色与角色身份，再讨论画面调色；站位图颜色只服务身份辨认，不等于服装颜色。",
+            "evidence": []
+          },
+          "counterexample": "不能把角色图例色直接写成服装、肤色或全片调色。",
+          "conflict": "none",
+          "priority": 20
+        }
+      ]
+    },
+    "performance": {
+      "rules": [
+        {
+          "rule_id": "performance-1",
+          "shot_ids": [
+            "S009"
+          ],
+          "preference": {
+            "classification": "source",
+            "text": "男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/director/visible_change",
+                "value": "男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。"
+              }
+            ]
+          },
+          "counterexample": "不得新增转头、哭泣、跌倒、反应镜或源镜没有的位移。",
+          "conflict": "none",
+          "priority": 100
+        }
+      ]
+    },
+    "editing": {
+      "rules": [
+        {
+          "rule_id": "editing-1",
+          "shot_ids": [
+            "S009"
+          ],
+          "preference": {
+            "classification": "inference",
+            "text": "只作交接计划：维持本合同镜序与原时长；24 fps 为本示例离线规划时基，尚非供应商/素材帧率承诺。",
+            "evidence": []
+          },
+          "counterexample": "不能因预算、风格或故障自动拆镜、删镜、变速。",
+          "conflict": "none",
+          "priority": 20
+        }
+      ]
+    },
+    "sound": {
+      "rules": [
+        {
+          "rule_id": "sound-1",
+          "shot_ids": [
+            "S009"
+          ],
+          "preference": {
+            "classification": "source",
+            "text": "无画外配乐。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/music/zh",
+                "value": "无画外配乐。"
+              }
+            ]
+          },
+          "counterexample": "不得把无配乐改为悬疑配乐；不新增可辨识对白。",
+          "conflict": "none",
+          "priority": 100
+        }
+      ]
+    }
+  },
+  "shots": [
+    {
+      "shot_id": "S009",
+      "scene_id": "scene_exhibition_hall",
+      "role_ids": [
+        "xiao_nan_hai",
+        "lu_jing_tian",
+        "staff_group_4",
+        "lu_chen",
+        "er_ma_duo",
+        "tourist_pair"
+      ],
+      "locked_source": {
+        "shot_id": "S009",
+        "source_shot_no": "9",
+        "source_span_sec": [
+          0,
+          10.0
+        ],
+        "duration_sec": 10.0,
+        "scene_id": "scene_exhibition_hall",
+        "status": "planned",
+        "director": {
+          "viewing_task": "先让观众辨认男孩的横向路线，再同时看清他前方的近侧底座；只建立风险，不提前发生事故。",
+          "visible_change": "男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。",
+          "why_this_camera": "继承低机位侧拍与前2秒向右跟拍。摄影机停止后，男孩继续进入既定危险区域，让道具的静止位置变成可读的因果参照，而不是不断追着人拍。",
+          "hidden_viewpoint_check": "不借镜头越轴改变路线；男孩未看见底座也不等于观众不能看见。成人可受遮挡但人数、站位和剧情状态不能凭空改变。"
+        },
+        "subjects": [
+          "xiao_nan_hai",
+          "lu_jing_tian",
+          "staff_group_4",
+          "lu_chen",
+          "er_ma_duo",
+          "tourist_pair"
+        ],
+        "reference_asset_ids": [
+          "child_identity",
+          "hall_plate",
+          "left_group",
+          "right_group",
+          "embroidery_stand"
+        ],
+        "camera": {
+          "shot_size_start": "中远景",
+          "shot_size_end": "中远景",
+          "height": "男孩身体高度附近的低机位；具体高度由已确认构图定，不虚构厘米值",
+          "angle": "同轴线侧拍",
+          "lens_mm": null,
+          "fov_deg": null,
+          "movement": "0–2秒沿通道向右短距平移跟拍；2–10秒固定机位",
+          "observable_evidence": "前2秒，近侧底座与远处展柜有差速位移；随后两者在画面中的位置稳定，只有男孩继续向右移动。不用原地摇摄或数字变焦冒充平移。",
+          "focus": "男孩和近侧底座均可辨认；后景群像较弱但不消失",
+          "composition": "左后景保留队列，右侧保留讲解组；中前景横向路线与男孩前方底座同框，地面接缝可见但不抢特写。"
+        },
+        "continuity": {
+          "axis_id": "boy_crossing_corridor",
+          "axis_side": "A",
+          "screen_direction": "left_to_right",
+          "entry_state": {
+            "stand.condition": "intact_unmoved",
+            "embroidery.condition": "intact",
+            "balloon.count": 1,
+            "balloon.string": "around_boy_wrist",
+            "left_group.logical_people": 6,
+            "right_group.logical_people": 3,
+            "boy.screen_direction": "left_to_right",
+            "boy.contact": "none",
+            "boy.position": "left_foreground_corridor"
+          },
+          "exit_state": {
+            "stand.condition": "intact_unmoved",
+            "embroidery.condition": "intact",
+            "balloon.count": 1,
+            "balloon.string": "around_boy_wrist",
+            "left_group.logical_people": 6,
+            "right_group.logical_people": 3,
+            "boy.screen_direction": "left_to_right",
+            "boy.contact": "none",
+            "boy.position": "right_foreground_before_floor_seam_and_base"
+          },
+          "exceptions": [],
+          "lookahead_source_shots": [
+            "10",
+            "11"
+          ]
+        },
+        "opening": {
+          "zh": "低机位中远景侧拍。男孩在左前景，蓝色气球位于他前上方、细线缠腕；右前方金属展架近侧底座入画，左后队列、右侧讲解组都留在既定区域。",
+          "en": "Low side-on medium-wide framing. The boy is in the left foreground; a single blue balloon floats ahead and above him with its string around his wrist. The near-side metal stand base is visible ahead on the right. The rear-left party and the right-side explanation group remain in their established areas."
+        },
+        "ending": {
+          "zh": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+          "en": "At the ending, the boy is still before the base and moving right. His shoe has not tripped on the floor seam and his body has not contacted the stand. Balloon, embroidery and adult positions remain continuous."
+        },
+        "beats": [
+          {
+            "start_sec": 0,
+            "end_sec": 2,
+            "trigger": "男孩进入前景横向通道",
+            "action": {
+              "zh": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+              "en": "The boy runs right after the balloon ahead of him; both adult groups remain in the background."
+            },
+            "camera": {
+              "zh": "摄影机向右短距平移跟随，底座与远处展柜产生可见视差。",
+              "en": "The camera translates a short distance to the right with him; the base shifts against the distant display cases through visible parallax."
+            },
+            "sound": {
+              "zh": "急促脚步、小孩笑声和气球拍打声。",
+              "en": "Quick footsteps, the child laughing and light balloon slapping sounds."
+            }
+          },
+          {
+            "start_sec": 2,
+            "end_sec": 7,
+            "trigger": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "action": {
+              "zh": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+              "en": "The boy continues right through the physically available transverse passage, with the base ahead still in frame and the string remaining around his wrist."
+            },
+            "camera": {
+              "zh": "摄影机固定，不继续跟移，不推近，不改变拍摄轴侧。",
+              "en": "The camera is now locked off; no further translation, push-in or change of axis side."
+            },
+            "sound": {
+              "zh": "脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。",
+              "en": "Footsteps and balloon sounds continue over subdued hall ambience, without new intelligible dialogue."
+            }
+          },
+          {
+            "start_sec": 7,
+            "end_sec": 10,
+            "trigger": "男孩逐渐靠近近侧底座前的地面区域",
+            "action": {
+              "zh": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+              "en": "The boy continues right toward the floor area before the base, without tripping, colliding or changing the stand state."
+            },
+            "camera": {
+              "zh": "保持固定中远景，让男孩、前方底座及地面关系同框收尾。",
+              "en": "Hold the locked medium-wide composition so the boy, base ahead and floor relationship share the ending frame."
+            },
+            "sound": {
+              "zh": "脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。",
+              "en": "Finish on footsteps, the child laughing and balloon sounds, without an early crash or shattering sound."
+            }
+          }
+        ],
+        "dialogue": [],
+        "soundscape": {
+          "zh": "室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。",
+          "en": "Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue."
+        },
+        "music": {
+          "zh": "无画外配乐。",
+          "en": "N/A"
+        },
+        "constraints": {
+          "zh": "保留左向右运动、细线缠腕、成人两组原站位以及完整绣面和展架。真实速度；本镜结束在尚未绊倒或碰撞的状态。",
+          "en": "Preserve left-to-right motion, the wrist string, both adult groups and the intact embroidery and stand. Use real-time motion; end before any trip or collision."
+        },
+        "keyframes": [
+          {
+            "id": "S009-entry",
+            "phase": "entry",
+            "time_sec": 0,
+            "visible_state": {
+              "zh": "男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。",
+              "en": "The boy has just entered the left foreground. Balloon ahead and above; adult groupings, the foreground route and the base ahead are all readable."
+            },
+            "reference_asset_ids": [
+              "child_identity",
+              "hall_plate",
+              "left_group",
+              "right_group",
+              "embroidery_stand"
+            ],
+            "image_path": null,
+            "generation_receipt": null,
+            "visual_review": {
+              "status": "unreviewed",
+              "evidence": ""
+            }
+          },
+          {
+            "id": "S009-trigger",
+            "phase": "trigger",
+            "time_sec": 2,
+            "visible_state": {
+              "zh": "向右平移到停止机位的时刻。男孩仍在运动中，前方底座与右侧讲解组保持空间区分。",
+              "en": "The camera has reached its stopping position after translating right. The boy remains in motion; the base ahead and the right-side group are spatially distinct."
+            },
+            "reference_asset_ids": [
+              "child_identity",
+              "hall_plate",
+              "left_group",
+              "right_group",
+              "embroidery_stand"
+            ],
+            "image_path": null,
+            "generation_receipt": null,
+            "visual_review": {
+              "status": "unreviewed",
+              "evidence": ""
+            }
+          },
+          {
+            "id": "S009-development",
+            "phase": "development",
+            "time_sec": 7,
+            "visible_state": {
+              "zh": "固定机位下，男孩比上一状态更靠近右侧底座前区域，鞋与地缝尚未发生绊脚接触；绣面和展架仍完整。",
+              "en": "From the locked camera, the boy is closer to the area before the base on the right. His shoe has not caught the floor seam; embroidery and stand remain intact."
+            },
+            "reference_asset_ids": [
+              "child_identity",
+              "hall_plate",
+              "left_group",
+              "right_group",
+              "embroidery_stand"
+            ],
+            "image_path": null,
+            "generation_receipt": null,
+            "visual_review": {
+              "status": "unreviewed",
+              "evidence": ""
+            }
+          },
+          {
+            "id": "S009-exit",
+            "phase": "exit",
+            "time_sec": 10,
+            "visible_state": {
+              "zh": "固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。",
+              "en": "The locked-camera ending: boy in the right foreground before the base, with no trip or collision yet. One blue balloon remains ahead and above, string around the wrist; the adult groups have not relocated."
+            },
+            "reference_asset_ids": [
+              "child_identity",
+              "hall_plate",
+              "left_group",
+              "right_group",
+              "embroidery_stand"
+            ],
+            "image_path": null,
+            "generation_receipt": null,
+            "visual_review": {
+              "status": "unreviewed",
+              "evidence": ""
+            }
+          }
+        ]
+      },
+      "performance": [
+        {
+          "role_id": "xiao_nan_hai",
+          "beat_index": 0,
+          "task": {
+            "classification": "source",
+            "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/action/zh",
+                "value": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：追逐方向与前上方气球；不新增看向底座的动作。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩进入前景横向通道",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/trigger",
+                "value": "男孩进入前景横向通道"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "inference",
+            "text": "待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "lu_jing_tian",
+          "beat_index": 0,
+          "task": {
+            "classification": "source",
+            "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/action/zh",
+                "value": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩进入前景横向通道",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/trigger",
+                "value": "男孩进入前景横向通道"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "staff_group_4",
+          "beat_index": 0,
+          "task": {
+            "classification": "source",
+            "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/action/zh",
+                "value": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩进入前景横向通道",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/trigger",
+                "value": "男孩进入前景横向通道"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "lu_chen",
+          "beat_index": 0,
+          "task": {
+            "classification": "source",
+            "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/action/zh",
+                "value": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩进入前景横向通道",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/trigger",
+                "value": "男孩进入前景横向通道"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "er_ma_duo",
+          "beat_index": 0,
+          "task": {
+            "classification": "source",
+            "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/action/zh",
+                "value": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩进入前景横向通道",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/trigger",
+                "value": "男孩进入前景横向通道"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "tourist_pair",
+          "beat_index": 0,
+          "task": {
+            "classification": "source",
+            "text": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/action/zh",
+                "value": "男孩追着前上方气球向右跑，成人两组保持背景位置。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩进入前景横向通道",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/0/trigger",
+                "value": "男孩进入前景横向通道"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "xiao_nan_hai",
+          "beat_index": 1,
+          "task": {
+            "classification": "source",
+            "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/action/zh",
+                "value": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：追逐方向与前上方气球；不新增看向底座的动作。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/trigger",
+                "value": "底座与横穿路线的关系已经清楚，摄影机停止"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "inference",
+            "text": "待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "lu_jing_tian",
+          "beat_index": 1,
+          "task": {
+            "classification": "source",
+            "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/action/zh",
+                "value": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/trigger",
+                "value": "底座与横穿路线的关系已经清楚，摄影机停止"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "staff_group_4",
+          "beat_index": 1,
+          "task": {
+            "classification": "source",
+            "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/action/zh",
+                "value": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/trigger",
+                "value": "底座与横穿路线的关系已经清楚，摄影机停止"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "lu_chen",
+          "beat_index": 1,
+          "task": {
+            "classification": "source",
+            "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/action/zh",
+                "value": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/trigger",
+                "value": "底座与横穿路线的关系已经清楚，摄影机停止"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "er_ma_duo",
+          "beat_index": 1,
+          "task": {
+            "classification": "source",
+            "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/action/zh",
+                "value": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/trigger",
+                "value": "底座与横穿路线的关系已经清楚，摄影机停止"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "tourist_pair",
+          "beat_index": 1,
+          "task": {
+            "classification": "source",
+            "text": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/action/zh",
+                "value": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "底座与横穿路线的关系已经清楚，摄影机停止",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/1/trigger",
+                "value": "底座与横穿路线的关系已经清楚，摄影机停止"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "xiao_nan_hai",
+          "beat_index": 2,
+          "task": {
+            "classification": "source",
+            "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/action/zh",
+                "value": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：追逐方向与前上方气球；不新增看向底座的动作。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩逐渐靠近近侧底座前的地面区域",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/trigger",
+                "value": "男孩逐渐靠近近侧底座前的地面区域"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：支撑脚与身体前移协调，避免脚底滑移；不增添停步或改变路线。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "inference",
+            "text": "待确认建议：仅校核脚与地面支撑反馈，不能据此增加人物与道具碰撞。",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "lu_jing_tian",
+          "beat_index": 2,
+          "task": {
+            "classification": "source",
+            "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/action/zh",
+                "value": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩逐渐靠近近侧底座前的地面区域",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/trigger",
+                "value": "男孩逐渐靠近近侧底座前的地面区域"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "staff_group_4",
+          "beat_index": 2,
+          "task": {
+            "classification": "source",
+            "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/action/zh",
+                "value": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩逐渐靠近近侧底座前的地面区域",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/trigger",
+                "value": "男孩逐渐靠近近侧底座前的地面区域"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "lu_chen",
+          "beat_index": 2,
+          "task": {
+            "classification": "source",
+            "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/action/zh",
+                "value": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩逐渐靠近近侧底座前的地面区域",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/trigger",
+                "value": "男孩逐渐靠近近侧底座前的地面区域"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "er_ma_duo",
+          "beat_index": 2,
+          "task": {
+            "classification": "source",
+            "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/action/zh",
+                "value": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩逐渐靠近近侧底座前的地面区域",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/trigger",
+                "value": "男孩逐渐靠近近侧底座前的地面区域"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        },
+        {
+          "role_id": "tourist_pair",
+          "beat_index": 2,
+          "task": {
+            "classification": "source",
+            "text": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/action/zh",
+                "value": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。"
+              }
+            ]
+          },
+          "attention": {
+            "classification": "inference",
+            "text": "待确认建议：只在源镜允许的任务内安排注意对象；未给出的视线与表情保持待确认。",
+            "evidence": []
+          },
+          "trigger": {
+            "classification": "source",
+            "text": "男孩逐渐靠近近侧底座前的地面区域",
+            "evidence": [
+              {
+                "pointer": "/shots/0/beats/2/trigger",
+                "value": "男孩逐渐靠近近侧底座前的地面区域"
+              }
+            ]
+          },
+          "weight_support": {
+            "classification": "inference",
+            "text": "待确认建议：原位姿态保持自然支撑，不以动作丰富为由增加位移。",
+            "evidence": []
+          },
+          "contact_feedback": {
+            "classification": "unknown",
+            "text": "",
+            "evidence": []
+          },
+          "end_state": {
+            "classification": "source",
+            "text": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+            "evidence": [
+              {
+                "pointer": "/shots/0/ending/zh",
+                "value": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。"
+              }
+            ]
+          }
+        }
+      ],
+      "repair": {
+        "shot_attempt_budget": 12,
+        "same_design_failure_limit": 3,
+        "attempts": []
+      },
+      "capability": {
+        "requested_shape": "unknown",
+        "capabilities": {
+          "text_to_video": "unknown",
+          "first_frame": "unknown",
+          "last_frame": "unknown",
+          "timestamped_multisegment": "unknown"
+        },
+        "evidence": [],
+        "first_frame_ref": null,
+        "last_frame_ref": null,
+        "execution_ready": false
+      },
+      "sound": {
+        "source_dialogue": [],
+        "source_soundscape": {
+          "zh": "室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。",
+          "en": "Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue."
+        },
+        "source_music": {
+          "zh": "无画外配乐。",
+          "en": "N/A"
+        },
+        "cues": [
+          {
+            "cue_id": "S009-source-1",
+            "layer": "FOL",
+            "start_frame": 0,
+            "end_frame": 48,
+            "description": {
+              "classification": "source",
+              "text": "急促脚步、小孩笑声和气球拍打声。",
+              "evidence": [
+                {
+                  "pointer": "/shots/0/beats/0/sound/zh",
+                  "value": "急促脚步、小孩笑声和气球拍打声。"
+                }
+              ]
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": null,
+              "position": {
+                "classification": "unknown",
+                "text": "",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          },
+          {
+            "cue_id": "S009-source-2",
+            "layer": "FOL",
+            "start_frame": 48,
+            "end_frame": 168,
+            "description": {
+              "classification": "source",
+              "text": "脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。",
+              "evidence": [
+                {
+                  "pointer": "/shots/0/beats/1/sound/zh",
+                  "value": "脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。"
+                }
+              ]
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": null,
+              "position": {
+                "classification": "unknown",
+                "text": "",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          },
+          {
+            "cue_id": "S009-source-3",
+            "layer": "FOL",
+            "start_frame": 168,
+            "end_frame": 240,
+            "description": {
+              "classification": "source",
+              "text": "脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。",
+              "evidence": [
+                {
+                  "pointer": "/shots/0/beats/2/sound/zh",
+                  "value": "脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。"
+                }
+              ]
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": null,
+              "position": {
+                "classification": "unknown",
+                "text": "",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          },
+          {
+            "cue_id": "S009-proposed-footsteps",
+            "layer": "FOL",
+            "start_frame": 0,
+            "end_frame": 240,
+            "description": {
+              "classification": "inference",
+              "text": "待确认声部分离：男孩急促脚步；具体接触点与音量包络待实际画面确认。",
+              "evidence": []
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": "xiao_nan_hai",
+              "position": {
+                "classification": "inference",
+                "text": "待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          },
+          {
+            "cue_id": "S009-proposed-balloon",
+            "layer": "SFX",
+            "start_frame": 0,
+            "end_frame": 240,
+            "description": {
+              "classification": "inference",
+              "text": "待确认声部分离：蓝色气球拍打声；不添加撞架、碎裂声。",
+              "evidence": []
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": "xiao_nan_hai",
+              "position": {
+                "classification": "inference",
+                "text": "待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          },
+          {
+            "cue_id": "S009-proposed-laugh",
+            "layer": "SFX",
+            "start_frame": 0,
+            "end_frame": 240,
+            "description": {
+              "classification": "inference",
+              "text": "待确认声部分离：小孩笑声；不添加词句。",
+              "evidence": []
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": "xiao_nan_hai",
+              "position": {
+                "classification": "inference",
+                "text": "待确认空间化：随画内左向右路线组织声像，但不预设固定声像数值。",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          },
+          {
+            "cue_id": "S009-proposed-room",
+            "layer": "RT",
+            "start_frame": 0,
+            "end_frame": 240,
+            "description": {
+              "classification": "inference",
+              "text": "待确认声部分离：展厅低电平底噪，不增加可辨识人物对白。",
+              "evidence": []
+            },
+            "space": {
+              "relation": "unknown",
+              "role_id": null,
+              "position": {
+                "classification": "inference",
+                "text": "底噪的声学空间、混响与素材来源待确认。",
+                "evidence": []
+              }
+            },
+            "asset_ref": null
+          }
+        ]
+      },
+      "edit": {
+        "source_in_frame": 0,
+        "source_out_frame": 240,
+        "program_in_frame": 0,
+        "program_out_frame": 240,
+        "transition": "cut",
+        "retime": false
+      }
+    }
+  ],
+  "change_requests": []
+}

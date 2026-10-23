@@ -1,0 +1,51 @@
+{
+  "schema_version": "3.0.0",
+  "project_name": "第一集分镜",
+  "source_file": "第一集分镜.xlsx",
+  "source_sha256": "d0ec06c2adb9f66d0b4e810230411a29fc6ada1ecafa90faaeaf00790f80a115",
+  "sheet": "第一集分镜",
+  "header_row": 1,
+  "headers": [
+    "镜号",
+    "时长",
+    "摄影角度",
+    "景别",
+    "画面内容",
+    "场景",
+    "声音",
+    "备注",
+    "叙事目的"
+  ],
+  "shots": [
+    {
+      "source_shot_no": "9",
+      "angle": "低机位",
+      "shot_size": "中远景",
+      "action": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。",
+      "scene": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+      "sound": "气球拍打声、急促脚步；小孩笑声",
+      "notes": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道",
+      "narrative_intent": "用左向右的前景横穿避开已被队列占用的纵深通道，建立男孩、近侧底座与后续碰撞的空间因果。",
+      "video_prompt": "",
+      "duration_sec": 10.0,
+      "source_row": 10,
+      "raw_cells": {
+        "镜号": "9",
+        "时长": "01:07-01:17",
+        "摄影角度": "低机位",
+        "景别": "中远景",
+        "画面内容": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。",
+        "场景": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+        "声音": "气球拍打声、急促脚步；小孩笑声",
+        "备注": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道",
+        "叙事目的": "用左向右的前景横穿避开已被队列占用的纵深通道，建立男孩、近侧底座与后续碰撞的空间因果。"
+      }
+    }
+  ],
+  "shot_count": 1,
+  "total_duration_sec": 10.0,
+  "ignored_rows": [],
+  "warnings": [],
+  "reader_limits": "Stored cells only; formulas are not evaluated; merged scene cells are not inferred; numeric durations mean seconds.",
+  "excerpt_note": "原工作簿镜9原文；原工作簿共有39镜360秒。此文件只选一镜作为结构示例，不代表完整工作簿。"
+}

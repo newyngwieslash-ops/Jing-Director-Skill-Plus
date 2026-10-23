@@ -1,0 +1,1350 @@
+{
+  "skill_name": "jingstudio",
+  "version": "4.5.0",
+  "contract_schema_version": "3.0.0",
+  "generated_date": "2026-10-22",
+  "manifest_excludes_itself": true,
+  "file_count_excluding_manifest": 268,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 64,
+      "sha256": "6ba32e37b8e7d20a5966ad70003ffabc31aab77a62f648969a8d43691d08305e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 5155,
+      "sha256": "8c8eabc1bd10a4a9dc87e04171b0c90a27d39404ff5305945256557fe60db293"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1900,
+      "sha256": "58fbb19e4afbfeeecd5a04a926a65dc0cf45212f5b0c057d857697e57b9bbd92"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "size_bytes": 11298,
+      "sha256": "f12d1df5801a419c930604502b21405f2e2de6d472f0be2fdab6a5e13a35f5f2"
+    },
+    {
+      "path": "SKILL.md",
+      "size_bytes": 20979,
+      "sha256": "aa81bbda4e022872007ad63a50132e0a11b0ada1c25d293d0d7604ba06b69d00"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size_bytes": 2664,
+      "sha256": "e1c817b804005d4710831a6950a9338ac336e15e90d13aa56b548dd9fa67e92b"
+    },
+    {
+      "path": "VERSION",
+      "size_bytes": 6,
+      "sha256": "195790f73af85f22cd306965e5fa5f5a73399c51b74065aa3ee1d4d571d6eef4"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "size_bytes": 466,
+      "sha256": "8d463782b31f6a5d4a3da332574493a70b4ba20c4eb3e594966c04b1ecb2e56f"
+    },
+    {
+      "path": "docs/BLOCKING_COMPLETE.zh-CN.md",
+      "size_bytes": 5447,
+      "sha256": "0a4451464242b6bbf7b99b1a44a0ed4ac54ab8cceaae7b45dc5beb5a6943919f"
+    },
+    {
+      "path": "docs/BLOCKING_UPGRADE.zh-CN.md",
+      "size_bytes": 2436,
+      "sha256": "1181f99c870ed8ae7d41f2cdba8c0df693ef4a875549e8411e219651e0f50d62"
+    },
+    {
+      "path": "docs/BRAND_AUDIT.json",
+      "size_bytes": 4264,
+      "sha256": "603a9ec16faf2c1f10f6a7b5614d7c1ed484743680ef3f071548fae7f90b60dd"
+    },
+    {
+      "path": "docs/CHARACTER_VISUAL_IDENTITY.zh-CN.md",
+      "size_bytes": 10076,
+      "sha256": "c57328582362a4cafdaf8ed5f75a517b42d0d44db6eab7e29478768abb299c25"
+    },
+    {
+      "path": "docs/DELIVERY_GUIDE.zh-CN.md",
+      "size_bytes": 5159,
+      "sha256": "6dd667c4a535441f443308d5eac540f43982f836749c23f33ac2d6e625be4a6f"
+    },
+    {
+      "path": "docs/DIRECTORSKILL_ABSORPTION.zh-CN.md",
+      "size_bytes": 3835,
+      "sha256": "a844e515c07b52ff797d7a9d810bf00f2eac15cc9fdf6f6973779a239f120892"
+    },
+    {
+      "path": "docs/INSTALL_AGENT_PROMPT.zh-CN.md",
+      "size_bytes": 1695,
+      "sha256": "5ba20f7086468c7dab286ea2e6679ebabd8c914b38862287674e5db76bd6d8fe"
+    },
+    {
+      "path": "docs/INTEGRITY_MIGRATION.zh-CN.md",
+      "size_bytes": 3916,
+      "sha256": "29333ec38b158b846d4a4595f1e02f2a1160df70e5c39b70d3c1aa4d0682f4f2"
+    },
+    {
+      "path": "docs/MERGE_REPORT.zh-CN.md",
+      "size_bytes": 2459,
+      "sha256": "3312375ccd0222406d0a7cc650856b8769bf0d798026af318cee395ca8ae5b33"
+    },
+    {
+      "path": "docs/METHOD_LAYER_QUICKSTART.zh-CN.md",
+      "size_bytes": 4390,
+      "sha256": "57129bc4e77c2898032e1fccf4c376e6185d7827da0e3a0242f995e600c93591"
+    },
+    {
+      "path": "docs/ORIGINAL_PRESERVATION.json",
+      "size_bytes": 5304,
+      "sha256": "a54cd98d0809bb60498eee0c20ec58148852d9644f37b4492d9de7c9176212f2"
+    },
+    {
+      "path": "docs/RENAME_NOTES.zh-CN.md",
+      "size_bytes": 2917,
+      "sha256": "e489b4aa31f08f52745d3f8974ab4fd5711a4124cec194937a6a667326b436c4"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "size_bytes": 4933,
+      "sha256": "78a2656b6000af11dff79f6732ba76563dd973c649541855140bb354db4b8879"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "size_bytes": 3840,
+      "sha256": "9897fecba36403c73bf49c6681daaacaeb3b05a407171182118183f268ea1714"
+    },
+    {
+      "path": "docs/history/3.0.0-TEST_REPORT.md",
+      "size_bytes": 2619,
+      "sha256": "50bdbcfa66cb35e07183054591f4f8de5f02d0d71c4d5c92977b03b29b2bc9ae"
+    },
+    {
+      "path": "docs/history/3.0.0-UPGRADE_REPORT.md",
+      "size_bytes": 4231,
+      "sha256": "27d18d763a3774cbf2ae6776e73d6b34e16d32a7dc5cf3096574a4ddc6cacee3"
+    },
+    {
+      "path": "docs/history/3.0.0-test-results.txt",
+      "size_bytes": 6035,
+      "sha256": "8f92979e7904d2e2b0bc3fbc5ea5cdb459848a6607cde4401b3b06a297017880"
+    },
+    {
+      "path": "docs/history/3.0.1-TEST_REPORT.md",
+      "size_bytes": 3158,
+      "sha256": "ba1cd6dfd8a54aaa7c74b6f54337dc711a86ca88d60f3ceab8931818840d2a90"
+    },
+    {
+      "path": "docs/history/3.0.1-test-results.txt",
+      "size_bytes": 10336,
+      "sha256": "18d2c9f61a48712933dcb695b68587fc39f1adcc6a300caf9e6ecd968073220b"
+    },
+    {
+      "path": "docs/history/4.1.0-TEST_REPORT.md",
+      "size_bytes": 2344,
+      "sha256": "0e8d2f6c50da212538c8360c737fe5f521a4548037b12d5615269439ac4ad2d3"
+    },
+    {
+      "path": "docs/history/4.1.0-test-results.txt",
+      "size_bytes": 12285,
+      "sha256": "7d4a64e05d3eb8aab4896a1cffe5dfd88b37b0cdb4c28023b36469355d6071f4"
+    },
+    {
+      "path": "docs/history/4.2.0-TEST_REPORT.md",
+      "size_bytes": 3140,
+      "sha256": "4e80ac2d0b4d9b5c87a7b41b6116ad943970e2e64a5952ffd1bf61f8e9033b0a"
+    },
+    {
+      "path": "docs/history/4.2.0-test-results.txt",
+      "size_bytes": 24197,
+      "sha256": "fbee9b26b71d68b2e66e7a253e7208d2f4afd8b20c24d979fd389dace51a576c"
+    },
+    {
+      "path": "docs/history/4.3.0-TEST_REPORT.md",
+      "size_bytes": 2532,
+      "sha256": "b996ac660df95408a669932fcde252f95df26a59ee243b8b8509a2e0ac2e1010"
+    },
+    {
+      "path": "docs/history/4.3.0-qa/final-board-visual-qa.json",
+      "size_bytes": 16478,
+      "sha256": "3244d5f68e408b9735e248ac745c1b540642ced4bf401ea144b32e866b7f0651"
+    },
+    {
+      "path": "docs/history/4.3.0-qa/final-spatial-visual-qa.json",
+      "size_bytes": 12618,
+      "sha256": "8f2ea96f7d4317205309833d458700fc249b04083cc956b0e24291eaef6fee01"
+    },
+    {
+      "path": "docs/history/4.3.0-test-results.txt",
+      "size_bytes": 28566,
+      "sha256": "3195bed4f448aa5105a8386ce7ad9b8abb99a1089b6025d9908b791e99541851"
+    },
+    {
+      "path": "docs/history/README.md",
+      "size_bytes": 649,
+      "sha256": "e2687b9c49966ad6de3ce068413eea21d22870f53c5920c79e204b8c4be54e89"
+    },
+    {
+      "path": "docs/history/TEST_REPORT-4.0.0.md",
+      "size_bytes": 1867,
+      "sha256": "55e1f93b242ef7498a585f2606ccf6527bb630eaa121e668907ece56b9ca1cd1"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/CHANGELOG.md",
+      "size_bytes": 6399,
+      "sha256": "867701f647e8a259ccab2d9ba66cb43965bec7d55b1a0a833685f37074c5f4c1"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/RENAME_AUDIT.json",
+      "size_bytes": 7618,
+      "sha256": "ff9f4ebdbb4dd0f38dd634166da23b28f83b77950658209b9c6779c66aab4e38"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/RENAME_REPORT.md",
+      "size_bytes": 2884,
+      "sha256": "aad2e2b98a1e8dff8db41a3e8283a50bdb971a04d5064d6baf8d7bdb21040cb9"
+    },
+    {
+      "path": "docs/history/pre-JingStudio/UPGRADE_REPORT.md",
+      "size_bytes": 4872,
+      "sha256": "97d6ab78a1bc053e10b14e57d61ff529a5b5183e19cd16f160adf810a81093c5"
+    },
+    {
+      "path": "docs/history/test-results-4.0.0.txt",
+      "size_bytes": 10867,
+      "sha256": "37e370e2fbb8dd0aec7cbae4280877d18f474ef34a3ceb3b10523100d73fb8da"
+    },
+    {
+      "path": "docs/history/v4.4.0/TEST_REPORT.md",
+      "size_bytes": 2677,
+      "sha256": "b552e58f7dbe6ceea8b765d6c41baf662fbfcb1fd47d9bef8a6a182bae11e697"
+    },
+    {
+      "path": "docs/history/v4.4.0/qa/bundle-probe-results.json",
+      "size_bytes": 1627,
+      "sha256": "1d4a05fc095a58e25bb9d54c478660872a5bf7d3888af2a10d5b99d7b89c9876"
+    },
+    {
+      "path": "docs/history/v4.4.0/qa/final-identity-board-qa.json",
+      "size_bytes": 9255,
+      "sha256": "8c22721a338362c3277b06550e54aae7e1e360baa8c4be701037ed6a95dc961b"
+    },
+    {
+      "path": "docs/history/v4.4.0/qa/final-identity-spatial-qa.json",
+      "size_bytes": 11956,
+      "sha256": "4194ecb4f0bee7fbf110d1811e291f4bf891b821b24a85cb9182e0f038623169"
+    },
+    {
+      "path": "docs/history/v4.4.0/qa/final-independent-identity-qa.json",
+      "size_bytes": 2129,
+      "sha256": "94520141789cebb74927eac9ee5d7250ea2e4dbd10bf4fa7312f1c7af9666883"
+    },
+    {
+      "path": "docs/history/v4.4.0/qa/registry-probe-results.json",
+      "size_bytes": 14734,
+      "sha256": "16a327372ebf6baba56e5557f02e743ab8efe9545eb0fa64896f53d62fdd9fd8"
+    },
+    {
+      "path": "docs/history/v4.4.0/test-results.txt",
+      "size_bytes": 31332,
+      "sha256": "efb108c49c000719c2efc98573b254bdbf30b2aec82cbcc9520034e38f19ca5e"
+    },
+    {
+      "path": "docs/qa/bundle-probe-results.json",
+      "size_bytes": 1627,
+      "sha256": "1d4a05fc095a58e25bb9d54c478660872a5bf7d3888af2a10d5b99d7b89c9876"
+    },
+    {
+      "path": "docs/qa/final-identity-board-qa.json",
+      "size_bytes": 9255,
+      "sha256": "8c22721a338362c3277b06550e54aae7e1e360baa8c4be701037ed6a95dc961b"
+    },
+    {
+      "path": "docs/qa/final-identity-spatial-qa.json",
+      "size_bytes": 11956,
+      "sha256": "4194ecb4f0bee7fbf110d1811e291f4bf891b821b24a85cb9182e0f038623169"
+    },
+    {
+      "path": "docs/qa/final-independent-identity-qa.json",
+      "size_bytes": 2129,
+      "sha256": "94520141789cebb74927eac9ee5d7250ea2e4dbd10bf4fa7312f1c7af9666883"
+    },
+    {
+      "path": "docs/qa/final-independent-qa.json",
+      "size_bytes": 4620,
+      "sha256": "ff753db25d3346ba38251c48a699d721a37308a768dedf93db5998e0da495575"
+    },
+    {
+      "path": "docs/qa/rebrand-qa.json",
+      "size_bytes": 2642,
+      "sha256": "a582ba2c16ac7605612b519e523a1b220d8f4849f49ddf94ae303fe68d0e34ac"
+    },
+    {
+      "path": "docs/qa/registry-probe-results.json",
+      "size_bytes": 14734,
+      "sha256": "16a327372ebf6baba56e5557f02e743ab8efe9545eb0fa64896f53d62fdd9fd8"
+    },
+    {
+      "path": "docs/source-import-check.json",
+      "size_bytes": 578,
+      "sha256": "20801576b3fccbf48643cdcf524cb07563da7c4104167a4daf9e0de0a76db273"
+    },
+    {
+      "path": "docs/test-results.txt",
+      "size_bytes": 42452,
+      "sha256": "595e6bbdca19b43fdfa132842c02ddd181e333e35af17726753c39b35aa973ee"
+    },
+    {
+      "path": "evals/README.zh-CN.md",
+      "size_bytes": 8256,
+      "sha256": "97229063b8a0d2da9f5226451378e9a4291bbc7d5b6676877bb35b2052097996"
+    },
+    {
+      "path": "evals/baseline-not-run.json",
+      "size_bytes": 514,
+      "sha256": "1f32cc52917e923f5e9018730348f5ae71d50a09e7cd0457af361061c345a83b"
+    },
+    {
+      "path": "evals/cases.json",
+      "size_bytes": 14637,
+      "sha256": "588926c1bfcd3531f99ec933dd33d4b78b8ae2a0c2de162344c6eac91cd57dd3"
+    },
+    {
+      "path": "examples/blocking-demo/README.md",
+      "size_bytes": 3239,
+      "sha256": "5d7867176fe26e9cde747431dde4f525b3705ac77d4240d523f683ee0120663b"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/blocking.json",
+      "size_bytes": 6484,
+      "sha256": "d125d7277fce1b47e27ff87a7542f96a2480c1465b6e795ad126efbfbfef5c7d"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/coverage.json",
+      "size_bytes": 5321,
+      "sha256": "84df83f741b467215ee8ecdf1f3ecc4412b72a2519a4e5586ea384fda4d3ef60"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/identity-registry.json",
+      "size_bytes": 427,
+      "sha256": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/index.html",
+      "size_bytes": 2429,
+      "sha256": "54cbff4cc4b7ca7a23153849fdcc274344d9fb184e0ace2f3cbead5cb9c267db"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/manifest.json",
+      "size_bytes": 10939,
+      "sha256": "ce7e56f89213de59a3ed02aca17db566a5b562fe74587eb257f1990fc6662454"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/roster.json",
+      "size_bytes": 911,
+      "sha256": "8b0aa95272e4e9c83967d7217c993c5a1aa0f10c95792fcf11fb42b52c7b763f"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/overview.png",
+      "size_bytes": 124798,
+      "sha256": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/overview.svg",
+      "size_bytes": 25078,
+      "sha256": "01347bb2c023a3c3a3259cd8aafd67332564ef3229b6f4006a20c3fc86f47147"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/entry.png",
+      "size_bytes": 109347,
+      "sha256": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/entry.svg",
+      "size_bytes": 24794,
+      "sha256": "7cacc949ebc714f0b629488d42cd16eba0377e3d7cbb9d103154be05bd004072"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/exit.png",
+      "size_bytes": 109327,
+      "sha256": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/exit.svg",
+      "size_bytes": 24793,
+      "sha256": "093b4237465e75be56da1aac42542f2784b9483e83654bddadb0e160578f9c18"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/movement.png",
+      "size_bytes": 124466,
+      "sha256": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-001/movement.svg",
+      "size_bytes": 34293,
+      "sha256": "4a7a3654b583ce71db72c2f8216d824eac3089f3f5db3e853e4ca5a6fa305161"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/entry.png",
+      "size_bytes": 111579,
+      "sha256": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/entry.svg",
+      "size_bytes": 24815,
+      "sha256": "b28c7b7edfed5e7158825322174ffa09ab4f01cd23cde1a7ed96d0a7042d9599"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/exit.png",
+      "size_bytes": 110893,
+      "sha256": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/exit.svg",
+      "size_bytes": 24704,
+      "sha256": "900aeea009c64d4d0b30676d85047af1b09937ff7e9828a5fdf44c290e4259d3"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/movement.png",
+      "size_bytes": 132839,
+      "sha256": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-001/shot-002/movement.svg",
+      "size_bytes": 35456,
+      "sha256": "e4778fb754f5d65caa5633a59d2df65c906dbbe1fc9cb6f539cef10a4bab73ac"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/overview.png",
+      "size_bytes": 107839,
+      "sha256": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/overview.svg",
+      "size_bytes": 4163,
+      "sha256": "f010108a7e8addf2b71484b1d18b26b7376fb72da2a11d1255e5227d2c7caefb"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/entry.png",
+      "size_bytes": 91728,
+      "sha256": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/entry.svg",
+      "size_bytes": 3883,
+      "sha256": "6e983a28dfcdf8caace1f242496e892b203c532fea497389e4c74608eb9ca74b"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/exit.png",
+      "size_bytes": 91340,
+      "sha256": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/exit.svg",
+      "size_bytes": 3882,
+      "sha256": "8fd4371e7bc9218c55fda4c6c9f408c877ce3b2771910d94297bb304ff9b589d"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/movement.png",
+      "size_bytes": 91938,
+      "sha256": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/scene-002/shot-001/movement.svg",
+      "size_bytes": 3886,
+      "sha256": "190d60f607d5dadaa488b1086c7b60272fd72d2a99508efca2ec7a7b73eb9b1a"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-complete/validation.json",
+      "size_bytes": 7170,
+      "sha256": "e456a102b796b7e3e518355e98a506ab3eeda65738c5f354247d051da02b33d6"
+    },
+    {
+      "path": "examples/blocking-demo/blocking-spec.json",
+      "size_bytes": 6484,
+      "sha256": "d125d7277fce1b47e27ff87a7542f96a2480c1465b6e795ad126efbfbfef5c7d"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p001.png",
+      "size_bytes": 502514,
+      "sha256": "55e285e2d010654e6de5133ed15de0d61b5e69995fa8d4f52c6fdaf8e61a8cc3"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p002.png",
+      "size_bytes": 412053,
+      "sha256": "ddd89555fb6fa20c463796fe648ecb5678a0a9036e4b5b146a399da0f4057ad7"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p003.png",
+      "size_bytes": 293000,
+      "sha256": "542b85ed2ba9d600003b00cc6cd92a55d5c4cb69adb47c8bcbd85d1b605d2af2"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p004.png",
+      "size_bytes": 326828,
+      "sha256": "89594b70bc2cb61cf5ee52a8911f4146fb03c21565d3a23274a54acbf9e42fff"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p005.png",
+      "size_bytes": 299071,
+      "sha256": "c910a50db3eebfd8737e838ea8911f0df08e78046333a70f6656536a1f1d6638"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p006.png",
+      "size_bytes": 299640,
+      "sha256": "73ec7e5b50e27c9b775c1074b4387b6c49388eb3252ff73ba356a3d0c001a10f"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-001-p007.png",
+      "size_bytes": 383904,
+      "sha256": "22eba46b1b593a6cea3b3a9ca39fbf2ad668c47dd2cbd12354c3530bbdcd8920"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-002-p001.png",
+      "size_bytes": 447920,
+      "sha256": "de6db2cd81cbc9389a62b26deb500f7392a44307297115d3fe8199f692d0513d"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-002-p002.png",
+      "size_bytes": 265050,
+      "sha256": "36a9382f46280799056e274c3316c723575ffd55904611385ecdbc9f068403f0"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-002-p003.png",
+      "size_bytes": 265133,
+      "sha256": "1434645f14f41e09fd4890e8ee5e3df79ad9dc341fcc420e409e0cfcb0468df6"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/board-002-p004.png",
+      "size_bytes": 312245,
+      "sha256": "00f30f197d8463b7cee8d4f99534c7f5203180e866f8b2de522c111d2d464163"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/index.html",
+      "size_bytes": 1624546,
+      "sha256": "0d6c890046a3f9f39bd97feee35c83a9bd937e2d82dbbe17d0ae431e9dfe931c"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial/manifest.json",
+      "size_bytes": 51563,
+      "sha256": "f31e6e0bcbdab62bf3949bb4294a217f8844d0ac9e44402198d7cd338adbbf70"
+    },
+    {
+      "path": "examples/blocking-demo/design-spatial-spec.json",
+      "size_bytes": 481,
+      "sha256": "95e90c544a5dd655efea1e4564da4420b837fdf6756dfab126c82c42696bdcc1"
+    },
+    {
+      "path": "examples/blocking-demo/director-contract.json",
+      "size_bytes": 14609,
+      "sha256": "bd6f4f43b83b988c41530961119a52e26d8576fc4f2938dac4aa94b32822fe75"
+    },
+    {
+      "path": "examples/blocking-demo/identity-registry.json",
+      "size_bytes": 427,
+      "sha256": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e"
+    },
+    {
+      "path": "examples/blocking-demo/methods-45/README.md",
+      "size_bytes": 4108,
+      "sha256": "f1f1e0eba2a219e5308f9ab13ad0b6c31b0659c1abf309d32a0d99bc13be65b7"
+    },
+    {
+      "path": "examples/blocking-demo/methods-45/method-pack.json",
+      "size_bytes": 34911,
+      "sha256": "1e8ac2ad516d2a95b7c4ca360a1c89f8a17da228b400a4a8db7b1892ad1d2027"
+    },
+    {
+      "path": "examples/blocking-demo/methods-45/review/method-report.json",
+      "size_bytes": 5636,
+      "sha256": "7de99edc18b2a71641a952538e58c7190c8cbd35a7a6e2d39d382b8543c4165d"
+    },
+    {
+      "path": "examples/blocking-demo/methods-45/review/method-review.html",
+      "size_bytes": 75751,
+      "sha256": "02ca991cd9117e3d2edd2f6b1b1e46ba25e6c92abd3d8ad404d5c5622282db7c"
+    },
+    {
+      "path": "examples/blocking-demo/methods-45/validate-report.json",
+      "size_bytes": 5636,
+      "sha256": "7de99edc18b2a71641a952538e58c7190c8cbd35a7a6e2d39d382b8543c4165d"
+    },
+    {
+      "path": "examples/blocking-demo/preview/blocking-review.json",
+      "size_bytes": 2999,
+      "sha256": "b279958b57a6781fc3d2702e53905f668d235627f19b33eaeb5ea0bea21fbbe9"
+    },
+    {
+      "path": "examples/blocking-demo/preview/index.html",
+      "size_bytes": 1109,
+      "sha256": "b8c53180ae7e1c40dccd337497e3d8a517d85c1e1a9673703556b1310e451952"
+    },
+    {
+      "path": "examples/blocking-demo/preview/manifest.json",
+      "size_bytes": 2179,
+      "sha256": "e4bd5b740044a4aae543fa2f479ccc3c9cef9d355baeede1357b4afd06efbaa5"
+    },
+    {
+      "path": "examples/blocking-demo/preview/scene-001/movement.svg",
+      "size_bytes": 6923,
+      "sha256": "2666f7d3eb83f431b524bd608bc1722ac9471125068871348fdbc8857ad99ffe"
+    },
+    {
+      "path": "examples/blocking-demo/preview/scene-001/positions.svg",
+      "size_bytes": 8219,
+      "sha256": "24db740621c844acabeab3ce25bebc606e44214e668f782d0847d777a1475f20"
+    },
+    {
+      "path": "examples/blocking-demo/preview/scene-002/movement.svg",
+      "size_bytes": 2187,
+      "sha256": "584ffe71fa0dcebc65353d9b9dabc5c520b19eb5d41c7f04c50f98aada9aec1c"
+    },
+    {
+      "path": "examples/blocking-demo/preview/scene-002/positions.svg",
+      "size_bytes": 2688,
+      "sha256": "7f15aa5bcd52c897199253816e2ea079afeddf7bac07ea9e1658fda16eee0a90"
+    },
+    {
+      "path": "examples/blocking-demo/preview/validation.json",
+      "size_bytes": 670,
+      "sha256": "3996b20cda6e7a595aa50fcc5d5ae1145af82ed61cef64a2334de1f092af502a"
+    },
+    {
+      "path": "examples/blocking-demo/preview/visual-verdict.json",
+      "size_bytes": 1296,
+      "sha256": "bfbf1d0321763acffb60e60ef19980ed1b97637ff16d670983a683c925a4f9e4"
+    },
+    {
+      "path": "examples/blocking-demo/roster.json",
+      "size_bytes": 911,
+      "sha256": "8b0aa95272e4e9c83967d7217c993c5a1aa0f10c95792fcf11fb42b52c7b763f"
+    },
+    {
+      "path": "examples/blocking-demo/source-table.json",
+      "size_bytes": 1100,
+      "sha256": "bcd152334c40fd7a51fe9905db37d9285526d624061de413257a49cd49cad31a"
+    },
+    {
+      "path": "examples/blocking-demo/source.json",
+      "size_bytes": 3442,
+      "sha256": "98ead56886a6f92465eadf16e5915a85be2cd34024271a69ab2730e9d80a633d"
+    },
+    {
+      "path": "examples/hall-shot-09/README.md",
+      "size_bytes": 7365,
+      "sha256": "33aa6a603d3a543e50dcb5837107a83cfa7c4c16c13f6951e55c836e58768692"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/blocking.json",
+      "size_bytes": 8543,
+      "sha256": "e23625ed0f92d85c319ab1898620829481cf4bb1e59730e95a2c75695ee23e97"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/coverage.json",
+      "size_bytes": 9494,
+      "sha256": "7d4b85532140f54a5a75da427a0116028c6bc4cfcb50bab9e5c1bc333b1e5653"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/identity-registry.json",
+      "size_bytes": 1760,
+      "sha256": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/index.html",
+      "size_bytes": 1451,
+      "sha256": "53cdde6db9e179c8ca0930a8e7d605865acf4fd8f6ccbadd8ea4bde212476238"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/manifest.json",
+      "size_bytes": 9676,
+      "sha256": "2a7206f79902c277b2b9800b5abe2b08fa963c826f06aabf2c2b98de64872380"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/roster.json",
+      "size_bytes": 2340,
+      "sha256": "704422f7ffb95aa71761348b15ae856502ce78c629bf3b5caf2e6ad4f88c48b1"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/overview.png",
+      "size_bytes": 222465,
+      "sha256": "972d96fdc858d6a5f933e681cee8e76599ee7216d14e19209421d0ecf005e94d"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/overview.svg",
+      "size_bytes": 72579,
+      "sha256": "3ac63ef45f5ce2dcc0bdacb874b011b3e3c7af69c2f32aae7355f183401612eb"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/entry.png",
+      "size_bytes": 207947,
+      "sha256": "24d6f9b87be1bd60da00ee0a2a21adfc470bd491050f422f8a855689b12aab3e"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/entry.svg",
+      "size_bytes": 72301,
+      "sha256": "a39006ad88706f00a429baeb65c96c8b95c21bd8363cae4cd01379a37dc85e90"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/exit.png",
+      "size_bytes": 209426,
+      "sha256": "16909e7161cec951f9851ae43e79bb3231bc8bece0952d37902020e5b9965f24"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/exit.svg",
+      "size_bytes": 72300,
+      "sha256": "969479f367b962d3044722ac889c900ab9f6b3a319890a2c11684a64daf75e41"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/movement.png",
+      "size_bytes": 332954,
+      "sha256": "7c7699355ea135c17393d13ddcce4b4987a6b33d43faab77e73463f8e05042c0"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/scene-001/shot-001/movement.svg",
+      "size_bytes": 106589,
+      "sha256": "7d0a63d15b927a5021b69a63a4a87339a6104591f781bf2ea808485ff6975e8e"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-complete/validation.json",
+      "size_bytes": 13911,
+      "sha256": "2bb771bcdb6a68c07a93f27e19ba4fe333493dba9de5f89b090498a44ffa37e0"
+    },
+    {
+      "path": "examples/hall-shot-09/blocking-spec.json",
+      "size_bytes": 8543,
+      "sha256": "e23625ed0f92d85c319ab1898620829481cf4bb1e59730e95a2c75695ee23e97"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/h3-first-last/manifest.json",
+      "size_bytes": 2450,
+      "sha256": "1ba9fc8acd9b49dc745e18f867176373be59cb97ca87b978fca20cea9c3bb121"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/h3-first-last/prompt.txt",
+      "size_bytes": 2209,
+      "sha256": "b69f78bc1db4d3c894c9ff65a944c604018d0c374e93066fa671e985b3ed9681"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/h3-ref/manifest.json",
+      "size_bytes": 4306,
+      "sha256": "894f77f345ea78611037861f2f66beb8dc30136d3bb96859034724459ad8fe43"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/h3-ref/prompt.txt",
+      "size_bytes": 3948,
+      "sha256": "ee4808e3ffd300fa7b877ee8cab98f8668f253bbcb61d45861d5bdd7de53ad5d"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/seedance-2.0-ref/manifest.json",
+      "size_bytes": 4276,
+      "sha256": "92cecd658c5c65d09955d6b4a88d665af1b341d9db018059b3f55b9ec82d7ec2"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/seedance-2.0-ref/prompt.txt",
+      "size_bytes": 2315,
+      "sha256": "f43187986430bed029eed06f9edfda46f08bafd502513deed3a1d676c35a16c9"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/seedance-2.5-ref/manifest.json",
+      "size_bytes": 4276,
+      "sha256": "8b550b80bbd6f030b0b331d259ccbc7179a29ad9e1b8de87c2e6d5ee65d813ae"
+    },
+    {
+      "path": "examples/hall-shot-09/compiled/seedance-2.5-ref/prompt.txt",
+      "size_bytes": 2315,
+      "sha256": "f43187986430bed029eed06f9edfda46f08bafd502513deed3a1d676c35a16c9"
+    },
+    {
+      "path": "examples/hall-shot-09/continuity-graph.json",
+      "size_bytes": 1149,
+      "sha256": "4cab48650c1a09ba0bd015583d59603a69aad0f938416f99ad223850e8deb551"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/board-001-p001.png",
+      "size_bytes": 670426,
+      "sha256": "8a56863995227454c66fa5a1b0d61c03ed8630890a64521e6dd36acf3947d300"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/board-001-p002.png",
+      "size_bytes": 750998,
+      "sha256": "f093b1eb3b593032dc2cf2d14b9053be360f6f6ae0ed031ae9d59dd043d81031"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/board-001-p003.png",
+      "size_bytes": 567973,
+      "sha256": "44329b855956cc95e66923830d94f709fac651b8a04826c593fbc1eb800705fc"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/board-001-p004.png",
+      "size_bytes": 616501,
+      "sha256": "1910b85e42175d3f60d5dd3049eac695298831d047cbc0ddc59c35a84d46e095"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/board-001-p005.png",
+      "size_bytes": 121947,
+      "sha256": "ef481f5f4c2703881947be816cfeaef5541040db39342c0719ed2bd06756a5c8"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/index.html",
+      "size_bytes": 1307024,
+      "sha256": "40d576b941e57e602929876266dd5e82eed66f47a38c5ebba519c900142c9829"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial/manifest.json",
+      "size_bytes": 32063,
+      "sha256": "0925916568ddbe9926618717f2d3e340cf15cfe7a4d236e2a4bd1c4ad7b3cf51"
+    },
+    {
+      "path": "examples/hall-shot-09/design-spatial-spec.json",
+      "size_bytes": 481,
+      "sha256": "db1604693d534bca5b5914c013f308a3efc94433df8135cb33ee852a1606e8a2"
+    },
+    {
+      "path": "examples/hall-shot-09/director-contract.json",
+      "size_bytes": 16086,
+      "sha256": "5447f7c6828d711220ef8005c57a8370efeeb0a3c1907bb88f6192963fdff1ab"
+    },
+    {
+      "path": "examples/hall-shot-09/frame-jobs.json",
+      "size_bytes": 16106,
+      "sha256": "9792a3bbd469cfeb1cdb827133aa453d0d2c6db6f03b846ee3452cacaf69d888"
+    },
+    {
+      "path": "examples/hall-shot-09/identity-registry.json",
+      "size_bytes": 1760,
+      "sha256": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5"
+    },
+    {
+      "path": "examples/hall-shot-09/lookahead-source.json",
+      "size_bytes": 4373,
+      "sha256": "7e7ddbd1237753a6e344b95205b434abfaa582b61b6d8f5e12f7af04834ffa1d"
+    },
+    {
+      "path": "examples/hall-shot-09/methods-45/README.md",
+      "size_bytes": 4636,
+      "sha256": "216a9a3ac7574050e3a9dfc0007418ed3abc4c1fd7af1466cb43c27a37e12c87"
+    },
+    {
+      "path": "examples/hall-shot-09/methods-45/method-pack.json",
+      "size_bytes": 58988,
+      "sha256": "d6a1f5e102663d7cf36c18c13cbc8729562979cf13f8d91242ed849281d594e7"
+    },
+    {
+      "path": "examples/hall-shot-09/methods-45/review/method-report.json",
+      "size_bytes": 12457,
+      "sha256": "069b52cc2533ade73fa834aa63e6f59a94c8eb074c3018d319affb3671b2ff0d"
+    },
+    {
+      "path": "examples/hall-shot-09/methods-45/review/method-review.html",
+      "size_bytes": 124586,
+      "sha256": "db77b30e8532bd7a1b77eec7e1b10361d2501b42fd2d51821f7a2b5e07164599"
+    },
+    {
+      "path": "examples/hall-shot-09/methods-45/validate-report.json",
+      "size_bytes": 12457,
+      "sha256": "069b52cc2533ade73fa834aa63e6f59a94c8eb074c3018d319affb3671b2ff0d"
+    },
+    {
+      "path": "examples/hall-shot-09/review-planning.html",
+      "size_bytes": 5841,
+      "sha256": "bacbec5b25daac607400edf1e8bb459d0fcff7c20042e6046d8edb211ce98758"
+    },
+    {
+      "path": "examples/hall-shot-09/roster.json",
+      "size_bytes": 2340,
+      "sha256": "704422f7ffb95aa71761348b15ae856502ce78c629bf3b5caf2e6ad4f88c48b1"
+    },
+    {
+      "path": "examples/hall-shot-09/source-excerpt.json",
+      "size_bytes": 2574,
+      "sha256": "6493924caa62f2bc0887ed68b0cccfa91adc00246a4c0edb3f66433b21337131"
+    },
+    {
+      "path": "install.ps1",
+      "size_bytes": 926,
+      "sha256": "d47b7aaca4e4c19814e2791211d7774d14a58a2ad350f341119fb6294f33e13a"
+    },
+    {
+      "path": "legacy/SKILL.md.before-continuity.bak",
+      "size_bytes": 36561,
+      "sha256": "c894a216be0a2fc8a47b77a6a59a9e5528fcbab9c8bb7f234d4786f559383d78"
+    },
+    {
+      "path": "legacy/SKILL.original.txt",
+      "size_bytes": 38159,
+      "sha256": "b0f6c78053e45ceb72bba17bf7df32eb81c910cf8a88e8c3fb9e2f9869e377a2"
+    },
+    {
+      "path": "legacy/references/character-consistency-format.md",
+      "size_bytes": 15022,
+      "sha256": "cfff13fb458222416ca7b180f5b3705a0344d24657cf668a35a6a0971f696459"
+    },
+    {
+      "path": "legacy/references/core-methodology.md",
+      "size_bytes": 21681,
+      "sha256": "229cbd48f673fdbfd10595e81f80432b72a96781e59232223275abd3bec59604"
+    },
+    {
+      "path": "legacy/references/execution-storyboard-format.md",
+      "size_bytes": 19906,
+      "sha256": "6efccf8d03b943c819f5833697f044a0e1d5ffe0d43a56bf80ae0e9da592318e"
+    },
+    {
+      "path": "legacy/references/execution-storyboard-format.md.before-continuity.bak",
+      "size_bytes": 18308,
+      "sha256": "bf551312947cab09da21cdc5386a4918ce191538eefc3065cf82b9f8dbb91fc1"
+    },
+    {
+      "path": "legacy/references/genre-A-mood.md",
+      "size_bytes": 40567,
+      "sha256": "4e7eddb5b6c019ee6ffb6b5252bd2a6ceabc92c96a7b8caf75c72bcb3150ccec"
+    },
+    {
+      "path": "legacy/references/genre-B-genre.md",
+      "size_bytes": 32248,
+      "sha256": "bdeca11ede2d62a9108d8e84136edb72e954b53b910fe875ff52d5f764c35ea2"
+    },
+    {
+      "path": "legacy/references/genre-C-action.md",
+      "size_bytes": 13527,
+      "sha256": "2ec43dbb746ca52495fdd207a67a944264d6cc2e6b63d70cabe6cac335d2fa11"
+    },
+    {
+      "path": "legacy/references/genre-D-theme.md",
+      "size_bytes": 14249,
+      "sha256": "c26a20d6f921b42ae8bebb0ebd9037bdce1e01f37a6f0b9fdd916ee5a35b20a1"
+    },
+    {
+      "path": "legacy/references/genre-E-form.md",
+      "size_bytes": 13295,
+      "sha256": "ffc2818d220e3bc4627e94558a85ced33f5b802491d602f8a7bac3d21f58a77f"
+    },
+    {
+      "path": "legacy/references/genre-F-social.md",
+      "size_bytes": 13402,
+      "sha256": "f4141a5dcc501d98e6e070194b363a3113d7e96632647eca417dbac00041f075"
+    },
+    {
+      "path": "legacy/references/scene-consistency-format.md",
+      "size_bytes": 2321,
+      "sha256": "29a2431cfa6e1350d0d9681e874e6cb98f74a579f8f81d4a9811045b453e0576"
+    },
+    {
+      "path": "legacy/references/seedance2-video-storyboard-format.md",
+      "size_bytes": 9297,
+      "sha256": "286a58646eafa30533104703c7df82651adef6fc0302719e2624b00dec5b99f2"
+    },
+    {
+      "path": "legacy/references/shot-design.md",
+      "size_bytes": 21081,
+      "sha256": "680b7e3b9a892d10ae112b54c6f99cb1e42fb7e05e94e2242198457959cf2f4b"
+    },
+    {
+      "path": "legacy/references/storyboard-format.md",
+      "size_bytes": 13993,
+      "sha256": "52771d3e0ac32770946a19e6c8372fe4247eb6629c9183634fbdb56a0e4d6a43"
+    },
+    {
+      "path": "legacy/references/video-prompt-format.md",
+      "size_bytes": 4658,
+      "sha256": "d50c2f07e8b35470bed95c2bcfbd679a749b5d987d8ec76651dce1dec9eeee50"
+    },
+    {
+      "path": "legacy/scripts/generate-seedance2-video-storyboards.mjs",
+      "size_bytes": 38636,
+      "sha256": "d7fefa77d194dce87748944ae846cac4d87360ba08b89e5b5ddf5732816e349d"
+    },
+    {
+      "path": "legacy/scripts/group-execution-storyboards.mjs",
+      "size_bytes": 29841,
+      "sha256": "286f1306605204cceadca34b37383091ce7b8b7cfc9d03edc120f33666df8847"
+    },
+    {
+      "path": "legacy/scripts/validate-character-bible.mjs",
+      "size_bytes": 5437,
+      "sha256": "a303c42e0250c71c7b21052533284f1d7fba0e0e3d53e0d24ed2f98e71c30389"
+    },
+    {
+      "path": "profiles/minimax-h3.json",
+      "size_bytes": 1417,
+      "sha256": "5a3083845f7c85c59b39e74414a342fb4573ba654cd433c573ae22220e96cdec"
+    },
+    {
+      "path": "profiles/seedance-2.0.json",
+      "size_bytes": 1142,
+      "sha256": "e63e700189ca7431ab33448e72e05004a4ab395ed7b120c614852cdf426e15d8"
+    },
+    {
+      "path": "profiles/seedance-2.5.json",
+      "size_bytes": 1423,
+      "sha256": "7c20d8c44ad0e1f11327764106a72f125fd1f22af96cd59d3d38cb30bcfd175f"
+    },
+    {
+      "path": "references/capability-prompt-routing.md",
+      "size_bytes": 2182,
+      "sha256": "6241d7da40ca67cbdd114950b1e3e9c3b9e484ddc03c08bd26480c107be5b04d"
+    },
+    {
+      "path": "references/character-consistency-format.md",
+      "size_bytes": 15591,
+      "sha256": "b87fa137d9ba46aff9c5d104cde85f7176a042768d588ea48bef289e5dfbf8f3"
+    },
+    {
+      "path": "references/continuity-graph.md",
+      "size_bytes": 3195,
+      "sha256": "6e97bc2094231e1cd98596898e4f4ae39479f935e2fd5568f10b1432ad2be64f"
+    },
+    {
+      "path": "references/core-methodology.md",
+      "size_bytes": 22109,
+      "sha256": "f7971b9764e8dcaba41c7cbd44069368ece1ceb41b8ef5eff9d145936c44dd67"
+    },
+    {
+      "path": "references/department-director-book.md",
+      "size_bytes": 4599,
+      "sha256": "f5490908a44a5531ed6cd938f13b97eee22ccd7f0911b9aa59e0228af647823b"
+    },
+    {
+      "path": "references/director-language-engine.md",
+      "size_bytes": 5311,
+      "sha256": "ceaca381a544f1aa1b57c02646fe6bccb21c534838e6ad6a0eacd3525a0166e4"
+    },
+    {
+      "path": "references/director-method-layer.md",
+      "size_bytes": 2480,
+      "sha256": "fb57811a28ee659531160d4b604a1feab9039f04450ad4e5f4242038e526c32e"
+    },
+    {
+      "path": "references/director-shot-contract.md",
+      "size_bytes": 4122,
+      "sha256": "fbbf95d2f2f22ebfa152a609cdc6b6687f748cb98df4d37d0c79b96141ac6c5c"
+    },
+    {
+      "path": "references/execution-storyboard-format.md",
+      "size_bytes": 5412,
+      "sha256": "8a3ef139de34acb0f8ce1eee80ec99e33e80b338769a2856318ba398ec08fbc3"
+    },
+    {
+      "path": "references/failure-repair-ledger.md",
+      "size_bytes": 4090,
+      "sha256": "db912c7bb6ce1c6c0709276c143042678597e598f9f8d31e5a091be785f5a72a"
+    },
+    {
+      "path": "references/genre-A-mood.md",
+      "size_bytes": 40847,
+      "sha256": "2b2c77d889575019a4e5c253b8258f4ad1f0c918c11ddf9eabf43b5febd48a7d"
+    },
+    {
+      "path": "references/genre-B-genre.md",
+      "size_bytes": 32528,
+      "sha256": "009f55b5ad245409de1ffea3693838fcf70ade7363cec7c3eb5c127606f4e488"
+    },
+    {
+      "path": "references/genre-C-action.md",
+      "size_bytes": 13807,
+      "sha256": "f3472ff4c0f563575814f2f49a5daa08fee8ebd51e5e650ce0570d41b330fb10"
+    },
+    {
+      "path": "references/genre-D-theme.md",
+      "size_bytes": 14529,
+      "sha256": "55fd2c2e94f01364e839752d81e39c685db14a6c739351e4efda84539cc9e5a7"
+    },
+    {
+      "path": "references/genre-E-form.md",
+      "size_bytes": 13575,
+      "sha256": "b1c3646df514a9e618c8cc0b1d1435f9417917253644e49fde451f595cad648f"
+    },
+    {
+      "path": "references/genre-F-social.md",
+      "size_bytes": 13682,
+      "sha256": "468a013e91ba7a70e834ceaadc39d1f63ca02a71c7827bf81881b763ab8371c2"
+    },
+    {
+      "path": "references/minimax-h3-adapter.md",
+      "size_bytes": 2999,
+      "sha256": "ebfd58df5d9bed3523a36d06d47416d7acc999d9e8d540d200eafa3924f666d1"
+    },
+    {
+      "path": "references/observable-performance.md",
+      "size_bytes": 1938,
+      "sha256": "f0001da907db6de93837e7dd2b2f5b670f5ca90f66d76e1389e8c76c057caf14"
+    },
+    {
+      "path": "references/original-workflow-steps-1-to-6.md",
+      "size_bytes": 15288,
+      "sha256": "8b03a48348af464a9847e488f5769005d4845fbdf377fa961fd73ca94cabd9ad"
+    },
+    {
+      "path": "references/project-memory-and-repair.md",
+      "size_bytes": 2206,
+      "sha256": "0f6c9275ea5030b9c5861fe9a9db0e4b66e5ff173c5c361ee2e3cc5542256b22"
+    },
+    {
+      "path": "references/scene-blocking.md",
+      "size_bytes": 10525,
+      "sha256": "32869e1fde1753de249cd45dee4fc144d6dcc13a92ec3d4c6aa5b32abea4e758"
+    },
+    {
+      "path": "references/scene-consistency-format.md",
+      "size_bytes": 2673,
+      "sha256": "92660b4392faa3c9c79f3a75bbd1f490fdc0d323451a10a9d65aa73011dcfa52"
+    },
+    {
+      "path": "references/seedance-adapter.md",
+      "size_bytes": 3127,
+      "sha256": "9adf2ac7068b5737b65da43686af5e167109e777f1c6c85e987273a88384ebd5"
+    },
+    {
+      "path": "references/seedance2-video-storyboard-format.md",
+      "size_bytes": 737,
+      "sha256": "027e3faee52ac6cc17932e29ae245f1fd45915ad1e02420c96b3a83bf676ad2d"
+    },
+    {
+      "path": "references/shot-design.md",
+      "size_bytes": 21361,
+      "sha256": "1dd9fe2cba82de7652b7c48161c30ab09a9e0cc7e328a466469a00577b2b071b"
+    },
+    {
+      "path": "references/sound-edit-planning.md",
+      "size_bytes": 2562,
+      "sha256": "501081a15bf0e69df94872a89b873ea424d56dfb479709252e7ff58510b74f50"
+    },
+    {
+      "path": "references/storyboard-format.md",
+      "size_bytes": 15381,
+      "sha256": "fdd9828aa19d5c1dcd2db88f9a408beea8af435807b382d8bf371995e9861fe9"
+    },
+    {
+      "path": "references/temporal-storyboard.md",
+      "size_bytes": 3277,
+      "sha256": "696e796dc1db89eacc0ca8c875dc4f9c97739475807b172d83c5bfca42fd04fa"
+    },
+    {
+      "path": "references/tooling-and-qa.md",
+      "size_bytes": 5853,
+      "sha256": "39d728a26bbf928f4b801c2066894980f57dadf879f116137e1ad420c6855857"
+    },
+    {
+      "path": "references/video-prompt-format.md",
+      "size_bytes": 5073,
+      "sha256": "45ea801b1962144dbe1d20535cd988c17ad8deaa0113ce1af9819412c669f258"
+    },
+    {
+      "path": "requirements-optional.txt",
+      "size_bytes": 226,
+      "sha256": "8049a783e3e67a0650a2758a1c25d1c0cddee48f05a13bf3e24dfeb9395552db"
+    },
+    {
+      "path": "schemas/blocking-roster.schema.json",
+      "size_bytes": 4451,
+      "sha256": "9e5c0b7f2d758114746cecac08b5d2e322208d08a2db48c325d72fc17b853144"
+    },
+    {
+      "path": "schemas/character-identity.schema.json",
+      "size_bytes": 1799,
+      "sha256": "7fd1bd89c62b50738a6bc0d363a9194d91f867d7d2630886b1f45e9e0e7e8da1"
+    },
+    {
+      "path": "schemas/director-contract.schema.json",
+      "size_bytes": 19337,
+      "sha256": "fab3c8efbaa03390739ea17a16803d566a77f035d39ccdecbde49c40396b4e3c"
+    },
+    {
+      "path": "schemas/director-method-pack.schema.json",
+      "size_bytes": 46122,
+      "sha256": "58b964958f9713de824952f5d301a909e5847cc595e20d63c226741c8f150c5d"
+    },
+    {
+      "path": "scripts/director_behavior_evals.py",
+      "size_bytes": 14080,
+      "sha256": "e12c79df69190eb9f690225d8e35c0b3e3d3e93ffcb0da969fce89c95d246a9d"
+    },
+    {
+      "path": "scripts/director_blocking.py",
+      "size_bytes": 36087,
+      "sha256": "b7c7c403470085dab4642ffa50644b8946dc109eecc8a47d8b3b3c799ecb0f8e"
+    },
+    {
+      "path": "scripts/director_blocking_output.py",
+      "size_bytes": 20517,
+      "sha256": "4acca3534353edab6c8c5a2bb9f58e521903f5a00a96fe078dcf9acc8aacab00"
+    },
+    {
+      "path": "scripts/director_core.py",
+      "size_bytes": 53950,
+      "sha256": "4a736fd5baa338e1473c388f5453e88433d0fe93d9456e6b29495489b8d01833"
+    },
+    {
+      "path": "scripts/director_design_board.py",
+      "size_bytes": 30010,
+      "sha256": "ec785ead68483a9c9090429c41e98c92af86c90f9523f5390483a9044d25cc93"
+    },
+    {
+      "path": "scripts/director_export.py",
+      "size_bytes": 19002,
+      "sha256": "141429a42e2bf3ad5623abe785f7c23fbb2c93084d9bb70ad2128ff42ee6543f"
+    },
+    {
+      "path": "scripts/director_identity.py",
+      "size_bytes": 7916,
+      "sha256": "5973a0f93502c82799330473999c23e17c205794eae73e6115fd0601517d25e0"
+    },
+    {
+      "path": "scripts/director_methods.py",
+      "size_bytes": 24950,
+      "sha256": "dc804c2563c87da317e4894f38e3ec063429ef38ed0dafb7506b01bdc3a5d097"
+    },
+    {
+      "path": "scripts/director_pipeline.py",
+      "size_bytes": 10922,
+      "sha256": "fcfae6ec016b845b488f12b64cd03a21b533e79c543d1e298344d5aebfe58cfd"
+    },
+    {
+      "path": "scripts/director_render.py",
+      "size_bytes": 14751,
+      "sha256": "99cde98ecae886b7081e185fd5727b0e88c9868c26c47e65a88f07e337c6fc62"
+    },
+    {
+      "path": "scripts/director_review_plan.py",
+      "size_bytes": 10404,
+      "sha256": "10d79cc76925de9f50f0fc9881d39bb4532fa8e7823e4edfd99327ecd1b8ceb9"
+    },
+    {
+      "path": "scripts/install_skill.py",
+      "size_bytes": 15771,
+      "sha256": "4e6ed6a8c8167f095fcebf43d6666de49936e5aa0fe90ae4c6c6151d34f87c72"
+    },
+    {
+      "path": "scripts/validate-character-bible.mjs",
+      "size_bytes": 5437,
+      "sha256": "a303c42e0250c71c7b21052533284f1d7fba0e0e3d53e0d24ed2f98e71c30389"
+    },
+    {
+      "path": "templates/design-board-spec.json",
+      "size_bytes": 105,
+      "sha256": "113496636b27540124faaf5ea0010cbdcc3f1fe46049641995303f4d109f738e"
+    },
+    {
+      "path": "templates/director-contract.draft.json",
+      "size_bytes": 4848,
+      "sha256": "61d2fc54ade6e6b49025088e007f64351000402a33a0d1b40b585ac7730262ae"
+    },
+    {
+      "path": "templates/director-method-worksheet.md",
+      "size_bytes": 2050,
+      "sha256": "40587a1045777ec1c6dfca7f3c63c34515c9c5692aaa089de1ffab766d5577b1"
+    },
+    {
+      "path": "templates/previs-job.json",
+      "size_bytes": 411,
+      "sha256": "daed5ff6e165e510c34da4a711a53fd64385960e6bd490ed197375ac35bfd599"
+    },
+    {
+      "path": "templates/project-state.json",
+      "size_bytes": 552,
+      "sha256": "dbb3ef44212338f4cd939b8e90fc57f58eefc4c5539d22b4e6e3325a8bbd57a4"
+    },
+    {
+      "path": "templates/provider-preflight.json",
+      "size_bytes": 464,
+      "sha256": "7f54dc818f3e1431441f662b5672c27f3a71e34d355313ebee32842bea4f5456"
+    },
+    {
+      "path": "tests/test_behavior_evals.py",
+      "size_bytes": 11273,
+      "sha256": "f2bde54c16646096141ddc65d916710d2f08082ec787d377ea7f0c297b2b00ff"
+    },
+    {
+      "path": "tests/test_blocking_coverage.py",
+      "size_bytes": 11836,
+      "sha256": "d538ba33aca6115df6fb2587da6dd9aa90e46c2d6b79e2bcedc0e5c97d544f00"
+    },
+    {
+      "path": "tests/test_blocking_output.py",
+      "size_bytes": 7634,
+      "sha256": "3b7b0084bb8032b2b70a4d0d5d7351b4f79a271f8a6e61710938a925126f5f05"
+    },
+    {
+      "path": "tests/test_character_identity.py",
+      "size_bytes": 13289,
+      "sha256": "a749debb8b44b960021c107adaa01cba3f9980470018f8a76fbfef5e41e5e45d"
+    },
+    {
+      "path": "tests/test_cli_output_safety.py",
+      "size_bytes": 1725,
+      "sha256": "6bd5b3f9a73aceb1ab71fad0089ff44d76bff2fa99e1e163b33acdadf924c77f"
+    },
+    {
+      "path": "tests/test_design_board.py",
+      "size_bytes": 8822,
+      "sha256": "2b7e77579db3f0ea08a23eb117d7dcc2ffbfe7e429a8562e54ac762af9573608"
+    },
+    {
+      "path": "tests/test_design_board_blocking.py",
+      "size_bytes": 9814,
+      "sha256": "2204ff886ea94ff5993693291a705a10184fe989eec8760759608950c6e7309d"
+    },
+    {
+      "path": "tests/test_director_blocking.py",
+      "size_bytes": 13186,
+      "sha256": "dc85eddec8bb458bc2c85bd5edd12ef463dd6b90823346862664975d2f6acb12"
+    },
+    {
+      "path": "tests/test_director_methods.py",
+      "size_bytes": 15398,
+      "sha256": "7af6a5166ed2e55686c5be48a6ebe5db62458e11e74aada53e322bf64042d95f"
+    },
+    {
+      "path": "tests/test_director_pipeline.py",
+      "size_bytes": 18216,
+      "sha256": "a94f84684bbd8b88c2bbcf1acbc1a9ffdb8d5122ad687517fe327a27bb3f2312"
+    },
+    {
+      "path": "tests/test_excel_export.py",
+      "size_bytes": 12989,
+      "sha256": "a4a927ba2e0109c3e83186855720da862da8f4ab73c8aa57f50118aa52dc5cc5"
+    },
+    {
+      "path": "tests/test_integrity_regressions.py",
+      "size_bytes": 10471,
+      "sha256": "55b2b067faa091fa9f36f0bb4ebe090f2d118365a8fb19b6ff8ae98271bb40ba"
+    },
+    {
+      "path": "tests/test_merged_install.py",
+      "size_bytes": 1417,
+      "sha256": "77ceab9d3b1fb1950b561e95b2fd6392c319fe2d585832bfe08d23cd062e09a3"
+    },
+    {
+      "path": "tests/test_review_binding.py",
+      "size_bytes": 2969,
+      "sha256": "517e16e83a7465d72893e9be48ff0871f9b125b2d65d3569ea5355a50e5859b8"
+    },
+    {
+      "path": "tests/test_review_plan.py",
+      "size_bytes": 7530,
+      "sha256": "bf7a00b908aa179f8ad4437303faea54a2a5cb2624a7b61e78a6fef030ec0709"
+    },
+    {
+      "path": "tests/test_skill_identity_install.py",
+      "size_bytes": 21138,
+      "sha256": "458c15dcc7d60b1bb3be95fdb08dd59dfa51643412087545f52aceb722ed3f73"
+    },
+    {
+      "path": "tests/test_source_gate.py",
+      "size_bytes": 7383,
+      "sha256": "4f8181e89a82fcf26f22c567b429c203a7c3810ea03706d09440d5f5c94cf03a"
+    },
+    {
+      "path": "third_party/DirectorSKILL/LICENSE",
+      "size_bytes": 1069,
+      "sha256": "df731ea2e1ffd3b8890ad246da3df96ceba3301c16fb4970c16811df4c728b56"
+    },
+    {
+      "path": "空间图交付入口.html",
+      "size_bytes": 2451,
+      "sha256": "41906dc2f296f13bb1eb60d0d5b3164d64449ca11746b07db8a14c16505ebb8d"
+    }
+  ]
+}

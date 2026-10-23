@@ -1,0 +1,4 @@
+# Core import, structural validation, text-only compilation and legacy HTML use the standard library.
+# Pillow is required for actual raster integrity checks and the new design-board layout.
+Pillow>=10,<13
+jsonschema>=4.20,<5

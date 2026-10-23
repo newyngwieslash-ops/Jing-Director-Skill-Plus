@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.2",
+  "identity_legend": [
+    {
+      "character_id": "A",
+      "name": "林晓",
+      "short_code": "C001",
+      "color": "#BE123C",
+      "marker_shape": "circle",
+      "path_style": "solid"
+    },
+    {
+      "character_id": "B",
+      "name": "周衡",
+      "short_code": "C002",
+      "color": "#1D4ED8",
+      "marker_shape": "square",
+      "path_style": "solid"
+    }
+  ],
+  "identity_registry": {
+    "path": "identity-registry.json",
+    "sha256": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e"
+  },
+  "identity_registry_sha256": "a6626639020cd54883ef30351ad5124012bca626ca53a93e8b24828665569d71",
+  "identity_binding": {
+    "project_id": "blocking-demo",
+    "revision": 1,
+    "registry_sha256": "a6626639020cd54883ef30351ad5124012bca626ca53a93e8b24828665569d71"
+  },
+  "source_contract_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "spec_sha256": "b67009006f177040dedbbb1c44c59c659e3a70ed08aa95650aef1c9a61d65445",
+  "review_status": "needs_manual_review",
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "location_id": "cafe",
+      "cast_ids": [
+        "A",
+        "B"
+      ],
+      "identity_legend": [
+        {
+          "character_id": "A",
+          "name": "林晓",
+          "short_code": "C001",
+          "color": "#BE123C",
+          "marker_shape": "circle",
+          "path_style": "solid"
+        },
+        {
+          "character_id": "B",
+          "name": "周衡",
+          "short_code": "C002",
+          "color": "#1D4ED8",
+          "marker_shape": "square",
+          "path_style": "solid"
+        }
+      ],
+      "shots": [
+        {
+          "shot_id": "S001",
+          "source_shot_no": "1",
+          "entry": {
+            "svg": {
+              "path": "scene-001/shot-001/entry.svg",
+              "sha256": "7cacc949ebc714f0b629488d42cd16eba0377e3d7cbb9d103154be05bd004072"
+            },
+            "png": {
+              "path": "scene-001/shot-001/entry.png",
+              "sha256": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc"
+            }
+          },
+          "exit": {
+            "svg": {
+              "path": "scene-001/shot-001/exit.svg",
+              "sha256": "093b4237465e75be56da1aac42542f2784b9483e83654bddadb0e160578f9c18"
+            },
+            "png": {
+              "path": "scene-001/shot-001/exit.png",
+              "sha256": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d"
+            }
+          },
+          "movement": {
+            "svg": {
+              "path": "scene-001/shot-001/movement.svg",
+              "sha256": "4a7a3654b583ce71db72c2f8216d824eac3089f3f5db3e853e4ca5a6fa305161"
+            },
+            "png": {
+              "path": "scene-001/shot-001/movement.png",
+              "sha256": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130"
+            }
+          }
+        },
+        {
+          "shot_id": "S002",
+          "source_shot_no": "2",
+          "entry": {
+            "svg": {
+              "path": "scene-001/shot-002/entry.svg",
+              "sha256": "b28c7b7edfed5e7158825322174ffa09ab4f01cd23cde1a7ed96d0a7042d9599"
+            },
+            "png": {
+              "path": "scene-001/shot-002/entry.png",
+              "sha256": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81"
+            }
+          },
+          "exit": {
+            "svg": {
+              "path": "scene-001/shot-002/exit.svg",
+              "sha256": "900aeea009c64d4d0b30676d85047af1b09937ff7e9828a5fdf44c290e4259d3"
+            },
+            "png": {
+              "path": "scene-001/shot-002/exit.png",
+              "sha256": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26"
+            }
+          },
+          "movement": {
+            "svg": {
+              "path": "scene-001/shot-002/movement.svg",
+              "sha256": "e4778fb754f5d65caa5633a59d2df65c906dbbe1fc9cb6f539cef10a4bab73ac"
+            },
+            "png": {
+              "path": "scene-001/shot-002/movement.png",
+              "sha256": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31"
+            }
+          }
+        }
+      ],
+      "files": [],
+      "overview": {
+        "svg": {
+          "path": "scene-001/overview.svg",
+          "sha256": "01347bb2c023a3c3a3259cd8aafd67332564ef3229b6f4006a20c3fc86f47147"
+        },
+        "png": {
+          "path": "scene-001/overview.png",
+          "sha256": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d"
+        }
+      }
+    },
+    {
+      "scene_id": "SC02",
+      "location_id": "street",
+      "cast_ids": [],
+      "identity_legend": [],
+      "shots": [
+        {
+          "shot_id": "S003",
+          "source_shot_no": "3",
+          "entry": {
+            "svg": {
+              "path": "scene-002/shot-001/entry.svg",
+              "sha256": "6e983a28dfcdf8caace1f242496e892b203c532fea497389e4c74608eb9ca74b"
+            },
+            "png": {
+              "path": "scene-002/shot-001/entry.png",
+              "sha256": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658"
+            }
+          },
+          "exit": {
+            "svg": {
+              "path": "scene-002/shot-001/exit.svg",
+              "sha256": "8fd4371e7bc9218c55fda4c6c9f408c877ce3b2771910d94297bb304ff9b589d"
+            },
+            "png": {
+              "path": "scene-002/shot-001/exit.png",
+              "sha256": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870"
+            }
+          },
+          "movement": {
+            "svg": {
+              "path": "scene-002/shot-001/movement.svg",
+              "sha256": "190d60f607d5dadaa488b1086c7b60272fd72d2a99508efca2ec7a7b73eb9b1a"
+            },
+            "png": {
+              "path": "scene-002/shot-001/movement.png",
+              "sha256": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722"
+            }
+          }
+        }
+      ],
+      "files": [],
+      "overview": {
+        "svg": {
+          "path": "scene-002/overview.svg",
+          "sha256": "f010108a7e8addf2b71484b1d18b26b7376fb72da2a11d1255e5227d2c7caefb"
+        },
+        "png": {
+          "path": "scene-002/overview.png",
+          "sha256": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8"
+        }
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "scene-001/overview.svg",
+      "sha256": "01347bb2c023a3c3a3259cd8aafd67332564ef3229b6f4006a20c3fc86f47147"
+    },
+    {
+      "path": "scene-001/overview.png",
+      "sha256": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d"
+    },
+    {
+      "path": "scene-001/shot-001/entry.svg",
+      "sha256": "7cacc949ebc714f0b629488d42cd16eba0377e3d7cbb9d103154be05bd004072"
+    },
+    {
+      "path": "scene-001/shot-001/entry.png",
+      "sha256": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc"
+    },
+    {
+      "path": "scene-001/shot-001/exit.svg",
+      "sha256": "093b4237465e75be56da1aac42542f2784b9483e83654bddadb0e160578f9c18"
+    },
+    {
+      "path": "scene-001/shot-001/exit.png",
+      "sha256": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d"
+    },
+    {
+      "path": "scene-001/shot-001/movement.svg",
+      "sha256": "4a7a3654b583ce71db72c2f8216d824eac3089f3f5db3e853e4ca5a6fa305161"
+    },
+    {
+      "path": "scene-001/shot-001/movement.png",
+      "sha256": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130"
+    },
+    {
+      "path": "scene-001/shot-002/entry.svg",
+      "sha256": "b28c7b7edfed5e7158825322174ffa09ab4f01cd23cde1a7ed96d0a7042d9599"
+    },
+    {
+      "path": "scene-001/shot-002/entry.png",
+      "sha256": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81"
+    },
+    {
+      "path": "scene-001/shot-002/exit.svg",
+      "sha256": "900aeea009c64d4d0b30676d85047af1b09937ff7e9828a5fdf44c290e4259d3"
+    },
+    {
+      "path": "scene-001/shot-002/exit.png",
+      "sha256": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26"
+    },
+    {
+      "path": "scene-001/shot-002/movement.svg",
+      "sha256": "e4778fb754f5d65caa5633a59d2df65c906dbbe1fc9cb6f539cef10a4bab73ac"
+    },
+    {
+      "path": "scene-001/shot-002/movement.png",
+      "sha256": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31"
+    },
+    {
+      "path": "scene-002/overview.svg",
+      "sha256": "f010108a7e8addf2b71484b1d18b26b7376fb72da2a11d1255e5227d2c7caefb"
+    },
+    {
+      "path": "scene-002/overview.png",
+      "sha256": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8"
+    },
+    {
+      "path": "scene-002/shot-001/entry.svg",
+      "sha256": "6e983a28dfcdf8caace1f242496e892b203c532fea497389e4c74608eb9ca74b"
+    },
+    {
+      "path": "scene-002/shot-001/entry.png",
+      "sha256": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658"
+    },
+    {
+      "path": "scene-002/shot-001/exit.svg",
+      "sha256": "8fd4371e7bc9218c55fda4c6c9f408c877ce3b2771910d94297bb304ff9b589d"
+    },
+    {
+      "path": "scene-002/shot-001/exit.png",
+      "sha256": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870"
+    },
+    {
+      "path": "scene-002/shot-001/movement.svg",
+      "sha256": "190d60f607d5dadaa488b1086c7b60272fd72d2a99508efca2ec7a7b73eb9b1a"
+    },
+    {
+      "path": "scene-002/shot-001/movement.png",
+      "sha256": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722"
+    },
+    {
+      "path": "coverage.json",
+      "sha256": "84df83f741b467215ee8ecdf1f3ecc4412b72a2519a4e5586ea384fda4d3ef60"
+    },
+    {
+      "path": "blocking.json",
+      "sha256": "d125d7277fce1b47e27ff87a7542f96a2480c1465b6e795ad126efbfbfef5c7d"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "8b0aa95272e4e9c83967d7217c993c5a1aa0f10c95792fcf11fb42b52c7b763f"
+    },
+    {
+      "path": "identity-registry.json",
+      "sha256": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e"
+    },
+    {
+      "path": "index.html",
+      "sha256": "54cbff4cc4b7ca7a23153849fdcc274344d9fb184e0ace2f3cbead5cb9c267db"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "e456a102b796b7e3e518355e98a506ab3eeda65738c5f354247d051da02b33d6"
+    }
+  ],
+  "coverage": {
+    "path": "coverage.json",
+    "sha256": "84df83f741b467215ee8ecdf1f3ecc4412b72a2519a4e5586ea384fda4d3ef60"
+  },
+  "blocking_spec": {
+    "path": "blocking.json",
+    "sha256": "d125d7277fce1b47e27ff87a7542f96a2480c1465b6e795ad126efbfbfef5c7d"
+  },
+  "roster": {
+    "path": "roster.json",
+    "sha256": "8b0aa95272e4e9c83967d7217c993c5a1aa0f10c95792fcf11fb42b52c7b763f"
+  },
+  "roster_sha256": "5e89b955901ee16ce238d0e2b7852e55f390952b7feeb4cc0ab1b1b15ffda3fa",
+  "hash_scope": "Every delivered file except manifest.json (no self-hash)",
+  "rendering": "Shared validated geometry; SVG and Pillow PNG independently drawn",
+  "total_png_pixels": 12916200
+}

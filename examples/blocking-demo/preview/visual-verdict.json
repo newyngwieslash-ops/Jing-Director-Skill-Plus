@@ -1,0 +1,33 @@
+{
+  "score": 93,
+  "verdict": "pass",
+  "category_match": true,
+  "reference_basis": "Fictional source shots and declared geometry; functional readability review, not pixel similarity.",
+  "differences": [
+    "静止人物首末标记重合且标签重复，原地说明可消除歧义。",
+    "双列站位图在窄窗口需水平滚动；SVG仍可缩放查看。"
+  ],
+  "suggestions": [
+    "将来面向移动端时可增加自适应缩放。"
+  ],
+  "reasoning": "已实际查看两场共四图；移动方向、首末态、时间、空间关系、无人状态及待审声明清晰，满足示意图验收。",
+  "review_files": [
+    {
+      "path": "scene-001/positions.svg",
+      "sha256": "24db740621c844acabeab3ce25bebc606e44214e668f782d0847d777a1475f20"
+    },
+    {
+      "path": "scene-001/movement.svg",
+      "sha256": "2666f7d3eb83f431b524bd608bc1722ac9471125068871348fdbc8857ad99ffe"
+    },
+    {
+      "path": "scene-002/positions.svg",
+      "sha256": "7f15aa5bcd52c897199253816e2ea079afeddf7bac07ea9e1658fda16eee0a90"
+    },
+    {
+      "path": "scene-002/movement.svg",
+      "sha256": "584ffe71fa0dcebc65353d9b9dabc5c520b19eb5d41c7f04c50f98aada9aec1c"
+    }
+  ],
+  "approval_scope": "demo diagrams only; no production or user approval"
+}

@@ -1,0 +1,348 @@
+{
+  "schema_version": "3.0.0",
+  "project": {
+    "name": "展厅·镜9导演增强候选示例",
+    "aspect_ratio": "16:9",
+    "style": {
+      "zh": "写实城市非遗展厅，柔和暖白照明，服装与展柜沿用已批准参考。",
+      "en": "A realistic urban heritage exhibition hall under soft warm-white lighting. Keep the approved wardrobe and display cases."
+    },
+    "source_sha256": "d0ec06c2adb9f66d0b4e810230411a29fc6ada1ecafa90faaeaf00790f80a115"
+  },
+  "policy": {
+    "board_max_duration_sec": 15,
+    "edit_mode": "preserve_shots",
+    "recut_approval": ""
+  },
+  "source_shots": [
+    {
+      "source_shot_no": "9",
+      "angle": "低机位",
+      "shot_size": "中远景",
+      "action": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。",
+      "scene": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+      "sound": "气球拍打声、急促脚步；小孩笑声",
+      "notes": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道",
+      "narrative_intent": "用左向右的前景横穿避开已被队列占用的纵深通道，建立男孩、近侧底座与后续碰撞的空间因果。",
+      "video_prompt": "",
+      "duration_sec": 10.0,
+      "source_row": 10,
+      "raw_cells": {
+        "镜号": "9",
+        "时长": "01:07-01:17",
+        "摄影角度": "低机位",
+        "景别": "中远景",
+        "画面内容": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。",
+        "场景": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+        "声音": "气球拍打声、急促脚步；小孩笑声",
+        "备注": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道",
+        "叙事目的": "用左向右的前景横穿避开已被队列占用的纵深通道，建立男孩、近侧底座与后续碰撞的空间因果。"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "child_identity",
+      "kind": "image",
+      "role": "identity",
+      "path": "refs/characters/xiao_nan_hai.png",
+      "entity_id": "xiao_nan_hai",
+      "description": {
+        "zh": "小男孩身份与黄色T恤、牛仔背带裤，蓝白鞋；单个蓝色气球细线缠腕。",
+        "en": "The boy identity, yellow T-shirt, denim overalls and blue-white shoes; one blue balloon with its thin string around his wrist."
+      }
+    },
+    {
+      "id": "hall_plate",
+      "kind": "image",
+      "role": "scene",
+      "path": "refs/scenes/heritage_hall_plate.jpg",
+      "entity_id": "scene_exhibition_hall",
+      "description": {
+        "zh": "批准的展厅纵深、玻璃展柜、暖白灯光和横向前景通道。",
+        "en": "Approved hall depth, glass displays, warm-white lights and transverse foreground passage."
+      }
+    },
+    {
+      "id": "left_group",
+      "kind": "image",
+      "role": "composition",
+      "path": "refs/continuity/shot08_left_group.png",
+      "entity_id": "left_group",
+      "description": {
+        "zh": "左后景父亲和四名员工，儿子落后；锁定队列及相对距离，不把全部人硬塞入近景。",
+        "en": "Father and four employees in the left rear; his son trails them. Preserve the grouping and relative distances without forcing every face into close view."
+      }
+    },
+    {
+      "id": "right_group",
+      "kind": "image",
+      "role": "composition",
+      "path": "refs/continuity/shot08_right_group.png",
+      "entity_id": "right_group",
+      "description": {
+        "zh": "右侧尔玛朵与两名游客持续讲绣；角色造型沿用既有角色图。",
+        "en": "Er Ma Duo continues explaining the embroidery to two visitors on the right; retain their existing character designs."
+      }
+    },
+    {
+      "id": "embroidery_stand",
+      "kind": "image",
+      "role": "prop",
+      "path": "refs/props/embroidery_stand_intact.png",
+      "entity_id": "embroidery_stand",
+      "description": {
+        "zh": "四羊护宝刺绣和金属展架近侧底座均完整，位置固定；不得提前破损。",
+        "en": "The four-sheep embroidery and the near-side metal stand base are intact and fixed in position; no premature damage."
+      }
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "S009",
+      "source_shot_no": "9",
+      "source_span_sec": [
+        0,
+        10.0
+      ],
+      "duration_sec": 10.0,
+      "scene_id": "scene_exhibition_hall",
+      "status": "planned",
+      "director": {
+        "viewing_task": "先让观众辨认男孩的横向路线，再同时看清他前方的近侧底座；只建立风险，不提前发生事故。",
+        "visible_change": "男孩从左前景向右接近近侧底座，左后队列和右侧讲解组仍占据原区域；绣面和展架一直完整。",
+        "why_this_camera": "继承低机位侧拍与前2秒向右跟拍。摄影机停止后，男孩继续进入既定危险区域，让道具的静止位置变成可读的因果参照，而不是不断追着人拍。",
+        "hidden_viewpoint_check": "不借镜头越轴改变路线；男孩未看见底座也不等于观众不能看见。成人可受遮挡但人数、站位和剧情状态不能凭空改变。"
+      },
+      "subjects": [
+        "xiao_nan_hai",
+        "lu_jing_tian",
+        "staff_group_4",
+        "lu_chen",
+        "er_ma_duo",
+        "tourist_pair"
+      ],
+      "reference_asset_ids": [
+        "child_identity",
+        "hall_plate",
+        "left_group",
+        "right_group",
+        "embroidery_stand"
+      ],
+      "camera": {
+        "shot_size_start": "中远景",
+        "shot_size_end": "中远景",
+        "height": "男孩身体高度附近的低机位；具体高度由已确认构图定，不虚构厘米值",
+        "angle": "同轴线侧拍",
+        "lens_mm": null,
+        "fov_deg": null,
+        "movement": "0–2秒沿通道向右短距平移跟拍；2–10秒固定机位",
+        "observable_evidence": "前2秒，近侧底座与远处展柜有差速位移；随后两者在画面中的位置稳定，只有男孩继续向右移动。不用原地摇摄或数字变焦冒充平移。",
+        "focus": "男孩和近侧底座均可辨认；后景群像较弱但不消失",
+        "composition": "左后景保留队列，右侧保留讲解组；中前景横向路线与男孩前方底座同框，地面接缝可见但不抢特写。"
+      },
+      "continuity": {
+        "axis_id": "boy_crossing_corridor",
+        "axis_side": "A",
+        "screen_direction": "left_to_right",
+        "entry_state": {
+          "stand.condition": "intact_unmoved",
+          "embroidery.condition": "intact",
+          "balloon.count": 1,
+          "balloon.string": "around_boy_wrist",
+          "left_group.logical_people": 6,
+          "right_group.logical_people": 3,
+          "boy.screen_direction": "left_to_right",
+          "boy.contact": "none",
+          "boy.position": "left_foreground_corridor"
+        },
+        "exit_state": {
+          "stand.condition": "intact_unmoved",
+          "embroidery.condition": "intact",
+          "balloon.count": 1,
+          "balloon.string": "around_boy_wrist",
+          "left_group.logical_people": 6,
+          "right_group.logical_people": 3,
+          "boy.screen_direction": "left_to_right",
+          "boy.contact": "none",
+          "boy.position": "right_foreground_before_floor_seam_and_base"
+        },
+        "exceptions": [],
+        "lookahead_source_shots": [
+          "10",
+          "11"
+        ]
+      },
+      "opening": {
+        "zh": "低机位中远景侧拍。男孩在左前景，蓝色气球位于他前上方、细线缠腕；右前方金属展架近侧底座入画，左后队列、右侧讲解组都留在既定区域。",
+        "en": "Low side-on medium-wide framing. The boy is in the left foreground; a single blue balloon floats ahead and above him with its string around his wrist. The near-side metal stand base is visible ahead on the right. The rear-left party and the right-side explanation group remain in their established areas."
+      },
+      "ending": {
+        "zh": "末态仍在底座前，男孩继续向右，鞋尖尚未绊过地缝，身体未接触展架；气球、绣面和成人站位连续。",
+        "en": "At the ending, the boy is still before the base and moving right. His shoe has not tripped on the floor seam and his body has not contacted the stand. Balloon, embroidery and adult positions remain continuous."
+      },
+      "beats": [
+        {
+          "start_sec": 0,
+          "end_sec": 2,
+          "trigger": "男孩进入前景横向通道",
+          "action": {
+            "zh": "男孩追着前上方气球向右跑，成人两组保持背景位置。",
+            "en": "The boy runs right after the balloon ahead of him; both adult groups remain in the background."
+          },
+          "camera": {
+            "zh": "摄影机向右短距平移跟随，底座与远处展柜产生可见视差。",
+            "en": "The camera translates a short distance to the right with him; the base shifts against the distant display cases through visible parallax."
+          },
+          "sound": {
+            "zh": "急促脚步、小孩笑声和气球拍打声。",
+            "en": "Quick footsteps, the child laughing and light balloon slapping sounds."
+          }
+        },
+        {
+          "start_sec": 2,
+          "end_sec": 7,
+          "trigger": "底座与横穿路线的关系已经清楚，摄影机停止",
+          "action": {
+            "zh": "男孩沿真实可行的横向通道继续向右，前方底座留在画面内，细线一直缠腕。",
+            "en": "The boy continues right through the physically available transverse passage, with the base ahead still in frame and the string remaining around his wrist."
+          },
+          "camera": {
+            "zh": "摄影机固定，不继续跟移，不推近，不改变拍摄轴侧。",
+            "en": "The camera is now locked off; no further translation, push-in or change of axis side."
+          },
+          "sound": {
+            "zh": "脚步和气球声连续，保留较轻的展厅环境声，不添加可辨认的新台词。",
+            "en": "Footsteps and balloon sounds continue over subdued hall ambience, without new intelligible dialogue."
+          }
+        },
+        {
+          "start_sec": 7,
+          "end_sec": 10,
+          "trigger": "男孩逐渐靠近近侧底座前的地面区域",
+          "action": {
+            "zh": "男孩继续向右到达底座前的区域，尚未绊倒、碰撞或改变展架状态。",
+            "en": "The boy continues right toward the floor area before the base, without tripping, colliding or changing the stand state."
+          },
+          "camera": {
+            "zh": "保持固定中远景，让男孩、前方底座及地面关系同框收尾。",
+            "en": "Hold the locked medium-wide composition so the boy, base ahead and floor relationship share the ending frame."
+          },
+          "sound": {
+            "zh": "脚步、小孩笑声与气球声结束本镜；不提前出现撞击或碎裂声。",
+            "en": "Finish on footsteps, the child laughing and balloon sounds, without an early crash or shattering sound."
+          }
+        }
+      ],
+      "dialogue": [],
+      "soundscape": {
+        "zh": "室内展厅的轻微人群底噪、脚步与气球声；没有可辨认的额外对白。",
+        "en": "Subdued exhibition-hall crowd ambience under the footsteps and balloon sounds; no additional intelligible dialogue."
+      },
+      "music": {
+        "zh": "无画外配乐。",
+        "en": "N/A"
+      },
+      "constraints": {
+        "zh": "保留左向右运动、细线缠腕、成人两组原站位以及完整绣面和展架。真实速度；本镜结束在尚未绊倒或碰撞的状态。",
+        "en": "Preserve left-to-right motion, the wrist string, both adult groups and the intact embroidery and stand. Use real-time motion; end before any trip or collision."
+      },
+      "keyframes": [
+        {
+          "id": "S009-entry",
+          "phase": "entry",
+          "time_sec": 0,
+          "visible_state": {
+            "zh": "男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。",
+            "en": "The boy has just entered the left foreground. Balloon ahead and above; adult groupings, the foreground route and the base ahead are all readable."
+          },
+          "reference_asset_ids": [
+            "child_identity",
+            "hall_plate",
+            "left_group",
+            "right_group",
+            "embroidery_stand"
+          ],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S009-trigger",
+          "phase": "trigger",
+          "time_sec": 2,
+          "visible_state": {
+            "zh": "向右平移到停止机位的时刻。男孩仍在运动中，前方底座与右侧讲解组保持空间区分。",
+            "en": "The camera has reached its stopping position after translating right. The boy remains in motion; the base ahead and the right-side group are spatially distinct."
+          },
+          "reference_asset_ids": [
+            "child_identity",
+            "hall_plate",
+            "left_group",
+            "right_group",
+            "embroidery_stand"
+          ],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S009-development",
+          "phase": "development",
+          "time_sec": 7,
+          "visible_state": {
+            "zh": "固定机位下，男孩比上一状态更靠近右侧底座前区域，鞋与地缝尚未发生绊脚接触；绣面和展架仍完整。",
+            "en": "From the locked camera, the boy is closer to the area before the base on the right. His shoe has not caught the floor seam; embroidery and stand remain intact."
+          },
+          "reference_asset_ids": [
+            "child_identity",
+            "hall_plate",
+            "left_group",
+            "right_group",
+            "embroidery_stand"
+          ],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S009-exit",
+          "phase": "exit",
+          "time_sec": 10,
+          "visible_state": {
+            "zh": "固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。",
+            "en": "The locked-camera ending: boy in the right foreground before the base, with no trip or collision yet. One blue balloon remains ahead and above, string around the wrist; the adult groups have not relocated."
+          },
+          "reference_asset_ids": [
+            "child_identity",
+            "hall_plate",
+            "left_group",
+            "right_group",
+            "embroidery_stand"
+          ],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        }
+      ]
+    }
+  ],
+  "review": {
+    "director": "pending",
+    "visual": "pending",
+    "video": "not_generated",
+    "user": "pending"
+  }
+}

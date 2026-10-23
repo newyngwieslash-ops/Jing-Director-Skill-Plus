@@ -1,0 +1,60 @@
+{
+  "total": 9,
+  "failures": [],
+  "results": [
+    {
+      "name": "baseline",
+      "passed": true,
+      "accepted": true,
+      "message": null
+    },
+    {
+      "name": "top-legend-fork",
+      "passed": true,
+      "accepted": false,
+      "message": "Blocking identity legend differs from project registry"
+    },
+    {
+      "name": "scene-legend-fork",
+      "passed": true,
+      "accepted": false,
+      "message": "Blocking scene identity legend differs from project registry"
+    },
+    {
+      "name": "manifest-revision-fork",
+      "passed": true,
+      "accepted": false,
+      "message": "Stale blocking identity registry hash or revision"
+    },
+    {
+      "name": "manifest-registry-hash-fork",
+      "passed": true,
+      "accepted": false,
+      "message": "Stale blocking identity registry hash or revision"
+    },
+    {
+      "name": "new-current-registry-with-old-bundle",
+      "passed": true,
+      "accepted": false,
+      "message": "Blocking identity registry snapshot differs from current project registry"
+    },
+    {
+      "name": "snapshot-pretends-current",
+      "passed": true,
+      "accepted": false,
+      "message": "Current project identity registry must be outside the historical blocking bundle"
+    },
+    {
+      "name": "current-file-missing",
+      "passed": true,
+      "accepted": false,
+      "message": "Missing blocking bundle input: /tmp/tmp682c8gxo/current.json"
+    },
+    {
+      "name": "png-byte-tamper",
+      "passed": true,
+      "accepted": false,
+      "message": "Stale blocking bundle hash: /tmp/tmp5vc84ove/bundle/scene-001/shot-001/entry.png"
+    }
+  ]
+}

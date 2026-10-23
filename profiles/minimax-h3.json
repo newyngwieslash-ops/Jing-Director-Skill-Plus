@@ -1,0 +1,35 @@
+{
+  "family": "h3",
+  "min_duration_sec": 4,
+  "max_duration_sec": 15,
+  "modes": [
+    "T2VA",
+    "I2VA",
+    "FL2VA",
+    "L2VA",
+    "Ref2VA"
+  ],
+  "max_prompt_chars": null,
+  "max_images": null,
+  "max_videos": null,
+  "max_audio": null,
+  "max_total_refs": null,
+  "profile_id": "minimax-h3",
+  "verified_at": "2026-09-24",
+  "actual_model_id": null,
+  "provider": null,
+  "status": "guidance_snapshot_not_api_contract",
+  "integer_seconds_policy": "Conservative local compiler policy; confirm provider support before submitting fractional or other durations.",
+  "sources": [
+    "https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills/h3-prompt-writing",
+    "https://raw.githubusercontent.com/MiniMax-AI/MiniMax-H3/main/skills/h3-prompt-writing/references/base-en.txt",
+    "https://raw.githubusercontent.com/MiniMax-AI/MiniMax-H3/main/skills/h3-prompt-writing/references/ref-en.txt"
+  ],
+  "evidence_level": "official_prompt_guides",
+  "notes": [
+    "H3 is not substituted with Hailuo 2.x. Use the model actually selected by the user.",
+    "Reference count and prompt character limits are unknown for the actual provider; null is not permission to submit unlimited assets.",
+    "English rewrite fields, original-language dialogue, and guide mode names are prompt guidance, not an HTTP payload.",
+    "No weights, inference runtime, network provider client or official skill files are bundled."
+  ]
+}

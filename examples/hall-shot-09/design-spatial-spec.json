@@ -1,0 +1,11 @@
+{
+  "schema_version": "design-board-spec-1",
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "scenes": {},
+  "blocking_bundle": {
+    "manifest_path": "blocking-complete/manifest.json",
+    "manifest_sha256": "2a7206f79902c277b2b9800b5abe2b08fa963c826f06aabf2c2b98de64872380",
+    "identity_registry_path": "identity-registry.json",
+    "identity_registry_sha256": "26bad8fa87fd56f40143177395b571887fb235bdd5b2ba00cbd370fb5f3887d5"
+  }
+}

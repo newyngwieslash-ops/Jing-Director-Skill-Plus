@@ -1,0 +1,79 @@
+{
+  "source_file": "第一集分镜.xlsx",
+  "source_sha256": "d0ec06c2adb9f66d0b4e810230411a29fc6ada1ecafa90faaeaf00790f80a115",
+  "shots": [
+    {
+      "source_shot_no": "8",
+      "angle": "平视",
+      "shot_size": "全景",
+      "action": "镜头保持展厅纵深：前景 er_ma_duo 面向游客讲绣，后景 lu_jing_tian 带人向前，lu_chen 落后刷手机；两组人被展架分隔。",
+      "scene": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+      "sound": "两组对白交叠成可辨的空间声场；配乐暂退",
+      "notes": "平滑横移，最后停在两组人物之间的金属展架",
+      "narrative_intent": "用开放构图把“一个在讲绣、一个在刷手机”的距离视觉化，建立误会发生前的平行线。",
+      "video_prompt": "",
+      "duration_sec": 13.0,
+      "source_row": 9,
+      "raw_cells": {
+        "镜号": "8",
+        "时长": "00:54-01:07",
+        "摄影角度": "平视",
+        "景别": "全景",
+        "画面内容": "镜头保持展厅纵深：前景 er_ma_duo 面向游客讲绣，后景 lu_jing_tian 带人向前，lu_chen 落后刷手机；两组人被展架分隔。",
+        "场景": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+        "声音": "两组对白交叠成可辨的空间声场；配乐暂退",
+        "备注": "平滑横移，最后停在两组人物之间的金属展架",
+        "叙事目的": "用开放构图把“一个在讲绣、一个在刷手机”的距离视觉化，建立误会发生前的平行线。"
+      }
+    },
+    {
+      "source_shot_no": "10",
+      "angle": "俯拍",
+      "shot_size": "特写",
+      "action": "xiao_nan_hai 的鞋尖绊过展厅地面接缝，气球从画面上方掠过；他的身体冲向展架底座。",
+      "scene": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+      "sound": "鞋底急刹、气球擦过空气的声音",
+      "notes": "承接镜9左向右运动；鞋尖绊过近侧底座前的地面接缝，保持真实速度，不慢动作",
+      "narrative_intent": "以可见脚步和路线完成“气球—奔跑—失衡”的因果递进。",
+      "video_prompt": "",
+      "duration_sec": 9.0,
+      "source_row": 11,
+      "raw_cells": {
+        "镜号": "10",
+        "时长": "01:17-01:26",
+        "摄影角度": "俯拍",
+        "景别": "特写",
+        "画面内容": "xiao_nan_hai 的鞋尖绊过展厅地面接缝，气球从画面上方掠过；他的身体冲向展架底座。",
+        "场景": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+        "声音": "鞋底急刹、气球擦过空气的声音",
+        "备注": "承接镜9左向右运动；鞋尖绊过近侧底座前的地面接缝，保持真实速度，不慢动作",
+        "叙事目的": "以可见脚步和路线完成“气球—奔跑—失衡”的因果递进。"
+      }
+    },
+    {
+      "source_shot_no": "11",
+      "angle": "平视",
+      "shot_size": "中景",
+      "action": "xiao_nan_hai 撞上铁质展架；展架向一侧晃动，玻璃保护板和挂架同时颤动；旁边 crowd_you_ke 侧身躲开。",
+      "scene": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+      "sound": "金属撞击声、游客惊呼起",
+      "notes": "撞击中央金属展架近侧底座，保持镜9方向；游客侧身让出通道，摄影机不晃",
+      "narrative_intent": "让事故先以物理运动发生，避免直接用特写替代空间因果。",
+      "video_prompt": "",
+      "duration_sec": 11.0,
+      "source_row": 12,
+      "raw_cells": {
+        "镜号": "11",
+        "时长": "01:26-01:37",
+        "摄影角度": "平视",
+        "景别": "中景",
+        "画面内容": "xiao_nan_hai 撞上铁质展架；展架向一侧晃动，玻璃保护板和挂架同时颤动；旁边 crowd_you_ke 侧身躲开。",
+        "场景": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+        "声音": "金属撞击声、游客惊呼起",
+        "备注": "撞击中央金属展架近侧底座，保持镜9方向；游客侧身让出通道，摄影机不晃",
+        "叙事目的": "让事故先以物理运动发生，避免直接用特写替代空间因果。"
+      }
+    }
+  ],
+  "note": "只用于上下文与因果约束；不是本镜可以提前生成的事件。"
+}

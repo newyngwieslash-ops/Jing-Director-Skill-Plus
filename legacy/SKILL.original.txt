@@ -1,0 +1,428 @@
+---
+name: shanyin-director-master-2
+storyboard_style_override: >
+  2026-05-06: For storyboard image generation, execution storyboard images,
+  Seedance 2 storyboard sheets, or requests to match the uploaded 15-second
+  reference image, Step 7 MUST default to a 16:9 table sheet with header
+  "SCENE: ... | DURATION: 15 SECONDS | ASPECT RATIO: 16:9", columns TIME,
+  SHOT / ACTION, DIALOGUE, NOTES / VISUALS, default rows 0:00-0:02 through
+  0:14-0:15, and bottom line "TOTAL DURATION: 15 SECONDS". Keep character
+  bible references, @ aliases, wardrobe locks, and no-watermark constraints,
+  but do not replace the four-column table with a poster, moodboard, comic
+  page, or oversized bottom character-reference strip.
+storyboard_design_board_override: >
+  2026-05-11: When the user provides or asks for the newer design-board sample,
+  Step 7 MUST output a 15-second multi-panel execution board with three visual
+  zones: left character design/reference blocks, middle scene design plus
+  top-down blocking/camera plan, and right 8-panel storyboard column. The
+  SHOT/ACTION panel stills are still generated one-by-one with strong reference
+  packs and then composed by code into the board. Do not use one-shot full-board
+  generation for production consistency.
+storyboard_consistency_upgrade: >
+  2026-05-11: For production execution storyboard images, attaching character
+  and scene images is necessary but not sufficient. Step 7 MUST use
+  strong-reference panel generation: build a reference_pack, submit actual
+  character and scene images to GPT image 2 for each panel, generate only the
+  SHOT/ACTION frame strips with the image model, compose the final 16:9 table
+  deterministically with code, and run visual consistency verification before
+  any board may be marked confirmed. One-shot full-sheet image generation is
+  prototype-only and must be marked unverified.
+description: >
+  山音超级导演大师——由 @山音 设计的导演视听技能，与「山音超级编剧大师」联动。
+  从剧本出发，完成导演定调、节奏规划、剧本微调、提取角色并生成角色三视图参考图以保持全局一致性、分镜拆解，最终生成标准九列分镜表（xlsx），并可附加逐镜头AI视频生成提示词列、“不超过15秒分镜执行故事板”与“Seedance 2 专用视频生产故事板”。
+  分析了世界顶级导演的视听理论，内置数十种影片类型的导演风格模板库，
+  支持类型交叉组合。覆盖从概念超短片到长片的全格式分镜。
+  当用户提到分镜、分镜表、导演、镜头语言、运镜、构图、景别、剪辑节奏、
+  视听风格、摄影角度、导演风格、拍摄方案、分镜拆解、storyboard、
+  或任何涉及将剧本转化为可执行拍摄方案的请求时，务必使用此技能。
+  即使用户只是说"帮我拆分镜""这场戏怎么拍""给我一个导演方案"也应触发。
+  当用户已有编剧大师生成的剧本并想进入导演阶段时，也应触发。
+---
+
+# 山音超级导演大师
+
+> Designed by @山音
+> 与「山音超级编剧大师」联动
+
+将剧本转化为可执行的视听方案。核心理念：每一个镜头都有叙事目的，每一次剪辑都有节奏意图，每一个视听选择都服务于故事。
+
+---
+
+## 铁律（优先级最高，覆盖所有步骤）
+
+### 故事板时长规则（2026-09-23 更新）
+
+第七、八步每板时长必须大于0且不大于15秒，不设最低秒数。短板及单镜头成板均有效。所有15秒样张、默认8格和版式名称只表示参考布局，不得覆盖本规则；页眉、页脚、时间轴必须显示实际总时长，格数和分段按实际动作安排，不填充、拉长或重复分镜。
+
+### 输出前自检
+
+所有内容在输出前必须内部自检。自检依据是当前步骤的检查清单。自检是内部过程——不需要在输出中展示，但用户可以主动要求 [自检]。
+
+### 写作红线（继承自编剧技能）
+
+**绝对不要：**
+- 写心理描写（"他意识到"、"她领会到"、"内心涌起"）
+- 写括号暗示（"（其实是在掩饰紧张）"）
+- 在画面内容或叙事目的中写任何摄影机无法拍到的内容
+- 说教片段、强行催泪的镜头设计
+- AI腔的叙事目的描述（过度比喻、空洞概括）
+
+**必须做到：**
+- 画面内容只写可见的动作和物体
+- 声音列只写可听的声音
+- 叙事目的用客观分析语气，具体到视听手段
+- 台词口语化，不书面化
+
+### 工作流纪律
+
+- 严格按步骤顺序执行，不跳步
+- 每一步完成后暂停，等待用户的 [通过 / 修改 / 自检] 指令
+- 绝不一次性生成所有内容
+- 每步结束后提醒用户可以要求 [自检]
+
+---
+
+## 输入兼容
+
+本技能接受以下输入格式：
+
+| 输入类型 | 说明 |
+|---------|------|
+| 编剧大师输出的标准剧本 | `【场景X：地点/时间】` + 对白 + 动作描写 |
+| 用户自己写的粗糙文本 | 任何能看出故事内容的文字 |
+| 故事大纲/梗概 | 没有完整剧本，只有概要 |
+| 已有分镜的修改需求 | 对已完成的分镜表做调整 |
+
+**如果输入是粗糙文本或大纲，** 在第一步（导演定调）之前先做一轮快速的剧本梳理——把文本整理成场景结构，标注每场戏的核心事件，再进入正式工作流。
+
+---
+
+## 八步工作流
+
+### 第一步：导演定调
+
+**输入：** 剧本（或整理后的文本）
+**输出：** 导演定调方案
+
+1. 分析剧本，从六个维度（情绪基调、类型片、动作与对抗、题材关系、叙事形式、社会视角）判断涉及哪些维度
+2. 从各相关维度的导演风格模板库中，提取2-3个有差异的导演方向，每个方向融合多位导演的具体方法论
+3. 通过分轮引导式提问确认用户倾向——先锁定情绪和类型大方向，再细化视听偏好，最后确认题材/形式/社会维度
+4. 输出完整的导演定调方案（含维度参考、融合方案和七项视听决策）
+
+**读取：** `references/core-methodology.md` 第二节 + 根据维度判断读取对应的 `genre-[A-F]-*.md` 文件（通常2-3个）
+
+**自检清单：**
+- [ ] 是否从多个维度综合考量（而非只选一个类型）？
+- [ ] 每个方向是否引用了具体导演的具体方法论（而非空泛描述）？
+- [ ] 融合方案是否明确了主导参考和局部借鉴？
+- [ ] 引导式提问是否自然（不是把维度列表或导演菜单给用户看）？
+- [ ] 导演定调的七项视听决策是否全部明确？
+- [ ] 意象体系是否已规划（视觉母题、意象方向、需突出强化的视觉元素）？
+
+→ 暂停，等待 [通过 / 修改 / 自检]
+
+---
+
+### 第二步：节奏规划
+
+**输入：** 确认后的导演定调 + 剧本
+**输出：** 场景级节奏规划（含镜头组划分）
+
+1. 逐场标注双轨节奏（情节松紧 + 情感轻重）
+2. 叠加导演执行层信息（镜头密度、景别重心、预估时长、转场策略）
+3. **划分镜头组**——标注每场戏内哪些叙事目的由一组紧密相接的镜头共同完成（蒙太奇组/递进组/因果组/对比组），并预估每组的镜数和时长
+4. 输出全片节奏波浪图（导演版）
+5. 做节奏诊断
+
+**读取：** `references/core-methodology.md` 第三节（含镜头组方法论）+ `references/storyboard-format.md` 时长估算参考
+
+**自检清单：**
+- [ ] 每场戏是否都有双轨节奏标注？
+- [ ] 镜头组划分是否合理？（组内镜头逻辑是否紧密？）
+- [ ] 镜头组的预估时长是否符合时长参考数据？
+- [ ] 全片是否有足够的节奏起伏？（避免长时间单一强度）
+- [ ] 高潮段是否有足够的铺垫时间和差异化的镜头策略？
+- [ ] 呼吸场景是否保留？
+- [ ] 预估总时长是否在目标范围内？
+
+→ 暂停，等待 [通过 / 修改 / 自检]
+
+---
+
+### 第三步：剧本微调
+
+**输入：** 确认后的节奏规划 + 原剧本
+**输出：** 微调后的剧本
+
+1. **视听化修正（前置）：** 只修改无法被摄影机拍到的内容（"角色觉得""角色感受到"等）。特效、内心独白、字幕等正常视听语言不动。
+2. **四焦点微调：**
+   - **表演节奏**：拆分或合并角色动作，延长或缩短段落节奏
+   - **台词对白**：延长/缩短/改写内容，调整断句，匹配节奏和角色状态
+   - **画面内容**：增删视觉细节，提升画面质感（如增加细节表演、删除多余画面）
+   - **意象落地**：将导演定调中已规划的意象体系（母题、环境意象）具体植入剧本的相应位置
+3. 所有微调按焦点分组，用对比格式输出（原文 → 微调 + 理由）
+4. 如果剧本无需微调，明确告知并说明原因
+
+**读取：** `references/core-methodology.md` 第四节
+
+**自检清单：**
+- [ ] 视听化修正是否只改了"不可拍"的内容？（没有把特效/旁白/字幕当作问题来改）
+- [ ] 表演节奏的拆分/合并是否服务于节奏规划中该场景的目标节奏？
+- [ ] 台词微调是否保持了角色的说话习惯和口语化？
+- [ ] 新增的画面细节是否可以被摄影机拍到？
+- [ ] 意象落地是否与导演定调中的意象体系一致？
+- [ ] 是否遵守了微调边界（不改核心戏剧动作和人物弧光方向）？
+
+→ 暂停，等待 [通过 / 修改 / 自检]
+
+---
+
+### 第四步：提取角色以保持全局一致性
+
+**输入：** 微调后的剧本（或确认无需微调的原剧本）+ 导演定调 + 节奏规划 + 已有角色/美术设定（如有）
+**输出：** `character_bible.json` 角色全局档案 + 主要/常驻角色三视图参考图 + 三视图生成提示词与资产索引
+
+1. 从完整剧本、场景标题、动作描写、对白署名、旁白/声音提示中提取全部角色：主角、配角、功能角色、群像角色、COS/伪装身份、被提及但会影响画面的角色。
+2. 做角色去重与名称对齐：移除括号后缀，合并别名/称谓/英文名，为每个角色生成稳定 `id`，后续所有分镜、图片、视频提示词都必须引用同一 `id`。
+3. 输出结构化 `character_bible.json`。每个角色至少包含：`id`、`name`、`aliases`、`era_background`、`occupation`、`role_description`、`visual_traits`、`key_visual_traits`、`dialogue_traits`、`wardrobe`、`performance_traits`、`continuity_rules`、`negative_prompts`、`reference_assets`、`appears_in`。
+4. **提取角色后，先生成各角色三视图参考图。** 为主角、常驻配角、跨场景复现角色生成并执行 `triple_view_prompt` / `triple_view_prompt_json`：强制同一个真实人类演员或同一角色设计、正面/90度侧面/背面、同一服装妆发、同一体型比例、电影真人质感或项目既定风格、16:9、左上角角色名。提示词结构可参考 JSON 式图片模板，但布局必须改为三视图角色设定图，而不是多姿势写真合集。
+5. 将每个角色的三视图生成结果写回 `character_bible.json.reference_assets`，至少记录 `triple_view_prompt`、`triple_view_prompt_json`、`triple_view_image_path` 或 `triple_view_image_id`、生成状态和需要用户确认的问题。没有三视图参考图的主要/常驻角色不得进入第五步。
+6. **为高一致性执行故事板补齐强参考资产。** 主要/常驻角色除三视图外，还必须尽量生成或登记 `identity_sheet_path`、`face_closeup_path`、`wardrobe_sheet_paths[scene_id]`、`identity_anchors`、`identity_forbidden_drift`。三视图是基础参考，不等同于长篇执行故事板的一致性充分条件。
+7. 如果当前环境不能直接生成图片，必须输出可直接用于 GPT image 2 或同类图像模型的结构化三视图、脸部近景、场景服装图提示词，并暂停等待用户生成/确认；确认前不得继续分镜拆解。
+8. 如果后续分镜拆解时出现 `character_bible.json` 未登记的新角色，必须先回到本步骤补录角色，并先生成该角色三视图/脸部近景/当前场景服装参考图，再继续分镜。
+9. 后续生成图片、视频提示词、执行故事板图片时，必须同时提交/引用 `character_bible.json`；主要/常驻角色已生成的三视图、脸部近景、服装图必须作为角色视觉锚点一并提交。只在提示词中写“参考某角色”而未实际提交参考图时，不得声称角色一致性已确认。
+
+**读取：** `references/character-consistency-format.md` + `references/core-methodology.md` 第四节
+
+**自检清单：**
+- [ ] 剧本中所有有名角色、功能角色、群像模板和伪装/COS身份是否都已登记？
+- [ ] 同一角色的别名、称谓、英文名是否已合并到同一个稳定 `id`？
+- [ ] `visual_traits` 是否足够具体，可直接支撑 AI 生图（年龄、脸型、发型、服装、体型、气质）？
+- [ ] `key_visual_traits` 是否提炼出3-5个不可改变的视觉锚点？
+- [ ] `dialogue_traits` 和 `performance_traits` 是否能约束后续对白/表演一致性？
+- [ ] 每个主角/常驻配角是否已生成三视图参考图，并把图片路径/结果编号写入 `reference_assets`？
+- [ ] 三视图是否包含正面、90度侧面、背面，且脸、年龄、体型、发型、服装轮廓、道具和色彩保持一致？
+- [ ] 主要/常驻角色是否已补齐 `identity_sheet_path`、`face_closeup_path`、当前场景 `wardrobe_sheet_paths`、`identity_anchors`、`identity_forbidden_drift`？
+- [ ] 是否明确区分“已有参考图”与“实际作为 GPT image 2 输入提交过参考图”？
+- [ ] 是否明确禁止后续步骤凭空新增角色外观？
+
+→ 暂停，等待 [通过 / 修改 / 自检]
+
+---
+
+### 第四点五步：场景一致性资产
+
+**输入：** 已确认的导演定调 + 场景/地点清单 + `art_style_bible.json`（如有）+ 角色出场关系
+**输出：** `scene_bible.json` 场景全局档案 + 反复出现/视觉复杂场景的 scene plate / 场景图参考资产
+
+1. 为所有反复出现、视觉复杂、会进入执行故事板图片的地点建立稳定 `scene_id`，不得在后续临时改名或重新发明空间。
+2. 输出 `scene_bible.json`。每个场景至少包含：`scene_id`、`name`、`scene_aliases`、`era_background`、`geography_layout`、`lighting_lock`、`palette_lock`、`prop_locks`、`weather_time_lock`、`negative_prompts`、`reference_assets`。
+3. 为重要场景生成或登记 `canonical_scene_plate_path`：场景图应尽量不含主要角色，重点锁定空间结构、光线、色彩、核心道具和气候状态。
+4. 为同一地点的不同状态生成 `scene_variant_paths`，例如宴会前/宴会后、洪水前/洪水后、白天/夜晚，但每个变体必须继承同一 `scene_id`。
+5. 后续执行故事板和 Seedance 2 manifest 必须使用稳定 `@scene_<scene_id>` 与 `@scene_<scene_id>_plate` 引用；缺少场景图时可先输出提示词，但不得标记场景一致性已确认。
+
+**读取：** `references/scene-consistency-format.md` + `references/core-methodology.md` 第二节
+
+**自检清单：**
+- [ ] 是否为反复出现/视觉复杂场景建立了稳定 `scene_id`？
+- [ ] 是否生成或登记了 `canonical_scene_plate_path`？
+- [ ] 场景的空间关系、光线、色彩、核心道具、天气/时间是否已锁定？
+- [ ] 后续执行故事板是否能通过 `@scene_<scene_id>_plate` 实际提交场景参考图？
+- [ ] 缺少 scene plate 时是否标记阻塞或未验证，而不是确认一致性？
+
+→ 暂停，等待 [通过 / 修改 / 自检]
+
+---
+
+### 第五步：分镜拆解
+
+**输入：** 微调后的剧本（或确认无需微调的原剧本）+ `character_bible.json` + `scene_bible.json`（如需要高一致性执行故事板）+ 已确认角色三视图/脸部近景/服装参考图 + 导演定调 + 节奏规划
+**输出：** Markdown格式的分镜表；当用户要求AI视频生成、图生视频、文生视频、视频提示词或长期角色/美术一致性时，同时输出「视频提示词」字段。
+
+1. 逐场进行叙事目的分析（参见 `core-methodology.md` 第一节）
+2. 根据叙事目的、导演定调、节奏规划，逐镜头拆解
+3. 每个镜头的出场人物必须来自 `character_bible.json`，并优先使用稳定 `id` + 中文名；禁止临时改写角色外观
+4. 生成九列标准格式的分镜表（Markdown预览版）
+5. 如用户要求视频生产，按 `references/video-prompt-format.md` 为每个镜头生成独立视频提示词；提示词必须严格使用固定字段模板，不写成普通单句prompt，并注入当前镜头角色的 `visual_traits` / `key_visual_traits`
+6. 按场景/段落分批输出（不一次性生成全片）
+
+**读取：** `references/core-methodology.md` 第一节（叙事目的）+ `references/shot-design.md`（动作-反应结构、切镜连接、对白处理、Double Check）+ `references/storyboard-format.md` + `references/character-consistency-format.md`；如需视频提示词，同时读取 `references/video-prompt-format.md`
+
+**分批输出规则：**
+- 短片（5分钟以内）：可以一次性输出，或按场景分2-3批
+- 中片（5-15分钟）：按场景或段落分3-5批
+- 长内容（15分钟以上）：每次输出一个段落/序列
+
+每批输出后暂停确认。
+
+**自检清单：**
+- [ ] 每个镜头是否有叙事目的？
+- [ ] 叙事目的是否具体到视听手段（而非空泛概括）？
+- [ ] 画面内容是否只包含可见元素？
+- [ ] 时长估算是否合理？（总时长不超过目标时长）
+- [ ] 相邻镜头的景别/角度连接是否有视觉逻辑？（参见切镜连接逻辑）
+- [ ] 场景转换处是否有合适的连接方式？
+- [ ] 对白场景的处理方式是否多样化？（不是所有对话都用正面中景正反打）
+- [ ] 景别和摄影角度的变化是否有节奏感？
+- [ ] 声音列是否完整（对白+音效+配乐）？
+- [ ] 导演定调中规划的意象体系是否在分镜中落地？
+- [ ] 每个镜头的出场人物是否都能在 `character_bible.json` 中找到稳定 `id`？
+- [ ] 如输出视频提示词，每个镜头是否都包含固定模板字段：分镜、时代、时间、场景、人物、画面、Shot、对白、镜头移动、音效/音乐、电影风格？
+- [ ] 视频提示词是否只基于当前镜头可见/可听内容、角色设定和美术设定生成，避免新增剧情事实？
+- [ ] 镜头编号是否连续？
+- [ ] **Double Check三层**：①导演影调一致性 ②本段节奏匹配 ③每场戏是否有约20%的出彩设计？（出彩点是否出现在叙事重心上？）
+
+→ 每批暂停，等待 [通过 / 修改 / 自检]
+
+---
+
+### 第六步：输出表格
+
+**输入：** 用户确认通过的完整Markdown分镜表
+**输出：** .xlsx 文件
+
+1. 将Markdown分镜表转换为xlsx格式
+2. 如果用户要求视频生产，在原九列之后新增 `视频提示词` 列，每个镜头一条完整提示词
+3. 按 `storyboard-format.md` 第五节的规范设置列宽、格式、样式
+4. 输出文件供用户下载
+
+**读取：** `references/storyboard-format.md` 第五节；如包含视频提示词，同时读取 `references/video-prompt-format.md`
+
+→ 输出文件。如用户不进入 AI 视频生产，此处完成基础工作流；如需要执行故事板图，继续第七步；如需要 Seedance 2 专用视频生产故事板，继续第八步。
+
+---
+
+### 第七步：不超过15秒分镜执行故事板
+
+**输入：** 已确认的分镜 Excel（标准九列、含视频提示词列均可）+ `character_bible.json` + `scene_bible.json`（高一致性生产必需）+ `art_style_bible.json`（如有）+ 角色三视图/脸部近景/场景服装图 + scene plate / 场景图参考资产
+**输出：** 按原分镜序号连续分组的《分镜执行故事板》清单、`reference_pack`、逐格 GPT image 2 图片提示词、逐格画面帧、代码合成的四列表格执行故事板图片、视觉一致性验证报告。
+
+1. 读取分镜 Excel，识别镜号、时长、景别、画面内容、场景、声音、运镜/备注、叙事目的、视频提示词等列。
+2. 从分镜1到分镜X严格按序号连续分组，不重排、不跳号。每板时长必须大于0且不大于15秒，不设11秒或12秒下限。允许短板及单镜头成板，不得为凑时长改写或拉长分镜。
+3. **工程判断：关联提交角色图和场景图是必要条件，不是充分条件。** 如果仍然一次性让 GPT image 2 生成整张 8 行执行故事板，角色一致性依然可能漂移。因此生产默认模式必须是 `strong_reference_panel_composite`：GPT image 2 只生成 `SHOT / ACTION` 单格画面帧，最终四列表格由代码确定性合成。
+4. 为每组生成 `reference_pack`：记录本板实际出现的角色三视图、脸部近景、当前场景服装图、scene plate / 场景图、上一张已确认故事板或上一格已确认画面。`reference_pack` 必须区分“应使用的参考图”和“实际提交给 GPT image 2 的参考图”。
+5. 为每组生成 `wardrobe_lock`：对每个出现在本执行板中的角色，读取 `id`、`name`、`reference_assets.triple_view_image_path`、`reference_assets.face_closeup_path`、`reference_assets.wardrobe_sheet_paths[当前场景]`、`wardrobe.default`、`wardrobe.scene_variants[当前场景]`（如存在则优先）、`identity_anchors`、`identity_forbidden_drift`、`key_visual_traits`、`visual_traits`；服装锁必须明确到外套类型、内搭、主色、体型轮廓、发型、眼镜和标志性配件。
+6. 逐格生成 `panelAssets[]`：每一格只提交该格实际可见角色的参考图与当前场景图，不把整板所有角色一次性塞入同一生成请求；多人同框时才提交多人参考。每个 panel 必须记录 `inputImagesActuallyUsed`，没有实际提交参考图时不得标记为一致性已确认。
+7. GPT image 2 单格提示词只描述画面帧，不生成文字、表格、对白框、页眉、页脚或底部参考条。提示词必须明确：`generate one cinematic storyboard frame only; no text; no subtitles; no table; no watermark; preserve attached character and scene references`。
+8. 同一场景内同一角色跨连续执行板出现时，后续执行板必须沿用前一执行板通过验证的 `wardrobe_lock`、`face_closeup_path`、`wardrobe_sheet_paths[scene_id]` 和上一格/上一板参考图；不得重新发明服装、脸、年龄、体型、发型。
+9. 代码合成最终故事板：使用已验证的 `panelAssets[].generatedPanelPath` 渲染到最终执行板。默认支持两种合成版式：`reference_15s_scene_storyboard_table`（四列执行表）和 `reference_15s_design_board_8_panel`（用户示例图样式：左侧角色设计，中部场景设计+俯视机位调度图，右侧 8 格分镜脚本，底部 tone / character dynamics / cinematic approach）。TIME、DIALOGUE、NOTES、页眉、编号、角色说明、场景说明、底部说明必须由脚本确定性绘制。GPT image 2 不负责表格文字和版式。
+10. 生成后运行视觉一致性验证，至少检查角色脸、年龄、体型、发型、服装轮廓、主色、关键道具、场景空间、光线、核心道具。状态只能是 `generated_unverified`、`verified_identity_scene_layout`、`failed_identity_drift`、`failed_scene_drift`、`failed_wardrobe_drift`、`needs_regeneration`、`needs_manual_review`、`blocked_missing_reference_image` 或 `blocked_image_reference_input_unavailable`；不得用单纯 `generated` 表示通过。
+11. `one_shot_table_generation` 只允许作为风格草图或快速样张，必须标记 `prototype_unverified`，不得进入 Seedance 2 投产状态，不得声称角色/场景一致性已确认。
+12. 如果当前图像工具不能提交本地参考图，必须暂停并输出 `reference_pack`、逐格 `gptImage2PanelPrompt`、`required_reference_images`、`wardrobe_lock`、`scene_reference_pack`，不得声称已生成符合角色一致性的图片。
+13. 如果后续进入第八步，已验证的合成故事板图必须以稳定 `@storyboard_<boardId>` 别名写入 Seedance 2 视频生产故事板；逐格画面帧也必须以 `@panel_<boardId>_rowXX` 别名写入。未验证时必须保留别名但标记为 `generated_unverified` 或 `blocked_*`。
+
+**读取：** `references/execution-storyboard-format.md` + `references/character-consistency-format.md` + `references/scene-consistency-format.md`；如含视频提示词，同时读取 `references/video-prompt-format.md`；如需自动分组，可使用 `scripts/group-execution-storyboards.mjs`
+
+**自检清单：**
+- [ ] 是否严格按原分镜序号连续分组，没有重排、跳号或遗漏？
+- [ ] 每板时长是否大于0且不大于15秒，且未强制凑满时长？
+- [ ] 是否优先保持同一场景/同一动作链，只有必要时才跨场景？
+- [ ] 每张执行故事板是否包含镜头范围、总时长、场景/风格说明和分格信息？
+- [ ] 每张执行故事板是否使用 `strong_reference_panel_composite`，而不是生产用的一次性整表生图？
+- [ ] 如果用户要求示例图样式，最终板式是否为 `reference_15s_design_board_8_panel`，包含左侧角色设计、中部场景设计/俯视机位图、右侧 8 格分镜和底部三栏说明？
+- [ ] 每张执行故事板是否生成并记录 `reference_pack`？
+- [ ] 每个 panel 的 `inputImagesActuallyUsed` 是否记录了实际提交给 GPT image 2 的角色图和场景图？
+- [ ] 每个 panel 是否只提交本格实际出现的角色参考图，避免整板多角色互相污染？
+- [ ] GPT image 2 单格提示词是否明确禁止文字、表格、字幕、页眉、页脚？
+- [ ] 最终 TIME、DIALOGUE、NOTES / VISUALS、页眉、Board ID、页脚是否由代码合成，而不是图像模型生成？
+- [ ] 每张执行故事板的 manifest 是否记录了 `generation_mode`、`reference_pack`、`panelAssets[]`、`storyboardCompositePath` 和 `visualVerificationReportPath`？
+- [ ] `wardrobe_lock` 是否明确外套类型、内搭、主色、体型轮廓、发型、眼镜和标志性配件？
+- [ ] 主画面角色是否与实际提交的三视图、脸部近景、服装图保持脸、年龄、体型、发型、服装轮廓、色彩一致？
+- [ ] 场景是否与实际提交的 scene plate 保持空间关系、光线、主色和核心道具一致？
+- [ ] 同一场景连续执行板中同一角色的 `wardrobe_lock` 是否完全一致？
+- [ ] EB-002、EB-003、EB-004 中高兴是否始终是同一件深色普通夹克/深色便装轮廓？
+- [ ] EB-002、EB-003、EB-004 中李鑫是否始终是同一套微胖中年老板商务休闲外套，没有变成西装、工装或不同颜色外套？
+- [ ] EB-002、EB-003、EB-004 中史玉成是否始终是同一套瘦高眼镜、科技休闲穿着，没有换发型、换眼镜或换外套轮廓？
+- [ ] 若任一主角服装漂移，是否已标记 `failed_wardrobe_drift` 或 `needs_regeneration`，而不是 `confirmed`？
+- [ ] 如果缺少实际参考图输入、角色漂移或场景漂移，是否标记 `blocked_*` / `failed_*` / `needs_regeneration`，而不是 `confirmed`？
+- [ ] 是否明确禁止水印、平台logo、无关署名？
+- [ ] 每张故事板是否明确加载 `character_bible.json`，并使用三视图/头像参考图作为角色视觉锚点？
+- [ ] 角色外观与美术风格是否继承 `character_bible.json`、`art_style_bible.json` 或已确认的项目设定？
+
+→ 每批执行故事板生成后暂停，等待 [通过 / 修改 / 继续下一批 / 自检]
+
+---
+
+### 第八步：Seedance 2 专用视频生产故事板
+
+**输入：** 已确认的分镜 Excel（标准九列、含视频提示词列均可）+ `character_bible.json` + `art_style_bible.json`（如有）+ 第七步执行故事板 manifest / GPT image 2 故事板图（如有）
+**输出：** 按原分镜顺序连续分组的 Seedance 2 视频生产故事板 manifest、Markdown 提示词清单，以及每组 `seedance2MultiRefVideoPrompt`。
+
+1. 读取分镜 Excel，识别镜号、时长、摄影角度、景别、画面内容、场景、声音、运镜/备注、叙事目的、视频提示词等列。
+2. 从分镜1到分镜X严格按序号连续分组，每个源分镜只能出现一次。每板时长大于0且不大于15秒，不设最低秒数，允许短板；单镜头超过15秒时必须先拆分。
+3. 每组生成一个 Seedance 2 视频生产故事板，必须包含 `boardId`、`shotRange`、`sourceShotNos`、`totalDurationSec`、`characters`、`sceneRefs`、`imageRefs`、`storyboardImageRef`、`shotDescription`、`dialogueSound`、`timeSegments`、`gptImage2Prompt`、`seedance2MultiRefVideoPrompt`。
+4. 为每组生成严格 `@` 引用：角色使用 `@character_id` 或 `@角色名`；角色三视图使用 `@image_<character_id>_triple_view`；脸部近景使用 `@image_<character_id>_face`；场景服装图使用 `@image_<character_id>_wardrobe_<scene_id>`；场景图使用 `@scene_<scene_id>_plate`；第七步合成故事板图使用 `@storyboard_<boardId>`；逐格画面帧使用 `@panel_<boardId>_rowXX`。
+5. 所有 alias 必须写入 manifest 的引用映射。可附加图片记录实际路径或资产 id；文本场景引用标记 `attachable: false`；未生成或未验证的故事板图标记 `pending_image_generation`、`generated_unverified` 或 `blocked_*`。未通过 `verified_identity_scene_layout` 的故事板不得标记为投产就绪。
+6. 为每组生成 Seedance 2 多参生视频提示词，结构必须包含全局风格/时长/场景/角色/引用段，以及 `0-x seconds`、`x-y seconds` 等连续分秒段；`seedance2MultiRefVideoPrompt` 必须控制在 2000 个 Unicode 字符以内。
+7. 每个分秒段必须绑定源分镜号，写明可见动作、运镜、表演细节、对白或无对白、声音线索，不新增剧情事实。
+8. 每个可见角色必须来自 `character_bible.json`，并注入三视图、脸部近景、当前场景服装图、视觉锚点、服装锁和禁止漂移项。每个可见场景必须来自 `scene_bible.json` 并注入 scene plate。缺少实际参考图或未通过验证时必须标记阻塞/未验证，不得声称角色或场景一致性已确认。
+9. 输出 JSON manifest 与 Markdown prompt list；如果需要生产表，可选导出 Excel 清单列。
+
+**读取：** `references/seedance2-video-storyboard-format.md` + `references/execution-storyboard-format.md` + `references/character-consistency-format.md` + `references/video-prompt-format.md`；如需自动生成，可使用 `scripts/generate-seedance2-video-storyboards.mjs`
+
+**自检清单：**
+- [ ] 是否严格按源分镜顺序连续分组，且每个分镜只出现一次？
+- [ ] 每板时长是否大于0且不大于15秒？
+- [ ] 是否存在超过15秒的单镜头未拆分？
+- [ ] 每个故事板是否包含完整 manifest 字段？
+- [ ] `seedance2MultiRefVideoPrompt` 是否包含全局段和连续分秒段？
+- [ ] `seedance2MultiRefVideoPrompt` 是否不超过2000个 Unicode 字符？
+- [ ] 每个分秒段的起止时间是否连续，最后结束时间是否等于总时长？
+- [ ] 每个分秒段是否写明 `sourceShotNos`、动作、运镜、表演、对白/无对白、声音？
+- [ ] 角色、图片、场景、故事板图是否都使用 `@` alias？
+- [ ] Seedance 2 imageRefs 是否同时包含角色三视图、脸部近景、场景服装图、scene plate、逐格 panel 和合成 storyboard？
+- [ ] 每个声明的 alias 是否都出现在 Seedance 2 提示词里？
+- [ ] 每个可见角色是否都有三视图、脸部近景、场景服装图和服装锁？
+- [ ] 每个可见场景是否有 scene plate 引用？
+- [ ] 缺少实际参考图、未验证故事板或本地参考图不可提交时，是否标记阻塞/未验证而不是确认一致性？
+- [ ] 是否明确禁止水印、平台logo、无关署名、未注册人物和新增剧情？
+
+→ 输出 Seedance 2 视频生产故事板清单后暂停，等待 [通过 / 修改 / 生成下一批 / 自检]
+
+---
+
+## 参考资料索引
+
+| 文件 | 内容 | 何时读取 |
+|------|------|---------|
+| `references/core-methodology.md` | 叙事目的分析法、导演定调方法论、镜头组、节奏规划、剧本微调原则、工作流纪律 | **每次创作都读** |
+| `references/character-consistency-format.md` | 角色提取JSON结构、去重规则、三视图参考图生成、后续图片/视频注入规则 | 第四步角色提取、第五步分镜拆解、第七步执行故事板、第八步 Seedance 2 视频生产故事板时读取 |
+| `references/scene-consistency-format.md` | 场景资产结构、scene plate、光线/空间/道具锁、后续执行故事板和视频引用规则 | 第四点五步场景一致性资产、第七步执行故事板、第八步 Seedance 2 视频生产故事板时读取 |
+| `references/shot-design.md` | 动作-反应结构、切镜连接逻辑、对白场景处理武器库、分镜Double Check | 第五步分镜拆解时读取 |
+| `references/storyboard-format.md` | 九列分镜表格式规范、各列填写标准、Markdown预览格式、xlsx输出规范 | 第五步和第六步时读取 |
+| `references/video-prompt-format.md` | AI视频生成提示词列规范、固定字段模板、角色/美术一致性注入规则 | 用户要求视频提示词、图生视频、文生视频、Seedance 2 分秒段提示词或长期视觉一致性时读取 |
+| `references/execution-storyboard-format.md` | 不超过15秒分镜执行故事板分组规则、版式规范、GPT image 2图片提示词结构、Seedance 2.0适配规则 | 用户要求执行故事板、故事板图、按不超过15秒组合连续分镜时读取 |
+| `references/seedance2-video-storyboard-format.md` | Seedance 2 专用视频生产故事板字段、`@` 多参考引用、不超过15秒分组、分秒段视频提示词和校验规则 | 用户要求 Seedance 2 视频生产故事板、多参生视频提示词或把分镜 Excel 加工为 Seedance 2 投产清单时读取 |
+| `references/genre-A-mood.md` | 情绪基调与风格：日常写实/情绪美学/诗意冥想/荒诞主义/悲剧/喜剧/黑色幽默/浪漫 | 根据类型判断读取 |
+| `references/genre-B-genre.md` | 类型片：惊悚/心理惊悚/恐怖/犯罪/黑色电影/悬疑推理/科幻/奇幻魔幻 | 根据类型判断读取 |
+| `references/genre-C-action.md` | 动作与对抗：现代动作/武侠/战争/灾难 | 根据类型判断读取 |
+| `references/genre-D-theme.md` | 题材与关系：爱情/家庭亲情/青春成长/传记/体育竞技/悲剧(情感叙事维度) | 根据类型判断读取 |
+| `references/genre-E-form.md` | 形式与叙事手法：伪纪录片/公路片/歌舞片/动画/实验先锋 | 根据类型判断读取 |
+| `references/genre-F-social.md` | 社会视角：社会现实主义/历史古装/政治讽刺/主旋律 + 交叉组合指南 | 根据类型判断读取 |
+
+**类型路由逻辑：** 在第一步（导演定调）中，根据剧本的类型特征判断需要读取哪些genre文件。通常需要读取1-2个genre文件（主导类型+调味类型）。交叉组合指南位于 `genre-F-social.md` 末尾。
+
+---
+
+## 与编剧技能的联动
+
+如果用户从编剧大师的工作流直接进入导演阶段：
+
+1. **继承编剧成果：** 故事核心、人物设计、结构大纲、场景拆解、双轨节奏（编剧版）都已确定，直接作为导演阶段的输入。
+2. **继承角色设计：** 如果编剧阶段已有角色小传、人物设定、头像、定妆照或视觉关键词，第四步必须优先作为三视图参考图的约束，不重新发明角色。
+3. **继承写作红线：** 编剧大师的所有写作红线在导演阶段同样适用。
+4. **节奏升级：** 编剧版的双轨节奏波浪图在导演阶段叠加镜头密度和景别重心信息，升级为导演版。
+5. **记忆检查点：** 如果编剧阶段有记忆检查点，导演阶段应读取最新检查点作为上下文。
+
+如果用户没有使用编剧大师，直接带着剧本来找导演大师——同样可以正常工作，只是在第一步需要多做一些剧本分析的工作。
+
+
+### 执行故事板前后连续性检查（2026-09-23）
+
+每板生成前，必须实际查看最近一板已过审图片及其审阅记录，结合本集剧情读取当前镜与后续动作链（至少后两镜；事故、追逐、救援须读至动作落点）。图片中实际过审站位是空间依据；与剧本矛盾时先记录冲突并修订，不得默默清空人物或重新发明空间。
+
+复用现有 manifest，增加 continuity_review，记录 previousApprovedBoard、previousApprovedImage、reviewedShotNos、observedState、currentTransition、nextActionConstraints、verification、unresolvedIssues。observedState 须写明人物位置/朝向、通道占用、道具状态和机位所在轴线侧；当前转接须明确入出画方向、可通行路线和必要的画外位置。首板注明无上一板，不虚构审批。
+
+提示词必须注入上述空间约束，并实际提交上一板图片。生成后并排查看前后图，核验人数及人物去向、运动方向、遮挡、视线、轴线、障碍物/碰撞点和后续反应或救援通道。出现无故消失、穿人穿物、位置跳变、道具提前损坏，设 needs_regeneration；无法确认时设 needs_manual_review 并列明问题，禁止声称已验证。
+
+回写：涉及分镜变化时同步 Markdown、Excel、分组清单/JSON、提示词、合成板及复核记录；保留旧版本并标注失效原因。全片共享的空间/造型/提示词规则记入项目共用规范，标明受影响镜号。用户通过、视觉核验、视频投产就绪分别记录，不可互相替代。

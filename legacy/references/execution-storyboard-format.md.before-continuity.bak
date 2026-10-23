@@ -1,0 +1,283 @@
+# 不超过15秒分镜执行故事板规范
+
+本文件定义从分镜 Excel 生成《不超过15秒分镜执行故事板》的通用规则。该步骤服务于 Seedance 2.0 等视频生成流程（本技能每板不超过15秒）：先把连续分镜组合成时间合格的执行单元，再生成一张可交给 GPT image 2 的故事板图片。
+
+## 一、启用条件
+
+当用户提出以下需求时启用本步骤：
+
+- 不超过15秒分镜执行故事板
+- 将分镜 Excel 组合成 Seedance 2.0 视频输入
+- 按连续分镜生成故事板图片
+- 根据分镜表生成 GPT image 2 故事板图
+- 将若干连续分镜合成 不超过15秒执行单元
+
+本步骤是分镜 Excel 之后的 AI 视频生产步骤，不替代原始分镜表。执行本步骤前必须已经完成“提取角色以保持全局一致性”，并具备 `character_bible.json` 与主要/常驻角色三视图参考图；每个会出现在执行故事板图片中的角色，必须在 `reference_assets.triple_view_image_path` 写入实际图片路径。如果缺失，应先返回角色提取步骤补录并生成三视图。
+
+2026-05-11 起，生产级执行故事板默认采用 `strong_reference_panel_composite` 流程：先构建 `reference_pack`，再用 GPT image 2 按单格生成 SHOT/ACTION 画面帧，最后用代码合成四列表格并进行视觉验证。一次性整张表生成仅允许作为 `one_shot_table_generation` 草图，必须标记 `prototype_unverified`，不得作为角色一致性已确认的生产资产。
+
+关键判断：关联提交角色图和场景图是必要条件，不是充分条件。必须记录实际提交给 GPT image 2 的输入图片；只在提示词中描述参考图，不算完成一致性约束。
+
+## 二、输入列兼容
+
+必须能从任意标准分镜 Excel 中识别以下字段。列名不完全一致时按语义匹配：
+
+| 标准字段 | 可接受列名 |
+|---------|------------|
+| 镜号 | 镜号、镜头号、分镜、编号 |
+| 时长 | 时长、持续时间、秒数 |
+| 场景 | 场景、场次、地点 |
+| 景别 | 景别、镜别 |
+| 运镜 | 机位/运动、运镜、镜头移动、摄影角度、备注 |
+| 画面内容 | 画面内容、画面、视觉内容 |
+| 台词/人物 | 台词/人物、人物、对白、台词 |
+| 声音 | 声音、台词/声音、音效/音乐 |
+| 叙事目的 | 叙事目的、目的 |
+| 视频提示词 | 视频提示词、AI视频提示词、文生视频提示词 |
+
+没有 `视频提示词` 列时，仍可用画面内容、人物、声音、运镜和项目美术设定生成执行故事板。但无论是否存在 `视频提示词` 列，都必须加载 `character_bible.json`，按镜头人物匹配稳定角色 `id`，并为每个涉及角色读取 `reference_assets.triple_view_image_path` 指向的实际图片。
+
+## 三、分组规则
+
+### 时间窗口
+
+- 每板时长：大于0且不大于15秒，无最低秒数限制。
+- 短板和单镜头成板均为正常有效结果，不是兜底异常。
+- 硬上限：15 秒，不能超过。
+- 不得为达到11秒、12秒或15秒而填充、拉长或重复源分镜。
+
+### 顺序规则
+
+- 从分镜 1 到分镜 X 依序处理。
+- 只能组合连续镜头，如 `1-3`、`4-6`、`7-8`。
+- 不允许重排、不允许跳号、不允许把非连续分镜放入同一张执行故事板。
+- 每个原始分镜必须且只能进入一个执行故事板。
+
+### 组合优先级
+
+1. 每板总时长大于0且不大于15秒。
+2. 尊重原分镜时长，允许单镜头成板和不足11秒的短板。
+3. 优先保持同一场景、同一动作链、同一对话段。
+4. 如果同一场景内无法满足时间窗口，可跨场景，但必须在故事板备注中说明转场。
+5. 如果某个单镜头超过 15 秒，不能直接进入 Seedance 执行板；必须先拆成若干可执行镜头，再重新分组。
+
+## 四、执行故事板版式
+
+以下15秒样张及8格时间轴仅为版式示例。实际每板大于0且不大于15秒；页眉、页脚、分秒段必须按实际时长生成，允许单格及短板，不得补足15秒。此规则优先于下文示例中的固定时长或固定格数描述。
+
+每张图是一页横版执行故事板，参考传统分镜执行表，不是电影海报。
+
+默认生产版式支持两类：
+
+1. `reference_15s_scene_storyboard_table`：参考用户上传的四列表格 15 秒样张，适合快速投产清单。
+2. `reference_15s_design_board_8_panel`：参考用户上传的“角色设计 / 场景设计 / 分镜脚本(8格)”样张，适合长篇视频严谨角色与场景一致性生产。
+
+当用户要求“我提交的示例图样式”“角色设计+场景设计+8格分镜”或长期角色/场景一致性时，优先使用 `reference_15s_design_board_8_panel`。
+
+### `reference_15s_scene_storyboard_table`
+
+每张图片必须采用 16:9 横版四列表格布局：
+
+- 顶部标题区：项目名、Board ID、分镜范围、总时长。
+- 中部分镜面板区：1-8个连续分镜面板，每个面板上半部是画面帧，下半部是紧凑信息表。
+- 底部角色参考区：标题固定为“角色参考（服装造型一致）”。当执行板中有可见常驻/主要角色时，该区域强制出现。
+
+在生成图片前，每张执行故事板必须同时具备：
+
+- `required_reference_images`：本执行板所有可见角色的 `reference_assets.triple_view_image_path` 实际图片路径。
+- `wardrobe_lock`：本执行板所有可见角色的当前场景服装锁。
+- `bottom_character_reference_strip`：本执行板底部角色参考区结构化数据。
+- `gptImage2Prompt`：已注入 `required_reference_images` 和 `wardrobe_lock` 的 GPT image 2 提示词。
+
+如果图像工具不能提交这些本地参考图，必须暂停在提示词/清单阶段，不得声称已经生成符合角色一致性的故事板图。
+
+### 生产级强参考流程
+
+每张执行故事板必须输出：
+
+- `generation_mode: "strong_reference_panel_composite"`
+- `reference_pack`：本板实际出现的角色三视图、脸部近景、当前场景服装图、scene plate、上一张已确认故事板或上一格已确认画面。
+- `panelAssets[]`：每一格的单帧生成记录，含 `rowIndex`、`time`、`characters`、`sceneId`、`inputImagesActuallyUsed`、`generatedPanelPath`、`verificationStatus`。
+- `storyboardCompositePath`：代码合成后的最终四列表格故事板图片。
+- `visualVerificationReportPath`：视觉一致性验证报告。
+
+GPT image 2 单格提示词只生成画面帧，不生成表格、时间列、对白、字幕、页眉、页脚或水印。最终表格必须由脚本合成，保证 TIME、DIALOGUE、NOTES / VISUALS、Board ID 和页脚准确。
+
+每个 panel 只提交该格实际可见角色和场景的参考图；不要把整张执行板的所有角色参考图一次性塞入每个 panel。多人同框时才提交多人参考，以降低角色互相污染。
+
+允许状态：
+
+- `generated_unverified`
+- `verified_identity_scene_layout`
+- `failed_identity_drift`
+- `failed_scene_drift`
+- `failed_wardrobe_drift`
+- `needs_regeneration`
+- `needs_manual_review`
+- `blocked_missing_reference_image`
+- `blocked_image_reference_input_unavailable`
+
+单纯 `generated` 只能表示文件存在，不能表示角色或场景一致性通过。
+
+底部角色参考区规则：
+
+- 每个出场主要/常驻角色占一个角色块。
+- 角色块必须包含中文名 / `character_id`。
+- 角色块必须展示从 `reference_assets.triple_view_image_path` 读取的实际三视图参考图。
+- 三视图至少展示正面、90度侧面、背面。
+- 三视图缩略图必须能看清脸、发型、体型、服装轮廓和主色。
+- 每个角色块下方或旁边必须写入简短 `wardrobe_lock` 摘要。
+- 角色参考区是执行校验用途的参考条，不是装饰海报，不得压缩到无法看清服装和脸。
+
+必须包含：
+
+- 顶部标题：`《项目名》分镜 N-M 执行故事板`
+- 顶部副信息：场次、总时长、风格、用途：Seedance 2.0
+- 主体分格：1-8个连续分镜面板
+- 每格上半部：电影感画面帧
+- 每格下半部：信息表
+- 底部角色参考区：`角色参考（服装造型一致）`
+- 底部备注：节奏、转场、灯光/色彩或 Seedance 生成注意点
+
+单格信息表建议字段：
+
+| 字段 | 内容 |
+|------|------|
+| 编号 | 原分镜编号 |
+| 景别 | 原分镜景别 |
+| 画面内容 | 可见动作和环境 |
+| 情绪/动作 | 可执行表演动作，不写心理 |
+| 运镜 | 摄影角度、机位或镜头运动 |
+| 台词/声音 | 对白、环境声、音效、音乐 |
+| 时长 | 原分镜时长 |
+
+### `reference_15s_design_board_8_panel`
+
+该版式是一张 16:9 横向设计执行板，必须由代码合成，不能由 GPT image 2 一次性整图生成。整体结构：
+
+- 左栏：`角色设计 / CHARACTER DESIGN`
+  - 每个本板出现的主要/常驻角色一个角色块。
+  - 角色块包含三视图、脸部近景、当前场景服装图、角色细节文字。
+  - 图片来自 `reference_pack` 中实际文件路径，不得由最终合成阶段重新生成。
+- 中栏上半：`场景设计：[场景名] / SCENE DESIGN`
+  - 使用 scene plate 或当前场景关键帧，锁定空间、光线、色彩和核心道具。
+- 中栏下半：`顶视图机位与调度图 / TOP-DOWN BLOCKING & CAMERA PLAN`
+  - 用简化俯视平面图表示角色位置、镜头机位、镜头方向、人物走位。
+  - 可由脚本绘制几何图，或由 GPT image 2 生成无人物/低细节场景平面参考后再由脚本标注。
+- 右栏：`分镜脚本（8格） / STORYBOARD (8 PANELS)`
+  - 固定 8 格，对应 15 秒节奏：0:00-0:02、0:02-0:04、0:04-0:06、0:06-0:08、0:08-0:10、0:10-0:12、0:12-0:14、0:14-0:15。
+  - 每格包含黑底白字编号 1-8、单格画面帧、镜头/对白/动作说明。
+  - 单格画面帧来自 `panelAssets[].generatedPanelPath`，且必须先通过强参考输入生成。
+- 底栏：三栏说明
+  - `TONE 风格与基调`
+  - `CHARACTER DYNAMICS 角色关系与冲突核心`
+  - `CINEMATIC APPROACH 影像呈现方式`
+
+该版式仍然是 15 秒执行故事板；“多宫格”指右侧固定 8 格分镜脚本，不是把整张图做成漫画页或海报。
+
+## 五、GPT image 2 图片提示词结构
+
+每个执行故事板组生成一条图片提示词，推荐结构如下：
+
+```text
+Create a polished cinematic execution storyboard sheet for GPT image 2.
+Match the uploaded 15-second reference storyboard sheet as closely as possible.
+Top header text: SCENE: [scene name] | DURATION: 15 SECONDS | ASPECT RATIO: 16:9.
+Main table columns: TIME | SHOT / ACTION | DIALOGUE | NOTES / VISUALS.
+Default 15-second row cadence: 0:00-0:02, 0:02-0:04, 0:04-0:06, 0:06-0:08, 0:08-0:10, 0:10-0:12, 0:12-0:14, 0:14-0:15.
+SHOT / ACTION column: wide cinematic frame strip plus visible physical action.
+DIALOGUE column: speaker label plus speech-bubble box; write no-dialogue if silent.
+NOTES / VISUALS column: performance, lighting, camera movement, continuity, tension, and sourceShotNos.
+Bottom line text: TOTAL DURATION: 15 SECONDS.
+Use a clean black-line production table on white/off-white paper, not a poster, moodboard, comic page, or single concept frame.
+Project: ...
+Board: 分镜 N-M, total X seconds, for Seedance 2.0 video generation, using the actual board duration (maximum 15 seconds).
+Layout: wide 16:9 reference-style scene sheet, clean white/off-white paper, thin black table grid, eight time-coded rows by default, cinematic image frames in the SHOT / ACTION column, dialogue bubbles in the DIALOGUE column, notes in the NOTES / VISUALS column.
+Storyboard image layout:
+- Top header: project title, board id, shot range, total duration.
+- Middle storyboard panels: 2-8 panels, each panel contains image frame + compact information table.
+- Character reference constraints: keep aliases, exact triple-view paths, and wardrobe locks available for identity consistency, but do not make an oversized bottom reference strip the primary layout unless the user explicitly asks for it.
+- The attached triple-view references must still control every visible recurring character's identity and wardrobe, but the visible storyboard sheet remains the four-column TIME / SHOT-ACTION / DIALOGUE / NOTES-VISUALS table.
+- Each character reference block must be labelled with Chinese name and stable character_id.
+- Character reference data is part of the prompt and validation context, not a replacement for the four-column storyboard table.
+Style: inherit project art bible and character bible; consistent faces, costumes, lighting, color palette, and camera language.
+Character consistency: load character_bible.json; match every visible recurring character by stable id; preserve face, age, body build, hairstyle, costume silhouette, color palette, dialogue traits, and performance traits.
+Reference images: attach the exact image files listed in each visible character's reference_assets.triple_view_image_path. These are mandatory GPT image 2 reference images, not optional text descriptions.
+Required triple-view reference image files:
+- [character_id / character_name]: [reference_assets.triple_view_image_path]
+Required character reference constraints for this table style:
+- [character_name] / [character_id]
+  source image: [reference_assets.triple_view_image_path]
+  show: front view, 90-degree side view, back view
+  wardrobe_lock summary: [exact_outfit_lock]
+Wardrobe lock:
+- character_id:
+  reference image: exact path from reference_assets.triple_view_image_path
+  scene wardrobe source: wardrobe.default OR wardrobe.scene_variants[scene]
+  exact outfit lock: [outerwear type, inner layer, main color, body silhouette, hairstyle, glasses, signature accessories]
+  forbidden drift: no jacket change, no shirt color change, no silhouette change, no body-shape change, no hairstyle change, no glasses change, no age drift
+The generated storyboard must copy the character's outfit from the attached triple-view reference image unless a scene-specific wardrobe variant is explicitly defined in character_bible.json.
+The four-column 15-second table layout is mandatory. Do not replace it with a bottom-reference-strip board. If character thumbnails are shown, keep them secondary and small; identity control still comes from the attached triple-view references, aliases, and wardrobe locks.
+Panel 01 / Shot N: ...
+Panel 02 / Shot N+1: ...
+...
+Header text: 《项目名》分镜 N-M 执行故事板
+Footer note: ...
+Negative requirements: no watermark, no platform logo, no bilibili mark, no random signature, no poster composition, no unrelated characters, no invented plot.
+```
+
+中文内容可写在提示词中，但图片生成时以“分格画面准确、顺序清晰、信息表结构可信”为第一优先级；若文字无法完全清晰，不能影响分镜画面与镜头顺序。
+
+明确禁止：
+
+- 不得只在 prompt 文字里写“参考三视图”而不在图片底部展示三视图参考区。
+- 不得生成只有分镜面板、没有角色参考区的故事板。
+- 不得把角色参考图做成装饰海报；它必须是执行校验用途的参考条。
+- 不得让底部角色参考区压缩到无法看清服装和脸。
+
+## 六、输出清单格式
+
+在真正生成图片前，先输出分组清单：
+
+| 执行板编号 | 分镜范围 | 包含分镜 | 总时长 | 场景/动作链 | 图片生成提示词摘要 |
+|-----------|----------|----------|--------|-------------|------------------|
+| EB-001 | 1-3 | 1,2,3 | 12秒 | 酒吧外入内 | 老街夜景到三人入座 |
+
+用户确认后，再按批次生成图片。
+
+每个执行板 manifest 必须记录：
+
+- `layout_standard`
+- `required_reference_images`
+- `wardrobe_lock`
+- `bottom_character_reference_strip`
+- `characterRefs[].wardrobeLock`
+- 如生成后的图片缺少底部参考区，记录 `visual_consistency_status: failed_missing_bottom_character_reference_strip`
+- 如生成后的图片存在角色漂移，记录 `visual_consistency_status: failed_visual_consistency`
+
+## 七、自检
+
+- 所有分镜编号是否从 1 到 X 全覆盖？
+- 每个分镜是否只出现一次？
+- 每板时长是否大于0且不大于15秒？
+- 是否存在超过 15 秒的单镜头未拆分？
+- 每组是否有明确的视觉连续性或转场说明？
+- 图片提示词是否生成的是“执行故事板表”，而不是单张电影剧照或海报？
+- 每张涉及主角/常驻角色的执行故事板是否有底部“角色参考（服装造型一致）”区域？
+- 底部是否展示了每个出场角色的三视图缩略图？
+- 三视图是否来自 `reference_assets.triple_view_image_path`？
+- 底部角色参考区是否包含中文名 / `character_id`？
+- 底部角色参考区是否包含 `wardrobe_lock` 摘要？
+- 图片提示词是否明确要求加载 `character_bible.json` 并按稳定 `id` 匹配角色？
+- 每个涉及角色是否都读取了 `reference_assets.triple_view_image_path` 的实际图片路径？
+- GPT image 2 调用时是否把这些实际三视图图片作为参考图输入，而不是只在提示词里描述？
+- 每张执行板 manifest 是否包含 `required_reference_images`、`wardrobe_lock` 和 `characterRefs[].wardrobeLock`？
+- 每张执行板 manifest 是否包含 `layout_standard` 和 `bottom_character_reference_strip`？
+- 主画面角色是否与底部三视图参考区保持脸、年龄、体型、发型、服装轮廓、色彩一致？
+- 同一场景连续执行板中同一角色的 `wardrobe_lock` 是否一致？
+- EB-002、EB-003、EB-004 中高兴是否始终是同一件深色普通夹克/深色便装轮廓？
+- EB-002、EB-003、EB-004 中李鑫是否始终是同一套微胖中年老板商务休闲外套，没有变成西装、工装或不同颜色外套？
+- EB-002、EB-003、EB-004 中史玉成是否始终是同一套瘦高眼镜、科技休闲穿着，没有换发型、换眼镜或换外套轮廓？
+- 若生成图片中任一主角服装漂移，是否标记 `failed_visual_consistency`，且没有标记 `confirmed`？
+- 若生成图片缺少底部角色参考区，是否标记 `failed_missing_bottom_character_reference_strip`，且没有标记 `confirmed`？
+- 是否禁止水印、平台logo、无关署名？

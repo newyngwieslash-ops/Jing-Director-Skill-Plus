@@ -1,0 +1,1708 @@
+{
+  "schema_version": "design-board-1.2",
+  "renderer_version": "design-board-1.2",
+  "contract_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "review_plan_sha256": "61bfde6e113cb9fe5ec1d70d771b8f2bf602b44196e52f68790b791db24ca78f",
+  "review_plan_input_sha256": null,
+  "design_spec_sha256": "b5232178f05acfeb0c34606dec55b6b1572abf781d45d314be1c15010e57d8f1",
+  "input_asset_sha256": {
+    "blocking-complete/manifest.json": "ce7e56f89213de59a3ed02aca17db566a5b562fe74587eb257f1990fc6662454",
+    "identity-registry.json": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e",
+    "blocking-complete/blocking.json": "d125d7277fce1b47e27ff87a7542f96a2480c1465b6e795ad126efbfbfef5c7d",
+    "blocking-complete/roster.json": "8b0aa95272e4e9c83967d7217c993c5a1aa0f10c95792fcf11fb42b52c7b763f",
+    "blocking-complete/coverage.json": "84df83f741b467215ee8ecdf1f3ecc4412b72a2519a4e5586ea384fda4d3ef60",
+    "blocking-complete/identity-registry.json": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e",
+    "blocking-complete/scene-001/overview.svg": "01347bb2c023a3c3a3259cd8aafd67332564ef3229b6f4006a20c3fc86f47147",
+    "blocking-complete/scene-001/overview.png": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d",
+    "blocking-complete/scene-001/shot-001/entry.svg": "7cacc949ebc714f0b629488d42cd16eba0377e3d7cbb9d103154be05bd004072",
+    "blocking-complete/scene-001/shot-001/entry.png": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc",
+    "blocking-complete/scene-001/shot-001/exit.svg": "093b4237465e75be56da1aac42542f2784b9483e83654bddadb0e160578f9c18",
+    "blocking-complete/scene-001/shot-001/exit.png": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d",
+    "blocking-complete/scene-001/shot-001/movement.svg": "4a7a3654b583ce71db72c2f8216d824eac3089f3f5db3e853e4ca5a6fa305161",
+    "blocking-complete/scene-001/shot-001/movement.png": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130",
+    "blocking-complete/scene-001/shot-002/entry.svg": "b28c7b7edfed5e7158825322174ffa09ab4f01cd23cde1a7ed96d0a7042d9599",
+    "blocking-complete/scene-001/shot-002/entry.png": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81",
+    "blocking-complete/scene-001/shot-002/exit.svg": "900aeea009c64d4d0b30676d85047af1b09937ff7e9828a5fdf44c290e4259d3",
+    "blocking-complete/scene-001/shot-002/exit.png": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26",
+    "blocking-complete/scene-001/shot-002/movement.svg": "e4778fb754f5d65caa5633a59d2df65c906dbbe1fc9cb6f539cef10a4bab73ac",
+    "blocking-complete/scene-001/shot-002/movement.png": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31",
+    "blocking-complete/scene-002/overview.svg": "f010108a7e8addf2b71484b1d18b26b7376fb72da2a11d1255e5227d2c7caefb",
+    "blocking-complete/scene-002/overview.png": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8",
+    "blocking-complete/scene-002/shot-001/entry.svg": "6e983a28dfcdf8caace1f242496e892b203c532fea497389e4c74608eb9ca74b",
+    "blocking-complete/scene-002/shot-001/entry.png": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658",
+    "blocking-complete/scene-002/shot-001/exit.svg": "8fd4371e7bc9218c55fda4c6c9f408c877ce3b2771910d94297bb304ff9b589d",
+    "blocking-complete/scene-002/shot-001/exit.png": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870",
+    "blocking-complete/scene-002/shot-001/movement.svg": "190d60f607d5dadaa488b1086c7b60272fd72d2a99508efca2ec7a7b73eb9b1a",
+    "blocking-complete/scene-002/shot-001/movement.png": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722",
+    "blocking-complete/index.html": "54cbff4cc4b7ca7a23153849fdcc274344d9fb184e0ace2f3cbead5cb9c267db",
+    "blocking-complete/validation.json": "e456a102b796b7e3e518355e98a506ab3eeda65738c5f354247d051da02b33d6"
+  },
+  "font_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+  "canvas": {
+    "width": 3840,
+    "height": 2160,
+    "aspect_ratio": "16:9"
+  },
+  "total_duration_sec": 9,
+  "pages": [
+    {
+      "page_id": "board-001-p001",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 1,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:characters",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "x": 80,
+          "y": 270,
+          "width": 880,
+          "height": 400
+        },
+        {
+          "id": "RW-001:plate-status",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "场景底图未提供；以下为空间示意，不是生成画面。",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:overview:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "场景总览 · schematic / needs_manual_review",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:overview",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/overview.png",
+          "sha256": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d",
+          "display_height": 1081,
+          "x": 1024,
+          "y": 398,
+          "width": 1062,
+          "height": 1081
+        },
+        {
+          "id": "RW-001:coverage",
+          "kind": "text",
+          "start": 0,
+          "end": 34,
+          "text": "逐镜覆盖清单 / SC01 / complete / 角色 A, B",
+          "x": 1024,
+          "y": 1499,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:coverage:S001",
+          "kind": "text",
+          "start": 0,
+          "end": 39,
+          "text": "S001 / complete / 应有角色 A, B / 实有角色 A, B",
+          "x": 1024,
+          "y": 1563,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:time",
+          "kind": "text",
+          "start": 0,
+          "end": 31,
+          "text": "S001 / 原镜 1 / 0–3s（镜内时间；分页不是剪切）",
+          "x": 2150,
+          "y": 270,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:frame:S001-entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S001-entry / entry / 0s",
+          "x": 2150,
+          "y": 334,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:frame:S001-entry",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 398,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S001:frame:S001-entry:state",
+          "kind": "text",
+          "start": 0,
+          "end": 12,
+          "text": "林晓在桌西侧，周衡在门内",
+          "x": 2150,
+          "y": 818,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:frame:S001-entry:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 882,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:frame:S001-exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S001-exit / exit / 3.0s",
+          "x": 2150,
+          "y": 946,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:frame:S001-exit",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 1010,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S001:frame:S001-exit:state",
+          "kind": "text",
+          "start": 0,
+          "end": 12,
+          "text": "林晓在桌西侧，周衡在门内",
+          "x": 2150,
+          "y": 1430,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:frame:S001-exit:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 1494,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:beats:0:timing",
+          "kind": "text",
+          "start": 0,
+          "end": 29,
+          "text": "beats 0–3.0s / 完整原项；跨窗重复仅供上下文",
+          "x": 2150,
+          "y": 1558,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:beats:0:action",
+          "kind": "text",
+          "start": 0,
+          "end": 25,
+          "text": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。",
+          "x": 2150,
+          "y": 1622,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:beats:0:camera",
+          "kind": "text",
+          "start": 0,
+          "end": 4,
+          "text": "机位固定",
+          "x": 2150,
+          "y": 1686,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:beats:0:sound",
+          "kind": "text",
+          "start": 0,
+          "end": 7,
+          "text": "轻微店内环境声",
+          "x": 2150,
+          "y": 1750,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S001:soundscape",
+          "kind": "text",
+          "start": 0,
+          "end": 7,
+          "text": "轻微店内环境声",
+          "x": 2150,
+          "y": 1814,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:time",
+          "kind": "text",
+          "start": 0,
+          "end": 31,
+          "text": "S002 / 原镜 2 / 0–4s（镜内时间；分页不是剪切）",
+          "x": 2150,
+          "y": 1878,
+          "width": 1610,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p002",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 2,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:blocking:S001:entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S001 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S001:entry",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-001/entry.png",
+          "sha256": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc",
+          "display_height": 1055,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S001",
+          "blocking_phase": "entry",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1055
+        },
+        {
+          "id": "RW-001:S002:frame:S002-entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S002-entry / entry / 0s",
+          "x": 2150,
+          "y": 270,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:frame:S002-entry",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 334,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S002:frame:S002-entry:state",
+          "kind": "text",
+          "start": 0,
+          "end": 12,
+          "text": "林晓在桌西侧，周衡在门内",
+          "x": 2150,
+          "y": 754,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:frame:S002-entry:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 818,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:frame:S002-exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S002-exit / exit / 4.0s",
+          "x": 2150,
+          "y": 882,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:frame:S002-exit",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 946,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-001:S002:frame:S002-exit:state",
+          "kind": "text",
+          "start": 0,
+          "end": 13,
+          "text": "林晓原位，周衡在桌东侧停住",
+          "x": 2150,
+          "y": 1366,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:frame:S002-exit:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 1430,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:beats:0:timing",
+          "kind": "text",
+          "start": 0,
+          "end": 29,
+          "text": "beats 0–4.0s / 完整原项；跨窗重复仅供上下文",
+          "x": 2150,
+          "y": 1494,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:beats:0:action",
+          "kind": "text",
+          "start": 0,
+          "end": 32,
+          "text": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。",
+          "x": 2150,
+          "y": 1558,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:beats:0:camera",
+          "kind": "text",
+          "start": 0,
+          "end": 4,
+          "text": "机位固定",
+          "x": 2150,
+          "y": 1622,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:beats:0:sound",
+          "kind": "text",
+          "start": 0,
+          "end": 7,
+          "text": "脚步声，无对白",
+          "x": 2150,
+          "y": 1686,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-001:S002:soundscape",
+          "kind": "text",
+          "start": 0,
+          "end": 7,
+          "text": "脚步声，无对白",
+          "x": 2150,
+          "y": 1750,
+          "width": 1610,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p003",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 3,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:blocking:S001:exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S001 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S001:exit",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-001/exit.png",
+          "sha256": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d",
+          "display_height": 1055,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S001",
+          "blocking_phase": "exit",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1055
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p004",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 4,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:blocking:S001:movement:label",
+          "kind": "text",
+          "start": 0,
+          "end": 37,
+          "text": "S001 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S001:movement",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-001/movement.png",
+          "sha256": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130",
+          "display_height": 1107,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S001",
+          "blocking_phase": "movement",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1107
+        },
+        {
+          "id": "RW-001:coverage:S002",
+          "kind": "text",
+          "start": 0,
+          "end": 39,
+          "text": "S002 / complete / 应有角色 A, B / 实有角色 A, B",
+          "x": 1024,
+          "y": 1461,
+          "width": 1062,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p005",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 5,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:blocking:S002:entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S002 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S002:entry",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-002/entry.png",
+          "sha256": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81",
+          "display_height": 1055,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S002",
+          "blocking_phase": "entry",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1055
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p006",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 6,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:blocking:S002:exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S002 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S002:exit",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-002/exit.png",
+          "sha256": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26",
+          "display_height": 1055,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S002",
+          "blocking_phase": "exit",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1055
+        }
+      ]
+    },
+    {
+      "page_id": "board-001-p007",
+      "board_id": "EB-001",
+      "window_id": "RW-001",
+      "page_index": 7,
+      "page_count": 7,
+      "window_duration_sec": 7,
+      "adds_duration_sec": 0,
+      "scene_id": "SC01",
+      "items": [
+        {
+          "id": "RW-001:blocking:S002:movement:label",
+          "kind": "text",
+          "start": 0,
+          "end": 37,
+          "text": "S002 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking:S002:movement",
+          "kind": "image",
+          "path": "blocking-complete/scene-001/shot-002/movement.png",
+          "sha256": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31",
+          "display_height": 1107,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S002",
+          "blocking_phase": "movement",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 1107
+        },
+        {
+          "id": "RW-001:blocking-status",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "全项目逐镜空间覆盖与字节绑定已核验；示意图 schematic，剧情与空间关",
+          "x": 1024,
+          "y": 1461,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:blocking-status",
+          "kind": "text",
+          "start": 38,
+          "end": 46,
+          "text": "系仍须人工审核。",
+          "x": 1024,
+          "y": 1509,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:footer:tone:label",
+          "kind": "text",
+          "start": 0,
+          "end": 9,
+          "text": "tone · 待定",
+          "x": 1024,
+          "y": 1573,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:footer:character_dynamics:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "character_dynamics · 待定",
+          "x": 1024,
+          "y": 1637,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-001:footer:cinematic_approach:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "cinematic_approach · 待定",
+          "x": 1024,
+          "y": 1701,
+          "width": 1062,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-002-p001",
+      "board_id": "EB-002",
+      "window_id": "RW-002",
+      "page_index": 1,
+      "page_count": 4,
+      "window_duration_sec": 2,
+      "adds_duration_sec": 0,
+      "scene_id": "SC02",
+      "items": [
+        {
+          "id": "RW-002:characters",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "x": 80,
+          "y": 270,
+          "width": 880,
+          "height": 400
+        },
+        {
+          "id": "RW-002:plate-status",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "场景底图未提供；以下为空间示意，不是生成画面。",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:overview:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "场景总览 · schematic / needs_manual_review",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:overview",
+          "kind": "image",
+          "path": "blocking-complete/scene-002/overview.png",
+          "sha256": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8",
+          "display_height": 977,
+          "x": 1024,
+          "y": 398,
+          "width": 1062,
+          "height": 977
+        },
+        {
+          "id": "RW-002:coverage",
+          "kind": "text",
+          "start": 0,
+          "end": 30,
+          "text": "逐镜覆盖清单 / SC02 / complete / 角色 ",
+          "x": 1024,
+          "y": 1395,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:coverage:S003",
+          "kind": "text",
+          "start": 0,
+          "end": 31,
+          "text": "S003 / complete / 应有角色  / 实有角色 ",
+          "x": 1024,
+          "y": 1459,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:time",
+          "kind": "text",
+          "start": 0,
+          "end": 31,
+          "text": "S003 / 原镜 3 / 0–2s（镜内时间；分页不是剪切）",
+          "x": 2150,
+          "y": 270,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:frame:S003-entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S003-entry / entry / 0s",
+          "x": 2150,
+          "y": 334,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:frame:S003-entry",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 398,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-002:S003:frame:S003-entry:state",
+          "kind": "text",
+          "start": 0,
+          "end": 6,
+          "text": "店外街道无人",
+          "x": 2150,
+          "y": 818,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:frame:S003-entry:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 882,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:frame:S003-exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "S003-exit / exit / 2.0s",
+          "x": 2150,
+          "y": 946,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:frame:S003-exit",
+          "kind": "image",
+          "path": null,
+          "sha256": null,
+          "display_height": 400,
+          "review_label": "合同声明 unreviewed（未核验）",
+          "declared_reviewed_sha256": null,
+          "x": 2150,
+          "y": 1010,
+          "width": 1610,
+          "height": 400
+        },
+        {
+          "id": "RW-002:S003:frame:S003-exit:state",
+          "kind": "text",
+          "start": 0,
+          "end": 6,
+          "text": "店外街道无人",
+          "x": 2150,
+          "y": 1430,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:frame:S003-exit:review",
+          "kind": "text",
+          "start": 0,
+          "end": 20,
+          "text": "合同声明 unreviewed（未核验）",
+          "x": 2150,
+          "y": 1494,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:beats:0:timing",
+          "kind": "text",
+          "start": 0,
+          "end": 29,
+          "text": "beats 0–2.0s / 完整原项；跨窗重复仅供上下文",
+          "x": 2150,
+          "y": 1558,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:beats:0:action",
+          "kind": "text",
+          "start": 0,
+          "end": 14,
+          "text": "切到店外街道空镜，门前无人。",
+          "x": 2150,
+          "y": 1622,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:beats:0:camera",
+          "kind": "text",
+          "start": 0,
+          "end": 4,
+          "text": "机位固定",
+          "x": 2150,
+          "y": 1686,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:beats:0:sound",
+          "kind": "text",
+          "start": 0,
+          "end": 9,
+          "text": "远处车流声，无对白",
+          "x": 2150,
+          "y": 1750,
+          "width": 1610,
+          "height": 48
+        },
+        {
+          "id": "RW-002:S003:soundscape",
+          "kind": "text",
+          "start": 0,
+          "end": 9,
+          "text": "远处车流声，无对白",
+          "x": 2150,
+          "y": 1814,
+          "width": 1610,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "page_id": "board-002-p002",
+      "board_id": "EB-002",
+      "window_id": "RW-002",
+      "page_index": 2,
+      "page_count": 4,
+      "window_duration_sec": 2,
+      "adds_duration_sec": 0,
+      "scene_id": "SC02",
+      "items": [
+        {
+          "id": "RW-002:blocking:S003:entry:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S003 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:blocking:S003:entry",
+          "kind": "image",
+          "path": "blocking-complete/scene-002/shot-001/entry.png",
+          "sha256": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658",
+          "display_height": 951,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S003",
+          "blocking_phase": "entry",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 951
+        }
+      ]
+    },
+    {
+      "page_id": "board-002-p003",
+      "board_id": "EB-002",
+      "window_id": "RW-002",
+      "page_index": 3,
+      "page_count": 4,
+      "window_duration_sec": 2,
+      "adds_duration_sec": 0,
+      "scene_id": "SC02",
+      "items": [
+        {
+          "id": "RW-002:blocking:S003:exit:label",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "S003 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:blocking:S003:exit",
+          "kind": "image",
+          "path": "blocking-complete/scene-002/shot-001/exit.png",
+          "sha256": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870",
+          "display_height": 951,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S003",
+          "blocking_phase": "exit",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 951
+        }
+      ]
+    },
+    {
+      "page_id": "board-002-p004",
+      "board_id": "EB-002",
+      "window_id": "RW-002",
+      "page_index": 4,
+      "page_count": 4,
+      "window_duration_sec": 2,
+      "adds_duration_sec": 0,
+      "scene_id": "SC02",
+      "items": [
+        {
+          "id": "RW-002:blocking:S003:movement:label",
+          "kind": "text",
+          "start": 0,
+          "end": 37,
+          "text": "S003 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核",
+          "x": 1024,
+          "y": 270,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:blocking:S003:movement",
+          "kind": "image",
+          "path": "blocking-complete/scene-002/shot-001/movement.png",
+          "sha256": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722",
+          "display_height": 951,
+          "context_only": true,
+          "adds_duration_sec": 0,
+          "source_shot_id": "S003",
+          "blocking_phase": "movement",
+          "x": 1024,
+          "y": 334,
+          "width": 1062,
+          "height": 951
+        },
+        {
+          "id": "RW-002:blocking-status",
+          "kind": "text",
+          "start": 0,
+          "end": 38,
+          "text": "全项目逐镜空间覆盖与字节绑定已核验；示意图 schematic，剧情与空间关",
+          "x": 1024,
+          "y": 1305,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:blocking-status",
+          "kind": "text",
+          "start": 38,
+          "end": 46,
+          "text": "系仍须人工审核。",
+          "x": 1024,
+          "y": 1353,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:footer:tone:label",
+          "kind": "text",
+          "start": 0,
+          "end": 9,
+          "text": "tone · 待定",
+          "x": 1024,
+          "y": 1417,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:footer:character_dynamics:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "character_dynamics · 待定",
+          "x": 1024,
+          "y": 1481,
+          "width": 1062,
+          "height": 48
+        },
+        {
+          "id": "RW-002:footer:cinematic_approach:label",
+          "kind": "text",
+          "start": 0,
+          "end": 23,
+          "text": "cinematic_approach · 待定",
+          "x": 1024,
+          "y": 1545,
+          "width": 1062,
+          "height": 48
+        }
+      ]
+    }
+  ],
+  "source_items": [
+    {
+      "id": "RW-001:characters",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400
+    },
+    {
+      "id": "RW-001:plate-status",
+      "kind": "text",
+      "text": "场景底图未提供；以下为空间示意，不是生成画面。"
+    },
+    {
+      "id": "RW-001:overview:label",
+      "kind": "text",
+      "text": "场景总览 · schematic / needs_manual_review"
+    },
+    {
+      "id": "RW-001:overview",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/overview.png",
+      "sha256": "1cdd4955a823a49bd64fef32cb26ac3f07614e403d5c9114b2ad02cf89d25a5d",
+      "display_height": 1081
+    },
+    {
+      "id": "RW-001:coverage",
+      "kind": "text",
+      "text": "逐镜覆盖清单 / SC01 / complete / 角色 A, B"
+    },
+    {
+      "id": "RW-001:coverage:S001",
+      "kind": "text",
+      "text": "S001 / complete / 应有角色 A, B / 实有角色 A, B"
+    },
+    {
+      "id": "RW-001:blocking:S001:entry:label",
+      "kind": "text",
+      "text": "S001 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S001:entry",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-001/entry.png",
+      "sha256": "ed088076e76495bcf8821384266db8ebe8430e1ed40f5dcd4fa0275c30ab90cc",
+      "display_height": 1055,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S001",
+      "blocking_phase": "entry"
+    },
+    {
+      "id": "RW-001:blocking:S001:exit:label",
+      "kind": "text",
+      "text": "S001 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S001:exit",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-001/exit.png",
+      "sha256": "585c3c6bebf0fce8946a16dd3d70d89e08d51bccf60043bd474c266e4ac0061d",
+      "display_height": 1055,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S001",
+      "blocking_phase": "exit"
+    },
+    {
+      "id": "RW-001:blocking:S001:movement:label",
+      "kind": "text",
+      "text": "S001 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S001:movement",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-001/movement.png",
+      "sha256": "dadf620acecd9e4cab43470b35cf2a94d5a371d8768d08344c3b2bcb6cfc0130",
+      "display_height": 1107,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S001",
+      "blocking_phase": "movement"
+    },
+    {
+      "id": "RW-001:coverage:S002",
+      "kind": "text",
+      "text": "S002 / complete / 应有角色 A, B / 实有角色 A, B"
+    },
+    {
+      "id": "RW-001:blocking:S002:entry:label",
+      "kind": "text",
+      "text": "S002 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S002:entry",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-002/entry.png",
+      "sha256": "e4f6759f482d66a9257c985f08a403a2abf8b23f5be95654cc5ad1cdc5660d81",
+      "display_height": 1055,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S002",
+      "blocking_phase": "entry"
+    },
+    {
+      "id": "RW-001:blocking:S002:exit:label",
+      "kind": "text",
+      "text": "S002 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S002:exit",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-002/exit.png",
+      "sha256": "a89d48f148355f885e554bb4a790271012d92f5e4f20e40d65eaaa457f295e26",
+      "display_height": 1055,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S002",
+      "blocking_phase": "exit"
+    },
+    {
+      "id": "RW-001:blocking:S002:movement:label",
+      "kind": "text",
+      "text": "S002 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-001:blocking:S002:movement",
+      "kind": "image",
+      "path": "blocking-complete/scene-001/shot-002/movement.png",
+      "sha256": "48fb62e071098f3edd80dd77dde2f5bb98fa68e1f93b37d58f2bfabae2bc1b31",
+      "display_height": 1107,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S002",
+      "blocking_phase": "movement"
+    },
+    {
+      "id": "RW-001:blocking-status",
+      "kind": "text",
+      "text": "全项目逐镜空间覆盖与字节绑定已核验；示意图 schematic，剧情与空间关系仍须人工审核。"
+    },
+    {
+      "id": "RW-001:footer:tone:label",
+      "kind": "text",
+      "text": "tone · 待定"
+    },
+    {
+      "id": "RW-001:footer:character_dynamics:label",
+      "kind": "text",
+      "text": "character_dynamics · 待定"
+    },
+    {
+      "id": "RW-001:footer:cinematic_approach:label",
+      "kind": "text",
+      "text": "cinematic_approach · 待定"
+    },
+    {
+      "id": "RW-001:S001:time",
+      "kind": "text",
+      "text": "S001 / 原镜 1 / 0–3s（镜内时间；分页不是剪切）"
+    },
+    {
+      "id": "RW-001:S001:frame:S001-entry:label",
+      "kind": "text",
+      "text": "S001-entry / entry / 0s"
+    },
+    {
+      "id": "RW-001:S001:frame:S001-entry",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S001:frame:S001-entry:state",
+      "kind": "text",
+      "text": "林晓在桌西侧，周衡在门内"
+    },
+    {
+      "id": "RW-001:S001:frame:S001-entry:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S001:frame:S001-exit:label",
+      "kind": "text",
+      "text": "S001-exit / exit / 3.0s"
+    },
+    {
+      "id": "RW-001:S001:frame:S001-exit",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S001:frame:S001-exit:state",
+      "kind": "text",
+      "text": "林晓在桌西侧，周衡在门内"
+    },
+    {
+      "id": "RW-001:S001:frame:S001-exit:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S001:beats:0:timing",
+      "kind": "text",
+      "text": "beats 0–3.0s / 完整原项；跨窗重复仅供上下文"
+    },
+    {
+      "id": "RW-001:S001:beats:0:action",
+      "kind": "text",
+      "text": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。"
+    },
+    {
+      "id": "RW-001:S001:beats:0:camera",
+      "kind": "text",
+      "text": "机位固定"
+    },
+    {
+      "id": "RW-001:S001:beats:0:sound",
+      "kind": "text",
+      "text": "轻微店内环境声"
+    },
+    {
+      "id": "RW-001:S001:soundscape",
+      "kind": "text",
+      "text": "轻微店内环境声"
+    },
+    {
+      "id": "RW-001:S002:time",
+      "kind": "text",
+      "text": "S002 / 原镜 2 / 0–4s（镜内时间；分页不是剪切）"
+    },
+    {
+      "id": "RW-001:S002:frame:S002-entry:label",
+      "kind": "text",
+      "text": "S002-entry / entry / 0s"
+    },
+    {
+      "id": "RW-001:S002:frame:S002-entry",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S002:frame:S002-entry:state",
+      "kind": "text",
+      "text": "林晓在桌西侧，周衡在门内"
+    },
+    {
+      "id": "RW-001:S002:frame:S002-entry:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S002:frame:S002-exit:label",
+      "kind": "text",
+      "text": "S002-exit / exit / 4.0s"
+    },
+    {
+      "id": "RW-001:S002:frame:S002-exit",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-001:S002:frame:S002-exit:state",
+      "kind": "text",
+      "text": "林晓原位，周衡在桌东侧停住"
+    },
+    {
+      "id": "RW-001:S002:frame:S002-exit:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-001:S002:beats:0:timing",
+      "kind": "text",
+      "text": "beats 0–4.0s / 完整原项；跨窗重复仅供上下文"
+    },
+    {
+      "id": "RW-001:S002:beats:0:action",
+      "kind": "text",
+      "text": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。"
+    },
+    {
+      "id": "RW-001:S002:beats:0:camera",
+      "kind": "text",
+      "text": "机位固定"
+    },
+    {
+      "id": "RW-001:S002:beats:0:sound",
+      "kind": "text",
+      "text": "脚步声，无对白"
+    },
+    {
+      "id": "RW-001:S002:soundscape",
+      "kind": "text",
+      "text": "脚步声，无对白"
+    },
+    {
+      "id": "RW-002:characters",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400
+    },
+    {
+      "id": "RW-002:plate-status",
+      "kind": "text",
+      "text": "场景底图未提供；以下为空间示意，不是生成画面。"
+    },
+    {
+      "id": "RW-002:overview:label",
+      "kind": "text",
+      "text": "场景总览 · schematic / needs_manual_review"
+    },
+    {
+      "id": "RW-002:overview",
+      "kind": "image",
+      "path": "blocking-complete/scene-002/overview.png",
+      "sha256": "63ccc7e4ec8d50713b8c2a59f108f8d68c495e3711285363f26d7a36155e2bc8",
+      "display_height": 977
+    },
+    {
+      "id": "RW-002:coverage",
+      "kind": "text",
+      "text": "逐镜覆盖清单 / SC02 / complete / 角色 "
+    },
+    {
+      "id": "RW-002:coverage:S003",
+      "kind": "text",
+      "text": "S003 / complete / 应有角色  / 实有角色 "
+    },
+    {
+      "id": "RW-002:blocking:S003:entry:label",
+      "kind": "text",
+      "text": "S003 / 首站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-002:blocking:S003:entry",
+      "kind": "image",
+      "path": "blocking-complete/scene-002/shot-001/entry.png",
+      "sha256": "fc25da602a6f1a07d6eb50fa1f0c1aadbcebdff3cb411ed78dfafd7e18e82658",
+      "display_height": 951,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S003",
+      "blocking_phase": "entry"
+    },
+    {
+      "id": "RW-002:blocking:S003:exit:label",
+      "kind": "text",
+      "text": "S003 / 末站位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-002:blocking:S003:exit",
+      "kind": "image",
+      "path": "blocking-complete/scene-002/shot-001/exit.png",
+      "sha256": "3bc2f50154e185140bbb453d8bfd81d479846a2d13cef71f3c112f99190d4870",
+      "display_height": 951,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S003",
+      "blocking_phase": "exit"
+    },
+    {
+      "id": "RW-002:blocking:S003:movement:label",
+      "kind": "text",
+      "text": "S003 / 走位 · 全镜上下文；跨窗重复不新增时长 · 示意待人工审核"
+    },
+    {
+      "id": "RW-002:blocking:S003:movement",
+      "kind": "image",
+      "path": "blocking-complete/scene-002/shot-001/movement.png",
+      "sha256": "5921da05a7433b8e5fcf62153f1ee343fef287425c0943f1c9c77ca06f4f2722",
+      "display_height": 951,
+      "context_only": true,
+      "adds_duration_sec": 0,
+      "source_shot_id": "S003",
+      "blocking_phase": "movement"
+    },
+    {
+      "id": "RW-002:blocking-status",
+      "kind": "text",
+      "text": "全项目逐镜空间覆盖与字节绑定已核验；示意图 schematic，剧情与空间关系仍须人工审核。"
+    },
+    {
+      "id": "RW-002:footer:tone:label",
+      "kind": "text",
+      "text": "tone · 待定"
+    },
+    {
+      "id": "RW-002:footer:character_dynamics:label",
+      "kind": "text",
+      "text": "character_dynamics · 待定"
+    },
+    {
+      "id": "RW-002:footer:cinematic_approach:label",
+      "kind": "text",
+      "text": "cinematic_approach · 待定"
+    },
+    {
+      "id": "RW-002:S003:time",
+      "kind": "text",
+      "text": "S003 / 原镜 3 / 0–2s（镜内时间；分页不是剪切）"
+    },
+    {
+      "id": "RW-002:S003:frame:S003-entry:label",
+      "kind": "text",
+      "text": "S003-entry / entry / 0s"
+    },
+    {
+      "id": "RW-002:S003:frame:S003-entry",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-002:S003:frame:S003-entry:state",
+      "kind": "text",
+      "text": "店外街道无人"
+    },
+    {
+      "id": "RW-002:S003:frame:S003-entry:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-002:S003:frame:S003-exit:label",
+      "kind": "text",
+      "text": "S003-exit / exit / 2.0s"
+    },
+    {
+      "id": "RW-002:S003:frame:S003-exit",
+      "kind": "image",
+      "path": null,
+      "sha256": null,
+      "display_height": 400,
+      "review_label": "合同声明 unreviewed（未核验）",
+      "declared_reviewed_sha256": null
+    },
+    {
+      "id": "RW-002:S003:frame:S003-exit:state",
+      "kind": "text",
+      "text": "店外街道无人"
+    },
+    {
+      "id": "RW-002:S003:frame:S003-exit:review",
+      "kind": "text",
+      "text": "合同声明 unreviewed（未核验）"
+    },
+    {
+      "id": "RW-002:S003:beats:0:timing",
+      "kind": "text",
+      "text": "beats 0–2.0s / 完整原项；跨窗重复仅供上下文"
+    },
+    {
+      "id": "RW-002:S003:beats:0:action",
+      "kind": "text",
+      "text": "切到店外街道空镜，门前无人。"
+    },
+    {
+      "id": "RW-002:S003:beats:0:camera",
+      "kind": "text",
+      "text": "机位固定"
+    },
+    {
+      "id": "RW-002:S003:beats:0:sound",
+      "kind": "text",
+      "text": "远处车流声，无对白"
+    },
+    {
+      "id": "RW-002:S003:soundscape",
+      "kind": "text",
+      "text": "远处车流声，无对白"
+    }
+  ],
+  "output_sha256": {
+    "board-001-p001.png": "55e285e2d010654e6de5133ed15de0d61b5e69995fa8d4f52c6fdaf8e61a8cc3",
+    "board-001-p002.png": "ddd89555fb6fa20c463796fe648ecb5678a0a9036e4b5b146a399da0f4057ad7",
+    "board-001-p003.png": "542b85ed2ba9d600003b00cc6cd92a55d5c4cb69adb47c8bcbd85d1b605d2af2",
+    "board-001-p004.png": "89594b70bc2cb61cf5ee52a8911f4146fb03c21565d3a23274a54acbf9e42fff",
+    "board-001-p005.png": "c910a50db3eebfd8737e838ea8911f0df08e78046333a70f6656536a1f1d6638",
+    "board-001-p006.png": "73ec7e5b50e27c9b775c1074b4387b6c49388eb3252ff73ba356a3d0c001a10f",
+    "board-001-p007.png": "22eba46b1b593a6cea3b3a9ca39fbf2ad668c47dd2cbd12354c3530bbdcd8920",
+    "board-002-p001.png": "de6db2cd81cbc9389a62b26deb500f7392a44307297115d3fe8199f692d0513d",
+    "board-002-p002.png": "36a9382f46280799056e274c3316c723575ffd55904611385ecdbc9f068403f0",
+    "board-002-p003.png": "1434645f14f41e09fd4890e8ee5e3df79ad9dc341fcc420e409e0cfcb0468df6",
+    "board-002-p004.png": "00f30f197d8463b7cee8d4f99534c7f5203180e866f8b2de522c111d2d464163",
+    "index.html": "0d6c890046a3f9f39bd97feee35c83a9bd937e2d82dbbe17d0ae431e9dfe931c"
+  },
+  "issues": [
+    {
+      "item_id": "RW-001:characters",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S001:frame:S001-entry",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S001:frame:S001-exit",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S002:frame:S002-entry",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-001:S002:frame:S002-exit",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-002:characters",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-002:S003:frame:S003-entry",
+      "reason": "missing_image_mapping"
+    },
+    {
+      "item_id": "RW-002:S003:frame:S003-exit",
+      "reason": "missing_image_mapping"
+    }
+  ],
+  "uncovered_items": [],
+  "resource_limits": {
+    "max_pages": 1000,
+    "max_items": 50000,
+    "max_text_characters": 1000000,
+    "max_raster_pixels": 40000000
+  },
+  "layout_checks": {
+    "text_ranges_lossless": true,
+    "fixed_canvas": true
+  },
+  "status": "draft",
+  "spatial_status": "spatial_complete_schematic",
+  "blocking_bundle": {
+    "manifest_path": "blocking-complete/manifest.json",
+    "manifest_sha256": "ce7e56f89213de59a3ed02aca17db566a5b562fe74587eb257f1990fc6662454",
+    "identity_registry_path": "identity-registry.json",
+    "identity_registry_sha256": "4d616f8076b7541c7e7a240e5ad4d6215e16b8a77bde11158d97f34ae2b5709e"
+  },
+  "visual_review": "needs_manual_review",
+  "html_pixel_parity": "not_verified_browser_font_dependent",
+  "unsupported": [
+    "SVG preview/conversion",
+    "blocking approval interpretation"
+  ]
+}

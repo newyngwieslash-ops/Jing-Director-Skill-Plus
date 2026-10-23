@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "contract_sha256": "8a72e614ea4a9a9cf9c174ee2ae2a91e4ea6447a36171e5e681abb6d1ced56da",
+  "locations": [
+    {
+      "id": "cafe",
+      "name": "咖啡店·空间示意",
+      "coordinate_mode": "schematic",
+      "units": "relative",
+      "basis": "根据虚构原文确定南侧门口、中部桌子；距离仅为相对示意，非实测。",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      },
+      "landmarks": [
+        {
+          "id": "table",
+          "label": "桌子",
+          "x": 4,
+          "y": 4,
+          "w": 1,
+          "h": 1,
+          "blocking": true
+        },
+        {
+          "id": "door",
+          "label": "入口",
+          "x": 6,
+          "y": 0.4,
+          "w": 1.5,
+          "h": 0.5,
+          "blocking": false
+        }
+      ],
+      "walls": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            5.2,
+            0
+          ]
+        ],
+        [
+          [
+            6.8,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        [
+          [
+            12,
+            0
+          ],
+          [
+            12,
+            8
+          ]
+        ],
+        [
+          [
+            12,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "street",
+      "name": "店外街道·无人场景",
+      "coordinate_mode": "schematic",
+      "units": "relative",
+      "basis": "虚构原镜的无人外景；只示意店面与门前空地。",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      },
+      "landmarks": [
+        {
+          "id": "facade",
+          "label": "咖啡店外墙",
+          "x": 6,
+          "y": 7,
+          "w": 6,
+          "h": 1,
+          "blocking": true
+        }
+      ],
+      "walls": []
+    }
+  ],
+  "cast": [
+    {
+      "id": "A",
+      "name": "林晓",
+      "color": "#BE123C"
+    },
+    {
+      "id": "B",
+      "name": "周衡",
+      "color": "#1D4ED8"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "SC01",
+      "location_id": "cafe",
+      "cast_ids": [
+        "A",
+        "B"
+      ],
+      "shots": [
+        {
+          "shot_id": "S001",
+          "source_shot_no": "1",
+          "duration_sec": 3.0,
+          "evidence": [
+            {
+              "field": "action",
+              "quote": "林晓坐在桌旁看手机，周衡停在门内。两人均原地不动。"
+            }
+          ],
+          "characters": [
+            {
+              "id": "A",
+              "entry": {
+                "x": 3,
+                "y": 4,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 3,
+                "y": 4,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "B",
+              "entry": {
+                "x": 6,
+                "y": 1,
+                "facing_deg": 90,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 6,
+                "y": 1,
+                "facing_deg": 90,
+                "visibility": "in_frame"
+              }
+            }
+          ],
+          "trajectories": [],
+          "cameras": [
+            {
+              "id": "CAM_A",
+              "x": 9,
+              "y": 2,
+              "facing_deg": 160
+            }
+          ],
+          "transition": null
+        },
+        {
+          "shot_id": "S002",
+          "source_shot_no": "2",
+          "duration_sec": 4.0,
+          "evidence": [
+            {
+              "field": "action",
+              "quote": "林晓仍坐在原位。周衡从门内绕过桌子的东侧走到桌旁，面向林晓停住。"
+            }
+          ],
+          "characters": [
+            {
+              "id": "A",
+              "entry": {
+                "x": 3,
+                "y": 4,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 3,
+                "y": 4,
+                "facing_deg": 0,
+                "visibility": "in_frame"
+              }
+            },
+            {
+              "id": "B",
+              "entry": {
+                "x": 6,
+                "y": 1,
+                "facing_deg": 90,
+                "visibility": "in_frame"
+              },
+              "exit": {
+                "x": 5.5,
+                "y": 4,
+                "facing_deg": 180,
+                "visibility": "in_frame"
+              }
+            }
+          ],
+          "trajectories": [
+            {
+              "who": "B",
+              "beat_index": 0,
+              "start_sec": 0,
+              "end_sec": 4,
+              "points": [
+                [
+                  6,
+                  1
+                ],
+                [
+                  6.8,
+                  2.5
+                ],
+                [
+                  5.5,
+                  4
+                ]
+              ],
+              "reason": "原镜周衡从门内绕桌东侧到桌旁停住，林晓原位。"
+            }
+          ],
+          "cameras": [
+            {
+              "id": "CAM_A",
+              "x": 9,
+              "y": 2,
+              "facing_deg": 160
+            }
+          ],
+          "transition": null
+        }
+      ]
+    },
+    {
+      "scene_id": "SC02",
+      "location_id": "street",
+      "cast_ids": [],
+      "shots": [
+        {
+          "shot_id": "S003",
+          "source_shot_no": "3",
+          "duration_sec": 2.0,
+          "evidence": [
+            {
+              "field": "action",
+              "quote": "切到店外街道空镜，门前无人。"
+            }
+          ],
+          "characters": [],
+          "trajectories": [],
+          "cameras": [
+            {
+              "id": "CAM_EXT",
+              "x": 6,
+              "y": 1,
+              "facing_deg": 90
+            }
+          ],
+          "transition": null
+        }
+      ]
+    }
+  ],
+  "identity_binding": {
+    "project_id": "blocking-demo",
+    "revision": 1,
+    "registry_sha256": "a6626639020cd54883ef30351ad5124012bca626ca53a93e8b24828665569d71"
+  }
+}

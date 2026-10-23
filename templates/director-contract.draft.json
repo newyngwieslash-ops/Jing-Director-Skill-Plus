@@ -1,0 +1,166 @@
+{
+  "schema_version": "3.0.0",
+  "project": {
+    "name": "第一集分镜",
+    "aspect_ratio": "16:9",
+    "style": {
+      "zh": "",
+      "en": ""
+    },
+    "source_sha256": "d0ec06c2adb9f66d0b4e810230411a29fc6ada1ecafa90faaeaf00790f80a115"
+  },
+  "policy": {
+    "board_max_duration_sec": 15,
+    "edit_mode": "preserve_shots",
+    "recut_approval": ""
+  },
+  "source_shots": [
+    {
+      "source_shot_no": "9",
+      "angle": "低机位",
+      "shot_size": "中远景",
+      "action": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。",
+      "scene": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+      "sound": "气球拍打声、急促脚步；小孩笑声",
+      "notes": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道",
+      "narrative_intent": "用左向右的前景横穿避开已被队列占用的纵深通道，建立男孩、近侧底座与后续碰撞的空间因果。",
+      "video_prompt": "",
+      "duration_sec": 10.0,
+      "source_row": 10,
+      "raw_cells": {
+        "镜号": "9",
+        "时长": "01:07-01:17",
+        "摄影角度": "低机位",
+        "景别": "中远景",
+        "画面内容": "xiao_nan_hai 从画面左侧前景向右横穿，追着前上方蓝色气球，细线缠腕；父亲及四名员工仍在左后景，陆宸落后，尔玛朵与两名游客仍在右侧讲绣；男孩前方为中央金属展架近侧底座，尚未接触。",
+        "场景": "scene_exhibition_hall / @scene_scene_exhibition_hall_plate",
+        "声音": "气球拍打声、急促脚步；小孩笑声",
+        "备注": "同轴线侧低机位侧拍，向右跟拍2秒后停住；保留左后景队列、右侧讲解组及前景横向通道",
+        "叙事目的": "用左向右的前景横穿避开已被队列占用的纵深通道，建立男孩、近侧底座与后续碰撞的空间因果。"
+      }
+    }
+  ],
+  "assets": [],
+  "shots": [
+    {
+      "shot_id": "S001",
+      "source_shot_no": "9",
+      "source_span_sec": [
+        0,
+        10.0
+      ],
+      "duration_sec": 10.0,
+      "scene_id": "UNRESOLVED",
+      "status": "draft",
+      "director": {
+        "viewing_task": "",
+        "visible_change": "",
+        "why_this_camera": "",
+        "hidden_viewpoint_check": ""
+      },
+      "subjects": [],
+      "reference_asset_ids": [],
+      "camera": {
+        "shot_size_start": "中远景",
+        "shot_size_end": "",
+        "height": "",
+        "angle": "低机位",
+        "lens_mm": null,
+        "fov_deg": null,
+        "movement": "UNRESOLVED",
+        "observable_evidence": "",
+        "focus": "",
+        "composition": ""
+      },
+      "continuity": {
+        "axis_id": "UNRESOLVED",
+        "axis_side": "unknown",
+        "screen_direction": "unknown",
+        "entry_state": {},
+        "exit_state": {},
+        "exceptions": [],
+        "lookahead_source_shots": []
+      },
+      "opening": {
+        "zh": "",
+        "en": ""
+      },
+      "ending": {
+        "zh": "",
+        "en": ""
+      },
+      "beats": [
+        {
+          "start_sec": 0,
+          "end_sec": 10.0,
+          "trigger": "",
+          "action": {
+            "zh": "",
+            "en": ""
+          },
+          "camera": {
+            "zh": "",
+            "en": ""
+          },
+          "sound": {
+            "zh": "",
+            "en": ""
+          }
+        }
+      ],
+      "dialogue": [],
+      "soundscape": {
+        "zh": "",
+        "en": ""
+      },
+      "music": {
+        "zh": "无画外配乐。",
+        "en": "N/A"
+      },
+      "constraints": {
+        "zh": "",
+        "en": ""
+      },
+      "keyframes": [
+        {
+          "id": "S001-entry",
+          "phase": "entry",
+          "time_sec": 0,
+          "visible_state": {
+            "zh": "",
+            "en": ""
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        },
+        {
+          "id": "S001-exit",
+          "phase": "exit",
+          "time_sec": 10.0,
+          "visible_state": {
+            "zh": "",
+            "en": ""
+          },
+          "reference_asset_ids": [],
+          "image_path": null,
+          "generation_receipt": null,
+          "visual_review": {
+            "status": "unreviewed",
+            "evidence": ""
+          }
+        }
+      ]
+    }
+  ],
+  "review": {
+    "director": "pending",
+    "visual": "pending",
+    "video": "not_generated",
+    "user": "pending"
+  }
+}

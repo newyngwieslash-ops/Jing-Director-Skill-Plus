@@ -1,0 +1,22 @@
+{
+  "source_file": "第一集分镜.xlsx",
+  "source_sha256": "d0ec06c2adb9f66d0b4e810230411a29fc6ada1ecafa90faaeaf00790f80a115",
+  "reader": "stdlib_zip_xml",
+  "shot_count": 39,
+  "total_duration_sec": 360.0,
+  "headers": [
+    "镜号",
+    "时长",
+    "摄影角度",
+    "景别",
+    "画面内容",
+    "场景",
+    "声音",
+    "备注",
+    "叙事目的"
+  ],
+  "source_shot_09_duration_sec": 10.0,
+  "source_shot_09_row": 10,
+  "mutated_original": false,
+  "scope": "实读当前上传工作簿的导入校验；不是39镜导演增强或视频完成报告。"
+}

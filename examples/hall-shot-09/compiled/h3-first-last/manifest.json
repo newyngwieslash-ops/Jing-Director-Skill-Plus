@@ -1,0 +1,72 @@
+{
+  "schema_version": "3.0.0",
+  "profile_id": "minimax-h3",
+  "profile_sha256": "404fb16958cf36f5562c542d2de3ce5885321c99e5c7013aa91816c8fd3b416e",
+  "mode": "FL2VA",
+  "requested_duration_sec": 10.0,
+  "aspect_ratio": "16:9",
+  "shot_ids": [
+    "S009"
+  ],
+  "contract_sha256": "d440bf3de193fb6dec661c6b3e389d3d9b4e1a1c8fdbd0d6a1afb540495b6757",
+  "prompt_sha256": "b69f78bc1db4d3c894c9ff65a944c604018d0c374e93066fa671e985b3ed9681",
+  "prompt_char_count": 2208,
+  "upload_plan": [
+    {
+      "id": "S009-entry",
+      "kind": "image",
+      "role": "first_frame",
+      "path": null,
+      "description": {
+        "zh": "男孩刚进入左前景。气球在前上方；成人分组、前景路线和前方底座同时可读。",
+        "en": "The boy has just entered the left foreground. Balloon ahead and above; adult groupings, the foreground route and the base ahead are all readable."
+      },
+      "entity_id": null,
+      "used_in_shots": [
+        "S009"
+      ],
+      "at_sec": 0,
+      "upload_label": "<Picture 1>",
+      "content_label": "<Picture 1>",
+      "submitted": false,
+      "file_status": "missing"
+    },
+    {
+      "id": "S009-exit",
+      "kind": "image",
+      "role": "last_frame",
+      "path": null,
+      "description": {
+        "zh": "固定机位末态。男孩在右前景底座前，尚未绊倒或撞架；单一蓝色气球在前上方、细线缠腕，成人群组不移位。",
+        "en": "The locked-camera ending: boy in the right foreground before the base, with no trip or collision yet. One blue balloon remains ahead and above, string around the wrist; the adult groups have not relocated."
+      },
+      "entity_id": null,
+      "used_in_shots": [
+        "S009"
+      ],
+      "at_sec": 10.0,
+      "upload_label": "<Picture 2>",
+      "content_label": "<Picture 2>",
+      "submitted": false,
+      "file_status": "missing"
+    }
+  ],
+  "missing_assets": [
+    "S009-entry",
+    "S009-exit"
+  ],
+  "speaker_map": {},
+  "status": "draft_missing_assets",
+  "actual_model_id": null,
+  "provider_payload": null,
+  "submitted": false,
+  "video_verified": false,
+  "warnings": [
+    {
+      "code": "PROVIDER_PREFLIGHT",
+      "where": "minimax-h3",
+      "message": "This is a prompt bundle, not an API payload. Confirm actual provider/model/mode/limits/reference slots/rights and upload each asset; labels do not upload files."
+    }
+  ],
+  "created_at": "2026-09-24T02:55:28.092802+00:00"
+}
