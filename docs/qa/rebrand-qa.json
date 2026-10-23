@@ -61,6 +61,13 @@
     "No browser visual recheck; SVG/PNG and board example bytes preserved.",
     "No model/provider invocation, behavior generation, GitHub push, or CI claim."
   ],
-  "pre_finalization_manifest_sha256": "f7cc316d34ce27abfb8993bb9da62d1f5d4e54adfd3fe83c4774e32159f0e487",
-  "manifest_note": "Snapshot before embedding QA reports; not a final archive checksum. Final package manifest is verified separately."
+  "portability_recheck": {
+    "status": "pass",
+    "scope": "Test fixture portability only: fixture copy excludes root Git metadata; identity assertions use manifest, not source directory basename. Arbitrarily named real git-init checkout runs identity/install suite successfully; installed destination remains jingstudio. No runtime change.",
+    "focused_test_log": "portable-checkout-focused.txt",
+    "tests_file_sha256": "57184608131c99973374e28fa5537e4805e1040ae135cb32a0347b1cafa2cd96",
+    "previous_47_probe_runtime_hashes_unchanged": true
+  },
+  "pre_finalization_manifest_sha256": "1e44a791226ddf6b8f03d12badba2726de268849d151371719403166e8554a3f",
+  "manifest_note": "Pre-finalization snapshot, not the final archive checksum."
 }

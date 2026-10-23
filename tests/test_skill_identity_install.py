@@ -26,16 +26,22 @@ def old_skill(home, folder, name=OLD):
     return p
 
 
-def temp_source(parent):
-    dst = Path(parent) / NAME
-    shutil.copytree(ROOT, dst, ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '.pytest_cache'))
+def temp_source(parent, name=NAME):
+    dst = Path(parent) / name
+    cache_ignore = shutil.ignore_patterns('__pycache__', '*.pyc', '.pytest_cache')
+    def ignore(directory, names):
+        excluded = set(cache_ignore(directory, names))
+        if Path(directory) == ROOT and '.git' in names:
+            excluded.add('.git')
+        return excluded
+    shutil.copytree(ROOT, dst, ignore=ignore)
     return dst
 
 
 class IdentityTests(unittest.TestCase):
     def test_canonical_name(self):
         self.assertEqual(NAME, 'jingstudio')
-        self.assertEqual(ROOT.name, NAME)
+        self.assertEqual(json.loads((ROOT / 'PACKAGE_MANIFEST.json').read_text(encoding='utf-8'))['skill_name'], NAME)
         text = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         self.assertIn(f'\nname: {NAME}\n', text)
         self.assertIn(f'${NAME}', text)
@@ -100,6 +106,21 @@ class IdentityTests(unittest.TestCase):
             self.assertTrue((target / '.gitignore').is_file())
             extra = src / 'untracked-secret.txt'; extra.write_text('untracked')
             self.assertRaises(ValueError, check_package, src)
+
+    def test_arbitrary_checkout_name_installs_canonical_identity(self):
+        with tempfile.TemporaryDirectory() as t:
+            src = temp_source(t, 'custom-checkout-name')
+            git = src / '.git'; git.mkdir()
+            (git / 'config').write_text('fixture metadata', encoding='utf-8')
+            self.assertNotEqual(src.name, NAME)
+            self.assertEqual(check_package(src)['skill_name'], NAME)
+            home = Path(t) / 'isolated-home'
+            result = install(src, home=home)
+            target = Path(result['target'])
+            self.assertEqual(target, home / '.agents/skills' / NAME)
+            self.assertTrue(result['verified'])
+            self.assertFalse((target / '.git').exists())
+            self.assertEqual(check_package(target)['skill_name'], NAME)
 
     def test_git_worktree_pointer_excluded(self):
         with tempfile.TemporaryDirectory() as t:
@@ -355,7 +376,11 @@ class InstallationTests(unittest.TestCase):
 
     def test_refuse_source_target_overlap(self):
         with tempfile.TemporaryDirectory() as t:
-            self.assertRaises(ValueError, install, ROOT, home=t, target_root=ROOT.parent)
+            src = temp_source(t)
+            before = _snapshot(src)
+            self.assertRaises(ValueError, install, src, home=Path(t) / 'home', target_root=src.parent)
+            self.assertEqual(_snapshot(src), before)
+            self.assertFalse((Path(t) / 'home').exists())
 
     def test_single_custom_collection_root(self):
         with tempfile.TemporaryDirectory() as t:

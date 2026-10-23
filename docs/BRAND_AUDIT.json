@@ -26,7 +26,7 @@
       "path": "tests/test_skill_identity_install.py",
       "occurrences": 9,
       "reason": "Explicit old installation preservation and identity rejection fixtures.",
-      "sha256": "458c15dcc7d60b1bb3be95fdb08dd59dfa51643412087545f52aceb722ed3f73"
+      "sha256": "57184608131c99973374e28fa5537e4805e1040ae135cb32a0347b1cafa2cd96"
     },
     {
       "path": "tests/test_merged_install.py",

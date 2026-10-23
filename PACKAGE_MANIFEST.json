@@ -2,7 +2,7 @@
   "skill_name": "jingstudio",
   "version": "4.5.0",
   "contract_schema_version": "3.0.0",
-  "generated_date": "2026-10-22",
+  "generated_date": "2026-10-23",
   "manifest_excludes_itself": true,
   "file_count_excluding_manifest": 268,
   "files": [
@@ -59,7 +59,7 @@
     {
       "path": "docs/BRAND_AUDIT.json",
       "size_bytes": 4264,
-      "sha256": "603a9ec16faf2c1f10f6a7b5614d7c1ed484743680ef3f071548fae7f90b60dd"
+      "sha256": "c4d8f6d8a7cad8d93433b5d461ae08b63a89f47911d1c0ae01d989163bf19336"
     },
     {
       "path": "docs/CHARACTER_VISUAL_IDENTITY.zh-CN.md",
@@ -113,8 +113,8 @@
     },
     {
       "path": "docs/TEST_REPORT.md",
-      "size_bytes": 3840,
-      "sha256": "9897fecba36403c73bf49c6681daaacaeb3b05a407171182118183f268ea1714"
+      "size_bytes": 4056,
+      "sha256": "17ccca313581e5f871f6cd9b4d5cc6d6c1423c15884e35a928cd787fe41110d3"
     },
     {
       "path": "docs/history/3.0.0-TEST_REPORT.md",
@@ -278,8 +278,8 @@
     },
     {
       "path": "docs/qa/rebrand-qa.json",
-      "size_bytes": 2642,
-      "sha256": "a582ba2c16ac7605612b519e523a1b220d8f4849f49ddf94ae303fe68d0e34ac"
+      "size_bytes": 3142,
+      "sha256": "4768277c48cd87a5041d227be1653973a0ff15646dbc2d3ec3b99dbef7051e82"
     },
     {
       "path": "docs/qa/registry-probe-results.json",
@@ -293,8 +293,8 @@
     },
     {
       "path": "docs/test-results.txt",
-      "size_bytes": 42452,
-      "sha256": "595e6bbdca19b43fdfa132842c02ddd181e333e35af17726753c39b35aa973ee"
+      "size_bytes": 42617,
+      "sha256": "886456fa6d0b4d14f76be591043fe545d48b74dd8c9a3eacbda97fed99fbf9de"
     },
     {
       "path": "evals/README.zh-CN.md",
@@ -1328,8 +1328,8 @@
     },
     {
       "path": "tests/test_skill_identity_install.py",
-      "size_bytes": 21138,
-      "sha256": "458c15dcc7d60b1bb3be95fdb08dd59dfa51643412087545f52aceb722ed3f73"
+      "size_bytes": 22445,
+      "sha256": "57184608131c99973374e28fa5537e4805e1040ae135cb32a0347b1cafa2cd96"
     },
     {
       "path": "tests/test_source_gate.py",

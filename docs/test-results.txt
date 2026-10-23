@@ -270,6 +270,7 @@ test_greedy_short_group_scene_boundary (test_review_plan.ReviewPlanTests.test_gr
 test_no_mutation_no_jobs_no_production_bypass (test_review_plan.ReviewPlanTests.test_no_mutation_no_jobs_no_production_bypass) ... ok
 test_reject_bad_windows (test_review_plan.ReviewPlanTests.test_reject_bad_windows) ... ok
 test_reject_stale_hash_and_forged_duration (test_review_plan.ReviewPlanTests.test_reject_stale_hash_and_forged_duration) ... ok
+test_arbitrary_checkout_name_installs_canonical_identity (test_skill_identity_install.IdentityTests.test_arbitrary_checkout_name_installs_canonical_identity) ... ok
 test_broken_manifest_name_rejected (test_skill_identity_install.IdentityTests.test_broken_manifest_name_rejected) ... ok
 test_canonical_name (test_skill_identity_install.IdentityTests.test_canonical_name) ... ok
 test_changed_file_rejected (test_skill_identity_install.IdentityTests.test_changed_file_rejected) ... ok
@@ -333,6 +334,6 @@ test_production_requires_independent_source (test_source_gate.SourceGateTests.te
 test_simultaneous_embedded_source_and_director_edit_cannot_pass_baseline (test_source_gate.SourceGateTests.test_simultaneous_embedded_source_and_director_edit_cannot_pass_baseline) ... ok
 
 ----------------------------------------------------------------------
-Ran 333 tests in 37.192s
+Ran 334 tests in 39.156s
 
 OK
